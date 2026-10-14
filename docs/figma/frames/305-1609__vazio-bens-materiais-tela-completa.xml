@@ -1,0 +1,69 @@
+  <frame id="305:1609" name="Vazio — Bens Materiais (tela completa)" x="-13688" y="7875" width="1440" height="1050">
+    <frame id="305:1610" name="Sidebar" x="0" y="0" width="278" height="1050">
+      <text id="305:1611" name="Finanças PF+PJ" x="20" y="28" width="116" height="18" />
+      <frame id="305:1612" name="Frame" x="20" y="70" width="238" height="43">
+        <text id="305:1613" name="+ Novo Lançamento" x="39.5" y="12" width="159" height="19" />
+      </frame>
+      <frame id="305:1614" name="Frame" x="20" y="137" width="238" height="492">
+        <frame id="305:1615" name="Frame" x="0" y="0" width="238" height="36">
+          <text id="305:1616" name="Relatórios" x="12" y="10" width="63" height="16" />
+          <text id="305:1617" name="▾" x="85" y="10" width="5" height="13" />
+        </frame>
+        <frame id="305:1618" name="Frame" x="0" y="38" width="238" height="36">
+          <text id="305:1619" name="DRE" x="25" y="10" width="26" height="16" />
+        </frame>
+        <frame id="305:1620" name="Frame" x="0" y="76" width="238" height="36">
+          <text id="305:1621" name="Balanço Patrimonial" x="25" y="10" width="123" height="16" />
+        </frame>
+        <frame id="305:1622" name="Frame" x="0" y="114" width="238" height="36">
+          <text id="305:1623" name="Evolução Mensal" x="25" y="10" width="105" height="16" />
+        </frame>
+        <frame id="305:1624" name="Frame" x="0" y="152" width="238" height="36">
+          <text id="305:1625" name="Indicadores Financeiros" x="25" y="10" width="148" height="16" />
+        </frame>
+        <frame id="305:1626" name="Frame" x="0" y="190" width="238" height="36">
+          <text id="305:1627" name="Revisão de Recorrentes" x="10" y="10" width="147" height="16" />
+        </frame>
+        <frame id="305:1628" name="Frame" x="0" y="228" width="238" height="36">
+          <text id="305:1629" name="Histórico" x="10" y="10" width="56" height="16" />
+        </frame>
+        <frame id="305:1630" name="Frame" x="0" y="266" width="238" height="36">
+          <text id="305:1631" name="Plano de Contas e Patrimônio" x="12" y="10" width="183" height="16" />
+          <text id="305:1632" name="▾" x="205" y="10" width="5" height="13" />
+        </frame>
+        <frame id="305:1633" name="Frame" x="0" y="304" width="238" height="36">
+          <text id="305:1634" name="Plano de Contas" x="25" y="10" width="102" height="16" />
+        </frame>
+        <frame id="305:1635" name="Frame" x="0" y="342" width="238" height="36">
+          <text id="305:1636" name="Contas Bancárias" x="25" y="10" width="109" height="16" />
+        </frame>
+        <frame id="305:1637" name="Frame" x="0" y="380" width="238" height="36">
+          <text id="305:1638" name="Bens Materiais" x="25" y="10" width="92" height="16" />
+        </frame>
+        <frame id="305:1639" name="Frame" x="0" y="418" width="238" height="36">
+          <text id="305:1640" name="Investimentos" x="25" y="10" width="88" height="16" />
+        </frame>
+        <frame id="305:1641" name="Frame" x="0" y="456" width="238" height="36">
+          <text id="305:1642" name="Passivos" x="25" y="10" width="55" height="16" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="305:1643" name="Frame" x="278" y="0" width="1162" height="1050">
+      <frame id="305:1644" name="Frame" x="48" y="40" width="1066" height="79">
+        <frame id="305:1645" name="Frame" x="0" y="0" width="1066" height="29">
+          <frame id="305:1646" name="Frame" x="0" y="0" width="1066" height="29">
+            <text id="305:1647" name="Bens Materiais" x="0" y="0" width="174" height="29" />
+          </frame>
+        </frame>
+        <text id="326:491" name="Bens Materiais: imóveis, veículos e outros bens de valor. Não são reavaliados mês a mês, só na venda." x="0" y="43" width="1066" height="16" />
+      </frame>
+      <frame id="305:1452" name="Vazio — Bens Materiais" x="48" y="139" width="420" height="180">
+        <text id="305:1453" name="Nenhum bem cadastrado" x="118.5" y="40" width="183" height="18" />
+        <text id="305:1454" name="Adicione imóveis, veículos ou outros bens de valor." x="40" y="66" width="340" height="15" />
+        <rounded-rectangle id="305:1455" name="Rectangle" x="209.5" y="89" width="1" height="8" />
+        <frame id="305:1456" name="Frame" x="159" y="105" width="102" height="35">
+          <text id="305:1457" name="+ Adicionar" x="16" y="10" width="70" height="15" />
+        </frame>
+      </frame>
+    </frame>
+  </frame>

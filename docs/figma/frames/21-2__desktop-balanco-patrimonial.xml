@@ -1,0 +1,124 @@
+  <frame id="21:2" name="Desktop — Balanço Patrimonial" x="26" y="3150" width="1440" height="900">
+    <frame id="20:140" name="Sidebar" x="0" y="0" width="278" height="900">
+      <frame id="509:84" name="Topo da sidebar" x="20" y="28" width="238" height="44">
+        <text id="20:141" name="Finanças PF+PJ" x="0" y="13" width="116" height="18" />
+        <instance id="509:85" name="Alternador de tema" x="154" y="0" width="84" height="44" />
+      </frame>
+      <frame id="20:142" name="Frame" x="20" y="96" width="238" height="43">
+        <text id="20:143" name="+ Novo Lançamento" x="39.5" y="12" width="159" height="19" />
+      </frame>
+      <frame id="20:144" name="Frame" x="20" y="163" width="238" height="302">
+        <frame id="20:145" name="Frame" x="0" y="0" width="238" height="36">
+          <text id="20:147" name="Relatórios" x="10" y="10" width="63" height="16" />
+          <text id="20:146" name="▾" x="83" y="10" width="5" height="13" />
+        </frame>
+        <frame id="20:148" name="Frame" x="0" y="38" width="238" height="36">
+          <text id="20:149" name="DRE" x="25" y="10" width="26" height="16" />
+        </frame>
+        <frame id="20:150" name="Frame" x="0" y="76" width="238" height="36">
+          <text id="20:151" name="Balanço Patrimonial" x="25" y="10" width="123" height="16" />
+        </frame>
+        <frame id="20:152" name="Frame" x="0" y="114" width="238" height="36">
+          <text id="20:153" name="Evolução Mensal" x="25" y="10" width="105" height="16" />
+        </frame>
+        <frame id="20:154" name="Frame" x="0" y="152" width="238" height="36">
+          <text id="20:155" name="Indicadores Financeiros" x="25" y="10" width="148" height="16" />
+        </frame>
+        <frame id="20:156" name="Frame" x="0" y="190" width="238" height="36">
+          <text id="20:157" name="Revisão de Recorrentes" x="10" y="10" width="147" height="16" />
+        </frame>
+        <frame id="20:158" name="Frame" x="0" y="228" width="238" height="36">
+          <text id="20:159" name="Histórico" x="10" y="10" width="56" height="16" />
+        </frame>
+        <frame id="157:55" name="Frame" x="0" y="266" width="238" height="36">
+          <text id="157:57" name="Plano de Contas e Patrimônio" x="12" y="10" width="183" height="16" />
+          <text id="157:56" name="▾" x="205" y="20.5" width="13" height="5" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="21:25" name="Frame" x="278" y="0" width="1162" height="900">
+      <frame id="288:4" name="Frame" x="48" y="40" width="1066" height="197">
+        <frame id="21:26" name="Frame" x="0" y="0" width="1066" height="29">
+          <frame id="262:1201" name="Frame 8" x="0" y="0" width="1066" height="29">
+            <text id="21:28" name="Balanço Patrimonial" x="0" y="0" width="233" height="29" />
+          </frame>
+        </frame>
+        <text id="272:2" name="Balanço Patrimonial: uma foto de tudo que você tem (Ativo) e tudo que deve (Passivo) agora, neste instante. Não é histórico, é sempre a posição atual." x="0" y="43" width="618" height="30" />
+        <text id="273:2" name="Veja o balanço consolidado (PF + PJ juntos), ou separado por entidade." x="0" y="87" width="1066" height="15" />
+        <frame id="21:30" name="Frame" x="0" y="116" width="214" height="31">
+          <frame id="21:31" name="Frame" x="0" y="0" width="105" height="31">
+            <text id="21:32" name="Consolidado" x="16" y="8" width="73" height="15" />
+          </frame>
+          <frame id="21:33" name="Frame" x="113" y="0" width="47" height="31">
+            <text id="21:34" name="PF" x="16" y="8" width="15" height="15" />
+          </frame>
+          <frame id="21:35" name="Frame" x="168" y="0" width="46" height="31">
+            <text id="21:36" name="PJ" x="16" y="8" width="14" height="15" />
+          </frame>
+        </frame>
+        <text id="21:29" name="posição em 20/07/2026" x="0" y="161" width="147" height="16" />
+      </frame>
+      <frame id="21:37" name="Frame" x="48" y="257" width="1066" height="230">
+        <frame id="21:38" name="Frame" x="0" y="0" width="523" height="230">
+          <text id="21:39" name="Ativo" x="20" y="16" width="39" height="18" />
+          <frame id="21:44" name="Frame" x="20" y="38" width="483" height="32">
+            <frame id="21:45" name="Frame" x="0" y="8" width="407" height="16">
+              <text id="21:46" name="Contas bancárias (Nubank, Itaú PJ)" x="0" y="0" width="216" height="16" />
+            </frame>
+            <text id="21:47" name="R$ 8.400,00" x="407" y="8" width="76" height="16" />
+          </frame>
+          <frame id="21:52" name="Frame" x="20" y="74" width="483" height="32">
+            <frame id="21:53" name="Frame" x="0" y="8" width="391" height="16">
+              <text id="21:54" name="Imóvel" x="0" y="0" width="40" height="16" />
+            </frame>
+            <text id="21:55" name="R$ 320.000,00" x="391" y="8" width="92" height="16" />
+          </frame>
+          <frame id="21:56" name="Frame" x="20" y="110" width="483" height="32">
+            <frame id="21:57" name="Frame" x="0" y="8" width="399" height="16">
+              <text id="21:58" name="Veículo" x="0" y="0" width="45" height="16" />
+            </frame>
+            <text id="21:59" name="R$ 45.000,00" x="399" y="8" width="84" height="16" />
+          </frame>
+          <frame id="21:60" name="Frame" x="20" y="146" width="483" height="32">
+            <frame id="21:61" name="Frame" x="0" y="8" width="399" height="16">
+              <text id="21:62" name="Investimentos (Tesouro, Ações)" x="0" y="0" width="194" height="16" />
+            </frame>
+            <text id="21:63" name="R$ 62.000,00" x="399" y="8" width="84" height="16" />
+          </frame>
+          <frame id="21:64" name="Frame" x="20" y="182" width="483" height="32">
+            <frame id="21:65" name="Frame" x="0" y="8" width="385" height="16">
+              <text id="21:66" name="Total do Ativo" x="0" y="0" width="88" height="16" />
+            </frame>
+            <text id="21:67" name="R$ 435.400,00" x="385" y="8" width="98" height="16" />
+          </frame>
+        </frame>
+        <frame id="21:68" name="Frame" x="543" y="0" width="523" height="194">
+          <text id="21:69" name="Passivo + Patrimônio Líquido" x="20" y="16" width="212" height="18" />
+          <frame id="21:74" name="Frame" x="20" y="38" width="483" height="32">
+            <frame id="21:75" name="Frame" x="0" y="8" width="410" height="16">
+              <text id="21:76" name="Cartão de crédito" x="0" y="0" width="108" height="16" />
+            </frame>
+            <text id="21:77" name="R$ 1.200,00" x="410" y="8" width="73" height="16" />
+          </frame>
+          <frame id="21:82" name="Frame" x="20" y="74" width="483" height="32">
+            <frame id="21:83" name="Frame" x="0" y="8" width="394" height="16">
+              <text id="21:84" name="Financiamento imóvel" x="0" y="0" width="133" height="16" />
+            </frame>
+            <text id="21:85" name="R$ 180.000,00" x="394" y="8" width="89" height="16" />
+          </frame>
+          <frame id="21:86" name="Frame" x="20" y="110" width="483" height="32">
+            <frame id="21:87" name="Frame" x="0" y="8" width="391" height="16">
+              <text id="21:88" name="Total do Passivo" x="0" y="0" width="104" height="16" />
+            </frame>
+            <text id="21:89" name="R$ 181.200,00" x="391" y="8" width="92" height="16" />
+          </frame>
+          <frame id="21:90" name="Frame" x="20" y="146" width="483" height="32">
+            <frame id="21:91" name="Frame" x="0" y="8" width="386" height="16">
+              <text id="21:92" name="Patrimônio Líquido" x="0" y="0" width="120" height="16" />
+            </frame>
+            <text id="21:93" name="R$ 254.200,00" x="386" y="8" width="97" height="16" />
+          </frame>
+        </frame>
+      </frame>
+    </frame>
+  </frame>

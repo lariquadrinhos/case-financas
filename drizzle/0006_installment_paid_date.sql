@@ -1,0 +1,1 @@
+ALTER TABLE `installments` ADD `paid_date` text;

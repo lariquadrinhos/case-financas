@@ -1,0 +1,8 @@
+  <frame id="309:5" name="Vazio — Mapa de Fluxo" x="-18015" y="-4604" width="420" height="195">
+    <text id="309:6" name="Sem lançamentos este mês" x="110.5" y="40" width="199" height="18" />
+    <text id="309:7" name="Registre uma receita ou despesa pra começar a ver de onde vem e pra onde vai o seu dinheiro." x="40" y="66" width="340" height="30" />
+    <rounded-rectangle id="309:8" name="Rectangle" x="209.5" y="104" width="1" height="8" />
+    <frame id="309:9" name="Frame" x="134.5" y="120" width="151" height="35">
+      <text id="309:10" name="+ Novo Lançamento" x="16" y="10" width="119" height="15" />
+    </frame>
+  </frame>

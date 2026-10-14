@@ -1,0 +1,1 @@
+ALTER TABLE `installments` ADD `discarded` integer DEFAULT false NOT NULL;

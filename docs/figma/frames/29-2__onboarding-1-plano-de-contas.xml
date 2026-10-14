@@ -1,0 +1,67 @@
+  <frame id="29:2" name="Onboarding 1 — Plano de Contas" x="1526" y="-4761" width="1440" height="1269">
+    <frame id="29:3" name="Frame" x="380" y="80" width="680" height="1052">
+      <frame id="29:4" name="Frame" x="40" y="36" width="272" height="4">
+        <rounded-rectangle id="29:5" name="Rectangle" x="0" y="0" width="48" height="4" />
+        <rounded-rectangle id="29:6" name="Rectangle" x="56" y="0" width="48" height="4" />
+        <rounded-rectangle id="29:7" name="Rectangle" x="112" y="0" width="48" height="4" />
+        <rounded-rectangle id="29:8" name="Rectangle" x="168" y="0" width="48" height="4" />
+        <rounded-rectangle id="29:9" name="Rectangle" x="224" y="0" width="48" height="4" />
+      </frame>
+      <text id="29:11" name="Passo 1 de 5: Plano de Contas" x="40" y="60" width="173" height="15" />
+      <text id="29:12" name="Revise seu plano de contas" x="40" y="95" width="292" height="27" />
+      <text id="29:13" name="Este é o modelo inicial do seu Plano de Contas. Os blocos abaixo (Receita Bruta, Despesas, etc.) são fixos e organizam seus relatórios. Dentro de cada um, você pode editar as categorias já sugeridas ou criar as suas. Crie categorias agora e lance os valores depois em Novo Lançamento." x="40" y="142" width="600" height="48" />
+      <text id="140:2" name="Cada bloco pode ser expandido, clique no nome do bloco pra ver e editar as categorias dentro dele." x="40" y="210" width="614" height="16" />
+      <frame id="51:2" name="Frame" x="40" y="246" width="600" height="53">
+        <text id="51:3" name="1. Receita Bruta" x="14" y="10" width="97" height="16" />
+        <text id="51:4" name="Salário/Pró-labore, Aluguel recebido, Dividendos, Freelance..." x="14" y="28" width="348" height="15" />
+      </frame>
+      <frame id="51:5" name="Frame" x="40" y="319" width="600" height="53">
+        <text id="51:6" name="2. Deduções da Receita" x="14" y="10" width="148" height="16" />
+        <text id="51:7" name="DAS Simples, DARF Unificado, Taxa Fiscalização..." x="14" y="28" width="283" height="15" />
+      </frame>
+      <frame id="51:8" name="Frame" x="40" y="392" width="600" height="53">
+        <text id="51:9" name="3. Custo dos Serviços/Produtos" x="14" y="10" width="200" height="16" />
+        <text id="51:10" name="Assinaturas, ração/pet, academia, contador, internet..." x="14" y="28" width="307" height="15" />
+      </frame>
+      <frame id="51:11" name="Frame" x="40" y="465" width="600" height="53">
+        <text id="51:12" name="4. Despesas Administrativas" x="14" y="10" width="179" height="16" />
+        <text id="51:13" name="Aluguel moradia, financiamento, plano de saúde, água, luz..." x="14" y="28" width="340" height="15" />
+      </frame>
+      <frame id="51:14" name="Frame" x="40" y="538" width="600" height="53">
+        <text id="51:15" name="5. Despesas Pessoais/Consumo" x="14" y="10" width="201" height="16" />
+        <text id="51:16" name="Alimentação, transporte, lazer, vestuário, consumo livre..." x="14" y="28" width="324" height="15" />
+      </frame>
+      <frame id="51:17" name="Frame" x="40" y="611" width="600" height="53">
+        <text id="51:18" name="6. Depreciação &amp; Amortização (D&amp;A)" x="14" y="10" width="231" height="16" />
+        <text id="51:19" name="Sempre zero no MVP: somente leitura" x="14" y="28" width="214" height="15" />
+      </frame>
+      <frame id="51:20" name="Frame" x="40" y="684" width="600" height="53">
+        <text id="51:21" name="7. Resultado Não Operacional" x="14" y="10" width="184" height="16" />
+        <text id="51:22" name="Ganho/perda na venda de ativo ou investimento..." x="14" y="28" width="282" height="15" />
+      </frame>
+      <frame id="51:23" name="Frame" x="40" y="757" width="600" height="53">
+        <text id="51:24" name="8. Resultado Financeiro" x="14" y="10" width="147" height="16" />
+        <text id="51:25" name="Juros de financiamento/cartão, rendimento de caixa..." x="14" y="28" width="306" height="15" />
+      </frame>
+      <frame id="51:26" name="Frame" x="40" y="830" width="600" height="53">
+        <text id="51:27" name="9. Impostos sobre o Lucro" x="14" y="10" width="163" height="16" />
+        <text id="51:28" name="IR (lançamento manual), outros impostos sobre lucro..." x="14" y="28" width="308" height="15" />
+      </frame>
+      <frame id="51:29" name="Frame" x="40" y="903" width="600" height="53">
+        <text id="51:30" name="10. Destinação do Lucro" x="14" y="10" width="151" height="16" />
+        <text id="51:31" name="Aporte, reinvestimento, consumo extraordinário, reserva + extras..." x="14" y="28" width="379" height="15" />
+      </frame>
+      <frame id="29:31" name="Frame" x="40" y="976" width="600" height="40">
+        <frame id="29:32" name="Frame" x="0" y="0" width="73" height="40">
+          <text id="29:33" name="Voltar" x="18" y="12" width="37" height="16" />
+        </frame>
+        <frame id="29:34" name="Frame" x="85" y="0" width="197" height="1" />
+        <frame id="29:35" name="Frame" x="294" y="0" width="194" height="40">
+          <text id="29:36" name="Salvar e continuar depois" x="18" y="12" width="158" height="16" />
+        </frame>
+        <frame id="29:37" name="Frame" x="500" y="0" width="100" height="40">
+          <text id="29:38" name="Avançar" x="24" y="12" width="52" height="16" />
+        </frame>
+      </frame>
+    </frame>
+  </frame>

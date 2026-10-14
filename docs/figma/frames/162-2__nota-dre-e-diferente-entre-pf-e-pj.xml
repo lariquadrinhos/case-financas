@@ -1,0 +1,4 @@
+  <frame id="162:2" name="Nota — DRE é diferente entre PF e PJ?" x="-1489" y="18116.2109375" width="516.6257934570312" height="365.1042785644531">
+    <text id="162:3" name="✅ DRE é igual pra PF e PJ (estrutura)" x="34.441715240478516" y="34.441715240478516" width="394" height="27" />
+    <text id="162:4" name="A estrutura é idêntica nas 3 visões (Consolidado/PF/PJ): mesmos 10 blocos, mesma cascata de cálculo. Não existe &quot;modelo de DRE da PJ&quot; diferente do da PF. O que muda é só o filtro de dado: cada lançamento tem um campo Entidade (PF ou PJ), e cada visão mostra só os lançamentos daquela entidade. Na prática, alguns blocos ficam vazios ou pequenos dependendo da visão (ex: Despesas Pessoais tende a concentrar na PF; Deduções da Receita, na PJ), mas isso é padrão de uso, não regra do sistema." x="34.44173049926758" y="78.66256713867188" width="447.7423400878906" height="252" />
+  </frame>

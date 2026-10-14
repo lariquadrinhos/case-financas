@@ -1,0 +1,4 @@
+  <frame id="164:5" name="Nota — Por que Rótulo só em Consumo Livre e IR" x="-1489" y="18523.36328125" width="516.6257934570312" height="254.0153350830078">
+    <text id="164:6" name="✅ Por que &quot;Rótulo&quot; só existe em 2 abas" x="34.441715240478516" y="34.441715240478516" width="354.2576599121094" height="20.911043167114258" />
+    <text id="164:7" name="Regra simples: Rótulo existe só nas abas que não têm campo de Categoria (Consumo Livre e IR), porque sem Categoria, não tem outro jeito de diferenciar lançamentos parecidos no Histórico. Despesa, Receita e Pró-labore/Distribuição já têm Categoria, então Rótulo seria redundante ali." x="34.441715240478516" y="72.57361602783203" width="452.6625671386719" height="147" />
+  </frame>

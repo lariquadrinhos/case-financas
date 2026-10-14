@@ -1,0 +1,4 @@
+  <frame id="167:2" name="Nota — Documento de Decisões de UX" x="774.3128662109375" y="17281" width="516.6257934570312" height="344.1042785644531">
+    <text id="167:3" name="📄 Toda decisão daqui está documentada" x="34.441734313964844" y="34.44171905517578" width="445" height="27" />
+    <text id="167:4" name="Cada nome, comportamento e exceção deste Figma tem o porquê registrado por escrito, o que vem do PRD e o que foi decisão nossa, com o raciocínio de cada uma. Ver documento &quot;Log de Decisões de UX&quot;. Também tem uma especificação completa de cada tela (&quot;Especificação de Telas&quot;) e o modelo de dados por campo (&quot;Modelo de Dados por Tela&quot;), pra quem for implementar." x="34.44173049926758" y="78.66256713867188" width="447.7423400878906" height="231" />
+  </frame>

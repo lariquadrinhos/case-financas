@@ -1,0 +1,54 @@
+  <frame id="310:455" name="Vazio — Balanço Patrimonial (tela completa)" x="-13698" y="669" width="1440" height="900">
+    <frame id="310:456" name="Sidebar" x="0" y="0" width="278" height="900">
+      <text id="310:457" name="Finanças PF+PJ" x="20" y="28" width="116" height="18" />
+      <frame id="310:458" name="Frame" x="20" y="70" width="238" height="43">
+        <text id="310:459" name="+ Novo Lançamento" x="39.5" y="12" width="159" height="19" />
+      </frame>
+      <frame id="310:460" name="Frame" x="20" y="137" width="238" height="302">
+        <frame id="310:461" name="Frame" x="0" y="0" width="238" height="36">
+          <text id="310:462" name="Relatórios" x="10" y="10" width="63" height="16" />
+          <text id="310:463" name="▾" x="83" y="10" width="5" height="13" />
+        </frame>
+        <frame id="310:464" name="Frame" x="0" y="38" width="238" height="36">
+          <text id="310:465" name="DRE" x="25" y="10" width="26" height="16" />
+        </frame>
+        <frame id="310:466" name="Frame" x="0" y="76" width="238" height="36">
+          <text id="310:467" name="Balanço Patrimonial" x="25" y="10" width="123" height="16" />
+        </frame>
+        <frame id="310:468" name="Frame" x="0" y="114" width="238" height="36">
+          <text id="310:469" name="Evolução Mensal" x="25" y="10" width="105" height="16" />
+        </frame>
+        <frame id="310:470" name="Frame" x="0" y="152" width="238" height="36">
+          <text id="310:471" name="Indicadores Financeiros" x="25" y="10" width="148" height="16" />
+        </frame>
+        <frame id="310:472" name="Frame" x="0" y="190" width="238" height="36">
+          <text id="310:473" name="Revisão de Recorrentes" x="10" y="10" width="147" height="16" />
+        </frame>
+        <frame id="310:474" name="Frame" x="0" y="228" width="238" height="36">
+          <text id="310:475" name="Histórico" x="10" y="10" width="56" height="16" />
+        </frame>
+        <frame id="310:476" name="Frame" x="0" y="266" width="238" height="36">
+          <text id="310:477" name="Plano de Contas e Patrimônio" x="12" y="10" width="183" height="16" />
+          <text id="310:478" name="▾" x="205" y="20.5" width="13" height="5" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="310:479" name="Frame" x="278" y="0" width="1162" height="900">
+      <frame id="310:480" name="Frame" x="48" y="40" width="1066" height="95">
+        <frame id="310:481" name="Frame" x="0" y="0" width="1066" height="29">
+          <frame id="310:482" name="Frame 8" x="0" y="0" width="1066" height="29">
+            <text id="310:483" name="Balanço Patrimonial" x="0" y="0" width="233" height="29" />
+          </frame>
+        </frame>
+        <text id="326:485" name="Balanço Patrimonial: uma foto de tudo que você tem (Ativo) e tudo que deve (Passivo) agora, neste instante. Não é histórico, é sempre a posição atual." x="0" y="43" width="618" height="32" />
+      </frame>
+      <frame id="305:1415" name="Vazio — Balanço Patrimonial" x="48" y="155" width="420" height="195">
+        <text id="305:1416" name="Nada cadastrado ainda" x="126" y="40" width="168" height="18" />
+        <text id="305:1417" name="Cadastre suas contas, bens, investimentos ou dívidas pra ver seu Ativo, Passivo e Patrimônio Líquido." x="40" y="66" width="340" height="30" />
+        <rounded-rectangle id="305:1418" name="Rectangle" x="209.5" y="104" width="1" height="8" />
+        <frame id="305:1419" name="Frame" x="147" y="120" width="126" height="35">
+          <text id="305:1420" name="Cadastrar agora" x="16" y="10" width="94" height="15" />
+        </frame>
+      </frame>
+    </frame>
+  </frame>

@@ -1,0 +1,54 @@
+  <frame id="310:780" name="Vazio — Histórico (tela completa)" x="-13698" y="4695" width="1440" height="900">
+    <frame id="310:781" name="Sidebar" x="0" y="0" width="278" height="900">
+      <text id="310:782" name="Finanças PF+PJ" x="20" y="28" width="116" height="18" />
+      <frame id="310:783" name="Frame" x="20" y="70" width="238" height="43">
+        <text id="310:784" name="+ Novo Lançamento" x="39.5" y="12" width="159" height="19" />
+      </frame>
+      <frame id="310:785" name="Frame" x="20" y="137" width="238" height="302">
+        <frame id="310:786" name="Frame" x="0" y="0" width="238" height="36">
+          <text id="310:787" name="Relatórios" x="10" y="10" width="63" height="16" />
+          <text id="310:788" name="▾" x="83" y="10" width="5" height="13" />
+        </frame>
+        <frame id="310:789" name="Frame" x="0" y="38" width="238" height="36">
+          <text id="310:790" name="DRE" x="25" y="10" width="26" height="16" />
+        </frame>
+        <frame id="310:791" name="Frame" x="0" y="76" width="238" height="36">
+          <text id="310:792" name="Balanço Patrimonial" x="25" y="10" width="123" height="16" />
+        </frame>
+        <frame id="310:793" name="Frame" x="0" y="114" width="238" height="36">
+          <text id="310:794" name="Evolução Mensal" x="25" y="10" width="105" height="16" />
+        </frame>
+        <frame id="310:795" name="Frame" x="0" y="152" width="238" height="36">
+          <text id="310:796" name="Indicadores Financeiros" x="25" y="10" width="148" height="16" />
+        </frame>
+        <frame id="310:797" name="Frame" x="0" y="190" width="238" height="36">
+          <text id="310:798" name="Revisão de Recorrentes" x="10" y="10" width="147" height="16" />
+        </frame>
+        <frame id="310:799" name="Frame" x="0" y="228" width="238" height="36">
+          <text id="310:800" name="Histórico" x="10" y="10" width="56" height="16" />
+        </frame>
+        <frame id="310:801" name="Frame" x="0" y="266" width="238" height="36">
+          <text id="310:802" name="Plano de Contas e Patrimônio" x="12" y="10" width="183" height="16" />
+          <text id="310:803" name="▾" x="205" y="20.5" width="13" height="5" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="310:804" name="Conteúdo — Histórico" x="278" y="0" width="1162" height="900">
+      <frame id="310:805" name="Frame" x="48" y="40" width="1066" height="79">
+        <frame id="310:806" name="Frame" x="0" y="0" width="1066" height="29">
+          <frame id="310:807" name="Frame" x="0" y="0" width="1066" height="29">
+            <text id="310:808" name="Histórico" x="0" y="0" width="107" height="29" />
+          </frame>
+        </frame>
+        <text id="326:489" name="Histórico: todos os lançamentos já registrados, de qualquer tipo." x="0" y="43" width="1066" height="16" />
+      </frame>
+      <frame id="305:1440" name="Vazio — Histórico" x="48" y="139" width="420" height="195">
+        <text id="305:1441" name="Nenhum lançamento ainda" x="113" y="40" width="194" height="18" />
+        <text id="305:1442" name="Assim que você registrar seu primeiro lançamento, ele aparece aqui." x="40" y="66" width="340" height="30" />
+        <rounded-rectangle id="305:1443" name="Rectangle" x="209.5" y="104" width="1" height="8" />
+        <frame id="305:1444" name="Frame" x="134.5" y="120" width="151" height="35">
+          <text id="305:1445" name="+ Novo Lançamento" x="16" y="10" width="119" height="15" />
+        </frame>
+      </frame>
+    </frame>
+  </frame>

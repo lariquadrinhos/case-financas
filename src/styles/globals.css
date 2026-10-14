@@ -1,0 +1,223 @@
+@import 'tailwindcss';
+@import './tokens.css';
+
+/**
+ * Token → Tailwind v4 bridge (ADR-0011 §2).
+ *
+ * Every utility resolves to a variable from `tokens.css`. The consequence is
+ * that `bg-surface-card` works and `bg-[#fff]` is forbidden.
+ *
+ * The three colour FAMILIES below (`surface-*`, `ink-*`, `line-*`) exist so a
+ * class reads like the role it plays — `bg-surface-card`, `text-ink-primary`,
+ * `border-line-focus` — while the underlying `--color-bg/text/border-*`
+ * variable stays named exactly like its files_design/07 token, for
+ * traceability. `chart-*` needs no such indirection: it is only ever a chart
+ * colour, in a `fill-*`/`text-*`/`bg-*` utility as the chart calls for it.
+ *
+ * Note the spacing scale is in PIXELS, matching the Figma frames: `p-20` is
+ * 20px, not Tailwind's default 5rem. This is deliberate — the wireframe is
+ * specified in pixels and a second mental conversion is where fidelity is lost.
+ */
+@theme inline {
+  --color-surface-canvas: var(--color-bg-canvas);
+  --color-surface-card: var(--color-bg-card);
+  --color-surface-subtle: var(--color-bg-subtle);
+  --color-surface-hover: var(--color-bg-hover);
+  --color-surface-inverse: var(--color-bg-inverse);
+  --color-surface-state: var(--color-bg-state-subtle);
+  --color-surface-positive: var(--color-bg-positive-subtle);
+  --color-surface-negative: var(--color-bg-negative-subtle);
+  --color-surface-alert: var(--color-bg-alert-subtle);
+  --color-surface-pf: var(--color-bg-pf-subtle);
+  --color-surface-pj: var(--color-bg-pj-subtle);
+
+  --color-ink-primary: var(--color-text-primary);
+  --color-ink-secondary: var(--color-text-secondary);
+  --color-ink-tertiary: var(--color-text-tertiary);
+  --color-ink-inverse: var(--color-text-inverse);
+  --color-ink-on-block: var(--color-text-on-block);
+  --color-ink-state: var(--color-text-state);
+  --color-ink-positive: var(--color-text-positive);
+  --color-ink-negative: var(--color-text-negative);
+  --color-ink-alert: var(--color-text-alert);
+  --color-ink-pf: var(--color-text-pf);
+  --color-ink-pj: var(--color-text-pj);
+
+  --color-line-default: var(--color-border-default);
+  --color-line-control: var(--color-border-control);
+  --color-line-strong: var(--color-border-strong);
+  --color-line-focus: var(--color-border-focus);
+  --color-line-negative: var(--color-border-negative);
+
+  --color-chart-pf: var(--color-chart-pf);
+  --color-chart-pj: var(--color-chart-pj);
+  --color-chart-series-1: var(--color-chart-series-1);
+  --color-chart-positive: var(--color-chart-positive);
+  --color-chart-negative: var(--color-chart-negative);
+  --color-chart-neutral: var(--color-chart-neutral);
+  --color-chart-ramp-1: var(--color-chart-ramp-1);
+  --color-chart-ramp-2: var(--color-chart-ramp-2);
+  --color-chart-ramp-3: var(--color-chart-ramp-3);
+  --color-chart-ramp-4: var(--color-chart-ramp-4);
+  --color-chart-ramp-5: var(--color-chart-ramp-5);
+  --color-chart-ramp-6: var(--color-chart-ramp-6);
+
+  --spacing-4: var(--space-4);
+  --spacing-8: var(--space-8);
+  --spacing-12: var(--space-12);
+  --spacing-16: var(--space-16);
+  --spacing-20: var(--space-20);
+  --spacing-24: var(--space-24);
+  --spacing-32: var(--space-32);
+  --spacing-40: var(--space-40);
+  --spacing-48: var(--space-48);
+
+  --radius-control: var(--radius-control);
+  --radius-card: var(--radius-card);
+  --radius-pill: var(--radius-pill);
+  --radius-treemap-block: var(--radius-treemap-block);
+  --radius-progress-track: var(--radius-progress-track);
+
+  --container-content: var(--width-content-max);
+  --container-sidebar: var(--width-sidebar);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border-default);
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--color-bg-canvas);
+    color: var(--color-text-primary);
+    font-family: var(--font-sans);
+    font-size: var(--text-body-md-size);
+    line-height: var(--text-body-md-leading);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Visible focus on everything reachable by keyboard — never remove (WCAG 2.4.7). */
+  :focus-visible {
+    outline: var(--focus-ring) solid var(--focus-color);
+    outline-offset: var(--focus-offset);
+  }
+
+  /* `DateField` draws the `icon/calendar` glyph of the doc07 icon library at
+     the right edge of the box. Chrome/Safari also draw their OWN picker
+     indicator there, so the Figma's single calendar icon rendered as two.
+     The native indicator stays in the DOM (it is what opens the OS picker on
+     click) but goes transparent and stretches over the drawn glyph, so the
+     one icon the person sees is the one the design system specifies. */
+  input[type='date']::-webkit-calendar-picker-indicator {
+    position: absolute;
+    right: 0;
+    width: var(--space-40);
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  /* Cursor de mãozinha em todo controle clicável (pedido do dono, 2026-10-01:
+     "todos os botões precisam ter o dedinho"). O preflight do Tailwind 4 deu
+     `cursor: default` ao <button>, e nenhum botão do app mostrava a mão. Uma
+     regra só, por papel, para não depender de cada componente lembrar. */
+  button:not(:disabled),
+  [role='button']:not([aria-disabled='true']),
+  [role='tab']:not([data-disabled]),
+  [role='radio']:not([data-disabled]),
+  [role='switch']:not(:disabled),
+  [role='option']:not([data-disabled]),
+  [role='combobox']:not(:disabled),
+  a[href],
+  label[for] {
+    cursor: pointer;
+  }
+
+  /* Money and dates line up in columns, so digits must be tabular. Used
+     directly (rather than a full `.text-style-numeric-*`) by controls whose
+     size/weight already comes from elsewhere, e.g. `MoneyInput`. */
+  .numeric {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/**
+ * The 10 named text styles of files_design/07, "Tipografia" — each a single
+ * class so a component reaches for `heading.sm` the same way the Figma layer
+ * panel does, instead of recomposing size + line-height + weight by hand at
+ * every call site.
+ *
+ * Weight is deliberately NOT baked into `body-md` and `numeric-md`: their
+ * `-medium` variant (files_design/07: "Ênfase estrutural, botão, subtotal") is
+ * the exact same box, just heavier, so it is Tailwind's own `font-medium`
+ * utility layered on top. That only works because this block sits in
+ * `@layer components`, which the `utilities` layer (where `font-medium` is
+ * generated) always beats, regardless of source order in this file.
+ * `heading-*`, `label-xs`, `numeric-lg` and `code-sm` have no such variant in
+ * the doc, so their one fixed weight is written directly below.
+ */
+@layer components {
+  .text-style-heading-xl {
+    font-family: var(--font-sans);
+    font-size: var(--text-heading-xl-size);
+    line-height: var(--text-heading-xl-leading);
+    font-weight: 600; /* Geist SemiBold */
+  }
+
+  .text-style-heading-sm {
+    font-family: var(--font-sans);
+    font-size: var(--text-heading-sm-size);
+    line-height: var(--text-heading-sm-leading);
+    font-weight: 600; /* Geist SemiBold */
+  }
+
+  .text-style-body-md {
+    font-family: var(--font-sans);
+    font-size: var(--text-body-md-size);
+    line-height: var(--text-body-md-leading);
+    font-weight: 400; /* Geist Regular — add `font-medium` for body.md-medium */
+  }
+
+  .text-style-body-sm {
+    font-family: var(--font-sans);
+    font-size: var(--text-body-sm-size);
+    line-height: var(--text-body-sm-leading);
+    font-weight: 400; /* Geist Regular */
+  }
+
+  .text-style-label-xs {
+    font-family: var(--font-sans);
+    font-size: var(--text-label-xs-size);
+    line-height: var(--text-label-xs-leading);
+    font-weight: 500; /* Geist Medium */
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+  }
+
+  .text-style-numeric-md {
+    font-family: var(--font-sans);
+    font-size: var(--text-body-md-size);
+    line-height: var(--text-body-md-leading);
+    font-weight: 400; /* Geist Regular — add `font-medium` for numeric.md-medium */
+    font-variant-numeric: tabular-nums;
+  }
+
+  .text-style-numeric-lg {
+    font-family: var(--font-sans);
+    font-size: var(--text-numeric-lg-size);
+    line-height: var(--text-numeric-lg-leading);
+    font-weight: 600; /* Geist SemiBold */
+    font-variant-numeric: tabular-nums;
+  }
+
+  .text-style-code-sm {
+    font-family: var(--font-mono);
+    font-size: var(--text-code-sm-size);
+    line-height: var(--text-code-sm-leading);
+    font-weight: 400; /* Geist Mono Regular */
+  }
+}

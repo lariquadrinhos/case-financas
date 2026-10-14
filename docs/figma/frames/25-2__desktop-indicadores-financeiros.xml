@@ -1,0 +1,194 @@
+  <frame id="25:2" name="Desktop — Indicadores Financeiros" x="26" y="5263" width="1440" height="1086">
+    <frame id="26:3" name="Sidebar" x="0" y="0" width="278" height="1086">
+      <frame id="509:120" name="Topo da sidebar" x="20" y="28" width="238" height="44">
+        <text id="26:4" name="Finanças PF+PJ" x="0" y="13" width="116" height="18" />
+        <instance id="509:121" name="Alternador de tema" x="154" y="0" width="84" height="44" />
+      </frame>
+      <frame id="26:5" name="Frame" x="20" y="96" width="238" height="43">
+        <text id="26:6" name="+ Novo Lançamento" x="39.5" y="12" width="159" height="19" />
+      </frame>
+      <frame id="26:7" name="Frame" x="20" y="163" width="238" height="302">
+        <frame id="26:8" name="Frame" x="0" y="0" width="238" height="36">
+          <text id="26:10" name="Relatórios" x="10" y="10" width="63" height="16" />
+          <text id="26:9" name="▾" x="83" y="10" width="5" height="13" />
+        </frame>
+        <frame id="26:11" name="Frame" x="0" y="38" width="238" height="36">
+          <text id="26:12" name="DRE" x="25" y="10" width="26" height="16" />
+        </frame>
+        <frame id="26:13" name="Frame" x="0" y="76" width="238" height="36">
+          <text id="26:14" name="Balanço Patrimonial" x="25" y="10" width="123" height="16" />
+        </frame>
+        <frame id="26:15" name="Frame" x="0" y="114" width="238" height="36">
+          <text id="26:16" name="Evolução Mensal" x="25" y="10" width="105" height="16" />
+        </frame>
+        <frame id="26:17" name="Frame" x="0" y="152" width="238" height="36">
+          <text id="26:18" name="Indicadores Financeiros" x="25" y="10" width="148" height="16" />
+        </frame>
+        <frame id="26:19" name="Frame" x="0" y="190" width="238" height="36">
+          <text id="26:20" name="Revisão de Recorrentes" x="10" y="10" width="147" height="16" />
+        </frame>
+        <frame id="26:21" name="Frame" x="0" y="228" width="238" height="36">
+          <text id="26:22" name="Histórico" x="10" y="10" width="56" height="16" />
+        </frame>
+        <frame id="157:47" name="Frame" x="0" y="266" width="238" height="36">
+          <text id="157:49" name="Plano de Contas e Patrimônio" x="12" y="10" width="183" height="16" />
+          <text id="157:48" name="▾" x="205" y="20.5" width="13" height="5" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="25:25" name="Frame" x="278" y="0" width="1138" height="1086">
+      <frame id="157:43" name="Frame 2" x="48" y="40" width="1042" height="32">
+        <frame id="25:27" name="Frame" x="0" y="2" width="925" height="29">
+          <text id="25:28" name="Indicadores Financeiros" x="0" y="0" width="281" height="29" />
+        </frame>
+      </frame>
+      <text id="282:2" name="Indicadores Financeiros: números que resumem a saúde financeira, calculados a partir do DRE e do Balanço, sem precisar montar fórmula manual." x="48" y="92" width="500" height="30" />
+      <text id="279:1202" name="Veja a evolução consolidada (PF + PJ juntos), ou separada por entidade." x="48" y="142" width="1042" height="15" />
+      <frame id="25:29" name="Frame" x="48" y="177" width="214" height="31">
+        <frame id="25:30" name="Frame" x="0" y="0" width="105" height="31">
+          <text id="25:31" name="Consolidado" x="16" y="8" width="73" height="15" />
+        </frame>
+        <frame id="25:32" name="Frame" x="113" y="0" width="47" height="31">
+          <text id="25:33" name="PF" x="16" y="8" width="15" height="15" />
+        </frame>
+        <frame id="25:34" name="Frame" x="168" y="0" width="46" height="31">
+          <text id="25:35" name="PJ" x="16" y="8" width="14" height="15" />
+        </frame>
+      </frame>
+      <text id="291:2" name="Navegue entre meses: pra trás revê indicadores de meses passados; pra frente mostra a projeção baseada em recorrências e parcelas já configuradas." x="48" y="228" width="1042" height="15" />
+      <frame id="143:2" name="Frame" x="48" y="263" width="141" height="32">
+        <text id="143:3" name="←" x="12" y="8" width="13" height="16" />
+        <text id="143:4" name="Julho 2026" x="35" y="8" width="71" height="16" />
+        <text id="143:5" name="→" x="116" y="8" width="13" height="16" />
+      </frame>
+      <frame id="25:36" name="Frame" x="48" y="315" width="1042" height="683">
+        <frame id="279:1203" name="Frame 9" x="16" y="0" width="430" height="683">
+          <frame id="25:37" name="Frame" x="0" y="0" width="430" height="265">
+            <text id="25:38" name="Rentabilidade" x="18" y="16" width="95" height="17" />
+            <frame id="25:39" name="Frame" x="18" y="37" width="394" height="32">
+              <frame id="25:40" name="Frame" x="0" y="8" width="356" height="16">
+                <text id="25:41" name="Margem bruta" x="0" y="0" width="87" height="16" />
+              </frame>
+              <text id="25:42" name="87,5%" x="356" y="8" width="38" height="16" />
+            </frame>
+            <frame id="25:43" name="Frame" x="18" y="73" width="394" height="32">
+              <frame id="25:44" name="Frame" x="0" y="8" width="356" height="16">
+                <text id="25:45" name="Margem EBITDA" x="0" y="0" width="100" height="16" />
+              </frame>
+              <text id="25:46" name="57,6%" x="356" y="8" width="38" height="16" />
+            </frame>
+            <frame id="25:47" name="Frame" x="18" y="109" width="394" height="32">
+              <frame id="25:48" name="Frame" x="0" y="8" width="356" height="16">
+                <text id="25:49" name="Margem EBIT" x="0" y="0" width="82" height="16" />
+              </frame>
+              <text id="25:50" name="57,6%" x="356" y="8" width="38" height="16" />
+            </frame>
+            <frame id="25:51" name="Frame" x="18" y="145" width="394" height="32">
+              <frame id="25:52" name="Frame" x="0" y="8" width="353" height="16">
+                <text id="25:53" name="Margem líquida" x="0" y="0" width="95" height="16" />
+              </frame>
+              <text id="25:54" name="46,4%" x="353" y="8" width="41" height="16" />
+            </frame>
+            <frame id="25:55" name="Frame" x="18" y="181" width="394" height="32">
+              <frame id="25:56" name="Frame" x="0" y="8" width="365" height="16">
+                <text id="25:57" name="ROE" x="0" y="0" width="26" height="16" />
+              </frame>
+              <text id="25:58" name="4,1%" x="365" y="8" width="29" height="16" />
+            </frame>
+            <frame id="25:59" name="Frame" x="18" y="217" width="394" height="32">
+              <frame id="25:60" name="Frame" x="0" y="8" width="355" height="16">
+                <text id="25:61" name="Taxa de poupança" x="0" y="0" width="113" height="16" />
+              </frame>
+              <text id="25:62" name="29,8%" x="355" y="8" width="39" height="16" />
+            </frame>
+          </frame>
+          <frame id="25:73" name="Frame" x="0" y="281" width="430" height="157">
+            <text id="25:74" name="Endividamento" x="18" y="16" width="103" height="17" />
+            <frame id="25:75" name="Frame" x="18" y="37" width="394" height="32">
+              <frame id="25:76" name="Frame" x="0" y="8" width="356" height="16">
+                <text id="25:77" name="Grau de endividamento" x="0" y="0" width="144" height="16" />
+              </frame>
+              <text id="25:78" name="41,6%" x="356" y="8" width="38" height="16" />
+            </frame>
+            <frame id="25:79" name="Frame" x="18" y="73" width="394" height="32">
+              <frame id="25:80" name="Frame" x="0" y="8" width="357" height="16">
+                <text id="25:81" name="Endividamento sobre PL" x="0" y="0" width="149" height="16" />
+              </frame>
+              <text id="25:82" name="71,3%" x="357" y="8" width="37" height="16" />
+            </frame>
+            <frame id="25:83" name="Frame" x="18" y="109" width="394" height="32">
+              <frame id="25:84" name="Frame" x="0" y="8" width="354" height="16">
+                <text id="25:85" name="Comprometimento da renda" x="0" y="0" width="173" height="16" />
+              </frame>
+              <text id="25:86" name="23,2%" x="354" y="8" width="40" height="16" />
+            </frame>
+          </frame>
+          <frame id="25:97" name="Frame" x="0" y="454" width="430" height="229">
+            <text id="25:98" name="Qualidade de Vida Financeira" x="18" y="16" width="200" height="17" />
+            <frame id="25:99" name="Frame" x="18" y="37" width="394" height="32">
+              <frame id="25:100" name="Frame" x="0" y="8" width="316" height="16">
+                <text id="25:101" name="Custo de vida mensal" x="0" y="0" width="133" height="16" />
+              </frame>
+              <text id="25:102" name="R$ 5.500,00" x="316" y="8" width="78" height="16" />
+            </frame>
+            <frame id="25:103" name="Frame" x="18" y="73" width="394" height="32">
+              <frame id="25:104" name="Frame" x="0" y="8" width="329" height="16">
+                <text id="25:105" name="Reserva de emergência" x="0" y="0" width="145" height="16" />
+              </frame>
+              <text id="25:106" name="4,2 meses" x="329" y="8" width="65" height="16" />
+            </frame>
+            <frame id="25:107" name="Frame" x="18" y="109" width="394" height="32">
+              <frame id="25:108" name="Frame" x="0" y="8" width="356" height="16">
+                <text id="25:109" name="Cobertura por renda passiva" x="0" y="0" width="176" height="16" />
+              </frame>
+              <text id="25:110" name="12,8%" x="356" y="8" width="38" height="16" />
+            </frame>
+            <frame id="25:111" name="Frame" x="18" y="145" width="394" height="32">
+              <frame id="25:112" name="Frame" x="0" y="8" width="356" height="16">
+                <text id="25:113" name="Consumo livre / FCL" x="0" y="0" width="124" height="16" />
+              </frame>
+              <text id="25:114" name="18,4%" x="356" y="8" width="38" height="16" />
+            </frame>
+            <frame id="25:115" name="Frame" x="18" y="181" width="394" height="32">
+              <frame id="25:116" name="Frame" x="0" y="8" width="354" height="16">
+                <text id="25:117" name="Eficiência de aporte" x="0" y="0" width="123" height="16" />
+              </frame>
+              <text id="25:118" name="62,0%" x="354" y="8" width="40" height="16" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="279:1204" name="Frame 10" x="467" y="0" width="430" height="258">
+          <frame id="25:87" name="Frame" x="0" y="0" width="430" height="121">
+            <text id="25:88" name="Crescimento Patrimonial" x="18" y="16" width="169" height="17" />
+            <frame id="25:89" name="Frame" x="18" y="37" width="394" height="32">
+              <frame id="25:90" name="Frame" x="0" y="8" width="356" height="16">
+                <text id="25:91" name="Crescimento do PL (mês)" x="0" y="0" width="156" height="16" />
+              </frame>
+              <text id="25:92" name="+1,5%" x="356" y="8" width="38" height="16" />
+            </frame>
+            <frame id="25:93" name="Frame" x="18" y="73" width="394" height="32">
+              <frame id="25:94" name="Frame" x="0" y="8" width="357" height="16">
+                <text id="25:95" name="Crescimento dos investimentos (mês)" x="0" y="0" width="232" height="16" />
+              </frame>
+              <text id="25:96" name="+2,1%" x="357" y="8" width="37" height="16" />
+            </frame>
+          </frame>
+          <frame id="25:63" name="Frame" x="0" y="137" width="430" height="121">
+            <text id="25:64" name="Liquidez" x="18" y="16" width="59" height="17" />
+            <frame id="25:65" name="Frame" x="18" y="37" width="394" height="32">
+              <frame id="25:66" name="Frame" x="0" y="8" width="375" height="16">
+                <text id="25:67" name="Liquidez corrente" x="0" y="0" width="108" height="16" />
+              </frame>
+              <text id="25:68" name="7,0" x="375" y="8" width="19" height="16" />
+            </frame>
+            <frame id="25:69" name="Frame" x="18" y="73" width="394" height="32">
+              <frame id="25:70" name="Frame" x="0" y="8" width="373" height="16">
+                <text id="25:71" name="Liquidez geral" x="0" y="0" width="87" height="16" />
+              </frame>
+              <text id="25:72" name="2,4" x="373" y="8" width="21" height="16" />
+            </frame>
+          </frame>
+        </frame>
+      </frame>
+    </frame>
+  </frame>

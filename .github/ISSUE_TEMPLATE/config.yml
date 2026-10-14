@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 🔒 Relatar uma vulnerabilidade de segurança
+    url: https://github.com/lariquadrinhos/case-financas/security/advisories/new
+    about: Nunca abra issue pública para falha de segurança. Use o relato privado (ver SECURITY.md).
+  - name: 📖 Como contribuir e como o processo funciona
+    url: https://github.com/lariquadrinhos/case-financas/blob/main/CONTRIBUTING.md
+    about: Fontes da verdade, TDD, ADRs e convenções de commit.

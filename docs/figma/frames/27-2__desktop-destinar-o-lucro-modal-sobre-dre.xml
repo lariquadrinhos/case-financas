@@ -1,0 +1,190 @@
+  <frame id="27:2" name="Desktop — Destinar o Lucro (modal sobre DRE)" x="1477" y="1963" width="1440" height="1357">
+    <frame id="26:26" name="Sidebar" x="0" y="0" width="278" height="1357">
+      <frame id="509:138" name="Topo da sidebar" x="20" y="28" width="238" height="44">
+        <text id="26:27" name="Finanças PF+PJ" x="0" y="13" width="116" height="18" />
+        <instance id="509:139" name="Alternador de tema" x="154" y="0" width="84" height="44" />
+      </frame>
+      <frame id="26:28" name="Frame" x="20" y="96" width="238" height="43">
+        <text id="26:29" name="+ Novo Lançamento" x="39.5" y="12" width="159" height="19" />
+      </frame>
+      <frame id="26:30" name="Frame" x="20" y="163" width="238" height="302">
+        <frame id="26:31" name="Frame" x="0" y="0" width="238" height="36">
+          <text id="26:32" name="▾" x="10" y="10" width="5" height="13" />
+          <text id="26:33" name="Relatórios" x="25" y="10" width="63" height="16" />
+        </frame>
+        <frame id="26:34" name="Frame" x="0" y="38" width="238" height="36">
+          <text id="26:35" name="DRE" x="25" y="10" width="26" height="16" />
+        </frame>
+        <frame id="26:36" name="Frame" x="0" y="76" width="238" height="36">
+          <text id="26:37" name="Balanço Patrimonial" x="25" y="10" width="123" height="16" />
+        </frame>
+        <frame id="26:38" name="Frame" x="0" y="114" width="238" height="36">
+          <text id="26:39" name="Evolução Mensal" x="25" y="10" width="105" height="16" />
+        </frame>
+        <frame id="26:40" name="Frame" x="0" y="152" width="238" height="36">
+          <text id="26:41" name="Indicadores Financeiros" x="25" y="10" width="148" height="16" />
+        </frame>
+        <frame id="26:42" name="Frame" x="0" y="190" width="238" height="36">
+          <text id="26:43" name="Revisão de Recorrentes" x="10" y="10" width="147" height="16" />
+        </frame>
+        <frame id="26:44" name="Frame" x="0" y="228" width="238" height="36">
+          <text id="26:45" name="Histórico" x="10" y="10" width="56" height="16" />
+        </frame>
+        <frame id="26:46" name="Frame" x="0" y="266" width="238" height="36">
+          <text id="26:47" name="Editar Plano de Contas e Patrimônio" x="10" y="10" width="223" height="16" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="27:25" name="Frame" x="278" y="0" width="1162" height="1357">
+      <text id="27:26" name="DRE" x="48" y="40" width="48" height="29" />
+      <text id="27:27" name="Lucro Líquido: R$ 10.400,00" x="48" y="89" width="188" height="17" />
+    </frame>
+    <rounded-rectangle id="27:28" name="Overlay escurecido" x="0" y="0" width="1440" height="1357" />
+    <frame id="27:29" name="Modal — Destinar o Lucro" x="514" y="80" width="575" height="1162">
+      <frame id="247:2" name="Frame" x="28" y="28" width="519" height="22">
+        <text id="27:30" name="Destinar o Lucro" x="0" y="0" width="437" height="22" />
+        <text id="27:31" name="Julho de 2026" x="437" y="0" width="82" height="15" />
+      </frame>
+      <frame id="245:2" name="Frame" x="28" y="66" width="519" height="43">
+        <frame id="245:3" name="Frame" x="14" y="12" width="384" height="15">
+          <text id="245:4" name="Lucro líquido do mês" x="0" y="0" width="119" height="15" />
+        </frame>
+        <text id="245:5" name="R$ 10.400,00" x="398" y="12" width="107" height="19" />
+      </frame>
+      <frame id="245:6" name="Frame" x="28" y="125" width="519" height="352">
+        <frame id="245:7" name="Frame" x="16" y="16" width="487" height="19">
+          <frame id="245:8" name="Frame" x="0" y="0" width="317" height="19">
+            <text id="245:9" name="Aporte em Investimentos" x="0" y="0" width="198" height="19" />
+          </frame>
+          <text id="245:10" name="R$ 4.000,00 · 38% do lucro" x="329" y="0" width="158" height="15" />
+        </frame>
+        <text id="246:2" name="Dinheiro novo do lucro deste mês, aplicado pela primeira vez." x="16" y="45" width="487" height="13" />
+        <frame id="245:11" name="Frame" x="16" y="68" width="487" height="36">
+          <text id="245:12" name="Tesouro Direto" x="12" y="9" width="339" height="15" />
+          <text id="245:13" name="R$ 2.500,00" x="359" y="9" width="72" height="15" />
+          <frame id="245:14" name="Frame" x="439" y="9" width="36" height="18">
+            <text id="245:15" name="24%" x="7" y="3" width="22" height="12" />
+          </frame>
+        </frame>
+        <frame id="245:16" name="Frame" x="16" y="114" width="487" height="36">
+          <text id="245:17" name="Ações XP" x="12" y="9" width="343" height="15" />
+          <text id="245:18" name="R$ 1.500,00" x="363" y="9" width="70" height="15" />
+          <frame id="245:19" name="Frame" x="441" y="9" width="34" height="18">
+            <text id="245:20" name="14%" x="7" y="3" width="20" height="12" />
+          </frame>
+        </frame>
+        <frame id="250:2" name="Frame" x="16" y="160" width="487" height="176">
+          <text id="250:3" name="Novo item" x="12" y="12" width="59" height="15" />
+          <frame id="250:4" name="Frame" x="12" y="37" width="463" height="50">
+            <frame id="250:5" name="Frame" x="0" y="0" width="226.5" height="50">
+              <text id="250:6" name="Investimento" x="0" y="0" width="68" height="13" />
+              <frame id="250:7" name="Frame" x="0" y="17" width="226.5" height="33">
+                <text id="250:8" name="Buscar investimento ou + criar novo…" x="10" y="9" width="213" height="15" />
+              </frame>
+            </frame>
+            <frame id="250:9" name="Frame" x="236.5" y="0" width="226.5" height="50">
+              <text id="250:10" name="Valor" x="0" y="0" width="27" height="13" />
+              <frame id="250:11" name="Frame" x="0" y="17" width="226.5" height="33">
+                <text id="250:12" name="R$ 0,00" x="10" y="9" width="44" height="15" />
+              </frame>
+            </frame>
+          </frame>
+          <frame id="250:13" name="Frame" x="12" y="97" width="463" height="33">
+            <frame id="250:14" name="Frame" x="0" y="16" width="283" height="1" />
+            <frame id="250:15" name="Frame" x="291" y="0" width="80" height="33">
+              <text id="250:16" name="Cancelar" x="14" y="9" width="52" height="15" />
+            </frame>
+            <frame id="250:17" name="Frame" x="379" y="0" width="84" height="33">
+              <text id="250:18" name="Adicionar" x="14" y="9" width="56" height="15" />
+            </frame>
+          </frame>
+          <text id="250:19" name="Clicar em &quot;+ Adicionar investimento&quot; abre este formulário, dentro do próprio card. &quot;Adicionar&quot; soma o item à lista acima e limpa os campos, pronto pra outro." x="12" y="140" width="463" height="24" />
+        </frame>
+      </frame>
+      <frame id="245:23" name="Frame" x="28" y="493" width="519" height="163">
+        <frame id="245:24" name="Frame" x="16" y="16" width="487" height="19">
+          <frame id="245:25" name="Frame" x="0" y="0" width="319" height="19">
+            <text id="245:26" name="Reinvestimento de Dividendos" x="0" y="0" width="238" height="19" />
+          </frame>
+          <text id="245:27" name="R$ 2.000,00 · 19% do lucro" x="331" y="0" width="156" height="15" />
+        </frame>
+        <text id="246:3" name="Rendimento que já veio de um investimento, reaplicado em vez de virar consumo." x="16" y="45" width="487" height="13" />
+        <frame id="245:28" name="Frame" x="16" y="68" width="487" height="36">
+          <text id="245:29" name="Fundo Imobiliário" x="12" y="9" width="340" height="15" />
+          <text id="245:30" name="R$ 2.000,00" x="360" y="9" width="73" height="15" />
+          <frame id="245:31" name="Frame" x="441" y="9" width="34" height="18">
+            <text id="245:32" name="19%" x="7" y="3" width="20" height="12" />
+          </frame>
+        </frame>
+        <frame id="248:4" name="Frame" x="16" y="114" width="487" height="33">
+          <frame id="248:5" name="Frame" x="0" y="16" width="311" height="1" />
+          <frame id="245:33" name="Frame" x="311" y="0" width="176" height="33">
+            <text id="245:34" name="+ Adicionar investimento" x="14" y="9" width="148" height="15" />
+          </frame>
+        </frame>
+      </frame>
+      <frame id="245:35" name="Frame" x="28" y="672" width="519" height="209">
+        <frame id="245:36" name="Frame" x="16" y="16" width="487" height="19">
+          <frame id="245:37" name="Frame" x="0" y="0" width="321" height="19">
+            <text id="245:38" name="Consumo Extraordinário" x="0" y="0" width="191" height="19" />
+          </frame>
+          <text id="245:39" name="R$ 1.400,00 · 13% do lucro" x="333" y="0" width="154" height="15" />
+        </frame>
+        <text id="246:4" name="Gasto pontual fora do orçamento normal, feito com o lucro do mês." x="16" y="45" width="487" height="13" />
+        <frame id="245:40" name="Frame" x="16" y="68" width="487" height="36">
+          <text id="245:41" name="Viagem" x="12" y="9" width="356" height="15" />
+          <text id="245:42" name="R$ 900,00" x="376" y="9" width="62" height="15" />
+          <frame id="245:43" name="Frame" x="446" y="9" width="29" height="18">
+            <text id="245:44" name="9%" x="7" y="3" width="15" height="12" />
+          </frame>
+        </frame>
+        <frame id="245:45" name="Frame" x="16" y="114" width="487" height="36">
+          <text id="245:46" name="Presente" x="12" y="9" width="356" height="15" />
+          <text id="245:47" name="R$ 500,00" x="376" y="9" width="62" height="15" />
+          <frame id="245:48" name="Frame" x="446" y="9" width="29" height="18">
+            <text id="245:49" name="5%" x="7" y="3" width="15" height="12" />
+          </frame>
+        </frame>
+        <frame id="248:6" name="Frame" x="16" y="160" width="487" height="33">
+          <frame id="248:7" name="Frame" x="0" y="16" width="361" height="1" />
+          <frame id="245:50" name="Frame" x="361" y="0" width="126" height="33">
+            <text id="245:51" name="+ Adicionar item" x="14" y="9" width="98" height="15" />
+          </frame>
+        </frame>
+      </frame>
+      <frame id="245:52" name="Frame" x="28" y="897" width="519" height="117">
+        <frame id="245:53" name="Frame" x="16" y="16" width="487" height="19">
+          <frame id="245:54" name="Frame" x="0" y="0" width="352" height="19">
+            <text id="245:55" name="Reserva em Caixa" x="0" y="0" width="140" height="19" />
+          </frame>
+          <text id="245:56" name="R$ 0,00 · 0% do lucro" x="364" y="0" width="123" height="15" />
+        </frame>
+        <text id="246:5" name="Fica guardado, disponível, sem virar investimento nem despesa." x="16" y="45" width="487" height="13" />
+        <frame id="248:8" name="Frame" x="16" y="68" width="487" height="33">
+          <frame id="248:9" name="Frame" x="0" y="16" width="353" height="1" />
+          <frame id="245:57" name="Frame" x="353" y="0" width="134" height="33">
+            <text id="245:58" name="+ Adicionar conta" x="14" y="9" width="106" height="15" />
+          </frame>
+        </frame>
+      </frame>
+      <frame id="245:59" name="Frame" x="28" y="1030" width="519" height="43">
+        <frame id="245:60" name="Frame" x="14" y="12" width="348" height="15">
+          <text id="245:61" name="Saldo não alocado" x="0" y="0" width="106" height="15" />
+        </frame>
+        <frame id="245:62" name="Frame" x="362" y="12" width="143" height="19">
+          <text id="245:63" name="R$ 3.000,00" x="0" y="0" width="99" height="19" />
+          <frame id="245:64" name="Frame" x="107" y="0" width="36" height="18">
+            <text id="245:65" name="29%" x="7" y="3" width="22" height="12" />
+          </frame>
+        </frame>
+      </frame>
+      <frame id="27:56" name="Frame" x="28" y="1089" width="519" height="45">
+        <frame id="27:57" name="Frame" x="0" y="0" width="254.5" height="45">
+          <text id="27:58" name="Cancelar" x="97.25" y="14" width="60" height="17" />
+        </frame>
+        <frame id="27:59" name="Frame" x="264.5" y="0" width="254.5" height="45">
+          <text id="27:60" name="Salvar Destinação" x="66.25" y="14" width="122" height="17" />
+        </frame>
+      </frame>
+    </frame>
+  </frame>

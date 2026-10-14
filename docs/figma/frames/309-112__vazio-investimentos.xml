@@ -1,0 +1,8 @@
+  <frame id="309:112" name="Vazio — Investimentos" x="-16635" y="-3454" width="420" height="180">
+    <text id="309:113" name="Nenhum investimento cadastrado" x="87.5" y="40" width="245" height="18" />
+    <text id="309:114" name="Adicione o valor acumulado dos seus investimentos." x="40" y="66" width="340" height="15" />
+    <rounded-rectangle id="309:115" name="Rectangle" x="209.5" y="89" width="1" height="8" />
+    <frame id="309:116" name="Frame" x="159" y="105" width="102" height="35">
+      <text id="309:117" name="+ Adicionar" x="16" y="10" width="70" height="15" />
+    </frame>
+  </frame>

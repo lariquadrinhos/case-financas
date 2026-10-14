@@ -1,0 +1,224 @@
+  <frame id="326:27" name="Vazio Estado — Home em Modo de Organização (tela completa)" x="-12198" y="-2803" width="1440" height="1256">
+    <frame id="326:28" name="Sidebar" x="0" y="0" width="278" height="1256">
+      <text id="326:29" name="Finanças PF+PJ" x="20" y="28" width="116" height="18" />
+      <frame id="326:30" name="Frame" x="20" y="70" width="238" height="43">
+        <text id="326:31" name="+ Novo Lançamento" x="39.5" y="12" width="159" height="19" />
+      </frame>
+      <frame id="326:32" name="Frame" x="20" y="137" width="238" height="302">
+        <frame id="326:33" name="Frame" x="0" y="0" width="238" height="36">
+          <text id="326:34" name="Relatórios" x="10" y="10" width="63" height="16" />
+          <text id="326:35" name="▾" x="83" y="10" width="5" height="13" />
+        </frame>
+        <frame id="326:36" name="Frame" x="0" y="38" width="238" height="36">
+          <text id="326:37" name="DRE" x="25" y="10" width="26" height="16" />
+        </frame>
+        <frame id="326:38" name="Frame" x="0" y="76" width="238" height="36">
+          <text id="326:39" name="Balanço Patrimonial" x="25" y="10" width="123" height="16" />
+        </frame>
+        <frame id="326:40" name="Frame" x="0" y="114" width="238" height="36">
+          <text id="326:41" name="Evolução Mensal" x="25" y="10" width="105" height="16" />
+        </frame>
+        <frame id="326:42" name="Frame" x="0" y="152" width="238" height="36">
+          <text id="326:43" name="Indicadores Financeiros" x="25" y="10" width="148" height="16" />
+        </frame>
+        <frame id="326:44" name="Frame" x="0" y="190" width="238" height="36">
+          <text id="326:45" name="Revisão de Recorrentes" x="10" y="10" width="147" height="16" />
+        </frame>
+        <frame id="326:46" name="Frame" x="0" y="228" width="238" height="36">
+          <text id="326:47" name="Histórico" x="10" y="10" width="56" height="16" />
+        </frame>
+        <frame id="326:48" name="Frame" x="0" y="266" width="238" height="36">
+          <text id="326:49" name="Plano de Contas e Patrimônio" x="12" y="10" width="183" height="16" />
+          <text id="326:50" name="▾" x="205" y="20.5" width="13" height="5" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="326:51" name="Frame" x="278" y="0" width="1162" height="2501">
+      <frame id="326:52" name="Frame" x="48" y="40" width="1066" height="31">
+        <text id="326:53" name="Modo de organização: arraste pelo ícone pra reordenar, ou minimize um card pra escondê-lo (sem perder o lugar dele)." x="0" y="8" width="989" height="15" />
+        <frame id="326:54" name="Frame" x="989" y="0" width="77" height="31">
+          <text id="326:55" name="Concluir" x="14" y="8" width="49" height="15" />
+        </frame>
+      </frame>
+      <frame id="326:347" name="Vazio — Pendências" x="48" y="91" width="420" height="154">
+        <frame id="326:391" name="Frame" x="24" y="20" width="372" height="25">
+          <frame id="326:407" name="Frame 19" x="0" y="3" width="372" height="19">
+            <frame id="326:392" name="Frame" x="0" y="2" width="9" height="15">
+              <frame id="326:393" name="Frame" x="0" y="0" width="3" height="15">
+                <ellipse id="326:394" name="Ellipse" x="0" y="0" width="3" height="3" />
+                <ellipse id="326:395" name="Ellipse" x="0" y="6" width="3" height="3" />
+                <ellipse id="326:396" name="Ellipse" x="0" y="12" width="3" height="3" />
+              </frame>
+              <frame id="326:397" name="Frame" x="6" y="0" width="3" height="15">
+                <ellipse id="326:398" name="Ellipse" x="0" y="0" width="3" height="3" />
+                <ellipse id="326:399" name="Ellipse" x="0" y="6" width="3" height="3" />
+                <ellipse id="326:400" name="Ellipse" x="0" y="12" width="3" height="3" />
+              </frame>
+            </frame>
+            <frame id="326:401" name="Frame" x="19" y="0" width="353" height="19">
+              <text id="326:402" name="Pendências" x="0" y="0" width="92" height="19" />
+            </frame>
+          </frame>
+          <frame id="326:403" name="Frame" x="295" y="0" width="77" height="25">
+            <text id="326:404" name="Minimizar" x="12" y="6" width="53" height="13" />
+          </frame>
+        </frame>
+        <frame id="326:350" name="Frame 11" x="40" y="59" width="340" height="71">
+          <text id="326:351" name="Tudo em dia" x="125.5" y="0" width="89" height="18" />
+          <text id="326:352" name="Nenhuma pendência agora. Quando algo precisar da sua decisão (valor sem destino, recorrência sem valor, lucro sem destinar), aparece aqui." x="0" y="26" width="340" height="45" />
+        </frame>
+      </frame>
+      <frame id="326:353" name="Vazio — Pendências" x="48" y="265" width="420" height="188">
+        <frame id="326:408" name="Frame" x="24" y="20" width="372" height="25">
+          <frame id="326:409" name="Frame 19" x="0" y="3" width="372" height="19">
+            <frame id="326:410" name="Frame" x="0" y="2" width="9" height="15">
+              <frame id="326:411" name="Frame" x="0" y="0" width="3" height="15">
+                <ellipse id="326:412" name="Ellipse" x="0" y="0" width="3" height="3" />
+                <ellipse id="326:413" name="Ellipse" x="0" y="6" width="3" height="3" />
+                <ellipse id="326:414" name="Ellipse" x="0" y="12" width="3" height="3" />
+              </frame>
+              <frame id="326:415" name="Frame" x="6" y="0" width="3" height="15">
+                <ellipse id="326:416" name="Ellipse" x="0" y="0" width="3" height="3" />
+                <ellipse id="326:417" name="Ellipse" x="0" y="6" width="3" height="3" />
+                <ellipse id="326:418" name="Ellipse" x="0" y="12" width="3" height="3" />
+              </frame>
+            </frame>
+            <frame id="326:419" name="Frame" x="19" y="0" width="353" height="19">
+              <text id="326:420" name="Saldo para Consumo Livre" x="0" y="0" width="204" height="19" />
+            </frame>
+          </frame>
+          <frame id="326:421" name="Frame" x="295" y="0" width="77" height="25">
+            <text id="326:422" name="Minimizar" x="12" y="6" width="53" height="13" />
+          </frame>
+        </frame>
+        <frame id="326:356" name="Frame 11" x="40" y="59" width="340" height="56">
+          <text id="326:357" name="Configurar Consumo Livre" x="74.5" y="0" width="191" height="18" />
+          <text id="326:358" name="Defina um valor mensal pra Consumo Livre. Sem lançar item por item, só confirma quando gastar." x="0" y="26" width="340" height="30" />
+        </frame>
+        <frame id="326:359" name="Frame" x="147" y="129" width="126" height="35">
+          <text id="326:360" name="Cadastrar agora" x="16" y="10" width="94" height="15" />
+        </frame>
+      </frame>
+      <frame id="326:361" name="Vazio — Pendências" x="48" y="473" width="420" height="188">
+        <frame id="326:423" name="Frame" x="24" y="20" width="372" height="25">
+          <frame id="326:424" name="Frame 19" x="0" y="3" width="372" height="19">
+            <frame id="326:425" name="Frame" x="0" y="2" width="9" height="15">
+              <frame id="326:426" name="Frame" x="0" y="0" width="3" height="15">
+                <ellipse id="326:427" name="Ellipse" x="0" y="0" width="3" height="3" />
+                <ellipse id="326:428" name="Ellipse" x="0" y="6" width="3" height="3" />
+                <ellipse id="326:429" name="Ellipse" x="0" y="12" width="3" height="3" />
+              </frame>
+              <frame id="326:430" name="Frame" x="6" y="0" width="3" height="15">
+                <ellipse id="326:431" name="Ellipse" x="0" y="0" width="3" height="3" />
+                <ellipse id="326:432" name="Ellipse" x="0" y="6" width="3" height="3" />
+                <ellipse id="326:433" name="Ellipse" x="0" y="12" width="3" height="3" />
+              </frame>
+            </frame>
+            <frame id="326:434" name="Frame" x="19" y="0" width="353" height="19">
+              <text id="326:435" name="Despesas por Categoria" x="0" y="0" width="189" height="19" />
+            </frame>
+          </frame>
+          <frame id="326:436" name="Frame" x="295" y="0" width="77" height="25">
+            <text id="326:437" name="Minimizar" x="12" y="6" width="53" height="13" />
+          </frame>
+        </frame>
+        <frame id="326:364" name="Frame 11" x="40" y="59" width="340" height="56">
+          <text id="326:365" name="Nenhuma despesa registrada" x="63.5" y="0" width="213" height="18" />
+          <text id="326:366" name="Assim que você lançar uma despesa, ela aparece aqui, organizada por categoria." x="0" y="26" width="340" height="30" />
+        </frame>
+        <frame id="326:367" name="Frame" x="134.5" y="129" width="151" height="35">
+          <text id="326:368" name="+ Novo Lançamento" x="16" y="10" width="119" height="15" />
+        </frame>
+      </frame>
+      <frame id="326:369" name="Vazio — Pendências" x="48" y="681" width="420" height="188">
+        <frame id="326:438" name="Frame" x="24" y="20" width="372" height="25">
+          <frame id="326:439" name="Frame 19" x="0" y="3" width="372" height="19">
+            <frame id="326:440" name="Frame" x="0" y="2" width="9" height="15">
+              <frame id="326:441" name="Frame" x="0" y="0" width="3" height="15">
+                <ellipse id="326:442" name="Ellipse" x="0" y="0" width="3" height="3" />
+                <ellipse id="326:443" name="Ellipse" x="0" y="6" width="3" height="3" />
+                <ellipse id="326:444" name="Ellipse" x="0" y="12" width="3" height="3" />
+              </frame>
+              <frame id="326:445" name="Frame" x="6" y="0" width="3" height="15">
+                <ellipse id="326:446" name="Ellipse" x="0" y="0" width="3" height="3" />
+                <ellipse id="326:447" name="Ellipse" x="0" y="6" width="3" height="3" />
+                <ellipse id="326:448" name="Ellipse" x="0" y="12" width="3" height="3" />
+              </frame>
+            </frame>
+            <frame id="326:449" name="Frame" x="19" y="0" width="353" height="19">
+              <text id="326:450" name="Mapa de Fluxo" x="0" y="0" width="113" height="19" />
+            </frame>
+          </frame>
+          <frame id="326:451" name="Frame" x="295" y="0" width="77" height="25">
+            <text id="326:452" name="Minimizar" x="12" y="6" width="53" height="13" />
+          </frame>
+        </frame>
+        <frame id="326:372" name="Frame 11" x="40" y="59" width="340" height="56">
+          <text id="326:373" name="Sem lançamentos este mês" x="70.5" y="0" width="199" height="18" />
+          <text id="326:374" name="Registre uma receita ou despesa pra começar a ver de onde vem e pra onde vai o seu dinheiro." x="0" y="26" width="340" height="30" />
+        </frame>
+        <frame id="326:375" name="Frame" x="134.5" y="129" width="151" height="35">
+          <text id="326:376" name="+ Novo Lançamento" x="16" y="10" width="119" height="15" />
+        </frame>
+      </frame>
+      <frame id="326:377" name="Vazio — Pendências" x="48" y="889" width="420" height="188">
+        <frame id="326:453" name="Frame" x="24" y="20" width="372" height="25">
+          <frame id="326:454" name="Frame 19" x="0" y="3" width="372" height="19">
+            <frame id="326:455" name="Frame" x="0" y="2" width="9" height="15">
+              <frame id="326:456" name="Frame" x="0" y="0" width="3" height="15">
+                <ellipse id="326:457" name="Ellipse" x="0" y="0" width="3" height="3" />
+                <ellipse id="326:458" name="Ellipse" x="0" y="6" width="3" height="3" />
+                <ellipse id="326:459" name="Ellipse" x="0" y="12" width="3" height="3" />
+              </frame>
+              <frame id="326:460" name="Frame" x="6" y="0" width="3" height="15">
+                <ellipse id="326:461" name="Ellipse" x="0" y="0" width="3" height="3" />
+                <ellipse id="326:462" name="Ellipse" x="0" y="6" width="3" height="3" />
+                <ellipse id="326:463" name="Ellipse" x="0" y="12" width="3" height="3" />
+              </frame>
+            </frame>
+            <frame id="326:464" name="Frame" x="19" y="0" width="353" height="19">
+              <text id="326:465" name="Onde Está Meu Dinheiro" x="0" y="0" width="188" height="19" />
+            </frame>
+          </frame>
+          <frame id="326:466" name="Frame" x="295" y="0" width="77" height="25">
+            <text id="326:467" name="Minimizar" x="12" y="6" width="53" height="13" />
+          </frame>
+        </frame>
+        <frame id="326:380" name="Frame 11" x="40" y="59" width="340" height="56">
+          <text id="326:381" name="Nada cadastrado ainda" x="86" y="0" width="168" height="18" />
+          <text id="326:382" name="Cadastre suas contas, investimentos ou dívidas em Plano de Contas e Patrimônio pra ver onde seu dinheiro está." x="0" y="26" width="340" height="30" />
+        </frame>
+        <frame id="326:383" name="Frame" x="147" y="129" width="126" height="35">
+          <text id="326:384" name="Cadastrar agora" x="16" y="10" width="94" height="15" />
+        </frame>
+      </frame>
+      <frame id="326:385" name="Vazio — Pendências" x="48" y="1097" width="420" height="139">
+        <frame id="326:468" name="Frame" x="24" y="20" width="372" height="25">
+          <frame id="326:469" name="Frame 19" x="0" y="3" width="372" height="19">
+            <frame id="326:470" name="Frame" x="0" y="2" width="9" height="15">
+              <frame id="326:471" name="Frame" x="0" y="0" width="3" height="15">
+                <ellipse id="326:472" name="Ellipse" x="0" y="0" width="3" height="3" />
+                <ellipse id="326:473" name="Ellipse" x="0" y="6" width="3" height="3" />
+                <ellipse id="326:474" name="Ellipse" x="0" y="12" width="3" height="3" />
+              </frame>
+              <frame id="326:475" name="Frame" x="6" y="0" width="3" height="15">
+                <ellipse id="326:476" name="Ellipse" x="0" y="0" width="3" height="3" />
+                <ellipse id="326:477" name="Ellipse" x="0" y="6" width="3" height="3" />
+                <ellipse id="326:478" name="Ellipse" x="0" y="12" width="3" height="3" />
+              </frame>
+            </frame>
+            <frame id="326:479" name="Frame" x="19" y="0" width="353" height="19">
+              <text id="326:480" name="Eventos Recentes" x="0" y="0" width="141" height="19" />
+            </frame>
+          </frame>
+          <frame id="326:481" name="Frame" x="295" y="0" width="77" height="25">
+            <text id="326:482" name="Minimizar" x="12" y="6" width="53" height="13" />
+          </frame>
+        </frame>
+        <frame id="326:388" name="Frame 11" x="40" y="59" width="340" height="56">
+          <text id="326:389" name="Nenhum evento ainda" x="91" y="0" width="158" height="18" />
+          <text id="326:390" name="Reajustes de juros, divergências de pagamento e parcelas confirmadas aparecem aqui conforme forem acontecendo." x="0" y="26" width="340" height="30" />
+        </frame>
+      </frame>
+    </frame>
+  </frame>

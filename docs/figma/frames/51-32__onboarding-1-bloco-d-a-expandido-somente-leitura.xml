@@ -1,0 +1,24 @@
+  <frame id="51:32" name="Onboarding 1 — bloco D&amp;A expandido (somente leitura)" x="3026" y="-4761" width="1440" height="455">
+    <frame id="51:33" name="Frame" x="380" y="60" width="680" height="321">
+      <text id="51:34" name="Passo 1 de 5: Plano de Contas" x="40" y="36" width="173" height="15" />
+      <text id="51:35" name="Bloco 6: exceção: somente leitura" x="40" y="67" width="362" height="27" />
+      <frame id="51:36" name="Frame" x="40" y="110" width="600" height="146">
+        <frame id="51:37" name="Frame" x="14" y="12" width="572" height="16">
+          <frame id="51:38" name="Frame" x="0" y="0" width="567" height="16">
+            <text id="51:39" name="6. Depreciação &amp; Amortização (D&amp;A)" x="0" y="0" width="231" height="16" />
+          </frame>
+          <text id="51:40" name="▾" x="567" y="0" width="5" height="15" />
+        </frame>
+        <frame id="51:41" name="Frame" x="14" y="38" width="572" height="36">
+          <frame id="51:42" name="Frame" x="12" y="10" width="462" height="15">
+            <text id="51:43" name="Valor deste bloco" x="0" y="0" width="100" height="15" />
+          </frame>
+          <text id="51:44" name="R$ 0,00 (fixo)" x="474" y="10" width="86" height="16" />
+        </frame>
+        <frame id="51:45" name="Frame" x="14" y="84" width="572" height="50">
+          <text id="51:46" name="Este bloco não tem categorias: é sempre zero no MVP (sem depreciação mensal). Ganho ou perda de ativos só é reconhecido na venda, em Resultado Não Operacional." x="12" y="10" width="548" height="30" />
+        </frame>
+      </frame>
+      <text id="51:47" name="Sem botão de criar categoria e sem Editar/Descartar: não há nada aqui pra editar." x="40" y="272" width="424" height="13" />
+    </frame>
+  </frame>

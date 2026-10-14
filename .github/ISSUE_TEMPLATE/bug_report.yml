@@ -1,0 +1,88 @@
+name: 🐛 Relato de bug
+description: Relatar um problema reproduzível no Bigorna
+labels: ['bug']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por reservar tempo para relatar.
+
+        ⚠️ **Não relate falha de segurança aqui.** Use o
+        [relato privado de vulnerabilidade](https://github.com/lariquadrinhos/case-financas/security/advisories/new)
+        — ver [`SECURITY.md`](../blob/main/SECURITY.md). Issue é pública para
+        quem tem acesso ao repositório; uma falha aberta assim vira mapa para
+        quem quiser explorá-la.
+
+        🔒 **Nunca cole dado financeiro real, print de tela com valor, saldo,
+        extrato, nome de pessoa, CPF, CNPJ ou credencial.** Este produto trata
+        finanças pessoais e de empresa: o que entra numa issue fica registrado
+        para sempre. Descreva com valor inventado e redija o log.
+  - type: checkboxes
+    id: pre-voo
+    attributes:
+      label: Pré-voo
+      options:
+        - label: Procurei nas issues existentes e este relato não é duplicado.
+          required: true
+        - label: Este relato não contém dado real de pessoa alguma — nem meu, nem de terceiro.
+          required: true
+  - type: textarea
+    id: o-que-aconteceu
+    attributes:
+      label: O que aconteceu
+      description: Descreva o comportamento observado e o que você esperava no lugar.
+    validations:
+      required: true
+  - type: textarea
+    id: reproducao
+    attributes:
+      label: Passos para reproduzir
+      description: Use valores inventados nos exemplos.
+      placeholder: |
+        1. …
+        2. …
+        3. O erro aparece
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Área
+      description: Qual tela do produto está afetada?
+      options:
+        - Home
+        - Novo Lançamento
+        - DRE
+        - Balanço Patrimonial
+        - Evolução Mensal
+        - Indicadores Financeiros
+        - Revisão de Recorrentes
+        - Histórico
+        - Plano de Contas e Patrimônio
+        - Consumo Livre
+        - Onboarding
+        - Outra / não sei dizer
+    validations:
+      required: true
+  - type: input
+    id: navegador
+    attributes:
+      label: Navegador e versão
+      placeholder: 'ex.: Chrome 140, Safari 18.4, Firefox 132'
+    validations:
+      required: true
+  - type: input
+    id: versao
+    attributes:
+      label: Versão ou commit do Bigorna
+      placeholder: 'ex.: 0.1.0 ou commit 9c5f014'
+    validations:
+      required: false
+  - type: textarea
+    id: log
+    attributes:
+      label: Log relevante
+      description: Só log estruturado, sem conteúdo. Remova qualquer valor, rótulo ou texto digitado antes de colar.
+      render: shell
+    validations:
+      required: false

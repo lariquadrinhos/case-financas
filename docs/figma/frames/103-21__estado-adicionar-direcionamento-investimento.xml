@@ -1,0 +1,44 @@
+  <frame id="103:21" name="Estado — Adicionar Direcionamento (Investimento)" x="3062" y="10988" width="1000" height="700">
+    <frame id="103:22" name="Frame" x="280" y="111.5" width="440" height="477">
+      <text id="103:23" name="Adicionar Direcionamento" x="28" y="28" width="230" height="22" />
+      <frame id="103:24" name="Frame" x="28" y="66" width="265" height="33">
+        <frame id="103:25" name="Frame" x="0" y="0" width="104" height="33">
+          <text id="103:26" name="Investimento" x="14" y="9" width="76" height="15" />
+        </frame>
+        <frame id="103:27" name="Frame" x="112" y="0" width="73" height="33">
+          <text id="103:28" name="Passivo" x="14" y="9" width="45" height="15" />
+        </frame>
+        <frame id="103:29" name="Frame" x="193" y="0" width="72" height="33">
+          <text id="103:30" name="Receita" x="14" y="9" width="44" height="15" />
+        </frame>
+      </frame>
+      <frame id="103:31" name="Frame" x="28" y="115" width="384" height="61">
+        <text id="103:32" name="Buscar investimento" x="0" y="0" width="117" height="15" />
+        <frame id="103:33" name="Frame" x="0" y="21" width="384" height="40">
+          <text id="103:34" name="Clique para ver a lista de investimentos…" x="14" y="12" width="252" height="16" />
+        </frame>
+      </frame>
+      <frame id="103:38" name="Frame" x="28" y="192" width="384" height="61">
+        <text id="103:39" name="Valor a alocar" x="0" y="0" width="78" height="15" />
+        <frame id="103:40" name="Frame" x="0" y="21" width="384" height="40">
+          <text id="103:41" name="R$ 0,00" x="14" y="12" width="48" height="16" />
+        </frame>
+      </frame>
+      <frame id="202:20" name="Frame" x="28" y="269" width="384" height="35">
+        <frame id="202:21" name="Frame" x="0" y="0" width="286" height="1" />
+        <frame id="103:35" name="Frame" x="286" y="0" width="98" height="35">
+          <text id="103:36" name="+ Adicionar" x="14" y="10" width="70" height="15" />
+        </frame>
+      </frame>
+      <text id="103:37" name="Abre o formulário completo de cadastro de investimento já existente no produto." x="28" y="320" width="384" height="26" />
+      <frame id="103:42" name="Frame" x="28" y="362" width="384" height="45">
+        <frame id="103:43" name="Frame" x="0" y="0" width="187" height="45">
+          <text id="103:44" name="Cancelar" x="63.5" y="14" width="60" height="17" />
+        </frame>
+        <frame id="103:45" name="Frame" x="197" y="0" width="187" height="45">
+          <text id="103:46" name="Direcionar" x="58.5" y="14" width="70" height="17" />
+        </frame>
+      </frame>
+      <text id="103:47" name="Passivo funciona igual (buscar + adicionar passivo). Receita abre o formulário de Receita já existente, com Valor pré-preenchido (editável)." x="28" y="423" width="384" height="26" />
+    </frame>
+  </frame>

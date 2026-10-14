@@ -1,0 +1,138 @@
+  <frame id="93:15" name="Desktop — Bens Materiais" x="39.935546875" y="10999.7333984375" width="1440" height="1050">
+    <frame id="93:16" name="Sidebar" x="0" y="0" width="278" height="1050">
+      <frame id="509:174" name="Topo da sidebar" x="20" y="28" width="238" height="44">
+        <text id="93:17" name="Finanças PF+PJ" x="0" y="13" width="116" height="18" />
+        <instance id="509:175" name="Alternador de tema" x="154" y="0" width="84" height="44" />
+      </frame>
+      <frame id="93:18" name="Frame" x="20" y="96" width="238" height="43">
+        <text id="93:19" name="+ Novo Lançamento" x="39.5" y="12" width="159" height="19" />
+      </frame>
+      <frame id="93:20" name="Frame" x="20" y="163" width="238" height="492">
+        <frame id="93:21" name="Frame" x="0" y="0" width="238" height="36">
+          <text id="93:23" name="Relatórios" x="12" y="10" width="63" height="16" />
+          <text id="93:22" name="▾" x="85" y="10" width="5" height="13" />
+        </frame>
+        <frame id="93:24" name="Frame" x="0" y="38" width="238" height="36">
+          <text id="93:25" name="DRE" x="25" y="10" width="26" height="16" />
+        </frame>
+        <frame id="93:26" name="Frame" x="0" y="76" width="238" height="36">
+          <text id="93:27" name="Balanço Patrimonial" x="25" y="10" width="123" height="16" />
+        </frame>
+        <frame id="93:28" name="Frame" x="0" y="114" width="238" height="36">
+          <text id="93:29" name="Evolução Mensal" x="25" y="10" width="105" height="16" />
+        </frame>
+        <frame id="93:30" name="Frame" x="0" y="152" width="238" height="36">
+          <text id="93:31" name="Indicadores Financeiros" x="25" y="10" width="148" height="16" />
+        </frame>
+        <frame id="93:32" name="Frame" x="0" y="190" width="238" height="36">
+          <text id="93:33" name="Revisão de Recorrentes" x="10" y="10" width="147" height="16" />
+        </frame>
+        <frame id="93:34" name="Frame" x="0" y="228" width="238" height="36">
+          <text id="93:35" name="Histórico" x="10" y="10" width="56" height="16" />
+        </frame>
+        <frame id="93:36" name="Frame" x="0" y="266" width="238" height="36">
+          <text id="93:38" name="Plano de Contas e Patrimônio" x="12" y="10" width="183" height="16" />
+          <text id="93:37" name="▾" x="205" y="10" width="5" height="13" />
+        </frame>
+        <frame id="93:39" name="Frame" x="0" y="304" width="238" height="36">
+          <text id="93:40" name="Plano de Contas" x="25" y="10" width="102" height="16" />
+        </frame>
+        <frame id="93:41" name="Frame" x="0" y="342" width="238" height="36">
+          <text id="93:42" name="Contas Bancárias" x="25" y="10" width="109" height="16" />
+        </frame>
+        <frame id="93:43" name="Frame" x="0" y="380" width="238" height="36">
+          <text id="93:44" name="Bens Materiais" x="25" y="10" width="92" height="16" />
+        </frame>
+        <frame id="93:45" name="Frame" x="0" y="418" width="238" height="36">
+          <text id="93:46" name="Investimentos" x="25" y="10" width="88" height="16" />
+        </frame>
+        <frame id="93:47" name="Frame" x="0" y="456" width="238" height="36">
+          <text id="93:48" name="Passivos" x="25" y="10" width="55" height="16" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="96:137" name="Frame" x="278" y="0" width="1162" height="1050">
+      <text id="96:138" name="Bens Materiais" x="48" y="40" width="174" height="29" />
+      <text id="298:2" name="Bens Materiais: imóveis, veículos e outros bens de valor. Não são reavaliados mês a mês, só na venda." x="48" y="89" width="1066" height="15" />
+      <frame id="96:139" name="Frame" x="48" y="124" width="1066" height="215">
+        <text id="155:7" name="Adicionar bem material" x="20" y="20" width="170" height="18" />
+        <frame id="96:140" name="Frame" x="20" y="54" width="1026" height="61">
+          <frame id="96:141" name="Frame" x="0" y="0" width="331.3333435058594" height="61">
+            <text id="96:142" name="Nome *" x="0" y="0" width="44" height="15" />
+            <frame id="96:143" name="Frame" x="0" y="21" width="331.3333435058594" height="40">
+              <text id="96:144" name="Ex: Apartamento Centro" x="14" y="12" width="148" height="16" />
+            </frame>
+          </frame>
+          <frame id="96:145" name="Frame" x="347.3333435058594" y="0" width="331.33331298828125" height="52">
+            <text id="96:146" name="Entidade" x="0" y="0" width="51" height="15" />
+            <frame id="96:147" name="Frame" x="0" y="21" width="331.33331298828125" height="31">
+              <frame id="96:148" name="Frame" x="0" y="0" width="162.66665649414062" height="31">
+                <text id="96:149" name="PF" x="73.83332824707031" y="8" width="15" height="15" />
+              </frame>
+              <frame id="96:150" name="Frame" x="168.66665649414062" y="0" width="162.66665649414062" height="31">
+                <text id="96:151" name="PJ" x="74.33332824707031" y="8" width="14" height="15" />
+              </frame>
+            </frame>
+          </frame>
+          <frame id="96:152" name="Frame" x="694.6666259765625" y="0" width="331.33331298828125" height="61">
+            <text id="96:153" name="Valor inicial *" x="0" y="0" width="75" height="15" />
+            <frame id="96:154" name="Frame" x="0" y="21" width="331.33331298828125" height="40">
+              <text id="96:155" name="R$ 0,00" x="14" y="12" width="48" height="16" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="202:14" name="Frame" x="20" y="131" width="1026" height="35">
+          <frame id="202:15" name="Frame" x="0" y="0" width="924" height="1" />
+          <frame id="96:156" name="Frame" x="924" y="0" width="102" height="35">
+            <text id="96:157" name="+ Adicionar" x="16" y="10" width="70" height="15" />
+          </frame>
+        </frame>
+        <text id="216:9" name="* Campo obrigatório" x="20" y="182" width="106" height="13" />
+      </frame>
+      <frame id="334:3" name="Frame" x="48" y="359" width="1066" height="190">
+        <text id="96:158" name="Bens cadastrados" x="20" y="20" width="132" height="18" />
+        <frame id="206:2" name="Frame" x="20" y="54" width="1026" height="50">
+          <frame id="187:5" name="Frame 6" x="16" y="15" width="422" height="20">
+            <frame id="206:3" name="Frame" x="0" y="0" width="200" height="20">
+              <text id="206:4" name="Apartamento Centro" x="0" y="2.5" width="118" height="15" />
+            </frame>
+            <frame id="206:5" name="Frame" x="216" y="0" width="40" height="20">
+              <text id="206:6" name="PF" x="0" y="2.5" width="15" height="15" />
+            </frame>
+            <frame id="206:7" name="Frame" x="272" y="0" width="150" height="20">
+              <text id="206:8" name="R$ 320.000,00" x="0" y="2.5" width="86" height="15" />
+            </frame>
+          </frame>
+          <frame id="206:10" name="Frame" x="853" y="9.5" width="157" height="31">
+            <frame id="206:11" name="Frame" x="0" y="0" width="63" height="31">
+              <text id="206:12" name="Editar" x="14" y="8" width="35" height="15" />
+            </frame>
+            <frame id="206:13" name="Frame" x="71" y="0" width="86" height="31">
+              <text id="206:14" name="Descartar" x="14" y="8" width="58" height="15" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="206:15" name="Frame" x="20" y="120" width="1026" height="50">
+          <frame id="187:6" name="Frame 7" x="14" y="15" width="422" height="20">
+            <frame id="206:16" name="Frame" x="0" y="0" width="200" height="20">
+              <text id="206:17" name="Civic 2020" x="0" y="2.5" width="62" height="15" />
+            </frame>
+            <frame id="206:18" name="Frame" x="216" y="0" width="40" height="20">
+              <text id="206:19" name="PF" x="0" y="2.5" width="15" height="15" />
+            </frame>
+            <frame id="206:20" name="Frame" x="272" y="0" width="150" height="20">
+              <text id="206:21" name="R$ 45.000,00" x="0" y="2.5" width="79" height="15" />
+            </frame>
+          </frame>
+          <frame id="206:23" name="Frame" x="855" y="9.5" width="157" height="31">
+            <frame id="206:24" name="Frame" x="0" y="0" width="63" height="31">
+              <text id="206:25" name="Editar" x="14" y="8" width="35" height="15" />
+            </frame>
+            <frame id="206:26" name="Frame" x="71" y="0" width="86" height="31">
+              <text id="206:27" name="Descartar" x="14" y="8" width="58" height="15" />
+            </frame>
+          </frame>
+        </frame>
+      </frame>
+    </frame>
+  </frame>

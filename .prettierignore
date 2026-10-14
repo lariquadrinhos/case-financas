@@ -1,0 +1,23 @@
+.next
+node_modules
+coverage
+playwright-report
+storybook-static
+docs/figma/frames
+package-lock.json
+
+# Documentos de entrada do time de produto e de design.
+# São fonte da verdade, escritos fora deste repo — não reformatar.
+docs/prd
+docs/event-storming
+docs/reference
+files_design
+
+# Gerado por `npm run api:spec` a partir dos schemas Zod. Formatar aqui faria o
+# arquivo divergir do gerador e o fmt:check falhar a cada regeneração.
+docs/api/openapi.json
+
+# Gerado por `drizzle-kit generate` (o journal e os snapshots de cada
+# migração). Mesmo motivo do openapi.json acima: formatar aqui faria o arquivo
+# divergir do gerador e o fmt:check falhar na próxima migração.
+drizzle/meta

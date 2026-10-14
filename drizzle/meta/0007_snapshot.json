@@ -1,0 +1,2276 @@
+{
+  "version": "6",
+  "dialect": "sqlite",
+  "id": "1b32e264-5dda-4e3d-b888-d92cc83742af",
+  "prevId": "445daae5-2fed-4105-8549-7fbad0fbc6c7",
+  "tables": {
+    "allocation_items": {
+      "name": "allocation_items",
+      "columns": {
+        "user_id": {
+          "name": "user_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "id": {
+          "name": "id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "month": {
+          "name": "month",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "bucket": {
+          "name": "bucket",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "position": {
+          "name": "position",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "destination_kind": {
+          "name": "destination_kind",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "destination_investment_id": {
+          "name": "destination_investment_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "destination_bank_account_id": {
+          "name": "destination_bank_account_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "destination_name": {
+          "name": "destination_name",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "amount": {
+          "name": "amount",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        }
+      },
+      "indexes": {
+        "allocation_items_user_month_idx": {
+          "name": "allocation_items_user_month_idx",
+          "columns": [
+            "user_id",
+            "month",
+            "bucket",
+            "position"
+          ],
+          "isUnique": false
+        }
+      },
+      "foreignKeys": {
+        "allocation_items_user_id_month_profit_allocations_user_id_month_fk": {
+          "name": "allocation_items_user_id_month_profit_allocations_user_id_month_fk",
+          "tableFrom": "allocation_items",
+          "tableTo": "profit_allocations",
+          "columnsFrom": [
+            "user_id",
+            "month"
+          ],
+          "columnsTo": [
+            "user_id",
+            "month"
+          ],
+          "onDelete": "restrict",
+          "onUpdate": "no action"
+        },
+        "allocation_items_user_id_destination_investment_id_investments_user_id_id_fk": {
+          "name": "allocation_items_user_id_destination_investment_id_investments_user_id_id_fk",
+          "tableFrom": "allocation_items",
+          "tableTo": "investments",
+          "columnsFrom": [
+            "user_id",
+            "destination_investment_id"
+          ],
+          "columnsTo": [
+            "user_id",
+            "id"
+          ],
+          "onDelete": "restrict",
+          "onUpdate": "no action"
+        },
+        "allocation_items_user_id_destination_bank_account_id_bank_accounts_user_id_id_fk": {
+          "name": "allocation_items_user_id_destination_bank_account_id_bank_accounts_user_id_id_fk",
+          "tableFrom": "allocation_items",
+          "tableTo": "bank_accounts",
+          "columnsFrom": [
+            "user_id",
+            "destination_bank_account_id"
+          ],
+          "columnsTo": [
+            "user_id",
+            "id"
+          ],
+          "onDelete": "restrict",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {
+        "allocation_items_user_id_id_pk": {
+          "columns": [
+            "user_id",
+            "id"
+          ],
+          "name": "allocation_items_user_id_id_pk"
+        }
+      },
+      "uniqueConstraints": {},
+      "checkConstraints": {
+        "allocation_items_amount_non_negative": {
+          "name": "allocation_items_amount_non_negative",
+          "value": "\"allocation_items\".\"amount\" >= 0"
+        },
+        "allocation_items_destination_shape": {
+          "name": "allocation_items_destination_shape",
+          "value": "\"allocation_items\".\"destination_kind\" IS NULL OR (\n            (\"allocation_items\".\"destination_kind\" = 'Investment' AND \"allocation_items\".\"destination_investment_id\" IS NOT NULL\n              AND \"allocation_items\".\"destination_bank_account_id\" IS NULL AND \"allocation_items\".\"destination_name\" IS NULL)\n            OR (\"allocation_items\".\"destination_kind\" = 'BankAccount' AND \"allocation_items\".\"destination_bank_account_id\" IS NOT NULL\n              AND \"allocation_items\".\"destination_investment_id\" IS NULL AND \"allocation_items\".\"destination_name\" IS NULL)\n            OR (\"allocation_items\".\"destination_kind\" = 'FreeText' AND \"allocation_items\".\"destination_name\" IS NOT NULL\n              AND \"allocation_items\".\"destination_investment_id\" IS NULL AND \"allocation_items\".\"destination_bank_account_id\" IS NULL))"
+        }
+      }
+    },
+    "bank_accounts": {
+      "name": "bank_accounts",
+      "columns": {
+        "user_id": {
+          "name": "user_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "id": {
+          "name": "id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "label": {
+          "name": "label",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "colour": {
+          "name": "colour",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "entity": {
+          "name": "entity",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "balance": {
+          "name": "balance",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        }
+      },
+      "indexes": {
+        "bank_accounts_user_entity_idx": {
+          "name": "bank_accounts_user_entity_idx",
+          "columns": [
+            "user_id",
+            "entity"
+          ],
+          "isUnique": false
+        }
+      },
+      "foreignKeys": {
+        "bank_accounts_user_id_users_id_fk": {
+          "name": "bank_accounts_user_id_users_id_fk",
+          "tableFrom": "bank_accounts",
+          "tableTo": "users",
+          "columnsFrom": [
+            "user_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "restrict",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {
+        "bank_accounts_user_id_id_pk": {
+          "columns": [
+            "user_id",
+            "id"
+          ],
+          "name": "bank_accounts_user_id_id_pk"
+        }
+      },
+      "uniqueConstraints": {},
+      "checkConstraints": {}
+    },
+    "categories": {
+      "name": "categories",
+      "columns": {
+        "user_id": {
+          "name": "user_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "id": {
+          "name": "id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "block_id": {
+          "name": "block_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "name": {
+          "name": "name",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "is_system": {
+          "name": "is_system",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false,
+          "default": false
+        },
+        "suggested_classification": {
+          "name": "suggested_classification",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "archived": {
+          "name": "archived",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false,
+          "default": false
+        },
+        "is_passive_income": {
+          "name": "is_passive_income",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false,
+          "default": false
+        }
+      },
+      "indexes": {
+        "categories_user_block_idx": {
+          "name": "categories_user_block_idx",
+          "columns": [
+            "user_id",
+            "block_id"
+          ],
+          "isUnique": false
+        },
+        "categories_user_archived_idx": {
+          "name": "categories_user_archived_idx",
+          "columns": [
+            "user_id",
+            "archived"
+          ],
+          "isUnique": false
+        }
+      },
+      "foreignKeys": {
+        "categories_user_id_block_id_statement_blocks_user_id_id_fk": {
+          "name": "categories_user_id_block_id_statement_blocks_user_id_id_fk",
+          "tableFrom": "categories",
+          "tableTo": "statement_blocks",
+          "columnsFrom": [
+            "user_id",
+            "block_id"
+          ],
+          "columnsTo": [
+            "user_id",
+            "id"
+          ],
+          "onDelete": "restrict",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {
+        "categories_user_id_id_pk": {
+          "columns": [
+            "user_id",
+            "id"
+          ],
+          "name": "categories_user_id_id_pk"
+        }
+      },
+      "uniqueConstraints": {},
+      "checkConstraints": {}
+    },
+    "discretionary_expenses": {
+      "name": "discretionary_expenses",
+      "columns": {
+        "user_id": {
+          "name": "user_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "entry_id": {
+          "name": "entry_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "label": {
+          "name": "label",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "discretionary_expenses_user_id_entry_id_entries_user_id_id_fk": {
+          "name": "discretionary_expenses_user_id_entry_id_entries_user_id_id_fk",
+          "tableFrom": "discretionary_expenses",
+          "tableTo": "entries",
+          "columnsFrom": [
+            "user_id",
+            "entry_id"
+          ],
+          "columnsTo": [
+            "user_id",
+            "id"
+          ],
+          "onDelete": "restrict",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {
+        "discretionary_expenses_user_id_entry_id_pk": {
+          "columns": [
+            "user_id",
+            "entry_id"
+          ],
+          "name": "discretionary_expenses_user_id_entry_id_pk"
+        }
+      },
+      "uniqueConstraints": {},
+      "checkConstraints": {}
+    },
+    "discretionary_spending_config": {
+      "name": "discretionary_spending_config",
+      "columns": {
+        "user_id": {
+          "name": "user_id",
+          "type": "text",
+          "primaryKey": true,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "monthly_amount": {
+          "name": "monthly_amount",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "source_account_id": {
+          "name": "source_account_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "entity": {
+          "name": "entity",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "discretionary_spending_config_user_id_source_account_id_bank_accounts_user_id_id_fk": {
+          "name": "discretionary_spending_config_user_id_source_account_id_bank_accounts_user_id_id_fk",
+          "tableFrom": "discretionary_spending_config",
+          "tableTo": "bank_accounts",
+          "columnsFrom": [
+            "user_id",
+            "source_account_id"
+          ],
+          "columnsTo": [
+            "user_id",
+            "id"
+          ],
+          "onDelete": "restrict",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {
+        "discretionary_config_amount_non_negative": {
+          "name": "discretionary_config_amount_non_negative",
+          "value": "\"discretionary_spending_config\".\"monthly_amount\" >= 0"
+        }
+      }
+    },
+    "entries": {
+      "name": "entries",
+      "columns": {
+        "user_id": {
+          "name": "user_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "id": {
+          "name": "id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "kind": {
+          "name": "kind",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "amount": {
+          "name": "amount",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "date": {
+          "name": "date",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "status": {
+          "name": "status",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "recurrence_id": {
+          "name": "recurrence_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "entity": {
+          "name": "entity",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "category_id": {
+          "name": "category_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "classification": {
+          "name": "classification",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "bank_account_id": {
+          "name": "bank_account_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "source_account_id": {
+          "name": "source_account_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "destination_account_id": {
+          "name": "destination_account_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "direction": {
+          "name": "direction",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "label": {
+          "name": "label",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        }
+      },
+      "indexes": {
+        "entries_user_date_idx": {
+          "name": "entries_user_date_idx",
+          "columns": [
+            "user_id",
+            "date"
+          ],
+          "isUnique": false
+        },
+        "entries_user_status_date_idx": {
+          "name": "entries_user_status_date_idx",
+          "columns": [
+            "user_id",
+            "status",
+            "date"
+          ],
+          "isUnique": false
+        },
+        "entries_user_category_idx": {
+          "name": "entries_user_category_idx",
+          "columns": [
+            "user_id",
+            "category_id"
+          ],
+          "isUnique": false
+        },
+        "entries_user_account_idx": {
+          "name": "entries_user_account_idx",
+          "columns": [
+            "user_id",
+            "bank_account_id"
+          ],
+          "isUnique": false
+        },
+        "entries_user_recurrence_idx": {
+          "name": "entries_user_recurrence_idx",
+          "columns": [
+            "user_id",
+            "recurrence_id"
+          ],
+          "isUnique": false
+        }
+      },
+      "foreignKeys": {
+        "entries_user_id_users_id_fk": {
+          "name": "entries_user_id_users_id_fk",
+          "tableFrom": "entries",
+          "tableTo": "users",
+          "columnsFrom": [
+            "user_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "restrict",
+          "onUpdate": "no action"
+        },
+        "entries_user_id_category_id_categories_user_id_id_fk": {
+          "name": "entries_user_id_category_id_categories_user_id_id_fk",
+          "tableFrom": "entries",
+          "tableTo": "categories",
+          "columnsFrom": [
+            "user_id",
+            "category_id"
+          ],
+          "columnsTo": [
+            "user_id",
+            "id"
+          ],
+          "onDelete": "restrict",
+          "onUpdate": "no action"
+        },
+        "entries_user_id_bank_account_id_bank_accounts_user_id_id_fk": {
+          "name": "entries_user_id_bank_account_id_bank_accounts_user_id_id_fk",
+          "tableFrom": "entries",
+          "tableTo": "bank_accounts",
+          "columnsFrom": [
+            "user_id",
+            "bank_account_id"
+          ],
+          "columnsTo": [
+            "user_id",
+            "id"
+          ],
+          "onDelete": "restrict",
+          "onUpdate": "no action"
+        },
+        "entries_user_id_source_account_id_bank_accounts_user_id_id_fk": {
+          "name": "entries_user_id_source_account_id_bank_accounts_user_id_id_fk",
+          "tableFrom": "entries",
+          "tableTo": "bank_accounts",
+          "columnsFrom": [
+            "user_id",
+            "source_account_id"
+          ],
+          "columnsTo": [
+            "user_id",
+            "id"
+          ],
+          "onDelete": "restrict",
+          "onUpdate": "no action"
+        },
+        "entries_user_id_destination_account_id_bank_accounts_user_id_id_fk": {
+          "name": "entries_user_id_destination_account_id_bank_accounts_user_id_id_fk",
+          "tableFrom": "entries",
+          "tableTo": "bank_accounts",
+          "columnsFrom": [
+            "user_id",
+            "destination_account_id"
+          ],
+          "columnsTo": [
+            "user_id",
+            "id"
+          ],
+          "onDelete": "restrict",
+          "onUpdate": "no action"
+        },
+        "entries_user_id_recurrence_id_recurrences_user_id_id_fk": {
+          "name": "entries_user_id_recurrence_id_recurrences_user_id_id_fk",
+          "tableFrom": "entries",
+          "tableTo": "recurrences",
+          "columnsFrom": [
+            "user_id",
+            "recurrence_id"
+          ],
+          "columnsTo": [
+            "user_id",
+            "id"
+          ],
+          "onDelete": "restrict",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {
+        "entries_user_id_id_pk": {
+          "columns": [
+            "user_id",
+            "id"
+          ],
+          "name": "entries_user_id_id_pk"
+        }
+      },
+      "uniqueConstraints": {},
+      "checkConstraints": {
+        "entries_expense_revenue_shape": {
+          "name": "entries_expense_revenue_shape",
+          "value": "\"entries\".\"kind\" NOT IN ('Expense', 'Revenue') OR (\n            \"entries\".\"entity\" IS NOT NULL AND \"entries\".\"category_id\" IS NOT NULL\n            AND \"entries\".\"classification\" IS NOT NULL AND \"entries\".\"bank_account_id\" IS NOT NULL\n            AND \"entries\".\"source_account_id\" IS NULL AND \"entries\".\"destination_account_id\" IS NULL\n            AND \"entries\".\"direction\" IS NULL AND \"entries\".\"label\" IS NULL)"
+        },
+        "entries_intercompany_shape": {
+          "name": "entries_intercompany_shape",
+          "value": "\"entries\".\"kind\" NOT IN ('ProLabore', 'ProfitDistribution') OR (\n            \"entries\".\"source_account_id\" IS NOT NULL AND \"entries\".\"destination_account_id\" IS NOT NULL\n            AND \"entries\".\"entity\" IS NULL AND \"entries\".\"category_id\" IS NULL\n            AND \"entries\".\"classification\" IS NULL AND \"entries\".\"bank_account_id\" IS NULL\n            AND \"entries\".\"direction\" IS NULL AND \"entries\".\"label\" IS NULL)"
+        },
+        "entries_income_tax_shape": {
+          "name": "entries_income_tax_shape",
+          "value": "\"entries\".\"kind\" <> 'IncomeTax' OR (\n            \"entries\".\"direction\" IS NOT NULL AND \"entries\".\"entity\" IS NOT NULL\n            AND \"entries\".\"bank_account_id\" IS NOT NULL\n            AND \"entries\".\"category_id\" IS NULL AND \"entries\".\"classification\" IS NULL\n            AND \"entries\".\"source_account_id\" IS NULL AND \"entries\".\"destination_account_id\" IS NULL)"
+        },
+        "entries_date_format": {
+          "name": "entries_date_format",
+          "value": "\"entries\".\"date\" GLOB '[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]'"
+        }
+      }
+    },
+    "installments": {
+      "name": "installments",
+      "columns": {
+        "user_id": {
+          "name": "user_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "id": {
+          "name": "id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "liability_id": {
+          "name": "liability_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "number": {
+          "name": "number",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "planned_date": {
+          "name": "planned_date",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "planned_amount": {
+          "name": "planned_amount",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "status": {
+          "name": "status",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "paid_amount": {
+          "name": "paid_amount",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "paid_date": {
+          "name": "paid_date",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "discarded": {
+          "name": "discarded",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false,
+          "default": false
+        }
+      },
+      "indexes": {
+        "installments_user_liability_idx": {
+          "name": "installments_user_liability_idx",
+          "columns": [
+            "user_id",
+            "liability_id",
+            "number"
+          ],
+          "isUnique": false
+        },
+        "installments_user_status_date_idx": {
+          "name": "installments_user_status_date_idx",
+          "columns": [
+            "user_id",
+            "status",
+            "planned_date"
+          ],
+          "isUnique": false
+        }
+      },
+      "foreignKeys": {
+        "installments_user_id_liability_id_liabilities_user_id_id_fk": {
+          "name": "installments_user_id_liability_id_liabilities_user_id_id_fk",
+          "tableFrom": "installments",
+          "tableTo": "liabilities",
+          "columnsFrom": [
+            "user_id",
+            "liability_id"
+          ],
+          "columnsTo": [
+            "user_id",
+            "id"
+          ],
+          "onDelete": "restrict",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {
+        "installments_user_id_id_pk": {
+          "columns": [
+            "user_id",
+            "id"
+          ],
+          "name": "installments_user_id_id_pk"
+        }
+      },
+      "uniqueConstraints": {},
+      "checkConstraints": {
+        "installments_paid_amount_shape": {
+          "name": "installments_paid_amount_shape",
+          "value": "(\"installments\".\"status\" = 'Paid') OR (\"installments\".\"paid_amount\" IS NULL)"
+        }
+      }
+    },
+    "investments": {
+      "name": "investments",
+      "columns": {
+        "user_id": {
+          "name": "user_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "id": {
+          "name": "id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "name": {
+          "name": "name",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "entity": {
+          "name": "entity",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "accumulated_value": {
+          "name": "accumulated_value",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        }
+      },
+      "indexes": {
+        "investments_user_entity_idx": {
+          "name": "investments_user_entity_idx",
+          "columns": [
+            "user_id",
+            "entity"
+          ],
+          "isUnique": false
+        }
+      },
+      "foreignKeys": {
+        "investments_user_id_users_id_fk": {
+          "name": "investments_user_id_users_id_fk",
+          "tableFrom": "investments",
+          "tableTo": "users",
+          "columnsFrom": [
+            "user_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "restrict",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {
+        "investments_user_id_id_pk": {
+          "columns": [
+            "user_id",
+            "id"
+          ],
+          "name": "investments_user_id_id_pk"
+        }
+      },
+      "uniqueConstraints": {},
+      "checkConstraints": {}
+    },
+    "leftover_directions": {
+      "name": "leftover_directions",
+      "columns": {
+        "user_id": {
+          "name": "user_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "id": {
+          "name": "id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "month": {
+          "name": "month",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "amount": {
+          "name": "amount",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "destination_kind": {
+          "name": "destination_kind",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "destination_bank_account_id": {
+          "name": "destination_bank_account_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "destination_investment_id": {
+          "name": "destination_investment_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "destination_liability_id": {
+          "name": "destination_liability_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {
+        "leftover_directions_user_id_id_pk": {
+          "columns": [
+            "user_id",
+            "id"
+          ],
+          "name": "leftover_directions_user_id_id_pk"
+        }
+      },
+      "uniqueConstraints": {},
+      "checkConstraints": {
+        "leftover_directions_amount_positive": {
+          "name": "leftover_directions_amount_positive",
+          "value": "\"leftover_directions\".\"amount\" > 0"
+        }
+      }
+    },
+    "liabilities": {
+      "name": "liabilities",
+      "columns": {
+        "user_id": {
+          "name": "user_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "id": {
+          "name": "id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "name": {
+          "name": "name",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "creditor": {
+          "name": "creditor",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "entity": {
+          "name": "entity",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "classification": {
+          "name": "classification",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "original_amount": {
+          "name": "original_amount",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "installment_amount": {
+          "name": "installment_amount",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "installment_count": {
+          "name": "installment_count",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "installments_already_paid": {
+          "name": "installments_already_paid",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false,
+          "default": 0
+        },
+        "monthly_interest_rate": {
+          "name": "monthly_interest_rate",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "start_date": {
+          "name": "start_date",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        }
+      },
+      "indexes": {
+        "liabilities_user_entity_idx": {
+          "name": "liabilities_user_entity_idx",
+          "columns": [
+            "user_id",
+            "entity"
+          ],
+          "isUnique": false
+        }
+      },
+      "foreignKeys": {
+        "liabilities_user_id_users_id_fk": {
+          "name": "liabilities_user_id_users_id_fk",
+          "tableFrom": "liabilities",
+          "tableTo": "users",
+          "columnsFrom": [
+            "user_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "restrict",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {
+        "liabilities_user_id_id_pk": {
+          "columns": [
+            "user_id",
+            "id"
+          ],
+          "name": "liabilities_user_id_id_pk"
+        }
+      },
+      "uniqueConstraints": {},
+      "checkConstraints": {
+        "liabilities_count_positive": {
+          "name": "liabilities_count_positive",
+          "value": "\"liabilities\".\"installment_count\" > 0"
+        },
+        "liabilities_already_paid_in_range": {
+          "name": "liabilities_already_paid_in_range",
+          "value": "\"liabilities\".\"installments_already_paid\" >= 0 AND \"liabilities\".\"installments_already_paid\" <= \"liabilities\".\"installment_count\""
+        },
+        "liabilities_rate_non_negative": {
+          "name": "liabilities_rate_non_negative",
+          "value": "\"liabilities\".\"monthly_interest_rate\" >= 0"
+        }
+      }
+    },
+    "occurrences": {
+      "name": "occurrences",
+      "columns": {
+        "user_id": {
+          "name": "user_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "id": {
+          "name": "id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "recurrence_id": {
+          "name": "recurrence_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "month": {
+          "name": "month",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "planned_date": {
+          "name": "planned_date",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "planned_amount": {
+          "name": "planned_amount",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "status": {
+          "name": "status",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "discarded": {
+          "name": "discarded",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false,
+          "default": false
+        },
+        "entry_id": {
+          "name": "entry_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        }
+      },
+      "indexes": {
+        "occurrences_user_month_idx": {
+          "name": "occurrences_user_month_idx",
+          "columns": [
+            "user_id",
+            "month"
+          ],
+          "isUnique": false
+        },
+        "occurrences_user_recurrence_idx": {
+          "name": "occurrences_user_recurrence_idx",
+          "columns": [
+            "user_id",
+            "recurrence_id",
+            "month"
+          ],
+          "isUnique": false
+        }
+      },
+      "foreignKeys": {
+        "occurrences_user_id_recurrence_id_recurrences_user_id_id_fk": {
+          "name": "occurrences_user_id_recurrence_id_recurrences_user_id_id_fk",
+          "tableFrom": "occurrences",
+          "tableTo": "recurrences",
+          "columnsFrom": [
+            "user_id",
+            "recurrence_id"
+          ],
+          "columnsTo": [
+            "user_id",
+            "id"
+          ],
+          "onDelete": "restrict",
+          "onUpdate": "no action"
+        },
+        "occurrences_user_id_entry_id_entries_user_id_id_fk": {
+          "name": "occurrences_user_id_entry_id_entries_user_id_id_fk",
+          "tableFrom": "occurrences",
+          "tableTo": "entries",
+          "columnsFrom": [
+            "user_id",
+            "entry_id"
+          ],
+          "columnsTo": [
+            "user_id",
+            "id"
+          ],
+          "onDelete": "restrict",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {
+        "occurrences_user_id_id_pk": {
+          "columns": [
+            "user_id",
+            "id"
+          ],
+          "name": "occurrences_user_id_id_pk"
+        }
+      },
+      "uniqueConstraints": {},
+      "checkConstraints": {
+        "occurrences_month_format": {
+          "name": "occurrences_month_format",
+          "value": "\"occurrences\".\"month\" GLOB '[0-9][0-9][0-9][0-9]-[0-9][0-9]'"
+        },
+        "occurrences_paid_has_entry": {
+          "name": "occurrences_paid_has_entry",
+          "value": "(\"occurrences\".\"status\" = 'Paid') OR (\"occurrences\".\"entry_id\" IS NULL)"
+        }
+      }
+    },
+    "onboarding_progress": {
+      "name": "onboarding_progress",
+      "columns": {
+        "user_id": {
+          "name": "user_id",
+          "type": "text",
+          "primaryKey": true,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "status": {
+          "name": "status",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "last_step": {
+          "name": "last_step",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "onboarding_progress_user_id_users_id_fk": {
+          "name": "onboarding_progress_user_id_users_id_fk",
+          "tableFrom": "onboarding_progress",
+          "tableTo": "users",
+          "columnsFrom": [
+            "user_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "restrict",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {
+        "onboarding_last_step_in_range": {
+          "name": "onboarding_last_step_in_range",
+          "value": "\"onboarding_progress\".\"last_step\" IS NULL OR (\"onboarding_progress\".\"last_step\" >= 1 AND \"onboarding_progress\".\"last_step\" <= 5)"
+        }
+      }
+    },
+    "payment_discrepancies": {
+      "name": "payment_discrepancies",
+      "columns": {
+        "user_id": {
+          "name": "user_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "id": {
+          "name": "id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "origin_kind": {
+          "name": "origin_kind",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "origin_entry_id": {
+          "name": "origin_entry_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "shortfall": {
+          "name": "shortfall",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "origin_date": {
+          "name": "origin_date",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "status": {
+          "name": "status",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        }
+      },
+      "indexes": {
+        "payment_discrepancies_user_status_idx": {
+          "name": "payment_discrepancies_user_status_idx",
+          "columns": [
+            "user_id",
+            "status",
+            "origin_date"
+          ],
+          "isUnique": false
+        }
+      },
+      "foreignKeys": {
+        "payment_discrepancies_user_id_origin_entry_id_entries_user_id_id_fk": {
+          "name": "payment_discrepancies_user_id_origin_entry_id_entries_user_id_id_fk",
+          "tableFrom": "payment_discrepancies",
+          "tableTo": "entries",
+          "columnsFrom": [
+            "user_id",
+            "origin_entry_id"
+          ],
+          "columnsTo": [
+            "user_id",
+            "id"
+          ],
+          "onDelete": "restrict",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {
+        "payment_discrepancies_user_id_id_pk": {
+          "columns": [
+            "user_id",
+            "id"
+          ],
+          "name": "payment_discrepancies_user_id_id_pk"
+        }
+      },
+      "uniqueConstraints": {},
+      "checkConstraints": {
+        "payment_discrepancies_shortfall_positive": {
+          "name": "payment_discrepancies_shortfall_positive",
+          "value": "\"payment_discrepancies\".\"shortfall\" > 0"
+        }
+      }
+    },
+    "pending_allocations": {
+      "name": "pending_allocations",
+      "columns": {
+        "user_id": {
+          "name": "user_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "id": {
+          "name": "id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "origin_kind": {
+          "name": "origin_kind",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "origin_tangible_asset_id": {
+          "name": "origin_tangible_asset_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "amount": {
+          "name": "amount",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "origin_date": {
+          "name": "origin_date",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "status": {
+          "name": "status",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        }
+      },
+      "indexes": {
+        "pending_allocations_user_status_idx": {
+          "name": "pending_allocations_user_status_idx",
+          "columns": [
+            "user_id",
+            "status",
+            "origin_date"
+          ],
+          "isUnique": false
+        }
+      },
+      "foreignKeys": {
+        "pending_allocations_user_id_origin_tangible_asset_id_tangible_assets_user_id_id_fk": {
+          "name": "pending_allocations_user_id_origin_tangible_asset_id_tangible_assets_user_id_id_fk",
+          "tableFrom": "pending_allocations",
+          "tableTo": "tangible_assets",
+          "columnsFrom": [
+            "user_id",
+            "origin_tangible_asset_id"
+          ],
+          "columnsTo": [
+            "user_id",
+            "id"
+          ],
+          "onDelete": "restrict",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {
+        "pending_allocations_user_id_id_pk": {
+          "columns": [
+            "user_id",
+            "id"
+          ],
+          "name": "pending_allocations_user_id_id_pk"
+        }
+      },
+      "uniqueConstraints": {},
+      "checkConstraints": {}
+    },
+    "profit_allocations": {
+      "name": "profit_allocations",
+      "columns": {
+        "user_id": {
+          "name": "user_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "month": {
+          "name": "month",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "net_profit": {
+          "name": "net_profit",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "profit_allocations_user_id_users_id_fk": {
+          "name": "profit_allocations_user_id_users_id_fk",
+          "tableFrom": "profit_allocations",
+          "tableTo": "users",
+          "columnsFrom": [
+            "user_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "restrict",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {
+        "profit_allocations_user_id_month_pk": {
+          "columns": [
+            "user_id",
+            "month"
+          ],
+          "name": "profit_allocations_user_id_month_pk"
+        }
+      },
+      "uniqueConstraints": {},
+      "checkConstraints": {
+        "profit_allocations_month_format": {
+          "name": "profit_allocations_month_format",
+          "value": "\"profit_allocations\".\"month\" GLOB '[0-9][0-9][0-9][0-9]-[0-9][0-9]'"
+        }
+      }
+    },
+    "rate_adjustments": {
+      "name": "rate_adjustments",
+      "columns": {
+        "user_id": {
+          "name": "user_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "id": {
+          "name": "id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "liability_id": {
+          "name": "liability_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "new_rate": {
+          "name": "new_rate",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "effective_from": {
+          "name": "effective_from",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        }
+      },
+      "indexes": {
+        "rate_adjustments_user_liability_idx": {
+          "name": "rate_adjustments_user_liability_idx",
+          "columns": [
+            "user_id",
+            "liability_id",
+            "effective_from"
+          ],
+          "isUnique": false
+        }
+      },
+      "foreignKeys": {
+        "rate_adjustments_user_id_liability_id_liabilities_user_id_id_fk": {
+          "name": "rate_adjustments_user_id_liability_id_liabilities_user_id_id_fk",
+          "tableFrom": "rate_adjustments",
+          "tableTo": "liabilities",
+          "columnsFrom": [
+            "user_id",
+            "liability_id"
+          ],
+          "columnsTo": [
+            "user_id",
+            "id"
+          ],
+          "onDelete": "restrict",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {
+        "rate_adjustments_user_id_id_pk": {
+          "columns": [
+            "user_id",
+            "id"
+          ],
+          "name": "rate_adjustments_user_id_id_pk"
+        }
+      },
+      "uniqueConstraints": {},
+      "checkConstraints": {
+        "rate_adjustments_rate_non_negative": {
+          "name": "rate_adjustments_rate_non_negative",
+          "value": "\"rate_adjustments\".\"new_rate\" >= 0"
+        }
+      }
+    },
+    "recurrences": {
+      "name": "recurrences",
+      "columns": {
+        "user_id": {
+          "name": "user_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "id": {
+          "name": "id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "amount_kind": {
+          "name": "amount_kind",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "start_date": {
+          "name": "start_date",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "ends_on": {
+          "name": "ends_on",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "closed_on": {
+          "name": "closed_on",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "template_kind": {
+          "name": "template_kind",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "template_amount": {
+          "name": "template_amount",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "template_entity": {
+          "name": "template_entity",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "template_category_id": {
+          "name": "template_category_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "template_classification": {
+          "name": "template_classification",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "template_bank_account_id": {
+          "name": "template_bank_account_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "template_source_account_id": {
+          "name": "template_source_account_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "template_destination_account_id": {
+          "name": "template_destination_account_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "template_direction": {
+          "name": "template_direction",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "template_label": {
+          "name": "template_label",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        }
+      },
+      "indexes": {
+        "recurrences_user_open_idx": {
+          "name": "recurrences_user_open_idx",
+          "columns": [
+            "user_id",
+            "closed_on"
+          ],
+          "isUnique": false
+        }
+      },
+      "foreignKeys": {
+        "recurrences_user_id_users_id_fk": {
+          "name": "recurrences_user_id_users_id_fk",
+          "tableFrom": "recurrences",
+          "tableTo": "users",
+          "columnsFrom": [
+            "user_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "restrict",
+          "onUpdate": "no action"
+        },
+        "recurrences_user_id_template_category_id_categories_user_id_id_fk": {
+          "name": "recurrences_user_id_template_category_id_categories_user_id_id_fk",
+          "tableFrom": "recurrences",
+          "tableTo": "categories",
+          "columnsFrom": [
+            "user_id",
+            "template_category_id"
+          ],
+          "columnsTo": [
+            "user_id",
+            "id"
+          ],
+          "onDelete": "restrict",
+          "onUpdate": "no action"
+        },
+        "recurrences_user_id_template_bank_account_id_bank_accounts_user_id_id_fk": {
+          "name": "recurrences_user_id_template_bank_account_id_bank_accounts_user_id_id_fk",
+          "tableFrom": "recurrences",
+          "tableTo": "bank_accounts",
+          "columnsFrom": [
+            "user_id",
+            "template_bank_account_id"
+          ],
+          "columnsTo": [
+            "user_id",
+            "id"
+          ],
+          "onDelete": "restrict",
+          "onUpdate": "no action"
+        },
+        "recurrences_user_id_template_source_account_id_bank_accounts_user_id_id_fk": {
+          "name": "recurrences_user_id_template_source_account_id_bank_accounts_user_id_id_fk",
+          "tableFrom": "recurrences",
+          "tableTo": "bank_accounts",
+          "columnsFrom": [
+            "user_id",
+            "template_source_account_id"
+          ],
+          "columnsTo": [
+            "user_id",
+            "id"
+          ],
+          "onDelete": "restrict",
+          "onUpdate": "no action"
+        },
+        "recurrences_user_id_template_destination_account_id_bank_accounts_user_id_id_fk": {
+          "name": "recurrences_user_id_template_destination_account_id_bank_accounts_user_id_id_fk",
+          "tableFrom": "recurrences",
+          "tableTo": "bank_accounts",
+          "columnsFrom": [
+            "user_id",
+            "template_destination_account_id"
+          ],
+          "columnsTo": [
+            "user_id",
+            "id"
+          ],
+          "onDelete": "restrict",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {
+        "recurrences_user_id_id_pk": {
+          "columns": [
+            "user_id",
+            "id"
+          ],
+          "name": "recurrences_user_id_id_pk"
+        }
+      },
+      "uniqueConstraints": {},
+      "checkConstraints": {
+        "recurrences_template_categorized_shape": {
+          "name": "recurrences_template_categorized_shape",
+          "value": "\"recurrences\".\"template_kind\" NOT IN ('Expense', 'Revenue') OR (\n            \"recurrences\".\"template_entity\" IS NOT NULL AND \"recurrences\".\"template_category_id\" IS NOT NULL\n            AND \"recurrences\".\"template_classification\" IS NOT NULL AND \"recurrences\".\"template_bank_account_id\" IS NOT NULL\n            AND \"recurrences\".\"template_source_account_id\" IS NULL AND \"recurrences\".\"template_destination_account_id\" IS NULL\n            AND \"recurrences\".\"template_direction\" IS NULL AND \"recurrences\".\"template_label\" IS NULL)"
+        },
+        "recurrences_template_intercompany_shape": {
+          "name": "recurrences_template_intercompany_shape",
+          "value": "\"recurrences\".\"template_kind\" NOT IN ('ProLabore', 'ProfitDistribution') OR (\n            \"recurrences\".\"template_source_account_id\" IS NOT NULL AND \"recurrences\".\"template_destination_account_id\" IS NOT NULL\n            AND \"recurrences\".\"template_entity\" IS NULL AND \"recurrences\".\"template_category_id\" IS NULL\n            AND \"recurrences\".\"template_classification\" IS NULL AND \"recurrences\".\"template_bank_account_id\" IS NULL\n            AND \"recurrences\".\"template_direction\" IS NULL AND \"recurrences\".\"template_label\" IS NULL)"
+        },
+        "recurrences_template_income_tax_shape": {
+          "name": "recurrences_template_income_tax_shape",
+          "value": "\"recurrences\".\"template_kind\" <> 'IncomeTax' OR (\n            \"recurrences\".\"template_direction\" IS NOT NULL AND \"recurrences\".\"template_entity\" IS NOT NULL\n            AND \"recurrences\".\"template_bank_account_id\" IS NOT NULL\n            AND \"recurrences\".\"template_category_id\" IS NULL AND \"recurrences\".\"template_classification\" IS NULL\n            AND \"recurrences\".\"template_source_account_id\" IS NULL AND \"recurrences\".\"template_destination_account_id\" IS NULL)"
+        }
+      }
+    },
+    "statement_blocks": {
+      "name": "statement_blocks",
+      "columns": {
+        "user_id": {
+          "name": "user_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "id": {
+          "name": "id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "name": {
+          "name": "name",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "sort_order": {
+          "name": "sort_order",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "effect": {
+          "name": "effect",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "below_the_line": {
+          "name": "below_the_line",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "accepts_user_categories": {
+          "name": "accepts_user_categories",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "statement_label": {
+          "name": "statement_label",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        }
+      },
+      "indexes": {
+        "statement_blocks_user_order_idx": {
+          "name": "statement_blocks_user_order_idx",
+          "columns": [
+            "user_id",
+            "sort_order"
+          ],
+          "isUnique": false
+        }
+      },
+      "foreignKeys": {
+        "statement_blocks_user_id_users_id_fk": {
+          "name": "statement_blocks_user_id_users_id_fk",
+          "tableFrom": "statement_blocks",
+          "tableTo": "users",
+          "columnsFrom": [
+            "user_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "restrict",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {
+        "statement_blocks_user_id_id_pk": {
+          "columns": [
+            "user_id",
+            "id"
+          ],
+          "name": "statement_blocks_user_id_id_pk"
+        }
+      },
+      "uniqueConstraints": {},
+      "checkConstraints": {}
+    },
+    "tangible_assets": {
+      "name": "tangible_assets",
+      "columns": {
+        "user_id": {
+          "name": "user_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "id": {
+          "name": "id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "name": {
+          "name": "name",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "entity": {
+          "name": "entity",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "recorded_value": {
+          "name": "recorded_value",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "sold_on": {
+          "name": "sold_on",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        }
+      },
+      "indexes": {
+        "tangible_assets_user_sold_idx": {
+          "name": "tangible_assets_user_sold_idx",
+          "columns": [
+            "user_id",
+            "sold_on"
+          ],
+          "isUnique": false
+        }
+      },
+      "foreignKeys": {
+        "tangible_assets_user_id_users_id_fk": {
+          "name": "tangible_assets_user_id_users_id_fk",
+          "tableFrom": "tangible_assets",
+          "tableTo": "users",
+          "columnsFrom": [
+            "user_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "restrict",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {
+        "tangible_assets_user_id_id_pk": {
+          "columns": [
+            "user_id",
+            "id"
+          ],
+          "name": "tangible_assets_user_id_id_pk"
+        }
+      },
+      "uniqueConstraints": {},
+      "checkConstraints": {}
+    },
+    "trace_events": {
+      "name": "trace_events",
+      "columns": {
+        "user_id": {
+          "name": "user_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "id": {
+          "name": "id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "date": {
+          "name": "date",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "kind": {
+          "name": "kind",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "origin_kind": {
+          "name": "origin_kind",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "origin_liability_id": {
+          "name": "origin_liability_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "origin_recurrence_id": {
+          "name": "origin_recurrence_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "origin_entry_id": {
+          "name": "origin_entry_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "description": {
+          "name": "description",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        }
+      },
+      "indexes": {
+        "trace_events_user_date_idx": {
+          "name": "trace_events_user_date_idx",
+          "columns": [
+            "user_id",
+            "date"
+          ],
+          "isUnique": false
+        },
+        "trace_events_user_liability_idx": {
+          "name": "trace_events_user_liability_idx",
+          "columns": [
+            "user_id",
+            "origin_liability_id",
+            "date"
+          ],
+          "isUnique": false
+        }
+      },
+      "foreignKeys": {
+        "trace_events_user_id_origin_liability_id_liabilities_user_id_id_fk": {
+          "name": "trace_events_user_id_origin_liability_id_liabilities_user_id_id_fk",
+          "tableFrom": "trace_events",
+          "tableTo": "liabilities",
+          "columnsFrom": [
+            "user_id",
+            "origin_liability_id"
+          ],
+          "columnsTo": [
+            "user_id",
+            "id"
+          ],
+          "onDelete": "restrict",
+          "onUpdate": "no action"
+        },
+        "trace_events_user_id_origin_recurrence_id_recurrences_user_id_id_fk": {
+          "name": "trace_events_user_id_origin_recurrence_id_recurrences_user_id_id_fk",
+          "tableFrom": "trace_events",
+          "tableTo": "recurrences",
+          "columnsFrom": [
+            "user_id",
+            "origin_recurrence_id"
+          ],
+          "columnsTo": [
+            "user_id",
+            "id"
+          ],
+          "onDelete": "restrict",
+          "onUpdate": "no action"
+        },
+        "trace_events_user_id_origin_entry_id_entries_user_id_id_fk": {
+          "name": "trace_events_user_id_origin_entry_id_entries_user_id_id_fk",
+          "tableFrom": "trace_events",
+          "tableTo": "entries",
+          "columnsFrom": [
+            "user_id",
+            "origin_entry_id"
+          ],
+          "columnsTo": [
+            "user_id",
+            "id"
+          ],
+          "onDelete": "restrict",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {
+        "trace_events_user_id_id_pk": {
+          "columns": [
+            "user_id",
+            "id"
+          ],
+          "name": "trace_events_user_id_id_pk"
+        }
+      },
+      "uniqueConstraints": {},
+      "checkConstraints": {
+        "trace_events_origin_shape": {
+          "name": "trace_events_origin_shape",
+          "value": "(\"trace_events\".\"origin_kind\" = 'Liability' AND \"trace_events\".\"origin_liability_id\" IS NOT NULL\n             AND \"trace_events\".\"origin_recurrence_id\" IS NULL AND \"trace_events\".\"origin_entry_id\" IS NULL)\n          OR (\"trace_events\".\"origin_kind\" = 'Recurrence' AND \"trace_events\".\"origin_recurrence_id\" IS NOT NULL\n             AND \"trace_events\".\"origin_liability_id\" IS NULL AND \"trace_events\".\"origin_entry_id\" IS NULL)\n          OR (\"trace_events\".\"origin_kind\" = 'Entry' AND \"trace_events\".\"origin_entry_id\" IS NOT NULL\n             AND \"trace_events\".\"origin_liability_id\" IS NULL AND \"trace_events\".\"origin_recurrence_id\" IS NULL)"
+        }
+      }
+    },
+    "users": {
+      "name": "users",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "text",
+          "primaryKey": true,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {}
+    }
+  },
+  "views": {},
+  "enums": {},
+  "_meta": {
+    "schemas": {},
+    "tables": {},
+    "columns": {}
+  },
+  "internal": {
+    "indexes": {}
+  }
+}

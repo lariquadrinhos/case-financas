@@ -1,0 +1,116 @@
+  <frame id="314:194" name="Vazio — Onboarding 5 (Passivos)" x="-6198" y="-4604" width="1440" height="1037">
+    <frame id="314:195" name="Frame" x="330" y="80" width="780" height="697">
+      <frame id="314:196" name="Frame" x="40" y="36" width="272" height="4">
+        <rounded-rectangle id="314:197" name="Rectangle" x="0" y="0" width="48" height="4" />
+        <rounded-rectangle id="314:198" name="Rectangle" x="56" y="0" width="48" height="4" />
+        <rounded-rectangle id="314:199" name="Rectangle" x="112" y="0" width="48" height="4" />
+        <rounded-rectangle id="314:200" name="Rectangle" x="168" y="0" width="48" height="4" />
+        <rounded-rectangle id="314:201" name="Rectangle" x="224" y="0" width="48" height="4" />
+      </frame>
+      <text id="314:202" name="Passo 5 de 5: Passivos" x="40" y="60" width="131" height="15" />
+      <text id="314:203" name="Cadastre seus passivos" x="40" y="95" width="257" height="27" />
+      <text id="314:204" name="Dívidas e financiamentos. A classificação é sugerida automaticamente pelo nome." x="40" y="142" width="503" height="16" />
+      <text id="314:227" name="Adicionar passivo" x="40" y="178" width="132" height="18" />
+      <frame id="314:228" name="Frame" x="40" y="216" width="700" height="61">
+        <frame id="314:229" name="Frame" x="0" y="0" width="222.6666717529297" height="61">
+          <text id="314:230" name="Nome *" x="0" y="0" width="44" height="15" />
+          <frame id="314:231" name="Frame" x="0" y="21" width="222.6666717529297" height="40">
+            <text id="314:232" name="Ex: Financiamento apartamento" x="14" y="12" width="195" height="16" />
+          </frame>
+        </frame>
+        <frame id="314:233" name="Frame" x="238.6666717529297" y="0" width="222.66665649414062" height="61">
+          <text id="314:234" name="Credor / Instituição *" x="0" y="0" width="120" height="15" />
+          <frame id="314:235" name="Frame" x="0" y="21" width="222.66665649414062" height="40">
+            <text id="314:236" name="Ex: Caixa Econômica" x="14" y="12" width="128" height="16" />
+          </frame>
+        </frame>
+        <frame id="314:237" name="Frame" x="477.33331298828125" y="0" width="222.66665649414062" height="52">
+          <text id="314:238" name="Entidade" x="0" y="0" width="51" height="15" />
+          <frame id="314:239" name="Frame" x="0" y="21" width="222.66665649414062" height="31">
+            <frame id="314:240" name="Frame" x="0" y="0" width="108.33332824707031" height="31">
+              <text id="314:241" name="PF" x="46.666664123535156" y="8" width="15" height="15" />
+            </frame>
+            <frame id="314:242" name="Frame" x="114.33332824707031" y="0" width="108.33332824707031" height="31">
+              <text id="314:243" name="PJ" x="47.166664123535156" y="8" width="14" height="15" />
+            </frame>
+          </frame>
+        </frame>
+      </frame>
+      <frame id="314:244" name="Frame" x="40" y="297" width="700" height="61">
+        <frame id="314:245" name="Frame" x="0" y="0" width="222.6666717529297" height="61">
+          <text id="314:246" name="Valor original da dívida *" x="0" y="0" width="140" height="15" />
+          <frame id="314:247" name="Frame" x="0" y="21" width="222.6666717529297" height="40">
+            <text id="314:248" name="R$ 0,00" x="14" y="12" width="48" height="16" />
+          </frame>
+        </frame>
+        <frame id="314:249" name="Frame" x="238.6666717529297" y="0" width="222.66665649414062" height="61">
+          <text id="314:250" name="Valor da parcela *" x="0" y="0" width="102" height="15" />
+          <frame id="314:251" name="Frame" x="0" y="21" width="222.66665649414062" height="40">
+            <text id="314:252" name="R$ 0,00" x="14" y="12" width="48" height="16" />
+          </frame>
+        </frame>
+        <frame id="314:253" name="Frame" x="477.33331298828125" y="0" width="222.66665649414062" height="61">
+          <text id="314:254" name="Número de parcelas *" x="0" y="0" width="125" height="15" />
+          <frame id="314:255" name="Frame" x="0" y="21" width="222.66665649414062" height="40">
+            <text id="314:256" name="Ex: 360" x="14" y="12" width="47" height="16" />
+          </frame>
+        </frame>
+      </frame>
+      <frame id="314:257" name="Frame" x="40" y="378" width="700" height="63">
+        <frame id="314:258" name="Frame" x="0" y="0" width="222.6666717529297" height="61">
+          <text id="314:259" name="Parcelas já pagas *" x="0" y="0" width="110" height="15" />
+          <frame id="314:260" name="Frame" x="0" y="21" width="222.6666717529297" height="40">
+            <text id="314:261" name="Ex: 12" x="14" y="12" width="36" height="16" />
+          </frame>
+        </frame>
+        <frame id="314:262" name="Frame" x="238.6666717529297" y="0" width="222.66665649414062" height="61">
+          <text id="314:263" name="Taxa de juros (a.m.) *" x="0" y="0" width="123" height="15" />
+          <frame id="314:264" name="Frame" x="0" y="21" width="222.66665649414062" height="40">
+            <text id="314:265" name="Ex: 0,85%" x="14" y="12" width="60" height="16" />
+          </frame>
+        </frame>
+        <frame id="314:266" name="Frame" x="477.33331298828125" y="0" width="222.66665649414062" height="63">
+          <text id="314:267" name="Data de início *" x="0" y="0" width="88" height="15" />
+          <frame id="314:268" name="Frame" x="0" y="21" width="222.66665649414062" height="42">
+            <text id="314:269" name="dd/mm/aaaa" x="19" y="12" width="78" height="16" />
+            <frame id="314:270" name="Frame" x="185.66665649414062" y="12" width="18" height="18">
+              <rounded-rectangle id="314:271" name="Rectangle" x="2" y="2.5" width="14" height="13" />
+              <rounded-rectangle id="314:272" name="Rectangle" x="2" y="1" width="14" height="3.5" />
+            </frame>
+          </frame>
+        </frame>
+      </frame>
+      <frame id="314:273" name="Frame" x="40" y="461" width="700" height="52">
+        <frame id="314:274" name="Frame" x="0" y="0" width="700" height="52">
+          <text id="314:275" name="Classificação (sugerida)" x="0" y="0" width="139" height="15" />
+          <frame id="314:276" name="Frame" x="0" y="21" width="700" height="31">
+            <frame id="314:277" name="Frame" x="0" y="0" width="347" height="31">
+              <text id="314:278" name="Circulante" x="144" y="8" width="59" height="15" />
+            </frame>
+            <frame id="314:279" name="Frame" x="353" y="0" width="347" height="31">
+              <text id="314:280" name="Não circulante" x="132" y="8" width="83" height="15" />
+            </frame>
+          </frame>
+        </frame>
+      </frame>
+      <frame id="314:281" name="Frame" x="40" y="533" width="700" height="35">
+        <frame id="314:282" name="Frame" x="0" y="0" width="598" height="1" />
+        <frame id="314:283" name="Frame" x="598" y="0" width="102" height="35">
+          <text id="314:284" name="+ Adicionar" x="16" y="10" width="70" height="15" />
+        </frame>
+      </frame>
+      <frame id="314:285" name="Frame" x="40" y="588" width="700" height="40">
+        <frame id="314:286" name="Frame" x="0" y="0" width="73" height="40">
+          <text id="314:287" name="Voltar" x="18" y="12" width="37" height="16" />
+        </frame>
+        <frame id="314:288" name="Frame" x="85" y="0" width="296" height="1" />
+        <frame id="314:289" name="Frame" x="393" y="0" width="194" height="40">
+          <text id="314:290" name="Salvar e continuar depois" x="18" y="12" width="158" height="16" />
+        </frame>
+        <frame id="314:291" name="Frame" x="599" y="0" width="101" height="40">
+          <text id="314:292" name="Concluir" x="24" y="12" width="53" height="16" />
+        </frame>
+      </frame>
+      <text id="314:293" name="* Campo obrigatório" x="40" y="648" width="106" height="13" />
+    </frame>
+  </frame>

@@ -1,0 +1,89 @@
+  <frame id="29:133" name="Onboarding 4 — Investimentos" x="7526" y="-4761" width="1440" height="900">
+    <frame id="29:134" name="Frame" x="380" y="80" width="680" height="607">
+      <frame id="29:135" name="Frame" x="40" y="36" width="272" height="4">
+        <rounded-rectangle id="29:136" name="Rectangle" x="0" y="0" width="48" height="4" />
+        <rounded-rectangle id="29:137" name="Rectangle" x="56" y="0" width="48" height="4" />
+        <rounded-rectangle id="29:138" name="Rectangle" x="112" y="0" width="48" height="4" />
+        <rounded-rectangle id="29:139" name="Rectangle" x="168" y="0" width="48" height="4" />
+        <rounded-rectangle id="29:140" name="Rectangle" x="224" y="0" width="48" height="4" />
+      </frame>
+      <text id="29:142" name="Passo 4 de 5: Investimentos" x="40" y="60" width="162" height="15" />
+      <text id="29:143" name="Cadastre seus investimentos" x="40" y="95" width="314" height="27" />
+      <text id="29:144" name="Cadastre o valor acumulado até hoje em investimentos, como: ações, bitcoin, etf..." x="40" y="142" width="600" height="16" />
+      <frame id="211:22" name="Frame" x="40" y="178" width="600" height="53">
+        <frame id="211:23" name="Frame" x="15" y="17.5" width="358" height="18">
+          <text id="211:24" name="Tesouro Direto" x="0" y="0" width="150" height="18" />
+          <text id="211:25" name="PF" x="164" y="0" width="50" height="18" />
+          <text id="211:26" name="R$ 38.000,00" x="228" y="0" width="130" height="18" />
+        </frame>
+        <frame id="211:27" name="Frame" x="438" y="12" width="147" height="29">
+          <frame id="211:28" name="Frame" x="0" y="0" width="59" height="29">
+            <text id="211:29" name="Editar" x="12" y="7" width="35" height="15" />
+          </frame>
+          <frame id="211:30" name="Frame" x="65" y="0" width="82" height="29">
+            <text id="211:31" name="Descartar" x="12" y="7" width="58" height="15" />
+          </frame>
+        </frame>
+      </frame>
+      <frame id="211:32" name="Frame" x="40" y="251" width="600" height="53">
+        <frame id="211:33" name="Frame" x="15" y="17.5" width="358" height="18">
+          <text id="211:34" name="Ações XP" x="0" y="0" width="150" height="18" />
+          <text id="211:35" name="PF" x="164" y="0" width="50" height="18" />
+          <text id="211:36" name="R$ 24.000,00" x="228" y="0" width="130" height="18" />
+        </frame>
+        <frame id="211:37" name="Frame" x="438" y="12" width="147" height="29">
+          <frame id="211:38" name="Frame" x="0" y="0" width="59" height="29">
+            <text id="211:39" name="Editar" x="12" y="7" width="35" height="15" />
+          </frame>
+          <frame id="211:40" name="Frame" x="65" y="0" width="82" height="29">
+            <text id="211:41" name="Descartar" x="12" y="7" width="58" height="15" />
+          </frame>
+        </frame>
+      </frame>
+      <text id="155:4" name="Adicionar investimento" x="40" y="324" width="171" height="18" />
+      <frame id="29:145" name="Frame" x="40" y="362" width="600" height="61">
+        <frame id="29:146" name="Frame" x="0" y="0" width="214" height="61">
+          <text id="29:147" name="Nome *" x="0" y="0" width="44" height="15" />
+          <frame id="29:148" name="Frame" x="0" y="21" width="214" height="40">
+            <text id="29:149" name="Ex: Tesouro Direto" x="14" y="12" width="113" height="16" />
+          </frame>
+        </frame>
+        <frame id="29:150" name="Frame" x="230" y="0" width="140" height="52">
+          <text id="29:151" name="Entidade" x="0" y="0" width="51" height="15" />
+          <frame id="29:152" name="Frame" x="0" y="21" width="83" height="31">
+            <frame id="29:153" name="Frame" x="0" y="0" width="39" height="31">
+              <text id="29:154" name="PF" x="12" y="8" width="15" height="15" />
+            </frame>
+            <frame id="29:155" name="Frame" x="45" y="0" width="38" height="31">
+              <text id="29:156" name="PJ" x="12" y="8" width="14" height="15" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="29:157" name="Frame" x="386" y="0" width="214" height="61">
+          <text id="29:158" name="Valor inicial acumulado" x="0" y="0" width="132" height="15" />
+          <frame id="29:159" name="Frame" x="0" y="21" width="214" height="40">
+            <text id="29:160" name="R$ 0,00" x="14" y="12" width="48" height="16" />
+          </frame>
+        </frame>
+      </frame>
+      <frame id="202:8" name="Frame" x="40" y="443" width="600" height="35">
+        <frame id="202:9" name="Frame" x="0" y="0" width="498" height="1" />
+        <frame id="29:161" name="Frame" x="498" y="0" width="102" height="35">
+          <text id="29:162" name="+ Adicionar" x="16" y="10" width="70" height="15" />
+        </frame>
+      </frame>
+      <frame id="29:172" name="Frame" x="40" y="498" width="600" height="40">
+        <frame id="29:173" name="Frame" x="0" y="0" width="73" height="40">
+          <text id="29:174" name="Voltar" x="18" y="12" width="37" height="16" />
+        </frame>
+        <frame id="29:175" name="Frame" x="85" y="0" width="197" height="1" />
+        <frame id="29:176" name="Frame" x="294" y="0" width="194" height="40">
+          <text id="29:177" name="Salvar e continuar depois" x="18" y="12" width="158" height="16" />
+        </frame>
+        <frame id="29:178" name="Frame" x="500" y="0" width="100" height="40">
+          <text id="29:179" name="Avançar" x="24" y="12" width="52" height="16" />
+        </frame>
+      </frame>
+      <text id="216:6" name="* Campo obrigatório" x="40" y="558" width="106" height="13" />
+    </frame>
+  </frame>

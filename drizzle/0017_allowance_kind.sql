@@ -1,0 +1,1 @@
+ALTER TABLE `discretionary_spending_config` ADD `allowance_kind` text DEFAULT 'Fixed' NOT NULL;

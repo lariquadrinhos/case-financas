@@ -1,0 +1,256 @@
+  <frame id="11:2" name="Desktop — DRE" x="26" y="1488" width="1440" height="1565">
+    <frame id="20:117" name="Sidebar" x="0" y="0" width="278" height="1565">
+      <frame id="509:66" name="Topo da sidebar" x="20" y="28" width="238" height="44">
+        <text id="20:118" name="Finanças PF+PJ" x="0" y="13" width="116" height="18" />
+        <instance id="509:67" name="Alternador de tema" x="154" y="0" width="84" height="44" />
+      </frame>
+      <frame id="20:119" name="Frame" x="20" y="96" width="238" height="43">
+        <text id="20:120" name="+ Novo Lançamento" x="39.5" y="12" width="159" height="19" />
+      </frame>
+      <frame id="20:121" name="Frame" x="20" y="163" width="238" height="302">
+        <frame id="20:122" name="Frame" x="0" y="0" width="238" height="36">
+          <text id="20:124" name="Relatórios" x="10" y="10" width="63" height="16" />
+          <text id="20:123" name="▾" x="83" y="10" width="5" height="13" />
+        </frame>
+        <frame id="20:125" name="Frame" x="0" y="38" width="238" height="36">
+          <text id="20:126" name="DRE" x="25" y="10" width="26" height="16" />
+        </frame>
+        <frame id="20:127" name="Frame" x="0" y="76" width="238" height="36">
+          <text id="20:128" name="Balanço Patrimonial" x="25" y="10" width="123" height="16" />
+        </frame>
+        <frame id="20:129" name="Frame" x="0" y="114" width="238" height="36">
+          <text id="20:130" name="Evolução Mensal" x="25" y="10" width="105" height="16" />
+        </frame>
+        <frame id="20:131" name="Frame" x="0" y="152" width="238" height="36">
+          <text id="20:132" name="Indicadores Financeiros" x="25" y="10" width="148" height="16" />
+        </frame>
+        <frame id="20:133" name="Frame" x="0" y="190" width="238" height="36">
+          <text id="20:134" name="Revisão de Recorrentes" x="10" y="10" width="147" height="16" />
+        </frame>
+        <frame id="20:135" name="Frame" x="0" y="228" width="238" height="36">
+          <text id="20:136" name="Histórico" x="10" y="10" width="56" height="16" />
+        </frame>
+        <frame id="157:59" name="Frame" x="0" y="266" width="238" height="36">
+          <text id="157:61" name="Plano de Contas e Patrimônio" x="12" y="10" width="183" height="16" />
+          <text id="157:60" name="▾" x="205" y="20.5" width="13" height="5" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="11:24" name="Frame" x="278" y="0" width="1162" height="1565">
+      <frame id="288:3" name="Frame" x="48" y="40" width="1066" height="302">
+        <frame id="11:25" name="Frame" x="0" y="0" width="1066" height="29">
+          <frame id="11:26" name="Frame" x="0" y="0" width="1066" height="29">
+            <text id="11:27" name="DRE" x="0" y="0" width="48" height="29" />
+          </frame>
+        </frame>
+        <text id="239:2" name="O DRE mostra como sua receita se transforma em lucro, mês a mês, passando por cada categoria de custo e despesa até chegar no Lucro Líquido." x="0" y="43" width="1066" height="16" />
+        <text id="239:3" name="Veja o resultado consolidado (PF + PJ juntos, com pró-labore e distribuição eliminados), ou separado por entidade." x="0" y="73" width="1066" height="15" />
+        <frame id="239:4" name="Frame" x="0" y="102" width="1066" height="31">
+          <frame id="239:5" name="Frame" x="0" y="0" width="105" height="31">
+            <text id="239:6" name="Consolidado" x="16" y="8" width="73" height="15" />
+          </frame>
+          <frame id="239:7" name="Frame" x="113" y="0" width="47" height="31">
+            <text id="239:8" name="PF" x="16" y="8" width="15" height="15" />
+          </frame>
+          <frame id="239:9" name="Frame" x="168" y="0" width="46" height="31">
+            <text id="239:10" name="PJ" x="16" y="8" width="14" height="15" />
+          </frame>
+        </frame>
+        <text id="239:11" name="Pago mostra só o que já é fato; Previsto inclui o que ainda está por confirmar." x="0" y="147" width="1066" height="15" />
+        <frame id="239:12" name="Frame" x="0" y="176" width="1066" height="31">
+          <frame id="239:13" name="Frame" x="0" y="0" width="62" height="31">
+            <text id="239:14" name="Pago" x="16" y="8" width="30" height="15" />
+          </frame>
+          <frame id="239:15" name="Frame" x="70" y="0" width="80" height="31">
+            <text id="239:16" name="Previsto" x="16" y="8" width="48" height="15" />
+          </frame>
+        </frame>
+        <text id="290:2" name="Navegue entre meses: pra trás revê o resultado real de meses passados; pra frente mostra a projeção baseada em recorrências e parcelas já configuradas." x="0" y="221" width="1066" height="15" />
+        <frame id="11:28" name="Frame" x="0" y="250" width="141" height="32">
+          <text id="11:29" name="←" x="12" y="8" width="13" height="16" />
+          <text id="11:30" name="Julho 2026" x="35" y="8" width="71" height="16" />
+          <text id="11:31" name="→" x="116" y="8" width="13" height="16" />
+        </frame>
+      </frame>
+      <frame id="11:39" name="Frame" x="48" y="362" width="1066" height="484">
+        <frame id="11:40" name="Frame" x="20" y="8" width="1026" height="36">
+          <frame id="11:41" name="Frame" x="0" y="10" width="942" height="16">
+            <text id="11:42" name="Receita Bruta" x="0" y="0" width="83" height="16" />
+          </frame>
+          <text id="11:43" name="R$ 22.400,00" x="942" y="10" width="84" height="16" />
+        </frame>
+        <frame id="11:44" name="Frame" x="20" y="44" width="1026" height="36">
+          <frame id="11:45" name="Frame" x="0" y="10" width="929" height="16">
+            <text id="11:46" name="(-) Deduções da Receita" x="0" y="0" width="150" height="16" />
+          </frame>
+          <text id="11:47" name="(−) R$ 2.800,00" x="929" y="10" width="97" height="16" />
+        </frame>
+        <frame id="11:48" name="Frame" x="20" y="80" width="1026" height="36">
+          <frame id="11:49" name="Frame" x="0" y="10" width="940" height="16">
+            <text id="11:50" name="= Receita Líquida" x="0" y="0" width="86" height="16" />
+          </frame>
+          <text id="11:51" name="R$ 19.600,00" x="940" y="10" width="86" height="16" />
+        </frame>
+        <frame id="11:52" name="Frame" x="20" y="116" width="1026" height="36">
+          <frame id="11:53" name="Frame" x="0" y="10" width="931" height="16">
+            <text id="11:54" name="(-) Custo dos Serviços/Produtos" x="0" y="0" width="199" height="16" />
+          </frame>
+          <text id="11:55" name="(−) R$ 1.200,00" x="931" y="10" width="95" height="16" />
+        </frame>
+        <frame id="11:56" name="Frame" x="20" y="152" width="1026" height="36">
+          <frame id="11:57" name="Frame" x="0" y="10" width="928" height="16">
+            <text id="11:58" name="(-) Despesas Administrativas" x="0" y="0" width="178" height="16" />
+          </frame>
+          <text id="11:59" name="(−) R$ 2.400,00" x="928" y="10" width="98" height="16" />
+        </frame>
+        <frame id="11:60" name="Frame" x="20" y="188" width="1026" height="36">
+          <frame id="11:61" name="Frame" x="0" y="10" width="932" height="16">
+            <text id="11:62" name="(-) Despesas Pessoais/Consumo" x="0" y="0" width="200" height="16" />
+          </frame>
+          <text id="11:63" name="(−) R$ 3.100,00" x="932" y="10" width="94" height="16" />
+        </frame>
+        <frame id="11:64" name="Frame" x="20" y="224" width="1026" height="36">
+          <frame id="11:65" name="Frame" x="0" y="10" width="940" height="16">
+            <text id="11:66" name="= EBITDA" x="0" y="0" width="60" height="16" />
+          </frame>
+          <text id="11:67" name="R$ 12.900,00" x="940" y="10" width="86" height="16" />
+        </frame>
+        <frame id="11:68" name="Frame" x="20" y="260" width="1026" height="36">
+          <frame id="11:69" name="Frame" x="0" y="10" width="978" height="16">
+            <text id="11:70" name="(-) D&amp;A" x="0" y="0" width="46" height="16" />
+          </frame>
+          <text id="11:71" name="R$ 0,00" x="978" y="10" width="48" height="16" />
+        </frame>
+        <frame id="11:72" name="Frame" x="20" y="296" width="1026" height="36">
+          <frame id="11:73" name="Frame" x="0" y="10" width="940" height="16">
+            <text id="11:74" name="= EBIT" x="0" y="0" width="41" height="16" />
+          </frame>
+          <text id="11:75" name="R$ 12.900,00" x="940" y="10" width="86" height="16" />
+        </frame>
+        <frame id="11:76" name="Frame" x="20" y="332" width="1026" height="36">
+          <frame id="11:77" name="Frame" x="0" y="10" width="978" height="16">
+            <text id="11:78" name="(+/–) Resultado Não Operacional" x="0" y="0" width="200" height="16" />
+          </frame>
+          <text id="11:79" name="R$ 0,00" x="978" y="10" width="48" height="16" />
+        </frame>
+        <frame id="11:80" name="Frame" x="20" y="368" width="1026" height="36">
+          <frame id="11:81" name="Frame" x="0" y="10" width="964" height="16">
+            <text id="11:82" name="(+/–) Resultado Financeiro" x="0" y="0" width="162" height="16" />
+          </frame>
+          <text id="11:83" name="R$ 180,00" x="964" y="10" width="62" height="16" />
+        </frame>
+        <frame id="11:84" name="Frame" x="20" y="404" width="1026" height="36">
+          <frame id="11:85" name="Frame" x="0" y="10" width="929" height="16">
+            <text id="11:86" name="(-) Impostos sobre o Lucro" x="0" y="0" width="164" height="16" />
+          </frame>
+          <text id="11:87" name="(−) R$ 2.680,00" x="929" y="10" width="97" height="16" />
+        </frame>
+        <frame id="11:88" name="Frame" x="20" y="440" width="1026" height="36">
+          <frame id="11:89" name="Frame" x="0" y="10" width="939" height="16">
+            <text id="11:90" name="= Lucro Líquido" x="0" y="0" width="98" height="16" />
+          </frame>
+          <text id="11:91" name="R$ 10.400,00" x="939" y="10" width="87" height="16" />
+        </frame>
+      </frame>
+      <frame id="239:21" name="Frame" x="48" y="866" width="1066" height="81">
+        <frame id="239:22" name="Frame" x="20" y="18" width="854" height="34">
+          <text id="239:23" name="Destinar o lucro deste mês" x="0" y="0" width="183" height="17" />
+          <text id="239:24" name="Decida o que fazer com o Lucro Líquido: investir, guardar em reserva, ou distribuir." x="0" y="19" width="466" height="15" />
+        </frame>
+        <frame id="11:92" name="Frame" x="874" y="18" width="172" height="45">
+          <text id="11:93" name="Destinar este Lucro" x="20" y="14" width="132" height="17" />
+        </frame>
+      </frame>
+      <frame id="340:2" name="Frame" x="48" y="967" width="1066" height="504">
+        <text id="235:2" name="Lançamentos deste mês" x="20" y="20" width="215" height="22" />
+        <text id="239:25" name="Veja e edite os lançamentos do mês. Ao marcar como pago, o valor passa a contar no DRE como confirmado." x="20" y="54" width="1026" height="15" />
+        <frame id="235:10" name="Frame" x="20" y="81" width="1026" height="25">
+          <text id="235:11" name="Lançamento" x="14" y="6" width="260" height="13" />
+          <text id="235:12" name="Bloco" x="274" y="6" width="180" height="13" />
+          <text id="235:13" name="Status" x="454" y="6" width="90" height="13" />
+          <text id="235:14" name="Valor" x="544" y="6" width="120" height="13" />
+        </frame>
+        <frame id="235:15" name="Frame" x="20" y="118" width="1026" height="51">
+          <text id="235:16" name="Salário" x="14" y="18" width="260" height="15" />
+          <text id="235:17" name="Receita Bruta" x="274" y="18" width="180" height="15" />
+          <text id="235:18" name="Pago" x="454" y="18" width="90" height="15" />
+          <text id="235:19" name="R$ 18.000,00" x="544" y="18" width="120" height="15" />
+          <frame id="235:20" name="Frame" x="664" y="25" width="292" height="1" />
+          <frame id="235:21" name="Frame" x="956" y="12" width="56" height="27">
+            <frame id="235:22" name="Frame" x="0" y="0" width="56" height="27">
+              <text id="235:23" name="Editar" x="12" y="7" width="32" height="13" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="235:24" name="Frame" x="20" y="181" width="1026" height="51">
+          <text id="235:25" name="Pró-labore" x="14" y="18" width="260" height="15" />
+          <text id="235:26" name="Receita Bruta" x="274" y="18" width="180" height="15" />
+          <text id="235:27" name="Pago" x="454" y="18" width="90" height="15" />
+          <text id="235:28" name="R$ 4.000,00" x="544" y="18" width="120" height="15" />
+          <frame id="235:29" name="Frame" x="664" y="25" width="292" height="1" />
+          <frame id="235:30" name="Frame" x="956" y="12" width="56" height="27">
+            <frame id="235:31" name="Frame" x="0" y="0" width="56" height="27">
+              <text id="235:32" name="Editar" x="12" y="7" width="32" height="13" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="235:33" name="Frame" x="20" y="244" width="1026" height="51">
+          <text id="235:34" name="Aluguel" x="14" y="18" width="260" height="15" />
+          <text id="235:35" name="Despesas Administrativas" x="274" y="18" width="180" height="15" />
+          <text id="235:36" name="Pago" x="454" y="18" width="90" height="15" />
+          <text id="235:37" name="R$ 1.500,00" x="544" y="18" width="120" height="15" />
+          <frame id="235:38" name="Frame" x="664" y="25" width="292" height="1" />
+          <frame id="235:39" name="Frame" x="956" y="12" width="56" height="27">
+            <frame id="235:40" name="Frame" x="0" y="0" width="56" height="27">
+              <text id="235:41" name="Editar" x="12" y="7" width="32" height="13" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="235:42" name="Frame" x="20" y="307" width="1026" height="51">
+          <text id="235:43" name="Internet" x="14" y="18" width="260" height="15" />
+          <text id="235:44" name="Despesas Administrativas" x="274" y="18" width="180" height="15" />
+          <text id="235:45" name="Previsto" x="454" y="18" width="90" height="15" />
+          <text id="235:46" name="R$ 120,00" x="544" y="18" width="120" height="15" />
+          <frame id="235:47" name="Frame" x="664" y="25" width="194" height="1" />
+          <frame id="235:48" name="Frame" x="858" y="12" width="154" height="27">
+            <frame id="235:49" name="Frame" x="0" y="0" width="92" height="27">
+              <text id="235:50" name="Marcar Pago" x="12" y="7" width="68" height="13" />
+            </frame>
+            <frame id="235:51" name="Frame" x="98" y="0" width="56" height="27">
+              <text id="235:52" name="Editar" x="12" y="7" width="32" height="13" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="235:53" name="Frame" x="20" y="370" width="1026" height="51">
+          <text id="235:54" name="Contador" x="14" y="18" width="260" height="15" />
+          <text id="235:55" name="Custo dos Serviços/Produtos" x="274" y="18" width="180" height="15" />
+          <text id="235:56" name="Previsto" x="454" y="18" width="90" height="15" />
+          <text id="235:57" name="R$ 350,00" x="544" y="18" width="120" height="15" />
+          <frame id="235:58" name="Frame" x="664" y="25" width="194" height="1" />
+          <frame id="235:59" name="Frame" x="858" y="12" width="154" height="27">
+            <frame id="235:60" name="Frame" x="0" y="0" width="92" height="27">
+              <text id="235:61" name="Marcar Pago" x="12" y="7" width="68" height="13" />
+            </frame>
+            <frame id="235:62" name="Frame" x="98" y="0" width="56" height="27">
+              <text id="235:63" name="Editar" x="12" y="7" width="32" height="13" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="235:64" name="Frame" x="20" y="433" width="1026" height="51">
+          <text id="235:65" name="Financiamento apartamento, parcela 13" x="14" y="18" width="260" height="15" />
+          <text id="235:66" name="Despesas Administrativas" x="274" y="18" width="180" height="15" />
+          <text id="235:67" name="Previsto" x="454" y="18" width="90" height="15" />
+          <text id="235:68" name="R$ 1.520,00" x="544" y="18" width="120" height="15" />
+          <frame id="235:69" name="Frame" x="664" y="25" width="194" height="1" />
+          <frame id="235:70" name="Frame" x="858" y="12" width="154" height="27">
+            <frame id="235:71" name="Frame" x="0" y="0" width="92" height="27">
+              <text id="235:72" name="Marcar Pago" x="12" y="7" width="68" height="13" />
+            </frame>
+            <frame id="235:73" name="Frame" x="98" y="0" width="56" height="27">
+              <text id="235:74" name="Editar" x="12" y="7" width="32" height="13" />
+            </frame>
+          </frame>
+        </frame>
+      </frame>
+    </frame>
+  </frame>

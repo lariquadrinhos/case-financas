@@ -1,0 +1,54 @@
+  <frame id="310:943" name="Vazio — Indicadores Financeiros (tela completa)" x="-13698" y="2589" width="1440" height="1086">
+    <frame id="310:944" name="Sidebar" x="0" y="0" width="278" height="1086">
+      <text id="310:945" name="Finanças PF+PJ" x="20" y="28" width="116" height="18" />
+      <frame id="310:946" name="Frame" x="20" y="70" width="238" height="43">
+        <text id="310:947" name="+ Novo Lançamento" x="39.5" y="12" width="159" height="19" />
+      </frame>
+      <frame id="310:948" name="Frame" x="20" y="137" width="238" height="302">
+        <frame id="310:949" name="Frame" x="0" y="0" width="238" height="36">
+          <text id="310:950" name="Relatórios" x="10" y="10" width="63" height="16" />
+          <text id="310:951" name="▾" x="83" y="10" width="5" height="13" />
+        </frame>
+        <frame id="310:952" name="Frame" x="0" y="38" width="238" height="36">
+          <text id="310:953" name="DRE" x="25" y="10" width="26" height="16" />
+        </frame>
+        <frame id="310:954" name="Frame" x="0" y="76" width="238" height="36">
+          <text id="310:955" name="Balanço Patrimonial" x="25" y="10" width="123" height="16" />
+        </frame>
+        <frame id="310:956" name="Frame" x="0" y="114" width="238" height="36">
+          <text id="310:957" name="Evolução Mensal" x="25" y="10" width="105" height="16" />
+        </frame>
+        <frame id="310:958" name="Frame" x="0" y="152" width="238" height="36">
+          <text id="310:959" name="Indicadores Financeiros" x="25" y="10" width="148" height="16" />
+        </frame>
+        <frame id="310:960" name="Frame" x="0" y="190" width="238" height="36">
+          <text id="310:961" name="Revisão de Recorrentes" x="10" y="10" width="147" height="16" />
+        </frame>
+        <frame id="310:962" name="Frame" x="0" y="228" width="238" height="36">
+          <text id="310:963" name="Histórico" x="10" y="10" width="56" height="16" />
+        </frame>
+        <frame id="310:964" name="Frame" x="0" y="266" width="238" height="36">
+          <text id="310:965" name="Plano de Contas e Patrimônio" x="12" y="10" width="183" height="16" />
+          <text id="310:966" name="▾" x="205" y="20.5" width="13" height="5" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="310:967" name="Frame" x="278" y="0" width="1138" height="1086">
+      <frame id="305:1430" name="Frame" x="48" y="40" width="1042" height="79">
+        <frame id="305:1431" name="Frame" x="0" y="0" width="1042" height="29">
+          <frame id="305:1432" name="Frame" x="0" y="0" width="1042" height="29">
+            <text id="305:1433" name="Indicadores Financeiros" x="0" y="0" width="281" height="29" />
+          </frame>
+        </frame>
+        <text id="326:487" name="Indicadores Financeiros: números que resumem a saúde financeira, calculados a partir do DRE e do Balanço, sem precisar montar fórmula manual." x="0" y="43" width="1042" height="16" />
+      </frame>
+      <frame id="305:1424" name="Vazio — Indicadores Financeiros" x="48" y="139" width="420" height="195">
+        <text id="305:1425" name="Não é possível calcular ainda" x="105" y="40" width="210" height="18" />
+        <text id="305:1426" name="Os indicadores dependem de dados no DRE e no Balanço. Cadastre e registre lançamentos pra ver os números aqui." x="40" y="66" width="340" height="30" />
+        <rounded-rectangle id="305:1427" name="Rectangle" x="209.5" y="104" width="1" height="8" />
+        <frame id="305:1428" name="Frame" x="147" y="120" width="126" height="35">
+          <text id="305:1429" name="Cadastrar agora" x="16" y="10" width="94" height="15" />
+        </frame>
+      </frame>
+    </frame>
+  </frame>

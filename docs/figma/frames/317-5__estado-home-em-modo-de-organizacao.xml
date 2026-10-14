@@ -1,0 +1,446 @@
+  <frame id="317:5" name="Estado — Home em Modo de Organização" x="2768" y="-2684" width="1440" height="2501">
+    <frame id="317:6" name="Sidebar" x="0" y="0" width="278" height="2501">
+      <text id="317:7" name="Finanças PF+PJ" x="20" y="28" width="116" height="18" />
+      <frame id="317:8" name="Frame" x="20" y="70" width="238" height="43">
+        <text id="317:9" name="+ Novo Lançamento" x="39.5" y="12" width="159" height="19" />
+      </frame>
+      <frame id="317:10" name="Frame" x="20" y="137" width="238" height="302">
+        <frame id="317:11" name="Frame" x="0" y="0" width="238" height="36">
+          <text id="317:12" name="Relatórios" x="10" y="10" width="63" height="16" />
+          <text id="317:13" name="▾" x="83" y="10" width="5" height="13" />
+        </frame>
+        <frame id="317:14" name="Frame" x="0" y="38" width="238" height="36">
+          <text id="317:15" name="DRE" x="25" y="10" width="26" height="16" />
+        </frame>
+        <frame id="317:16" name="Frame" x="0" y="76" width="238" height="36">
+          <text id="317:17" name="Balanço Patrimonial" x="25" y="10" width="123" height="16" />
+        </frame>
+        <frame id="317:18" name="Frame" x="0" y="114" width="238" height="36">
+          <text id="317:19" name="Evolução Mensal" x="25" y="10" width="105" height="16" />
+        </frame>
+        <frame id="317:20" name="Frame" x="0" y="152" width="238" height="36">
+          <text id="317:21" name="Indicadores Financeiros" x="25" y="10" width="148" height="16" />
+        </frame>
+        <frame id="317:22" name="Frame" x="0" y="190" width="238" height="36">
+          <text id="317:23" name="Revisão de Recorrentes" x="10" y="10" width="147" height="16" />
+        </frame>
+        <frame id="317:24" name="Frame" x="0" y="228" width="238" height="36">
+          <text id="317:25" name="Histórico" x="10" y="10" width="56" height="16" />
+        </frame>
+        <frame id="317:26" name="Frame" x="0" y="266" width="238" height="36">
+          <text id="317:27" name="Plano de Contas e Patrimônio" x="12" y="10" width="183" height="16" />
+          <text id="317:28" name="▾" x="205" y="20.5" width="13" height="5" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="317:29" name="Frame" x="278" y="0" width="1162" height="2501">
+      <frame id="323:1822" name="Frame" x="48" y="40" width="1066" height="31">
+        <text id="323:1823" name="Modo de organização: arraste pelo ícone pra reordenar, ou minimize um card pra escondê-lo (sem perder o lugar dele)." x="0" y="8" width="989" height="15" />
+        <frame id="323:1824" name="Frame" x="989" y="0" width="77" height="31">
+          <text id="323:1825" name="Concluir" x="14" y="8" width="49" height="15" />
+        </frame>
+      </frame>
+      <frame id="317:255" name="Frame" x="48" y="91" width="1066" height="226">
+        <frame id="317:34" name="Frame" x="0" y="0" width="1066" height="226">
+          <frame id="320:2" name="Frame" x="24" y="20" width="1018" height="25">
+            <frame id="320:3" name="Frame" x="0" y="0" width="9" height="15">
+              <frame id="320:4" name="Frame" x="0" y="0" width="3" height="15">
+                <ellipse id="320:5" name="Ellipse" x="0" y="0" width="3" height="3" />
+                <ellipse id="320:6" name="Ellipse" x="0" y="6" width="3" height="3" />
+                <ellipse id="320:7" name="Ellipse" x="0" y="12" width="3" height="3" />
+              </frame>
+              <frame id="320:8" name="Frame" x="6" y="0" width="3" height="15">
+                <ellipse id="320:9" name="Ellipse" x="0" y="0" width="3" height="3" />
+                <ellipse id="320:10" name="Ellipse" x="0" y="6" width="3" height="3" />
+                <ellipse id="320:11" name="Ellipse" x="0" y="12" width="3" height="3" />
+              </frame>
+            </frame>
+            <frame id="320:12" name="Frame" x="19" y="0" width="912" height="19">
+              <text id="317:35" name="Pendências" x="0" y="0" width="92" height="19" />
+            </frame>
+            <frame id="320:13" name="Frame" x="941" y="0" width="77" height="25">
+              <text id="320:14" name="Minimizar" x="12" y="6" width="53" height="13" />
+            </frame>
+          </frame>
+          <text id="317:36" name="Coisas que precisam da sua decisão: valor sem destino, recorrência sem valor definido, ou lucro do mês ainda não distribuído." x="24" y="59" width="1018" height="15" />
+          <frame id="317:37" name="Frame" x="24" y="88" width="1018" height="114">
+            <frame id="317:38" name="Frame" x="0" y="0" width="245.5" height="114">
+              <frame id="317:39" name="Frame" x="16" y="14" width="226" height="49">
+                <text id="317:40" name="R$ 5.000,00 aguardando direcionamento" x="0" y="0" width="226" height="32" />
+                <text id="317:41" name="Venda de Civic 2020" x="0" y="34" width="118" height="15" />
+              </frame>
+              <frame id="317:42" name="Frame" x="16" y="71" width="116" height="29">
+                <text id="317:43" name="Direcionar agora" x="14" y="8" width="88" height="13" />
+              </frame>
+            </frame>
+            <frame id="317:44" name="Frame" x="257.5" y="0" width="245.5" height="114">
+              <frame id="317:45" name="Frame" x="16" y="14" width="214" height="49">
+                <text id="317:46" name="2 recorrentes pendentes este mês" x="0" y="0" width="166" height="32" />
+                <text id="317:47" name="Internet, Contador: valor a definir" x="0" y="34" width="188" height="15" />
+              </frame>
+              <frame id="317:48" name="Frame" x="16" y="71" width="101" height="29">
+                <text id="317:49" name="Revisar agora" x="14" y="8" width="73" height="13" />
+              </frame>
+            </frame>
+            <frame id="317:50" name="Frame" x="515" y="0" width="245.5" height="114">
+              <frame id="317:51" name="Frame" x="16" y="14" width="210" height="49">
+                <text id="317:52" name="R$ 3.000,00 do lucro de Julho não alocado" x="0" y="0" width="194" height="32" />
+                <text id="317:53" name="Destinação do lucro ficou incompleta" x="0" y="34" width="210" height="15" />
+              </frame>
+              <frame id="317:54" name="Frame" x="16" y="71" width="96" height="29">
+                <text id="317:55" name="Alocar agora" x="14" y="8" width="68" height="13" />
+              </frame>
+            </frame>
+            <frame id="317:56" name="Frame" x="772.5" y="0" width="245.5" height="114">
+              <frame id="317:57" name="Frame" x="16" y="14" width="178" height="49">
+                <text id="317:58" name="R$ 200,00 pendente" x="0" y="0" width="130" height="32" />
+                <text id="317:59" name="Aluguel de Julho pago a menos" x="0" y="34" width="178" height="15" />
+              </frame>
+              <frame id="317:60" name="Frame" x="16" y="71" width="59" height="29">
+                <text id="317:61" name="Pagar" x="14" y="8" width="31" height="13" />
+              </frame>
+            </frame>
+          </frame>
+        </frame>
+      </frame>
+      <frame id="317:62" name="Frame" x="48" y="337" width="740" height="247">
+        <frame id="317:267" name="Frame" x="24" y="20" width="692" height="25">
+          <frame id="317:268" name="Frame" x="-5" y="0" width="9" height="15">
+            <frame id="317:269" name="Frame" x="0" y="0" width="3" height="15">
+              <ellipse id="317:270" name="Ellipse" x="0" y="0" width="3" height="3" />
+              <ellipse id="317:271" name="Ellipse" x="0" y="6" width="3" height="3" />
+              <ellipse id="317:272" name="Ellipse" x="0" y="12" width="3" height="3" />
+            </frame>
+            <frame id="317:273" name="Frame" x="6" y="0" width="3" height="15">
+              <ellipse id="317:274" name="Ellipse" x="0" y="0" width="3" height="3" />
+              <ellipse id="317:275" name="Ellipse" x="0" y="6" width="3" height="3" />
+              <ellipse id="317:276" name="Ellipse" x="0" y="12" width="3" height="3" />
+            </frame>
+          </frame>
+          <frame id="317:64" name="Frame" x="14" y="0" width="596" height="19">
+            <text id="317:65" name="Saldo para Consumo Livre" x="5" y="0" width="204" height="19" />
+          </frame>
+          <frame id="317:277" name="Frame" x="620" y="0" width="77" height="25">
+            <text id="317:278" name="Minimizar" x="12" y="6" width="53" height="13" />
+          </frame>
+        </frame>
+        <text id="317:66" name="Seu limite livre do mês, sem precisar lançar cada gasto." x="24" y="57" width="692" height="15" />
+        <frame id="317:69" name="Frame 13" x="24" y="84" width="683" height="64">
+          <text id="317:70" name="R$ 350 / R$ 500" x="0" y="0" width="206" height="31" />
+          <frame id="317:71" name="Frame" x="0" y="33" width="683" height="31">
+            <rounded-rectangle id="317:72" name="Rectangle" x="0" y="0" width="350" height="31" />
+          </frame>
+        </frame>
+        <text id="317:73" name="Saindo da conta Nubank · reabastece dia 1" x="24" y="160" width="222" height="13" />
+        <frame id="317:74" name="Frame" x="24" y="185" width="692" height="38">
+          <frame id="317:75" name="Frame" x="0" y="0" width="134" height="38">
+            <text id="317:76" name="Gastei um valor" x="18" y="11" width="98" height="16" />
+          </frame>
+          <frame id="317:77" name="Frame" x="134" y="0" width="558" height="1" />
+        </frame>
+      </frame>
+      <frame id="317:78" name="Frame" x="48" y="604" width="1066" height="292">
+        <frame id="323:1827" name="Frame 14" x="24" y="20" width="1018" height="25">
+          <frame id="317:279" name="Frame" x="0" y="0" width="332" height="19">
+            <frame id="317:280" name="Frame" x="0" y="0" width="9" height="15">
+              <frame id="317:281" name="Frame" x="0" y="0" width="3" height="15">
+                <ellipse id="317:282" name="Ellipse" x="0" y="0" width="3" height="3" />
+                <ellipse id="317:283" name="Ellipse" x="0" y="6" width="3" height="3" />
+                <ellipse id="317:284" name="Ellipse" x="0" y="12" width="3" height="3" />
+              </frame>
+              <frame id="317:285" name="Frame" x="6" y="0" width="3" height="15">
+                <ellipse id="317:286" name="Ellipse" x="0" y="0" width="3" height="3" />
+                <ellipse id="317:287" name="Ellipse" x="0" y="6" width="3" height="3" />
+                <ellipse id="317:288" name="Ellipse" x="0" y="12" width="3" height="3" />
+              </frame>
+            </frame>
+            <text id="317:80" name="Despesas por Categoria" x="19" y="0" width="189" height="19" />
+          </frame>
+          <frame id="317:289" name="Frame" x="941" y="0" width="77" height="25">
+            <text id="317:290" name="Minimizar" x="12" y="6" width="53" height="13" />
+          </frame>
+        </frame>
+        <text id="317:81" name="Clique na categoria para visualizar ou adicionar gastos." x="24" y="59" width="313" height="15" />
+        <frame id="317:82" name="Frame" x="24" y="88" width="1018" height="180">
+          <frame id="317:83" name="Frame" x="0" y="0" width="180" height="180">
+            <text id="317:84" name="Casa" x="12" y="10" width="156" height="15" />
+            <frame id="317:85" name="Frame" x="12" y="102.4772720336914" width="89" height="67.5227279663086">
+              <text id="317:86" name="46%" x="0" y="0" width="88" height="48" />
+              <text id="317:87" name="R$ 2.400,00" x="0" y="49.522727966308594" width="89" height="18" />
+            </frame>
+            <frame id="317:88" name="Frame" x="154" y="8" width="18" height="18">
+              <text id="317:89" name="↗" x="4" y="3" width="10" height="12" />
+            </frame>
+          </frame>
+          <frame id="317:90" name="Frame" x="192" y="0" width="130" height="130">
+            <text id="317:91" name="Carro" x="12" y="10" width="106" height="15" />
+            <frame id="317:92" name="Frame" x="12" y="70.6851806640625" width="71" height="49.314815521240234">
+              <text id="317:93" name="21%" x="0" y="0" width="53" height="32" />
+              <text id="317:94" name="R$ 1.100,00" x="0" y="33.314815521240234" width="71" height="16" />
+            </frame>
+            <frame id="317:95" name="Frame" x="104" y="8" width="18" height="18">
+              <text id="317:96" name="↗" x="4" y="3" width="10" height="12" />
+            </frame>
+          </frame>
+          <frame id="317:97" name="Frame" x="334" y="0" width="100" height="100">
+            <text id="317:98" name="Lazer" x="12" y="10" width="76" height="15" />
+            <frame id="317:99" name="Frame" x="12" y="49.75" width="61" height="40.25">
+              <text id="317:100" name="10%" x="0" y="0" width="41" height="24" />
+              <text id="317:101" name="R$ 520,00" x="0" y="25.25" width="61" height="15" />
+            </frame>
+            <frame id="317:102" name="Frame" x="74" y="8" width="18" height="18">
+              <text id="317:103" name="↗" x="4" y="3" width="10" height="12" />
+            </frame>
+          </frame>
+          <frame id="317:104" name="Frame" x="446" y="0" width="95" height="95">
+            <text id="317:105" name="Pet" x="12" y="10" width="71" height="15" />
+            <frame id="317:106" name="Frame" x="12" y="53" width="50" height="32">
+              <text id="317:107" name="7%" x="0" y="0" width="24" height="19" />
+              <text id="317:108" name="R$ 380,00" x="0" y="20" width="50" height="12" />
+            </frame>
+            <frame id="317:109" name="Frame" x="69" y="8" width="18" height="18">
+              <text id="317:110" name="↗" x="4" y="3" width="10" height="12" />
+            </frame>
+          </frame>
+          <frame id="317:111" name="Frame" x="553" y="0" width="95" height="95">
+            <text id="317:112" name="Saúde" x="12" y="10" width="71" height="15" />
+            <frame id="317:113" name="Frame" x="12" y="53" width="50" height="32">
+              <text id="317:114" name="6%" x="0" y="0" width="25" height="19" />
+              <text id="317:115" name="R$ 300,00" x="0" y="20" width="50" height="12" />
+            </frame>
+            <frame id="317:116" name="Frame" x="69" y="8" width="18" height="18">
+              <text id="317:117" name="↗" x="4" y="3" width="10" height="12" />
+            </frame>
+          </frame>
+          <frame id="317:118" name="Frame" x="660" y="0" width="95" height="95">
+            <text id="317:119" name="Outras" x="12" y="10" width="71" height="15" />
+            <frame id="317:120" name="Frame" x="12" y="53" width="49" height="32">
+              <text id="317:121" name="4%" x="0" y="0" width="25" height="19" />
+              <text id="317:122" name="R$ 200,00" x="0" y="20" width="49" height="12" />
+            </frame>
+            <frame id="317:123" name="Frame" x="69" y="8" width="18" height="18">
+              <text id="317:124" name="↗" x="4" y="3" width="10" height="12" />
+            </frame>
+          </frame>
+          <frame id="317:125" name="Frame" x="767" y="0" width="116" height="95">
+            <text id="317:126" name="Consumo Livre" x="12" y="10" width="92" height="30" />
+            <frame id="317:127" name="Frame" x="12" y="53" width="50" height="32">
+              <text id="317:128" name="7%" x="0" y="0" width="24" height="19" />
+              <text id="317:129" name="R$ 350,00" x="0" y="20" width="50" height="12" />
+            </frame>
+            <frame id="317:130" name="Frame" x="86" y="7" width="18" height="18">
+              <text id="317:131" name="↗" x="4" y="3" width="10" height="12" />
+            </frame>
+          </frame>
+        </frame>
+      </frame>
+      <frame id="317:132" name="Frame" x="48" y="916" width="1066" height="565">
+        <frame id="317:291" name="Frame" x="24" y="20" width="1018" height="25">
+          <frame id="317:292" name="Frame" x="0" y="0" width="9" height="15">
+            <frame id="317:293" name="Frame" x="0" y="0" width="3" height="15">
+              <ellipse id="317:294" name="Ellipse" x="0" y="0" width="3" height="3" />
+              <ellipse id="317:295" name="Ellipse" x="0" y="6" width="3" height="3" />
+              <ellipse id="317:296" name="Ellipse" x="0" y="12" width="3" height="3" />
+            </frame>
+            <frame id="317:297" name="Frame" x="6" y="0" width="3" height="15">
+              <ellipse id="317:298" name="Ellipse" x="0" y="0" width="3" height="3" />
+              <ellipse id="317:299" name="Ellipse" x="0" y="6" width="3" height="3" />
+              <ellipse id="317:300" name="Ellipse" x="0" y="12" width="3" height="3" />
+            </frame>
+          </frame>
+          <frame id="317:134" name="Frame" x="19" y="0" width="912" height="19">
+            <text id="317:135" name="Mapa de Fluxo" x="0" y="0" width="113" height="19" />
+          </frame>
+          <frame id="317:301" name="Frame" x="941" y="0" width="77" height="25">
+            <text id="317:302" name="Minimizar" x="12" y="6" width="53" height="13" />
+          </frame>
+        </frame>
+        <text id="317:136" name="De onde vem e pra onde vai o dinheiro no mês selecionado. Mês atual ou passado mostra fato; mês futuro mostra projeção (recorrências e parcelas já configuradas), nunca os dois ao mesmo tempo. Clique num bloco pra ver os lançamentos que o compõem." x="24" y="59" width="777" height="30" />
+        <frame id="317:141" name="Frame" x="24" y="103" width="194" height="27">
+          <frame id="317:142" name="Frame" x="0" y="0" width="95" height="27">
+            <text id="317:143" name="Consolidado" x="14" y="7" width="67" height="13" />
+          </frame>
+          <frame id="317:144" name="Frame" x="103" y="0" width="42" height="27">
+            <text id="317:145" name="PF" x="14" y="7" width="14" height="13" />
+          </frame>
+          <frame id="317:146" name="Frame" x="153" y="0" width="41" height="27">
+            <text id="317:147" name="PJ" x="14" y="7" width="13" height="13" />
+          </frame>
+        </frame>
+        <frame id="317:137" name="Frame" x="24" y="144" width="134" height="29">
+          <text id="317:138" name="←" x="12" y="7" width="12" height="15" />
+          <text id="317:139" name="Julho 2026" x="34" y="7" width="66" height="15" />
+          <text id="317:140" name="→" x="110" y="7" width="12" height="15" />
+        </frame>
+        <frame id="317:148" name="Frame" x="24" y="187" width="1018" height="328">
+          <frame id="317:149" name="Frame" x="0" y="0" width="190" height="160">
+            <frame id="317:150" name="Frame" x="0" y="0" width="190" height="48">
+              <text id="317:151" name="Salário" x="12" y="10" width="37" height="13" />
+              <text id="317:152" name="R$ 18.000,00" x="12" y="25" width="69" height="13" />
+              <frame id="317:153" name="Frame" x="164" y="8" width="18" height="18">
+                <text id="317:154" name="↗" x="4" y="3" width="10" height="12" />
+              </frame>
+            </frame>
+            <frame id="317:155" name="Frame" x="0" y="56" width="190" height="48">
+              <text id="317:156" name="Pró-labore" x="12" y="10" width="57" height="13" />
+              <text id="317:157" name="R$ 4.000,00" x="12" y="25" width="64" height="13" />
+              <frame id="317:158" name="Frame" x="164" y="8" width="18" height="18">
+                <text id="317:159" name="↗" x="4" y="3" width="10" height="12" />
+              </frame>
+            </frame>
+            <frame id="317:160" name="Frame" x="0" y="112" width="190" height="48">
+              <text id="317:161" name="Outras receitas" x="12" y="10" width="82" height="13" />
+              <text id="317:162" name="R$ 2.400,00" x="12" y="25" width="64" height="13" />
+              <frame id="317:163" name="Frame" x="164" y="8" width="18" height="18">
+                <text id="317:164" name="↗" x="4" y="3" width="10" height="12" />
+              </frame>
+            </frame>
+          </frame>
+          <frame id="317:165" name="Frame" x="190" y="0" width="160" height="140">
+            <frame id="317:166" name="Frame" x="21.5" y="42.5" width="117" height="55">
+              <text id="317:167" name="Receita do Mês" x="14" y="12" width="82" height="13" />
+              <text id="317:168" name="R$ 24.400,00" x="14" y="27" width="89" height="16" />
+            </frame>
+          </frame>
+          <frame id="317:169" name="Frame" x="350" y="0" width="668" height="328">
+            <frame id="317:170" name="Frame" x="0" y="0" width="220" height="48">
+              <text id="317:171" name="Despesas Administrativas" x="12" y="10" width="139" height="13" />
+              <text id="317:172" name="R$ 6.500,00" x="12" y="25" width="64" height="13" />
+              <frame id="317:173" name="Frame" x="194" y="8" width="18" height="18">
+                <text id="317:174" name="↗" x="4" y="3" width="10" height="12" />
+              </frame>
+            </frame>
+            <frame id="317:175" name="Frame" x="0" y="56" width="220" height="48">
+              <text id="317:176" name="Despesas Pessoais" x="12" y="10" width="103" height="13" />
+              <text id="317:177" name="R$ 5.200,00" x="12" y="25" width="64" height="13" />
+              <frame id="317:178" name="Frame" x="194" y="8" width="18" height="18">
+                <text id="317:179" name="↗" x="4" y="3" width="10" height="12" />
+              </frame>
+            </frame>
+            <frame id="317:180" name="Frame" x="0" y="112" width="220" height="48">
+              <text id="317:181" name="Investimentos" x="12" y="10" width="76" height="13" />
+              <text id="317:182" name="R$ 4.000,00" x="12" y="25" width="64" height="13" />
+              <frame id="317:183" name="Frame" x="194" y="8" width="18" height="18">
+                <text id="317:184" name="↗" x="4" y="3" width="10" height="12" />
+              </frame>
+            </frame>
+            <frame id="317:185" name="Frame" x="0" y="168" width="220" height="48">
+              <text id="317:186" name="Impostos" x="12" y="10" width="50" height="13" />
+              <text id="317:187" name="R$ 3.200,00" x="12" y="25" width="64" height="13" />
+              <frame id="317:188" name="Frame" x="194" y="8" width="18" height="18">
+                <text id="317:189" name="↗" x="4" y="3" width="10" height="12" />
+              </frame>
+            </frame>
+            <frame id="317:190" name="Frame" x="0" y="224" width="220" height="48">
+              <text id="317:191" name="Reserva em Caixa" x="12" y="10" width="95" height="13" />
+              <text id="317:192" name="R$ 3.000,00" x="12" y="25" width="64" height="13" />
+              <frame id="317:193" name="Frame" x="194" y="8" width="18" height="18">
+                <text id="317:194" name="↗" x="4" y="3" width="10" height="12" />
+              </frame>
+            </frame>
+            <frame id="317:195" name="Frame" x="0" y="280" width="220" height="48">
+              <text id="317:196" name="Consumo Extraordinário" x="12" y="10" width="129" height="13" />
+              <text id="317:197" name="R$ 2.500,00" x="12" y="25" width="64" height="13" />
+              <frame id="317:198" name="Frame" x="194" y="8" width="18" height="18">
+                <text id="317:199" name="↗" x="4" y="3" width="10" height="12" />
+              </frame>
+            </frame>
+          </frame>
+        </frame>
+        <text id="317:200" name="Faixas simplificadas: versão final usa espessura proporcional ao valor, estilo Sankey." x="24" y="529" width="398" height="12" />
+      </frame>
+      <frame id="317:201" name="Frame" x="48" y="1501" width="1066" height="319">
+        <frame id="317:303" name="Frame" x="24" y="20" width="1018" height="25">
+          <frame id="326:23" name="Frame 15" x="0" y="3" width="207" height="19">
+            <frame id="317:304" name="Frame" x="0" y="0" width="9" height="15">
+              <frame id="317:305" name="Frame" x="0" y="0" width="3" height="15">
+                <ellipse id="317:306" name="Ellipse" x="0" y="0" width="3" height="3" />
+                <ellipse id="317:307" name="Ellipse" x="0" y="6" width="3" height="3" />
+                <ellipse id="317:308" name="Ellipse" x="0" y="12" width="3" height="3" />
+              </frame>
+              <frame id="317:309" name="Frame" x="6" y="0" width="3" height="15">
+                <ellipse id="317:310" name="Ellipse" x="0" y="0" width="3" height="3" />
+                <ellipse id="317:311" name="Ellipse" x="0" y="6" width="3" height="3" />
+                <ellipse id="317:312" name="Ellipse" x="0" y="12" width="3" height="3" />
+              </frame>
+            </frame>
+            <frame id="317:202" name="Frame" x="19" y="0" width="188" height="19">
+              <text id="317:203" name="Onde Está Meu Dinheiro" x="0" y="0" width="188" height="19" />
+            </frame>
+          </frame>
+          <frame id="317:313" name="Frame" x="941" y="0" width="77" height="25">
+            <text id="317:314" name="Minimizar" x="12" y="6" width="53" height="13" />
+          </frame>
+        </frame>
+        <text id="317:204" name="Clique num bloco pra redirecionar dinheiro pra outro lugar, a qualquer momento." x="24" y="59" width="454" height="15" />
+        <frame id="317:205" name="Frame" x="24" y="88" width="1018" height="180">
+          <frame id="317:206" name="Frame" x="0" y="0" width="196" height="180">
+            <text id="317:207" name="Investimentos" x="12" y="10" width="172" height="15" />
+            <frame id="317:208" name="Frame" x="12" y="128" width="179" height="42">
+              <text id="317:209" name="R$ 250.000,00" x="0" y="0" width="179" height="29" />
+              <text id="317:210" name="Tesouro, ações" x="0" y="30" width="72" height="12" />
+            </frame>
+            <frame id="317:211" name="Frame" x="154" y="8" width="18" height="18">
+              <text id="317:212" name="↗" x="4" y="3" width="10" height="12" />
+            </frame>
+          </frame>
+          <frame id="317:213" name="Frame" x="208" y="0" width="181" height="153">
+            <text id="317:214" name="Dívidas (Passivos)" x="12" y="10" width="157" height="15" />
+            <frame id="317:215" name="Frame" x="12" y="104" width="157" height="39">
+              <text id="317:216" name="R$ 179.600,00" x="0" y="0" width="157" height="26" />
+              <text id="317:217" name="Financiamento, cartão" x="0" y="27" width="106" height="12" />
+            </frame>
+            <frame id="317:218" name="Frame" x="145" y="8" width="18" height="18">
+              <text id="317:219" name="↗" x="4" y="3" width="10" height="12" />
+            </frame>
+          </frame>
+          <frame id="317:220" name="Frame" x="401" y="0" width="128" height="110">
+            <text id="317:221" name="Nubank (PF)" x="12" y="10" width="104" height="15" />
+            <frame id="317:222" name="Frame" x="12" y="69" width="92" height="31">
+              <text id="317:223" name="R$ 4.200,00" x="0" y="0" width="92" height="18" />
+              <text id="317:224" name="conta corrente" x="0" y="19" width="70" height="12" />
+            </frame>
+            <frame id="317:225" name="Frame" x="102" y="8" width="18" height="18">
+              <text id="317:226" name="↗" x="4" y="3" width="10" height="12" />
+            </frame>
+          </frame>
+          <frame id="317:227" name="Frame" x="541" y="0" width="111" height="95">
+            <text id="317:228" name="Itaú PJ" x="12" y="10" width="87" height="15" />
+            <frame id="317:229" name="Frame" x="12" y="54" width="92" height="31">
+              <text id="317:230" name="R$ 8.900,00" x="0" y="0" width="92" height="18" />
+              <text id="317:231" name="conta corrente" x="0" y="19" width="70" height="12" />
+            </frame>
+            <frame id="317:232" name="Frame" x="82" y="8" width="18" height="18">
+              <text id="317:233" name="↗" x="4" y="3" width="10" height="12" />
+            </frame>
+          </frame>
+        </frame>
+        <text id="317:234" name="Bens Materiais não entram aqui, não são dinheiro líquido, só viram isso quando vendidos (ver Bens Materiais)." x="24" y="282" width="1018" height="13" />
+      </frame>
+      <frame id="317:235" name="Frame" x="48" y="1840" width="1066" height="80">
+        <frame id="317:315" name="Frame" x="24" y="14" width="1018" height="25">
+          <frame id="326:24" name="Frame 16" x="0" y="3" width="160" height="19">
+            <frame id="317:316" name="Frame" x="0" y="0" width="9" height="15">
+              <frame id="317:317" name="Frame" x="0" y="0" width="3" height="15">
+                <ellipse id="317:318" name="Ellipse" x="0" y="0" width="3" height="3" />
+                <ellipse id="317:319" name="Ellipse" x="0" y="6" width="3" height="3" />
+                <ellipse id="317:320" name="Ellipse" x="0" y="12" width="3" height="3" />
+              </frame>
+              <frame id="317:321" name="Frame" x="6" y="0" width="3" height="15">
+                <ellipse id="317:322" name="Ellipse" x="0" y="0" width="3" height="3" />
+                <ellipse id="317:323" name="Ellipse" x="0" y="6" width="3" height="3" />
+                <ellipse id="317:324" name="Ellipse" x="0" y="12" width="3" height="3" />
+              </frame>
+            </frame>
+            <frame id="317:236" name="Frame" x="19" y="0" width="141" height="19">
+              <text id="317:237" name="Eventos Recentes" x="0" y="0" width="141" height="19" />
+            </frame>
+          </frame>
+          <frame id="317:325" name="Frame" x="939" y="0" width="79" height="25">
+            <text id="317:326" name="Maximizar" x="12" y="6" width="55" height="13" />
+          </frame>
+        </frame>
+        <text id="317:238" name="Últimos 5: reajustes, divergências e parcelas confirmadas" x="24" y="51" width="326" height="15" />
+      </frame>
+    </frame>
+  </frame>

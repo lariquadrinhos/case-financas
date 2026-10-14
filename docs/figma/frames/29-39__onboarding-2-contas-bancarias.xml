@@ -1,0 +1,100 @@
+  <frame id="29:39" name="Onboarding 2 — Contas Bancárias" x="4526" y="-4761" width="1440" height="900">
+    <frame id="29:40" name="Frame" x="380" y="80" width="680" height="631">
+      <frame id="29:41" name="Frame" x="40" y="36" width="272" height="4">
+        <rounded-rectangle id="29:42" name="Rectangle" x="0" y="0" width="48" height="4" />
+        <rounded-rectangle id="29:43" name="Rectangle" x="56" y="0" width="48" height="4" />
+        <rounded-rectangle id="29:44" name="Rectangle" x="112" y="0" width="48" height="4" />
+        <rounded-rectangle id="29:45" name="Rectangle" x="168" y="0" width="48" height="4" />
+        <rounded-rectangle id="29:46" name="Rectangle" x="224" y="0" width="48" height="4" />
+      </frame>
+      <text id="29:48" name="Passo 2 de 5: Contas Bancárias" x="40" y="60" width="181" height="15" />
+      <text id="29:49" name="Cadastre suas contas bancárias e patrimonio" x="40" y="95" width="486" height="27" />
+      <text id="29:50" name="Legenda/cor, entidade e saldo atual. Adicione quantas contas quiser." x="40" y="142" width="423" height="16" />
+      <frame id="207:2" name="Frame" x="40" y="178" width="600" height="59">
+        <frame id="187:3" name="Frame 4" x="15" y="21.5" width="362" height="16">
+          <text id="207:3" name="Nubank" x="0" y="0" width="150" height="16" />
+          <text id="207:4" name="PF" x="166" y="0" width="50" height="16" />
+          <text id="207:5" name="R$ 4.200,00" x="232" y="0" width="130" height="16" />
+        </frame>
+        <frame id="207:6" name="Frame" x="428" y="14" width="157" height="31">
+          <frame id="207:7" name="Frame" x="0" y="0" width="63" height="31">
+            <text id="207:8" name="Editar" x="14" y="8" width="35" height="15" />
+          </frame>
+          <frame id="207:9" name="Frame" x="71" y="0" width="86" height="31">
+            <text id="207:10" name="Descartar" x="14" y="8" width="58" height="15" />
+          </frame>
+        </frame>
+      </frame>
+      <frame id="207:11" name="Frame" x="40" y="257" width="600" height="59">
+        <frame id="187:4" name="Frame 5" x="15" y="21.5" width="362" height="16">
+          <text id="207:12" name="Itaú PJ" x="0" y="0" width="150" height="16" />
+          <text id="207:13" name="PJ" x="166" y="0" width="50" height="16" />
+          <text id="207:14" name="R$ 8.900,00" x="232" y="0" width="130" height="16" />
+        </frame>
+        <frame id="207:15" name="Frame" x="428" y="14" width="157" height="31">
+          <frame id="207:16" name="Frame" x="0" y="0" width="63" height="31">
+            <text id="207:17" name="Editar" x="14" y="8" width="35" height="15" />
+          </frame>
+          <frame id="207:18" name="Frame" x="71" y="0" width="86" height="31">
+            <text id="207:19" name="Descartar" x="14" y="8" width="58" height="15" />
+          </frame>
+        </frame>
+      </frame>
+      <text id="155:2" name="Adicionar conta" x="40" y="336" width="117" height="18" />
+      <frame id="29:51" name="Frame" x="40" y="374" width="600" height="73">
+        <frame id="29:52" name="Frame" x="0" y="0" width="92" height="61">
+          <text id="29:53" name="Nome da conta *" x="0" y="0" width="97" height="15" />
+          <frame id="29:54" name="Frame" x="0" y="21" width="92" height="40">
+            <text id="29:55" name="Ex: Nubank" x="14" y="12" width="70" height="16" />
+          </frame>
+        </frame>
+        <frame id="36:2" name="Cor" x="108" y="0" width="228" height="73">
+          <text id="36:3" name="Cor" x="0" y="0" width="21" height="15" />
+          <frame id="36:4" name="Frame" x="0" y="21" width="228" height="52">
+            <ellipse id="37:3" name="Ellipse" x="0" y="12" width="28" height="28" />
+            <ellipse id="37:6" name="Ellipse" x="40" y="12" width="28" height="28" />
+            <ellipse id="37:9" name="Ellipse" x="80" y="12" width="28" height="28" />
+            <ellipse id="37:12" name="Ellipse" x="120" y="12" width="28" height="28" />
+            <ellipse id="37:15" name="Ellipse" x="160" y="12" width="28" height="28" />
+            <ellipse id="37:18" name="Ellipse" x="200" y="12" width="28" height="28" />
+          </frame>
+        </frame>
+        <frame id="29:56" name="Frame" x="352" y="0" width="140" height="52">
+          <text id="29:57" name="Entidade" x="0" y="0" width="51" height="15" />
+          <frame id="29:58" name="Frame" x="0" y="21" width="83" height="31">
+            <frame id="29:59" name="Frame" x="0" y="0" width="39" height="31">
+              <text id="29:60" name="PF" x="12" y="8" width="15" height="15" />
+            </frame>
+            <frame id="29:61" name="Frame" x="45" y="0" width="38" height="31">
+              <text id="29:62" name="PJ" x="12" y="8" width="14" height="15" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="29:63" name="Frame" x="508" y="0" width="92" height="61">
+          <text id="29:64" name="Saldo" x="0" y="0" width="33" height="15" />
+          <frame id="29:65" name="Frame" x="0" y="21" width="92" height="40">
+            <text id="29:66" name="R$ 0,00" x="14" y="12" width="48" height="16" />
+          </frame>
+        </frame>
+      </frame>
+      <frame id="202:4" name="Frame" x="40" y="467" width="600" height="35">
+        <frame id="202:5" name="Frame" x="0" y="0" width="498" height="1" />
+        <frame id="29:67" name="Frame" x="498" y="0" width="102" height="35">
+          <text id="29:68" name="+ Adicionar" x="16" y="10" width="70" height="15" />
+        </frame>
+      </frame>
+      <frame id="29:78" name="Frame" x="40" y="522" width="600" height="40">
+        <frame id="29:79" name="Frame" x="0" y="0" width="73" height="40">
+          <text id="29:80" name="Voltar" x="18" y="12" width="37" height="16" />
+        </frame>
+        <frame id="29:81" name="Frame" x="85" y="0" width="197" height="1" />
+        <frame id="29:82" name="Frame" x="294" y="0" width="194" height="40">
+          <text id="29:83" name="Salvar e continuar depois" x="18" y="12" width="158" height="16" />
+        </frame>
+        <frame id="29:84" name="Frame" x="500" y="0" width="100" height="40">
+          <text id="29:85" name="Avançar" x="24" y="12" width="52" height="16" />
+        </frame>
+      </frame>
+      <text id="216:4" name="* Campo obrigatório" x="40" y="582" width="106" height="13" />
+    </frame>
+  </frame>

@@ -1,0 +1,136 @@
+  <frame id="34:2" name="Estado — 3 ações da Revisão de Recorrentes" x="1480" y="6424" width="2106" height="800">
+    <frame id="34:3" name="Frame" x="5" y="183" width="2096" height="434">
+      <frame id="34:4" name="Frame" x="0" y="0" width="400" height="399">
+        <text id="34:5" name="① Marcar Pago" x="20" y="20" width="117" height="18" />
+        <frame id="34:6" name="Frame" x="20" y="52" width="360" height="51">
+          <frame id="34:7" name="Frame" x="12" y="10" width="260" height="31">
+            <text id="34:8" name="Aluguel" x="0" y="0" width="48" height="16" />
+            <text id="34:9" name="PJ · valor fixo" x="0" y="18" width="69" height="13" />
+          </frame>
+          <text id="34:10" name="R$ 1.500,00" x="272" y="10" width="76" height="16" />
+        </frame>
+        <text id="34:11" name="↓ clique em Marcar Pago" x="20" y="117" width="133" height="13" />
+        <frame id="34:12" name="Frame" x="20" y="144" width="360" height="208">
+          <text id="34:13" name="Confirmar pagamento" x="14" y="14" width="138" height="16" />
+          <frame id="146:2" name="Frame" x="14" y="40" width="332" height="48">
+            <text id="146:3" name="Valor pago" x="0" y="0" width="57" height="13" />
+            <frame id="146:4" name="Frame" x="0" y="17" width="332" height="31">
+              <text id="146:5" name="R$ 1.500,00" x="10" y="8" width="67" height="15" />
+            </frame>
+          </frame>
+          <frame id="34:14" name="Frame" x="14" y="98" width="332" height="51">
+            <text id="34:15" name="Data de pagamento *" x="0" y="0" width="112" height="13" />
+            <frame id="34:16" name="Frame" x="0" y="17" width="332" height="34">
+              <text id="34:17" name="Hoje, 20/07/2026" x="10" y="8" width="294" height="15" />
+              <frame id="201:8" name="Frame" x="304" y="8" width="18" height="18">
+                <rounded-rectangle id="201:9" name="Rectangle" x="2" y="2.5" width="14" height="13" />
+                <rounded-rectangle id="201:10" name="Rectangle" x="0" y="0" width="14" height="3.5" />
+              </frame>
+            </frame>
+          </frame>
+          <frame id="34:18" name="Frame" x="14" y="159" width="91" height="35">
+            <text id="34:19" name="Confirmar" x="16" y="10" width="59" height="15" />
+          </frame>
+        </frame>
+        <text id="34:20" name="Sem pergunta de série: confirma só o previsto." x="20" y="366" width="243" height="13" />
+      </frame>
+      <frame id="34:21" name="Frame" x="424" y="0" width="400" height="328">
+        <text id="34:22" name="② Editar" x="20" y="20" width="68" height="18" />
+        <text id="34:23" name="↓ clique em Editar → altera o valor" x="20" y="52" width="182" height="13" />
+        <frame id="34:24" name="Frame" x="20" y="79" width="360" height="202">
+          <frame id="144:2" name="Frame" x="14" y="14" width="332" height="52">
+            <text id="144:3" name="Valor *" x="0" y="0" width="36" height="13" />
+            <frame id="144:4" name="Frame" x="0" y="19" width="332" height="33">
+              <text id="144:5" name="R$ 189,90" x="12" y="9" width="58" height="15" />
+            </frame>
+          </frame>
+          <text id="34:25" name="Aplicar esta mudança a:" x="14" y="78" width="151" height="16" />
+          <frame id="34:26" name="Frame" x="14" y="106" width="332" height="35">
+            <text id="34:27" name="Só esta ocorrência (Julho/2026)" x="12" y="10" width="186" height="15" />
+          </frame>
+          <frame id="34:28" name="Frame" x="14" y="153" width="332" height="35">
+            <text id="34:29" name="Toda a série (valores em aberto)" x="12" y="10" width="186" height="15" />
+          </frame>
+        </frame>
+        <text id="34:30" name="Só aparece quando o valor/dado muda: não ao só confirmar Pago." x="20" y="295" width="343" height="13" />
+      </frame>
+      <frame id="34:31" name="Frame" x="848" y="0" width="400" height="238">
+        <text id="34:32" name="③ Descartar" x="20" y="20" width="98" height="18" />
+        <text id="34:33" name="↓ clique em Descartar" x="20" y="52" width="118" height="13" />
+        <frame id="34:34" name="Frame" x="20" y="79" width="360" height="112">
+          <text id="34:35" name="Descartar &quot;Academia&quot; deste mês?" x="14" y="14" width="214" height="16" />
+          <text id="34:36" name="A série continua normalmente a partir do mês seguinte." x="14" y="40" width="288" height="13" />
+          <frame id="34:37" name="Frame" x="14" y="63" width="182" height="35">
+            <frame id="34:38" name="Frame" x="0" y="0" width="84" height="35">
+              <text id="34:39" name="Cancelar" x="16" y="10" width="52" height="15" />
+            </frame>
+            <frame id="34:40" name="Frame" x="92" y="0" width="90" height="35">
+              <text id="34:41" name="Descartar" x="16" y="10" width="58" height="15" />
+            </frame>
+          </frame>
+        </frame>
+        <text id="34:42" name="Disponível para qualquer recorrência (fixa ou a definir)." x="20" y="205" width="285" height="13" />
+      </frame>
+      <frame id="147:2" name="Frame" x="1272" y="0" width="400" height="434">
+        <text id="147:3" name="④ Marcar Pago: valor divergente" x="20" y="20" width="228" height="17" />
+        <frame id="147:4" name="Frame" x="20" y="51" width="360" height="51">
+          <frame id="147:5" name="Frame" x="12" y="10" width="336" height="31">
+            <text id="147:6" name="Aluguel" x="0" y="0" width="48" height="16" />
+            <text id="147:7" name="PJ · valor fixo · previsto R$ 1.500,00" x="0" y="18" width="184" height="13" />
+          </frame>
+        </frame>
+        <frame id="147:8" name="Frame" x="20" y="116" width="360" height="258">
+          <text id="147:9" name="Confirmar pagamento" x="14" y="14" width="138" height="16" />
+          <frame id="147:10" name="Frame" x="14" y="40" width="332" height="48">
+            <text id="147:11" name="Valor pago" x="0" y="0" width="57" height="13" />
+            <frame id="147:12" name="Frame" x="0" y="17" width="332" height="31">
+              <text id="147:13" name="R$ 1.300,00" x="10" y="8" width="68" height="15" />
+            </frame>
+          </frame>
+          <frame id="147:14" name="Frame" x="14" y="98" width="332" height="51">
+            <text id="147:15" name="Data de pagamento *" x="0" y="0" width="112" height="13" />
+            <frame id="147:16" name="Frame" x="0" y="17" width="332" height="34">
+              <text id="147:17" name="Hoje, 20/07/2026" x="10" y="8" width="100" height="15" />
+              <frame id="201:11" name="Frame" x="110" y="8" width="18" height="18">
+                <rounded-rectangle id="201:12" name="Rectangle" x="2" y="2.5" width="14" height="13" />
+                <rounded-rectangle id="201:13" name="Rectangle" x="0" y="0" width="14" height="3.5" />
+              </frame>
+            </frame>
+          </frame>
+          <frame id="147:18" name="Frame" x="14" y="159" width="332" height="50">
+            <text id="147:19" name="R$ 200,00 abaixo do previsto" x="12" y="10" width="171" height="15" />
+            <text id="147:20" name="Esse valor fica pendente e passa a ser rastreado no histórico de eventos." x="12" y="27" width="381" height="13" />
+          </frame>
+          <frame id="147:21" name="Frame" x="14" y="219" width="78" height="25">
+            <text id="147:22" name="Confirmar" x="12" y="6" width="54" height="13" />
+          </frame>
+        </frame>
+        <text id="147:23" name="Divergência entre previsto e pago vira um evento rastreável, mesma lógica já usada em Passivos." x="20" y="388" width="360" height="26" />
+      </frame>
+      <frame id="152:2" name="Frame" x="1696" y="0" width="400" height="429">
+        <text id="152:3" name="⑤ Marcar Pago: valor a mais" x="20" y="20" width="198" height="17" />
+        <frame id="152:4" name="Frame" x="20" y="51" width="360" height="51">
+          <frame id="152:5" name="Frame" x="12" y="10" width="336" height="31">
+            <text id="152:6" name="Aluguel" x="0" y="0" width="48" height="16" />
+            <text id="152:7" name="PJ · previsto R$ 1.500,00 · pago R$ 1.700,00" x="0" y="18" width="227" height="13" />
+          </frame>
+        </frame>
+        <frame id="152:8" name="Frame" x="20" y="116" width="360" height="253">
+          <text id="152:9" name="R$ 200,00 a mais que o previsto. O que fazer com a diferença?" x="14" y="14" width="317" height="32" />
+          <frame id="152:10" name="Frame" x="14" y="56" width="332" height="50">
+            <text id="152:11" name="Descontar da próxima ocorrência" x="12" y="10" width="193" height="15" />
+            <text id="152:12" name="Reduz o valor previsto do mês seguinte" x="12" y="27" width="205" height="13" />
+          </frame>
+          <frame id="152:13" name="Frame" x="14" y="116" width="332" height="63">
+            <text id="152:14" name="Redirecionar o valor extra" x="12" y="10" width="149" height="15" />
+            <text id="152:15" name="Investimento, Passivo ou Receita: mesmo fluxo de Venda de Bem Material" x="12" y="27" width="296" height="26" />
+          </frame>
+          <frame id="152:16" name="Frame" x="14" y="189" width="332" height="50">
+            <text id="152:17" name="Manter sem ação" x="12" y="10" width="100" height="15" />
+            <text id="152:18" name="Só registra no histórico de eventos, sem decisão pendente" x="12" y="27" width="306" height="13" />
+          </frame>
+        </frame>
+        <text id="152:19" name="Diferente de pagar a menos, isso nunca vira Pendência: a pessoa decide na hora, ou deixa registrado." x="20" y="383" width="360" height="26" />
+      </frame>
+    </frame>
+  </frame>

@@ -1,0 +1,89 @@
+  <frame id="29:86" name="Onboarding 3 — Bens Materiais" x="6026" y="-4761" width="1440" height="900">
+    <frame id="29:87" name="Frame" x="380" y="80" width="680" height="607">
+      <frame id="29:88" name="Frame" x="40" y="36" width="272" height="4">
+        <rounded-rectangle id="29:89" name="Rectangle" x="0" y="0" width="48" height="4" />
+        <rounded-rectangle id="29:90" name="Rectangle" x="56" y="0" width="48" height="4" />
+        <rounded-rectangle id="29:91" name="Rectangle" x="112" y="0" width="48" height="4" />
+        <rounded-rectangle id="29:92" name="Rectangle" x="168" y="0" width="48" height="4" />
+        <rounded-rectangle id="29:93" name="Rectangle" x="224" y="0" width="48" height="4" />
+      </frame>
+      <text id="29:95" name="Passo 3 de 5: Bens Materiais" x="40" y="60" width="165" height="15" />
+      <text id="29:96" name="Cadastre seus bens materiais" x="40" y="95" width="320" height="27" />
+      <text id="29:97" name="Imóvel, veículo, equipamentos, o que tiver valor. Nome livre, sem categoria fixa." x="40" y="142" width="487" height="16" />
+      <frame id="211:2" name="Frame" x="40" y="178" width="600" height="53">
+        <frame id="211:3" name="Frame" x="15" y="17.5" width="344" height="18">
+          <text id="211:4" name="Apartamento Centro" x="0" y="0" width="150" height="18" />
+          <text id="211:5" name="PF" x="164" y="0" width="36" height="18" />
+          <text id="211:6" name="R$ 320.000,00" x="214" y="0" width="130" height="18" />
+        </frame>
+        <frame id="211:7" name="Frame" x="438" y="12" width="147" height="29">
+          <frame id="211:8" name="Frame" x="0" y="0" width="59" height="29">
+            <text id="211:9" name="Editar" x="12" y="7" width="35" height="15" />
+          </frame>
+          <frame id="211:10" name="Frame" x="65" y="0" width="82" height="29">
+            <text id="211:11" name="Descartar" x="12" y="7" width="58" height="15" />
+          </frame>
+        </frame>
+      </frame>
+      <frame id="211:12" name="Frame" x="40" y="251" width="600" height="53">
+        <frame id="211:13" name="Frame" x="15" y="17.5" width="344" height="18">
+          <text id="211:14" name="Civic 2020" x="0" y="0" width="150" height="18" />
+          <text id="211:15" name="PF" x="164" y="0" width="36" height="18" />
+          <text id="211:16" name="R$ 45.000,00" x="214" y="0" width="130" height="18" />
+        </frame>
+        <frame id="211:17" name="Frame" x="438" y="12" width="147" height="29">
+          <frame id="211:18" name="Frame" x="0" y="0" width="59" height="29">
+            <text id="211:19" name="Editar" x="12" y="7" width="35" height="15" />
+          </frame>
+          <frame id="211:20" name="Frame" x="65" y="0" width="82" height="29">
+            <text id="211:21" name="Descartar" x="12" y="7" width="58" height="15" />
+          </frame>
+        </frame>
+      </frame>
+      <text id="155:3" name="Adicionar bem material" x="40" y="324" width="170" height="18" />
+      <frame id="29:98" name="Frame" x="40" y="362" width="600" height="61">
+        <frame id="29:99" name="Frame" x="0" y="0" width="214" height="61">
+          <text id="29:100" name="Nome *" x="0" y="0" width="44" height="15" />
+          <frame id="29:101" name="Frame" x="0" y="21" width="214" height="40">
+            <text id="29:102" name="Ex: Apartamento Centro" x="14" y="12" width="148" height="16" />
+          </frame>
+        </frame>
+        <frame id="29:103" name="Frame" x="230" y="0" width="140" height="52">
+          <text id="29:104" name="Entidade" x="0" y="0" width="51" height="15" />
+          <frame id="29:105" name="Frame" x="0" y="21" width="83" height="31">
+            <frame id="29:106" name="Frame" x="0" y="0" width="39" height="31">
+              <text id="29:107" name="PF" x="12" y="8" width="15" height="15" />
+            </frame>
+            <frame id="29:108" name="Frame" x="45" y="0" width="38" height="31">
+              <text id="29:109" name="PJ" x="12" y="8" width="14" height="15" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="29:110" name="Frame" x="386" y="0" width="214" height="61">
+          <text id="29:111" name="Valor inicial *" x="0" y="0" width="75" height="15" />
+          <frame id="29:112" name="Frame" x="0" y="21" width="214" height="40">
+            <text id="29:113" name="R$ 0,00" x="14" y="12" width="48" height="16" />
+          </frame>
+        </frame>
+      </frame>
+      <frame id="202:6" name="Frame" x="40" y="443" width="600" height="35">
+        <frame id="202:7" name="Frame" x="0" y="0" width="498" height="1" />
+        <frame id="29:114" name="Frame" x="498" y="0" width="102" height="35">
+          <text id="29:115" name="+ Adicionar" x="16" y="10" width="70" height="15" />
+        </frame>
+      </frame>
+      <frame id="29:125" name="Frame" x="40" y="498" width="600" height="40">
+        <frame id="29:126" name="Frame" x="0" y="0" width="73" height="40">
+          <text id="29:127" name="Voltar" x="18" y="12" width="37" height="16" />
+        </frame>
+        <frame id="29:128" name="Frame" x="85" y="0" width="197" height="1" />
+        <frame id="29:129" name="Frame" x="294" y="0" width="194" height="40">
+          <text id="29:130" name="Salvar e continuar depois" x="18" y="12" width="158" height="16" />
+        </frame>
+        <frame id="29:131" name="Frame" x="500" y="0" width="100" height="40">
+          <text id="29:132" name="Avançar" x="24" y="12" width="52" height="16" />
+        </frame>
+      </frame>
+      <text id="216:5" name="* Campo obrigatório" x="40" y="558" width="106" height="13" />
+    </frame>
+  </frame>

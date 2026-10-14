@@ -1,0 +1,187 @@
+  <frame id="23:2" name="Desktop — Evolução Mensal" x="26" y="4197" width="1440" height="900">
+    <frame id="20:163" name="Sidebar" x="0" y="0" width="278" height="900">
+      <frame id="509:102" name="Topo da sidebar" x="20" y="28" width="238" height="44">
+        <text id="20:164" name="Finanças PF+PJ" x="0" y="13" width="116" height="18" />
+        <instance id="509:103" name="Alternador de tema" x="154" y="0" width="84" height="44" />
+      </frame>
+      <frame id="20:165" name="Frame" x="20" y="96" width="238" height="43">
+        <text id="20:166" name="+ Novo Lançamento" x="39.5" y="12" width="159" height="19" />
+      </frame>
+      <frame id="20:167" name="Frame" x="20" y="163" width="238" height="302">
+        <frame id="20:168" name="Frame" x="0" y="0" width="238" height="36">
+          <text id="20:170" name="Relatórios" x="10" y="10" width="63" height="16" />
+          <text id="20:169" name="▾" x="83" y="10" width="5" height="13" />
+        </frame>
+        <frame id="20:171" name="Frame" x="0" y="38" width="238" height="36">
+          <text id="20:172" name="DRE" x="25" y="10" width="26" height="16" />
+        </frame>
+        <frame id="20:173" name="Frame" x="0" y="76" width="238" height="36">
+          <text id="20:174" name="Balanço Patrimonial" x="25" y="10" width="123" height="16" />
+        </frame>
+        <frame id="20:175" name="Frame" x="0" y="114" width="238" height="36">
+          <text id="20:176" name="Evolução Mensal" x="25" y="10" width="105" height="16" />
+        </frame>
+        <frame id="20:177" name="Frame" x="0" y="152" width="238" height="36">
+          <text id="20:178" name="Indicadores Financeiros" x="25" y="10" width="148" height="16" />
+        </frame>
+        <frame id="20:179" name="Frame" x="0" y="190" width="238" height="36">
+          <text id="20:180" name="Revisão de Recorrentes" x="10" y="10" width="147" height="16" />
+        </frame>
+        <frame id="20:181" name="Frame" x="0" y="228" width="238" height="36">
+          <text id="20:182" name="Histórico" x="10" y="10" width="56" height="16" />
+        </frame>
+        <frame id="157:51" name="Frame" x="0" y="266" width="238" height="36">
+          <text id="157:53" name="Plano de Contas e Patrimônio" x="12" y="10" width="183" height="16" />
+          <text id="157:52" name="▾" x="205" y="20.5" width="13" height="5" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="23:25" name="Frame" x="278" y="0" width="1162" height="900">
+      <frame id="288:5" name="Frame" x="48" y="40" width="1066" height="152">
+        <frame id="23:26" name="Frame" x="0" y="0" width="1066" height="29">
+          <frame id="23:27" name="Frame" x="0" y="0" width="1066" height="29">
+            <text id="23:28" name="Evolução Mensal" x="0" y="0" width="198" height="29" />
+          </frame>
+        </frame>
+        <text id="278:7" name="Evolução Mensal: como Receita, Lucro e Patrimônio mudaram mês a mês, pra comparar períodos e ver a tendência." x="0" y="43" width="1066" height="15" />
+        <text id="277:4" name="Veja a evolução consolidada (PF + PJ juntos), ou separada por entidade." x="0" y="72" width="1066" height="15" />
+        <frame id="23:29" name="Frame" x="0" y="101" width="214" height="31">
+          <frame id="23:30" name="Frame" x="0" y="0" width="105" height="31">
+            <text id="23:31" name="Consolidado" x="16" y="8" width="73" height="15" />
+          </frame>
+          <frame id="23:32" name="Frame" x="113" y="0" width="47" height="31">
+            <text id="23:33" name="PF" x="16" y="8" width="15" height="15" />
+          </frame>
+          <frame id="23:34" name="Frame" x="168" y="0" width="46" height="31">
+            <text id="23:35" name="PJ" x="16" y="8" width="14" height="15" />
+          </frame>
+        </frame>
+      </frame>
+      <frame id="23:36" name="Frame" x="48" y="212" width="1066" height="294">
+        <text id="23:37" name="Lucro Líquido no período selecionado" x="20" y="20" width="254" height="17" />
+        <frame id="142:4" name="Frame 1" x="20" y="49" width="210" height="27">
+          <frame id="143:11" name="Frame" x="0" y="0" width="117" height="27">
+            <text id="143:12" name="Últimos 6 meses" x="14" y="7" width="89" height="13" />
+          </frame>
+          <frame id="143:10" name="Frame" x="125" y="0" width="85" height="27">
+            <frame id="143:13" name="Frame" x="0" y="0" width="85" height="27">
+              <text id="143:14" name="Último ano" x="14" y="7" width="57" height="13" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="23:38" name="Frame" x="20" y="88" width="1026" height="186">
+          <frame id="23:39" name="Frame" x="0" y="16" width="151" height="170">
+            <rounded-rectangle id="23:40" name="Rectangle" x="55.5" y="72.63636016845703" width="40" height="76.36363983154297" />
+            <text id="23:41" name="Fev" x="66" y="157" width="19" height="13" />
+          </frame>
+          <frame id="23:42" name="Frame" x="175" y="16" width="151" height="170">
+            <rounded-rectangle id="23:43" name="Rectangle" x="55.5" y="47.18181610107422" width="40" height="101.81818389892578" />
+            <text id="23:44" name="Mar" x="65" y="157" width="21" height="13" />
+          </frame>
+          <frame id="23:45" name="Frame" x="350" y="16" width="151" height="170">
+            <rounded-rectangle id="23:46" name="Rectangle" x="55.5" y="91.7272720336914" width="40" height="57.272727966308594" />
+            <text id="23:47" name="Abr" x="66" y="157" width="19" height="13" />
+          </frame>
+          <frame id="23:48" name="Frame" x="525" y="16" width="151" height="170">
+            <rounded-rectangle id="23:49" name="Rectangle" x="55.5" y="28.090911865234375" width="40" height="120.90908813476562" />
+            <text id="23:50" name="Mai" x="66" y="157" width="19" height="13" />
+          </frame>
+          <frame id="23:51" name="Frame" x="700" y="16" width="151" height="170">
+            <rounded-rectangle id="23:52" name="Rectangle" x="55.5" y="59.909088134765625" width="40" height="89.09091186523438" />
+            <text id="23:53" name="Jun" x="65.5" y="157" width="20" height="13" />
+          </frame>
+          <frame id="23:54" name="Frame" x="875" y="16" width="151" height="170">
+            <rounded-rectangle id="23:55" name="Rectangle" x="55.5" y="9" width="40" height="140" />
+            <text id="23:56" name="Jul" x="67.5" y="157" width="16" height="13" />
+          </frame>
+        </frame>
+      </frame>
+      <frame id="23:57" name="Frame" x="48" y="526" width="1066" height="212">
+        <frame id="23:58" name="Frame" x="20" y="16" width="1026" height="36">
+          <frame id="23:59" name="Frame" x="0" y="10" width="140" height="16">
+            <text id="23:60" name="Métrica" x="0" y="0" width="45" height="15" />
+          </frame>
+          <frame id="23:61" name="Frame" x="140" y="10" width="160" height="16">
+            <text id="23:62" name="Fev" x="0" y="0" width="21" height="15" />
+          </frame>
+          <frame id="23:63" name="Frame" x="300" y="10" width="160" height="16">
+            <text id="23:64" name="Mar" x="0" y="0" width="23" height="15" />
+          </frame>
+          <frame id="23:65" name="Frame" x="460" y="10" width="160" height="16">
+            <text id="23:66" name="Abr" x="0" y="0" width="21" height="15" />
+          </frame>
+          <frame id="23:67" name="Frame" x="620" y="10" width="160" height="16">
+            <text id="23:68" name="Mai" x="0" y="0" width="21" height="15" />
+          </frame>
+        </frame>
+        <frame id="23:69" name="Frame" x="20" y="52" width="1026" height="36">
+          <frame id="23:70" name="Frame" x="0" y="10" width="140" height="16">
+            <text id="23:71" name="Receita" x="0" y="0" width="43" height="15" />
+          </frame>
+          <frame id="23:72" name="Frame" x="140" y="10" width="160" height="16">
+            <text id="23:73" name="R$ 18.200" x="0" y="0" width="57" height="15" />
+          </frame>
+          <frame id="23:74" name="Frame" x="300" y="10" width="160" height="16">
+            <text id="23:75" name="R$ 19.400" x="0" y="0" width="58" height="15" />
+          </frame>
+          <frame id="23:76" name="Frame" x="460" y="10" width="160" height="16">
+            <text id="23:77" name="R$ 17.900" x="0" y="0" width="56" height="15" />
+          </frame>
+          <frame id="23:78" name="Frame" x="620" y="10" width="160" height="16">
+            <text id="23:79" name="R$ 21.100" x="0" y="0" width="54" height="15" />
+          </frame>
+        </frame>
+        <frame id="23:80" name="Frame" x="20" y="88" width="1026" height="36">
+          <frame id="23:81" name="Frame" x="0" y="10" width="140" height="16">
+            <text id="23:82" name="EBITDA" x="0" y="0" width="43" height="15" />
+          </frame>
+          <frame id="23:83" name="Frame" x="140" y="10" width="160" height="16">
+            <text id="23:84" name="R$ 9.800" x="0" y="0" width="52" height="15" />
+          </frame>
+          <frame id="23:85" name="Frame" x="300" y="10" width="160" height="16">
+            <text id="23:86" name="R$ 10.900" x="0" y="0" width="58" height="15" />
+          </frame>
+          <frame id="23:87" name="Frame" x="460" y="10" width="160" height="16">
+            <text id="23:88" name="R$ 8.700" x="0" y="0" width="51" height="15" />
+          </frame>
+          <frame id="23:89" name="Frame" x="620" y="10" width="160" height="16">
+            <text id="23:90" name="R$ 12.200" x="0" y="0" width="58" height="15" />
+          </frame>
+        </frame>
+        <frame id="23:91" name="Frame" x="20" y="124" width="1026" height="36">
+          <frame id="23:92" name="Frame" x="0" y="10" width="140" height="16">
+            <text id="23:93" name="Lucro Líquido" x="0" y="0" width="77" height="15" />
+          </frame>
+          <frame id="23:94" name="Frame" x="140" y="10" width="160" height="16">
+            <text id="23:95" name="R$ 6.000" x="0" y="0" width="52" height="15" />
+          </frame>
+          <frame id="23:96" name="Frame" x="300" y="10" width="160" height="16">
+            <text id="23:97" name="R$ 8.000" x="0" y="0" width="52" height="15" />
+          </frame>
+          <frame id="23:98" name="Frame" x="460" y="10" width="160" height="16">
+            <text id="23:99" name="R$ 4.500" x="0" y="0" width="52" height="15" />
+          </frame>
+          <frame id="23:100" name="Frame" x="620" y="10" width="160" height="16">
+            <text id="23:101" name="R$ 9.500" x="0" y="0" width="52" height="15" />
+          </frame>
+        </frame>
+        <frame id="23:102" name="Frame" x="20" y="160" width="1026" height="36">
+          <frame id="23:103" name="Frame" x="0" y="10" width="140" height="16">
+            <text id="23:104" name="Patrimônio Líquido" x="0" y="0" width="106" height="15" />
+          </frame>
+          <frame id="23:105" name="Frame" x="140" y="10" width="160" height="16">
+            <text id="23:106" name="R$ 238.400" x="0" y="0" width="67" height="15" />
+          </frame>
+          <frame id="23:107" name="Frame" x="300" y="10" width="160" height="16">
+            <text id="23:108" name="R$ 244.100" x="0" y="0" width="64" height="15" />
+          </frame>
+          <frame id="23:109" name="Frame" x="460" y="10" width="160" height="16">
+            <text id="23:110" name="R$ 246.900" x="0" y="0" width="67" height="15" />
+          </frame>
+          <frame id="23:111" name="Frame" x="620" y="10" width="160" height="16">
+            <text id="23:112" name="R$ 250.700" x="0" y="0" width="66" height="15" />
+          </frame>
+        </frame>
+      </frame>
+    </frame>
+  </frame>

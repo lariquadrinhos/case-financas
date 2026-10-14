@@ -1,0 +1,18 @@
+  <frame id="311:1755" name="Vazio — Onboarding 0 (Antes de começar)" x="-13698" y="-4604" width="1440" height="900">
+    <frame id="311:1756" name="Frame" x="440" y="277.5" width="560" height="345">
+      <text id="311:1757" name="Antes de começar, vamos configurar seu Plano de Contas e Patrimônio" x="40" y="40" width="480" height="54" />
+      <frame id="311:1758" name="Frame" x="40" y="114" width="480" height="126">
+        <text id="311:1759" name="Esta etapa registra sua situação atual: contas, bens, investimentos e dívidas." x="0" y="0" width="480" height="34" />
+        <text id="311:1760" name="Dá pra fazer isso depois, mas configurar agora deixa seus relatórios certos desde o primeiro dia." x="0" y="46" width="480" height="34" />
+        <text id="311:1761" name="Lançamentos e recorrências não fazem parte desta etapa. Registre suas transações como salário e gastos do dia a dia em Novo Lançamento." x="0" y="92" width="480" height="34" />
+      </frame>
+      <frame id="311:1762" name="Frame" x="40" y="260" width="480" height="45">
+        <frame id="311:1763" name="Frame" x="0" y="0" width="234" height="45">
+          <text id="311:1764" name="Fazer depois" x="74" y="14" width="86" height="17" />
+        </frame>
+        <frame id="311:1765" name="Frame" x="246" y="0" width="234" height="45">
+          <text id="311:1766" name="Começar agora" x="65" y="14" width="104" height="17" />
+        </frame>
+      </frame>
+    </frame>
+  </frame>

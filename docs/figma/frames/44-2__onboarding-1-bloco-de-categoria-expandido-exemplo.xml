@@ -1,0 +1,146 @@
+  <frame id="44:2" name="Onboarding 1 — bloco de categoria expandido (exemplo)" x="3026" y="-4251" width="1440" height="1138">
+    <frame id="44:3" name="Frame" x="380" y="60" width="680" height="1050">
+      <text id="44:4" name="Passo 1 de 5: Plano de Contas" x="40" y="36" width="173" height="15" />
+      <text id="44:5" name="Revise seu plano de contas" x="40" y="67" width="292" height="27" />
+      <text id="140:3" name="Este é o modelo inicial do seu Plano de Contas. Os blocos abaixo (Receita Bruta, Despesas, etc.) são fixos e organizam seus relatórios. Dentro de cada um, você pode editar as categorias já sugeridas ou criar as suas. Crie categorias agora e lance os valores depois em Novo Lançamento." x="40" y="110" width="600" height="48" />
+      <text id="44:6" name="Cada bloco pode ser expandido, clique no nome do bloco pra ver e editar as categorias dentro dele." x="40" y="174" width="614" height="16" />
+      <frame id="44:7" name="Frame" x="40" y="206" width="600" height="53">
+        <frame id="44:8" name="Frame" x="14" y="10" width="572" height="33">
+          <frame id="44:9" name="Frame" x="0" y="0" width="567" height="33">
+            <text id="44:10" name="1. Receita Bruta" x="0" y="0" width="97" height="16" />
+            <text id="44:11" name="Salário/Pró-labore, Aluguel recebido, Freelance..." x="0" y="18" width="277" height="15" />
+          </frame>
+          <text id="44:12" name="▸" x="567" y="0" width="5" height="15" />
+        </frame>
+      </frame>
+      <frame id="44:13" name="Frame" x="40" y="275" width="600" height="53">
+        <frame id="44:14" name="Frame" x="14" y="10" width="572" height="33">
+          <frame id="44:15" name="Frame" x="0" y="0" width="567" height="33">
+            <text id="44:16" name="2. Deduções da Receita" x="0" y="0" width="148" height="16" />
+            <text id="44:17" name="DAS Simples, DARF Unificado..." x="0" y="18" width="177" height="15" />
+          </frame>
+          <text id="44:18" name="▸" x="567" y="0" width="5" height="15" />
+        </frame>
+      </frame>
+      <frame id="44:19" name="Frame" x="40" y="344" width="600" height="53">
+        <frame id="44:20" name="Frame" x="14" y="10" width="572" height="33">
+          <frame id="44:21" name="Frame" x="0" y="0" width="567" height="33">
+            <text id="44:22" name="3. Custo dos Serviços/Produtos" x="0" y="0" width="200" height="16" />
+            <text id="44:23" name="Assinaturas, academia, contador..." x="0" y="18" width="195" height="15" />
+          </frame>
+          <text id="44:24" name="▸" x="567" y="0" width="5" height="15" />
+        </frame>
+      </frame>
+      <frame id="44:25" name="Frame" x="40" y="413" width="600" height="53">
+        <frame id="44:26" name="Frame" x="14" y="10" width="572" height="33">
+          <frame id="44:27" name="Frame" x="0" y="0" width="567" height="33">
+            <text id="44:28" name="4. Despesas Administrativas" x="0" y="0" width="179" height="16" />
+            <text id="44:29" name="Aluguel moradia, financiamento, plano de saúde..." x="0" y="18" width="282" height="15" />
+          </frame>
+          <text id="44:30" name="▸" x="567" y="0" width="5" height="15" />
+        </frame>
+      </frame>
+      <frame id="44:31" name="Frame" x="40" y="482" width="600" height="401">
+        <frame id="44:32" name="Frame" x="14" y="10" width="572" height="16">
+          <frame id="44:33" name="Frame" x="0" y="0" width="567" height="16">
+            <text id="44:34" name="5. Despesas Pessoais/Consumo" x="0" y="0" width="201" height="16" />
+          </frame>
+          <text id="44:35" name="▾" x="567" y="0" width="5" height="15" />
+        </frame>
+        <frame id="44:36" name="Frame" x="14" y="38" width="572" height="41">
+          <frame id="44:37" name="Frame" x="12" y="8" width="397" height="15">
+            <text id="44:38" name="Alimentação" x="0" y="0" width="72" height="15" />
+          </frame>
+          <frame id="44:39" name="Frame" x="421" y="8" width="139" height="25">
+            <frame id="44:40" name="Frame" x="0" y="0" width="56" height="25">
+              <text id="44:41" name="Editar" x="12" y="6" width="32" height="13" />
+            </frame>
+            <frame id="44:42" name="Frame" x="62" y="0" width="77" height="25">
+              <text id="44:43" name="Descartar" x="12" y="6" width="53" height="13" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="44:44" name="Frame" x="14" y="91" width="572" height="41">
+          <frame id="44:45" name="Frame" x="12" y="8" width="397" height="15">
+            <text id="44:46" name="Transporte" x="0" y="0" width="64" height="15" />
+          </frame>
+          <frame id="44:47" name="Frame" x="421" y="8" width="139" height="25">
+            <frame id="44:48" name="Frame" x="0" y="0" width="56" height="25">
+              <text id="44:49" name="Editar" x="12" y="6" width="32" height="13" />
+            </frame>
+            <frame id="44:50" name="Frame" x="62" y="0" width="77" height="25">
+              <text id="44:51" name="Descartar" x="12" y="6" width="53" height="13" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="44:52" name="Frame" x="14" y="144" width="572" height="41">
+          <frame id="44:53" name="Frame" x="12" y="8" width="397" height="15">
+            <text id="44:54" name="Lazer/Entretenimento" x="0" y="0" width="125" height="15" />
+          </frame>
+          <frame id="44:55" name="Frame" x="421" y="8" width="139" height="25">
+            <frame id="44:56" name="Frame" x="0" y="0" width="56" height="25">
+              <text id="44:57" name="Editar" x="12" y="6" width="32" height="13" />
+            </frame>
+            <frame id="44:58" name="Frame" x="62" y="0" width="77" height="25">
+              <text id="44:59" name="Descartar" x="12" y="6" width="53" height="13" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="44:60" name="Frame" x="14" y="197" width="572" height="41">
+          <frame id="44:61" name="Frame" x="12" y="8" width="397" height="15">
+            <text id="44:62" name="Vestuário" x="0" y="0" width="55" height="15" />
+          </frame>
+          <frame id="44:63" name="Frame" x="421" y="8" width="139" height="25">
+            <frame id="44:64" name="Frame" x="0" y="0" width="56" height="25">
+              <text id="44:65" name="Editar" x="12" y="6" width="32" height="13" />
+            </frame>
+            <frame id="44:66" name="Frame" x="62" y="0" width="77" height="25">
+              <text id="44:67" name="Descartar" x="12" y="6" width="53" height="13" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="44:68" name="Frame" x="14" y="250" width="572" height="41">
+          <frame id="44:69" name="Frame" x="12" y="8" width="397" height="15">
+            <text id="44:70" name="Outras despesas pessoais" x="0" y="0" width="151" height="15" />
+          </frame>
+          <frame id="44:71" name="Frame" x="421" y="8" width="139" height="25">
+            <frame id="44:72" name="Frame" x="0" y="0" width="56" height="25">
+              <text id="44:73" name="Editar" x="12" y="6" width="32" height="13" />
+            </frame>
+            <frame id="44:74" name="Frame" x="62" y="0" width="77" height="25">
+              <text id="44:75" name="Descartar" x="12" y="6" width="53" height="13" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="44:76" name="Frame" x="14" y="303" width="572" height="41">
+          <frame id="44:77" name="Frame" x="12" y="8" width="397" height="15">
+            <text id="44:78" name="Consumo livre" x="0" y="0" width="82" height="15" />
+          </frame>
+          <frame id="44:79" name="Frame" x="421" y="8" width="139" height="25">
+            <frame id="44:80" name="Frame" x="0" y="0" width="56" height="25">
+              <text id="44:81" name="Editar" x="12" y="6" width="32" height="13" />
+            </frame>
+            <frame id="44:82" name="Frame" x="62" y="0" width="77" height="25">
+              <text id="44:83" name="Descartar" x="12" y="6" width="53" height="13" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="121:2" name="Frame" x="14" y="356" width="572" height="35">
+          <frame id="121:3" name="Frame" x="0" y="0" width="282" height="35">
+            <text id="121:4" name="Nome da categoria *" x="14" y="10" width="118" height="15" />
+          </frame>
+          <frame id="202:16" name="Frame" x="290" y="0" width="282" height="35">
+            <frame id="202:17" name="Frame" x="0" y="0" width="153" height="1" />
+            <frame id="121:5" name="Frame" x="153" y="0" width="129" height="35">
+              <text id="121:6" name="+ Criar categoria" x="14" y="10" width="101" height="15" />
+            </frame>
+          </frame>
+        </frame>
+      </frame>
+      <frame id="44:86" name="Frame" x="40" y="899" width="600" height="86">
+        <text id="44:87" name="Comportamento" x="14" y="12" width="88" height="13" />
+        <text id="44:88" name="Clicar no nome do bloco expande/recolhe (mesmo bloco, sem sobrepor outros). Cada categoria tem Editar/Descartar (mesmo padrão do resto do produto). A busca/criação de categoria fica escopada dentro do bloco: não é mais um campo solto na tela inteira." x="14" y="29" width="572" height="45" />
+      </frame>
+      <text id="216:10" name="* Campo obrigatório" x="40" y="1001" width="106" height="13" />
+    </frame>
+  </frame>

@@ -1,0 +1,18 @@
+  <frame id="242:2" name="Estado — DRE com Prejuízo (Lucro Líquido negativo)" x="1477" y="1612" width="560" height="299">
+    <text id="242:3" name="Estado: mês com prejuízo (Lucro Líquido negativo)" x="32" y="32" width="395" height="19" />
+    <frame id="242:4" name="Frame" x="32" y="67" width="496" height="28">
+      <text id="242:5" name="(-) Impostos sobre o Lucro" x="0" y="6" width="413" height="16" />
+      <text id="242:6" name="(-) R$ 900,00" x="413" y="6" width="83" height="16" />
+    </frame>
+    <frame id="242:7" name="Frame" x="32" y="111" width="496" height="28">
+      <text id="242:8" name="= Lucro Líquido" x="0" y="6" width="407" height="16" />
+      <text id="242:9" name="− R$ 1.850,00" x="407" y="6" width="89" height="16" />
+    </frame>
+    <frame id="242:10" name="Frame" x="32" y="155" width="496" height="70">
+      <frame id="242:11" name="Frame" x="47.5" y="18" width="401" height="34">
+        <text id="242:12" name="Sem lucro a destinar este mês" x="0" y="0" width="206" height="17" />
+        <text id="242:13" name="Prejuízo de R$ 1.850,00. Não há valor pra investir, guardar ou distribuir." x="0" y="19" width="401" height="15" />
+      </frame>
+    </frame>
+    <text id="242:14" name="&quot;Destinar este Lucro&quot; some quando o resultado é negativo — não faz sentido oferecer alocação de algo que não existe." x="32" y="241" width="496" height="26" />
+  </frame>

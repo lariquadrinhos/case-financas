@@ -1,0 +1,4 @@
+  <frame id="160:2" name="Nota — Mapear Dependentes" x="-1489" y="17646.328125" width="516.6257934570312" height="428.1042785644531">
+    <text id="160:3" name="✅ Dependentes: não precisa mapear" x="34.44171905517578" y="34.44181442260742" width="398" height="27" />
+    <text id="160:4" name="Nosso produto não calcula IR, só registra o valor já pago/recebido (aba IR do Novo Lançamento é um lançamento de valor, ponto). O abatimento por dependente acontece na declaração, dentro do sistema da Receita Federal, fora do nosso escopo inteiramente. Mesma lógica de Investimentos: não abrimos a composição porque nenhum cálculo nosso depende disso. Nenhum número do produto muda com 0 ou 3 dependentes. Conclusão, não pendência: fica fora do escopo por design, não por falta de tempo." x="34.44173049926758" y="78.66256713867188" width="447.7423400878906" height="315" />
+  </frame>

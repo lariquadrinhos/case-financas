@@ -1,0 +1,213 @@
+  <frame id="91:2" name="Desktop — Detalhe do Passivo (análise de dívida)" x="1542" y="13853" width="1440" height="1500">
+    <frame id="326:564" name="Sidebar" x="0" y="0" width="278" height="1500">
+      <frame id="509:264" name="Topo da sidebar" x="20" y="28" width="238" height="44">
+        <text id="326:565" name="Finanças PF+PJ" x="0" y="13" width="116" height="18" />
+        <instance id="509:265" name="Alternador de tema" x="154" y="0" width="84" height="44" />
+      </frame>
+      <frame id="326:566" name="Frame" x="20" y="96" width="238" height="43">
+        <text id="326:567" name="+ Novo Lançamento" x="39.5" y="12" width="159" height="19" />
+      </frame>
+      <frame id="326:568" name="Frame" x="20" y="163" width="238" height="492">
+        <frame id="326:569" name="Frame" x="0" y="0" width="238" height="36">
+          <text id="326:570" name="Relatórios" x="12" y="10" width="63" height="16" />
+          <text id="326:571" name="▾" x="85" y="10" width="5" height="13" />
+        </frame>
+        <frame id="326:572" name="Frame" x="0" y="38" width="238" height="36">
+          <text id="326:573" name="DRE" x="25" y="10" width="26" height="16" />
+        </frame>
+        <frame id="326:574" name="Frame" x="0" y="76" width="238" height="36">
+          <text id="326:575" name="Balanço Patrimonial" x="25" y="10" width="123" height="16" />
+        </frame>
+        <frame id="326:576" name="Frame" x="0" y="114" width="238" height="36">
+          <text id="326:577" name="Evolução Mensal" x="25" y="10" width="105" height="16" />
+        </frame>
+        <frame id="326:578" name="Frame" x="0" y="152" width="238" height="36">
+          <text id="326:579" name="Indicadores Financeiros" x="25" y="10" width="148" height="16" />
+        </frame>
+        <frame id="326:580" name="Frame" x="0" y="190" width="238" height="36">
+          <text id="326:581" name="Revisão de Recorrentes" x="10" y="10" width="147" height="16" />
+        </frame>
+        <frame id="326:582" name="Frame" x="0" y="228" width="238" height="36">
+          <text id="326:583" name="Histórico" x="10" y="10" width="56" height="16" />
+        </frame>
+        <frame id="326:584" name="Frame" x="0" y="266" width="238" height="36">
+          <text id="326:585" name="Plano de Contas e Patrimônio" x="12" y="10" width="183" height="16" />
+          <text id="326:586" name="▾" x="205" y="10" width="5" height="13" />
+        </frame>
+        <frame id="326:587" name="Frame" x="0" y="304" width="238" height="36">
+          <text id="326:588" name="Plano de Contas" x="25" y="10" width="102" height="16" />
+        </frame>
+        <frame id="326:589" name="Frame" x="0" y="342" width="238" height="36">
+          <text id="326:590" name="Contas Bancárias" x="25" y="10" width="109" height="16" />
+        </frame>
+        <frame id="326:591" name="Frame" x="0" y="380" width="238" height="36">
+          <text id="326:592" name="Bens Materiais" x="25" y="10" width="92" height="16" />
+        </frame>
+        <frame id="326:593" name="Frame" x="0" y="418" width="238" height="36">
+          <text id="326:594" name="Investimentos" x="25" y="10" width="88" height="16" />
+        </frame>
+        <frame id="326:595" name="Frame" x="0" y="456" width="238" height="36">
+          <text id="326:596" name="Passivos" x="25" y="10" width="55" height="16" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="91:36" name="Frame" x="278" y="0" width="1162" height="1500">
+      <text id="91:37" name="← Passivos" x="48" y="40" width="66" height="15" />
+      <frame id="91:38" name="Frame" x="48" y="75" width="1066" height="47">
+        <frame id="91:39" name="Frame" x="0" y="0" width="704" height="47">
+          <text id="91:40" name="Financiamento apartamento" x="0" y="0" width="332" height="29" />
+          <text id="91:41" name="Caixa Econômica · PF · Não circulante" x="0" y="31" width="232" height="16" />
+        </frame>
+        <frame id="203:2" name="Frame" x="704" y="0" width="362" height="35">
+          <frame id="91:42" name="Frame" x="0" y="0" width="169" height="35">
+            <text id="91:43" name="Editar dados cadastrais" x="16" y="10" width="137" height="15" />
+          </frame>
+          <frame id="91:57" name="Frame" x="177" y="0" width="185" height="35">
+            <text id="91:58" name="Registrar reajuste de juros" x="16" y="10" width="153" height="15" />
+          </frame>
+        </frame>
+      </frame>
+      <frame id="338:2" name="Frame" x="48" y="142" width="1066" height="136">
+        <text id="338:3" name="Informações da Dívida" x="20" y="20" width="164" height="18" />
+        <frame id="91:44" name="Frame" x="20" y="50" width="1026" height="66">
+          <frame id="91:45" name="Frame" x="0" y="0" width="247.5" height="66">
+            <text id="91:46" name="Valor original" x="16" y="14" width="69" height="13" />
+            <text id="91:47" name="R$ 320.000,00" x="16" y="31" width="127" height="21" />
+          </frame>
+          <frame id="91:48" name="Frame" x="259.5" y="0" width="247.5" height="66">
+            <text id="91:49" name="Saldo devedor atual" x="16" y="14" width="105" height="13" />
+            <text id="91:50" name="R$ 178.400,00" x="16" y="31" width="123" height="21" />
+          </frame>
+          <frame id="91:51" name="Frame" x="519" y="0" width="247.5" height="66">
+            <text id="91:52" name="Taxa de juros atual" x="16" y="14" width="99" height="13" />
+            <text id="91:53" name="0,85% a.m." x="16" y="31" width="93" height="21" />
+          </frame>
+          <frame id="91:54" name="Frame" x="778.5" y="0" width="247.5" height="66">
+            <text id="91:55" name="Parcelas" x="16" y="14" width="45" height="13" />
+            <text id="91:56" name="12 / 360 pagas" x="16" y="31" width="123" height="21" />
+          </frame>
+        </frame>
+      </frame>
+      <frame id="91:59" name="Frame" x="48" y="298" width="1066" height="250">
+        <text id="91:60" name="Evolução da dívida (saldo devedor)" x="20" y="20" width="238" height="17" />
+        <frame id="91:61" name="Frame" x="20" y="49" width="1026" height="156">
+          <frame id="91:62" name="Frame" x="0" y="12" width="70.83333587646484" height="144">
+            <rounded-rectangle id="91:63" name="Rectangle" x="19.416667938232422" y="7" width="32" height="120" />
+            <text id="91:64" name="Ago/25" x="19.416667938232422" y="133" width="32" height="11" />
+          </frame>
+          <frame id="91:65" name="Frame" x="86.83333587646484" y="12" width="70.83333587646484" height="144">
+            <rounded-rectangle id="91:66" name="Rectangle" x="19.416667938232422" y="11.800003051757812" width="32" height="115.19999694824219" />
+            <text id="91:67" name="Set" x="27.916667938232422" y="133" width="15" height="11" />
+          </frame>
+          <frame id="91:68" name="Frame" x="173.6666717529297" y="12" width="70.83333587646484" height="144">
+            <rounded-rectangle id="91:69" name="Rectangle" x="19.416667938232422" y="16.599998474121094" width="32" height="110.4000015258789" />
+            <text id="91:70" name="Out" x="27.416667938232422" y="133" width="16" height="11" />
+          </frame>
+          <frame id="91:71" name="Frame" x="260.5" y="12" width="70.83334350585938" height="144">
+            <rounded-rectangle id="91:72" name="Rectangle" x="19.416671752929688" y="21.400001525878906" width="32" height="105.5999984741211" />
+            <text id="91:73" name="Nov" x="26.416671752929688" y="133" width="18" height="11" />
+          </frame>
+          <frame id="91:74" name="Frame" x="347.3333435058594" y="12" width="70.83334350585938" height="144">
+            <rounded-rectangle id="91:75" name="Rectangle" x="19.416671752929688" y="26.199996948242188" width="32" height="100.80000305175781" />
+            <text id="91:76" name="Dez" x="26.916671752929688" y="133" width="17" height="11" />
+          </frame>
+          <frame id="91:77" name="Frame" x="434.16668701171875" y="12" width="70.83334350585938" height="144">
+            <rounded-rectangle id="91:78" name="Rectangle" x="19.416671752929688" y="31" width="32" height="96" />
+            <text id="91:79" name="Jan/26" x="19.916671752929688" y="133" width="31" height="11" />
+          </frame>
+          <frame id="91:80" name="Frame" x="521" y="12" width="70.83334350585938" height="144">
+            <rounded-rectangle id="91:81" name="Rectangle" x="19.416671752929688" y="35.80000305175781" width="32" height="91.19999694824219" />
+            <text id="91:82" name="Fev" x="27.416671752929688" y="133" width="16" height="11" />
+          </frame>
+          <frame id="91:83" name="Frame" x="607.8333740234375" y="12" width="70.83334350585938" height="144">
+            <rounded-rectangle id="91:84" name="Rectangle" x="19.416671752929688" y="40.599998474121094" width="32" height="86.4000015258789" />
+            <text id="91:85" name="Mar" x="26.916671752929688" y="133" width="17" height="11" />
+          </frame>
+          <frame id="91:86" name="Frame" x="694.666748046875" y="12" width="70.83334350585938" height="144">
+            <rounded-rectangle id="91:87" name="Rectangle" x="19.416671752929688" y="45.400001525878906" width="32" height="81.5999984741211" />
+            <text id="91:88" name="Abr" x="27.416671752929688" y="133" width="16" height="11" />
+          </frame>
+          <frame id="91:89" name="Frame" x="781.5001220703125" y="12" width="70.83334350585938" height="144">
+            <rounded-rectangle id="91:90" name="Rectangle" x="19.416671752929688" y="50.19999694824219" width="32" height="76.80000305175781" />
+            <text id="91:91" name="Mai" x="27.416671752929688" y="133" width="16" height="11" />
+          </frame>
+          <frame id="91:92" name="Frame" x="868.33349609375" y="12" width="70.83334350585938" height="144">
+            <rounded-rectangle id="91:93" name="Rectangle" x="19.416671752929688" y="55" width="32" height="72" />
+            <text id="91:94" name="Jun" x="27.416671752929688" y="133" width="16" height="11" />
+          </frame>
+          <frame id="91:95" name="Frame" x="955.1668701171875" y="12" width="70.83334350585938" height="144">
+            <rounded-rectangle id="91:96" name="Rectangle" x="19.416671752929688" y="59.80000305175781" width="32" height="67.19999694824219" />
+            <text id="91:97" name="Jul" x="28.916671752929688" y="133" width="13" height="11" />
+          </frame>
+        </frame>
+        <text id="91:98" name="Calculado automaticamente com base na taxa de juros e no cronograma de amortização. Recalculado a cada reajuste de juros registrado." x="20" y="217" width="715" height="13" />
+      </frame>
+      <frame id="337:3" name="Frame" x="48" y="568" width="1066" height="332">
+        <text id="91:99" name="Parcelas" x="20" y="20" width="68" height="19" />
+        <frame id="91:100" name="Frame" x="20" y="51" width="1026" height="50">
+          <text id="91:101" name="#11" x="14" y="10" width="20" height="15" />
+          <frame id="91:102" name="Frame" x="48" y="10" width="853" height="30">
+            <text id="91:103" name="10/06/2026" x="0" y="0" width="68" height="15" />
+            <text id="91:104" name="Previsto: R$ 1.520,00 · Pago: R$ 1.520,00" x="0" y="17" width="213" height="13" />
+          </frame>
+          <text id="91:105" name="Paga" x="915" y="10" width="27" height="13" />
+          <frame id="91:106" name="Frame" x="956" y="10" width="56" height="25">
+            <text id="91:107" name="Editar" x="12" y="6" width="32" height="13" />
+          </frame>
+        </frame>
+        <frame id="91:108" name="Frame" x="20" y="113" width="1026" height="50">
+          <text id="91:109" name="#12" x="14" y="10" width="21" height="15" />
+          <frame id="91:110" name="Frame" x="49" y="10" width="852" height="30">
+            <text id="91:111" name="10/07/2026" x="0" y="0" width="67" height="15" />
+            <text id="91:112" name="Previsto: R$ 1.520,00 · Pago: R$ 1.540,00" x="0" y="17" width="213" height="13" />
+          </frame>
+          <text id="91:113" name="Paga" x="915" y="10" width="27" height="13" />
+          <frame id="91:114" name="Frame" x="956" y="10" width="56" height="25">
+            <text id="91:115" name="Editar" x="12" y="6" width="32" height="13" />
+          </frame>
+        </frame>
+        <frame id="91:116" name="Frame" x="20" y="175" width="1026" height="50">
+          <text id="91:117" name="#13" x="14" y="10" width="22" height="15" />
+          <frame id="91:118" name="Frame" x="50" y="10" width="799" height="30">
+            <text id="91:119" name="10/08/2026" x="0" y="0" width="68" height="15" />
+            <text id="91:120" name="Previsto: R$ 1.520,00" x="0" y="17" width="110" height="13" />
+          </frame>
+          <text id="91:121" name="Prevista" x="863" y="10" width="44" height="13" />
+          <frame id="91:122" name="Frame" x="921" y="10" width="91" height="25">
+            <text id="91:123" name="Marcar Paga" x="12" y="6" width="67" height="13" />
+          </frame>
+        </frame>
+        <frame id="91:124" name="Frame" x="20" y="237" width="1026" height="50">
+          <text id="91:125" name="#14" x="14" y="10" width="22" height="15" />
+          <frame id="91:126" name="Frame" x="50" y="10" width="799" height="30">
+            <text id="91:127" name="10/09/2026" x="0" y="0" width="68" height="15" />
+            <text id="91:128" name="Previsto: R$ 1.520,00" x="0" y="17" width="110" height="13" />
+          </frame>
+          <text id="91:129" name="Prevista" x="863" y="10" width="44" height="13" />
+          <frame id="91:130" name="Frame" x="921" y="10" width="91" height="25">
+            <text id="91:131" name="Marcar Paga" x="12" y="6" width="67" height="13" />
+          </frame>
+        </frame>
+        <text id="91:132" name="... 346 parcelas restantes" x="20" y="299" width="132" height="13" />
+      </frame>
+      <frame id="337:4" name="Frame" x="48" y="920" width="1066" height="247">
+        <text id="91:133" name="Histórico de eventos (rastreabilidade)" x="20" y="20" width="297" height="19" />
+        <frame id="91:134" name="Frame" x="20" y="51" width="1026" height="35">
+          <text id="91:135" name="10/07/2026" x="14" y="10" width="63" height="13" />
+          <text id="91:136" name="Parcela #12 paga: previsto R$ 1.520,00, pago R$ 1.540,00 (divergência de R$ 20,00)" x="91" y="10" width="921" height="15" />
+        </frame>
+        <frame id="91:137" name="Frame" x="20" y="98" width="1026" height="35">
+          <text id="91:138" name="05/06/2026" x="14" y="10" width="66" height="13" />
+          <text id="91:139" name="Taxa de juros reajustada de 0,80% para 0,85% a.m." x="94" y="10" width="918" height="15" />
+        </frame>
+        <frame id="91:140" name="Frame" x="20" y="145" width="1026" height="35">
+          <text id="91:141" name="10/06/2026" x="14" y="10" width="64" height="13" />
+          <text id="91:142" name="Parcela #11 paga: valor conforme previsto" x="92" y="10" width="920" height="15" />
+        </frame>
+        <frame id="91:143" name="Frame" x="20" y="192" width="1026" height="35">
+          <text id="91:144" name="15/08/2025" x="14" y="10" width="63" height="13" />
+          <text id="91:145" name="Dívida cadastrada: R$ 320.000,00, 360 parcelas, taxa inicial 0,80% a.m." x="91" y="10" width="921" height="15" />
+        </frame>
+      </frame>
+    </frame>
+  </frame>

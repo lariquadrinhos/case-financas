@@ -1,0 +1,8 @@
+  <frame id="309:118" name="Vazio — Passivos" x="-16175" y="-3454" width="420" height="195">
+    <text id="309:119" name="Nenhuma dívida cadastrada" x="108.5" y="40" width="203" height="18" />
+    <text id="309:120" name="Adicione financiamentos ou dívidas que você queira acompanhar." x="40" y="66" width="340" height="30" />
+    <rounded-rectangle id="309:121" name="Rectangle" x="209.5" y="104" width="1" height="8" />
+    <frame id="309:122" name="Frame" x="159" y="120" width="102" height="35">
+      <text id="309:123" name="+ Adicionar" x="16" y="10" width="70" height="15" />
+    </frame>
+  </frame>

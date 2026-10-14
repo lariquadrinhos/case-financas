@@ -1,0 +1,152 @@
+# Bigorna — CI
+#
+# Monolito web Next.js 15 (App Router) + TypeScript strict + Tailwind v4.
+# O portão roda em duas etapas: `verificar` (tudo que não precisa de browser) e
+# `e2e` (Playwright), que só começa se `verificar` passar — browser é o passo
+# mais caro do pipeline e não vale gastá-lo sobre código que nem compila.
+#
+# O que roda:
+#   - npm ci                     instalação determinística a partir do lockfile
+#   - npm run typecheck          tsc --noEmit
+#   - npm run lint               ESLint (inclui a regra que impede src/domain
+#                                de importar framework)
+#   - npm run fmt:check          Prettier em modo verificação
+#   - npm run test               Vitest (domínio, regras puras, componentes)
+#   - npm run build              next build
+#   - make audit-tokens          nenhuma cor/medida literal fora de src/styles
+#   - make audit-lgpd            nenhuma PII em fixture, nenhum console.log
+#   - npm audit --audit-level=high
+#   - npm run test:e2e           Playwright no Chromium
+#
+# O que deliberadamente NÃO roda, e por quê:
+#   - Nenhum deploy e nenhuma publicação de release. O ambiente desta fase é
+#     privado; não existe distribuição para ninguém.
+#   - Nenhum job de banco de dados ou migração. O banco é SQLite em arquivo
+#     (ADR-0012) e cada suíte abre o seu em memória; não há instância a subir
+#     no CI, e nenhuma migração a aplicar contra ambiente algum.
+#   - Nenhuma matriz de sistema operacional. O alvo é um runtime Node único no
+#     servidor, não a máquina de quem usa — matriz aqui só queimaria minuto.
+#   - Nenhum build de Storybook. Os scripts existem em package.json, mas o
+#     pacote ainda não está nas dependências; CI não roda o que não instala.
+#   - Nenhum secret, nenhuma variável de ambiente de terceiro, nenhum passo que
+#     alcance rede fora do registro npm. O produto não fala com origem externa
+#     (CSP em next.config.ts) e o CI segue a mesma regra.
+#   - Nenhum upload de vídeo nem de trace do Playwright. Ver o comentário no
+#     passo de artefato.
+name: CI
+
+on:
+  push:
+  pull_request:
+
+# Só leitura: nenhum job aqui escreve no repositório. Menor privilégio por padrão.
+permissions:
+  contents: read
+
+jobs:
+  # Tipos, lint, formatação, testes unitários, build e as auditorias do Makefile.
+  verificar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # Node 24 é o que .nvmrc fixa e o que o Makefile prioriza no PATH local.
+      # Cache de npm acelera o `npm ci` sem afrouxar o lockfile.
+      - name: Preparar Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Instalar dependências
+        run: npm ci
+
+      - name: Tipos
+        run: npm run typecheck
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Formatação
+        run: npm run fmt:check
+
+      - name: Testes unitários
+        run: npm run test
+
+      - name: Build
+        run: npm run build
+
+      # ADR-0011: cor e medida vivem em src/styles/tokens.css, nunca no componente.
+      - name: Auditoria de tokens
+        run: make audit-tokens
+
+      # ADR-0009: fixture sem PII, e nenhum console.log — todo log passa por
+      # src/lib/log.ts, que nunca registra valor monetário nem texto digitado.
+      - name: Auditoria de LGPD
+        run: make audit-lgpd
+
+      # Não trava o PR: vulnerabilidade em dependência de desenvolvimento não
+      # justifica bloquear trabalho pronto. Mas tem que aparecer no log, todo
+      # dia, para ninguém descobrir tarde demais.
+      - name: Vulnerabilidades conhecidas
+        run: npm audit --audit-level=high
+        continue-on-error: true
+
+  # Playwright. Separado porque exige browser e porque depende do build acima
+  # já ter provado que o app compila.
+  e2e:
+    needs: verificar
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Preparar Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Instalar dependências
+        run: npm ci
+
+      # Só Chromium: playwright.config.ts declara um único projeto (chromium).
+      # Equivalente ao alvo `make test-e2e-install`.
+      - name: Instalar o Chromium do Playwright
+        run: npx playwright install --with-deps chromium
+
+      # Sem isto o app sobe com a base VAZIA: `.data/` é gitignored, então num
+      # checkout limpo o banco não existe e `openDatabase` cria um só com as
+      # migrações. Os specs de fidelidade afirmam sobre os dados da semente —
+      # "Seed de julho: R$ 4.000,00 de pró-labore" está escrito no próprio teste
+      # (`e2e/prd-fidelity.spec.ts`) —, e sem ela 8 deles falham por dado
+      # ausente, não por regressão. Era a causa de o CI estar vermelho desde
+      # 2026-09-07 sem que nada no código estivesse quebrado.
+      #
+      # O `make check` local nunca pegou isso porque ele exclui o e2e de
+      # propósito (depende de browser), e a base de desenvolvimento local já
+      # está semeada.
+      - name: Semear a base sintética
+        run: npm run db:seed
+
+      # O webServer de playwright.config.ts sobe o app (build + start) sozinho.
+      - name: Testes end-to-end
+        run: npm run test:e2e
+
+      # Só em falha, e sem os anexos. `playwright-report/data/` guarda screenshot
+      # de falha e trace — pixels da tela do app. A tela mostra dado financeiro:
+      # nesta fase ele é sintético, mas o hábito de nunca exportar tela de
+      # finanças para fora do ambiente é o que precisa estar certo desde hoje.
+      # Sobe apenas o relatório navegável: qual teste quebrou, em que asserção,
+      # com qual stack. Isso basta para diagnosticar.
+      - name: Relatório do Playwright
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report
+          path: |
+            playwright-report
+            !playwright-report/data
+          retention-days: 7
+          if-no-files-found: ignore

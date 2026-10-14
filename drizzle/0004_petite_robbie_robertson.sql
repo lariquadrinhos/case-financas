@@ -1,0 +1,1 @@
+ALTER TABLE `categories` ADD `is_passive_income` integer DEFAULT false NOT NULL;

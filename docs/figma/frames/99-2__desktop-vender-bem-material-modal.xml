@@ -1,0 +1,126 @@
+  <frame id="99:2" name="Desktop — Vender Bem Material (modal)" x="1575" y="10988" width="1440" height="900">
+    <frame id="99:3" name="Sidebar" x="0" y="0" width="278" height="900">
+      <frame id="509:300" name="Topo da sidebar" x="20" y="28" width="238" height="44">
+        <text id="99:4" name="Finanças PF+PJ" x="0" y="13" width="116" height="18" />
+        <instance id="509:301" name="Alternador de tema" x="154" y="0" width="84" height="44" />
+      </frame>
+      <frame id="99:5" name="Frame" x="20" y="96" width="238" height="43">
+        <text id="99:6" name="+ Novo Lançamento" x="39.5" y="12" width="159" height="19" />
+      </frame>
+      <frame id="99:7" name="Frame" x="20" y="163" width="238" height="492">
+        <frame id="99:8" name="Frame" x="0" y="0" width="238" height="36">
+          <text id="99:9" name="▾" x="10" y="10" width="5" height="13" />
+          <text id="99:10" name="Relatórios" x="25" y="10" width="63" height="16" />
+        </frame>
+        <frame id="99:11" name="Frame" x="0" y="38" width="238" height="36">
+          <text id="99:12" name="DRE" x="25" y="10" width="26" height="16" />
+        </frame>
+        <frame id="99:13" name="Frame" x="0" y="76" width="238" height="36">
+          <text id="99:14" name="Balanço Patrimonial" x="25" y="10" width="123" height="16" />
+        </frame>
+        <frame id="99:15" name="Frame" x="0" y="114" width="238" height="36">
+          <text id="99:16" name="Evolução Mensal" x="25" y="10" width="105" height="16" />
+        </frame>
+        <frame id="99:17" name="Frame" x="0" y="152" width="238" height="36">
+          <text id="99:18" name="Indicadores Financeiros" x="25" y="10" width="148" height="16" />
+        </frame>
+        <frame id="99:19" name="Frame" x="0" y="190" width="238" height="36">
+          <text id="99:20" name="Revisão de Recorrentes" x="10" y="10" width="147" height="16" />
+        </frame>
+        <frame id="99:21" name="Frame" x="0" y="228" width="238" height="36">
+          <text id="99:22" name="Histórico" x="10" y="10" width="56" height="16" />
+        </frame>
+        <frame id="99:23" name="Frame" x="0" y="266" width="238" height="36">
+          <text id="99:24" name="▾" x="10" y="10" width="5" height="13" />
+          <text id="99:25" name="Plano de Contas e Patrimônio" x="25" y="10" width="183" height="16" />
+        </frame>
+        <frame id="99:26" name="Frame" x="0" y="304" width="238" height="36">
+          <text id="99:27" name="Plano de Contas" x="25" y="10" width="102" height="16" />
+        </frame>
+        <frame id="99:28" name="Frame" x="0" y="342" width="238" height="36">
+          <text id="99:29" name="Contas Bancárias" x="25" y="10" width="109" height="16" />
+        </frame>
+        <frame id="99:30" name="Frame" x="0" y="380" width="238" height="36">
+          <text id="99:31" name="Bens Materiais" x="25" y="10" width="92" height="16" />
+        </frame>
+        <frame id="99:32" name="Frame" x="0" y="418" width="238" height="36">
+          <text id="99:33" name="Investimentos" x="25" y="10" width="88" height="16" />
+        </frame>
+        <frame id="99:34" name="Frame" x="0" y="456" width="238" height="36">
+          <text id="99:35" name="Passivos" x="25" y="10" width="55" height="16" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="99:36" name="Frame" x="278" y="0" width="1162" height="900">
+      <text id="99:37" name="Bens Materiais" x="48" y="40" width="174" height="29" />
+    </frame>
+    <rounded-rectangle id="99:38" name="Rectangle" x="0" y="0" width="1440" height="900" hidden="true" />
+    <frame id="99:39" name="Frame" x="629" y="60" width="460" height="705">
+      <text id="99:40" name="Vender Bem Material" x="28" y="28" width="184" height="22" />
+      <text id="99:41" name="Civic 2020 · PF · registrado por R$ 45.000,00" x="28" y="66" width="256" height="15" />
+      <frame id="99:42" name="Frame" x="28" y="97" width="404" height="61">
+        <text id="99:43" name="Valor de venda *" x="0" y="0" width="95" height="15" />
+        <frame id="99:44" name="Frame" x="0" y="21" width="404" height="40">
+          <text id="99:45" name="R$ 0,00" x="14" y="12" width="376" height="16" />
+        </frame>
+      </frame>
+      <frame id="99:46" name="Frame" x="28" y="174" width="404" height="63">
+        <text id="99:47" name="Data da venda *" x="0" y="0" width="93" height="15" />
+        <frame id="99:48" name="Frame" x="0" y="21" width="404" height="42">
+          <text id="99:49" name="dd/mm/aaaa" x="14" y="12" width="358" height="16" />
+          <frame id="201:35" name="Frame" x="372" y="12" width="18" height="18">
+            <rounded-rectangle id="201:36" name="Rectangle" x="2" y="2.5" width="14" height="13" />
+            <rounded-rectangle id="201:37" name="Rectangle" x="2" y="1" width="14" height="3.5" />
+          </frame>
+        </frame>
+      </frame>
+      <frame id="99:52" name="Frame" x="28" y="253" width="404" height="41">
+        <frame id="99:53" name="Frame" x="14" y="12" width="277" height="15">
+          <text id="99:54" name="Ganho/Perda (calculado)" x="0" y="0" width="143" height="15" />
+        </frame>
+        <text id="99:55" name="+ R$ 5.000,00" x="291" y="12" width="99" height="17" />
+      </frame>
+      <text id="99:56" name="Lançado automaticamente em Resultado Não Operacional." x="28" y="310" width="305" height="13" />
+      <frame id="103:2" name="Frame" x="28" y="339" width="404" height="186">
+        <text id="155:8" name="Direcionar valor recebido" x="0" y="0" width="185" height="18" />
+        <frame id="103:8" name="Frame" x="0" y="28" width="404" height="50">
+          <frame id="103:9" name="Frame" x="12" y="10" width="237" height="30">
+            <text id="103:10" name="Investimento: Tesouro Direto" x="0" y="0" width="168" height="15" />
+            <text id="103:11" name="R$ 20.000,00" x="0" y="17" width="71" height="13" />
+          </frame>
+          <frame id="103:12" name="Frame" x="259" y="10" width="133" height="25">
+            <frame id="103:13" name="Frame" x="0" y="0" width="56" height="25">
+              <text id="103:14" name="Editar" x="12" y="6" width="32" height="13" />
+            </frame>
+            <frame id="103:15" name="Frame" x="62" y="0" width="71" height="25">
+              <text id="103:16" name="Remover" x="12" y="6" width="47" height="13" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="202:18" name="Frame" x="0" y="88" width="404" height="33">
+          <frame id="202:19" name="Frame" x="0" y="0" width="306" height="1" />
+          <frame id="103:17" name="Frame" x="306" y="0" width="98" height="33">
+            <text id="103:18" name="+ Adicionar" x="14" y="9" width="70" height="15" />
+          </frame>
+        </frame>
+        <frame id="103:4" name="Frame" x="0" y="131" width="404" height="55">
+          <frame id="103:5" name="Frame" x="14" y="12" width="376" height="15">
+            <text id="103:6" name="Direcionado: R$ 20.000,00 de R$ 45.000,00" x="0" y="0" width="253" height="15" />
+          </frame>
+          <text id="103:7" name="Restante: R$ 25.000,00" x="126" y="27" width="152" height="16" />
+        </frame>
+      </frame>
+      <frame id="103:19" name="Frame" x="28" y="541" width="404" height="46">
+        <text id="103:20" name="O valor restante (não direcionado) fica pendente e aparece em destaque na Home." x="12" y="10" width="380" height="26" />
+      </frame>
+      <text id="216:15" name="* Campo obrigatório" x="28" y="603" width="106" height="13" />
+      <frame id="99:63" name="Frame" x="28" y="632" width="404" height="45">
+        <frame id="99:64" name="Frame" x="0" y="0" width="197" height="45">
+          <text id="99:65" name="Cancelar" x="68.5" y="14" width="60" height="17" />
+        </frame>
+        <frame id="99:66" name="Frame" x="207" y="0" width="197" height="45">
+          <text id="99:67" name="Confirmar Venda" x="41" y="14" width="115" height="17" />
+        </frame>
+      </frame>
+    </frame>
+  </frame>

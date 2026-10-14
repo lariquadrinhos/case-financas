@@ -1,0 +1,8 @@
+  <frame id="309:53" name="Vazio — Balanço Patrimonial" x="-18015" y="-4004" width="420" height="195">
+    <text id="309:54" name="Nada cadastrado ainda" x="126" y="40" width="168" height="18" />
+    <text id="309:55" name="Cadastre suas contas, bens, investimentos ou dívidas pra ver seu Ativo, Passivo e Patrimônio Líquido." x="40" y="66" width="340" height="30" />
+    <rounded-rectangle id="309:56" name="Rectangle" x="209.5" y="104" width="1" height="8" />
+    <frame id="309:57" name="Frame" x="147" y="120" width="126" height="35">
+      <text id="309:58" name="Cadastrar agora" x="16" y="10" width="94" height="15" />
+    </frame>
+  </frame>

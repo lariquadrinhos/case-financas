@@ -1,0 +1,59 @@
+  <frame id="314:133" name="Vazio — Onboarding 4 (Investimentos)" x="-7698" y="-4604" width="1440" height="900">
+    <frame id="314:134" name="Frame" x="380" y="80" width="680" height="461">
+      <frame id="314:135" name="Frame" x="40" y="36" width="272" height="4">
+        <rounded-rectangle id="314:136" name="Rectangle" x="0" y="0" width="48" height="4" />
+        <rounded-rectangle id="314:137" name="Rectangle" x="56" y="0" width="48" height="4" />
+        <rounded-rectangle id="314:138" name="Rectangle" x="112" y="0" width="48" height="4" />
+        <rounded-rectangle id="314:139" name="Rectangle" x="168" y="0" width="48" height="4" />
+        <rounded-rectangle id="314:140" name="Rectangle" x="224" y="0" width="48" height="4" />
+      </frame>
+      <text id="314:141" name="Passo 4 de 5: Investimentos" x="40" y="60" width="162" height="15" />
+      <text id="314:142" name="Cadastre seus investimentos" x="40" y="95" width="314" height="27" />
+      <text id="314:143" name="Cadastre o valor acumulado até hoje em investimentos, como: ações, bitcoin, etf..." x="40" y="142" width="600" height="16" />
+      <text id="314:164" name="Adicionar investimento" x="40" y="178" width="171" height="18" />
+      <frame id="314:165" name="Frame" x="40" y="216" width="600" height="61">
+        <frame id="314:166" name="Frame" x="0" y="0" width="214" height="61">
+          <text id="314:167" name="Nome *" x="0" y="0" width="44" height="15" />
+          <frame id="314:168" name="Frame" x="0" y="21" width="214" height="40">
+            <text id="314:169" name="Ex: Tesouro Direto" x="14" y="12" width="113" height="16" />
+          </frame>
+        </frame>
+        <frame id="314:170" name="Frame" x="230" y="0" width="140" height="52">
+          <text id="314:171" name="Entidade" x="0" y="0" width="51" height="15" />
+          <frame id="314:172" name="Frame" x="0" y="21" width="83" height="31">
+            <frame id="314:173" name="Frame" x="0" y="0" width="39" height="31">
+              <text id="314:174" name="PF" x="12" y="8" width="15" height="15" />
+            </frame>
+            <frame id="314:175" name="Frame" x="45" y="0" width="38" height="31">
+              <text id="314:176" name="PJ" x="12" y="8" width="14" height="15" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="314:177" name="Frame" x="386" y="0" width="214" height="61">
+          <text id="314:178" name="Valor inicial acumulado" x="0" y="0" width="132" height="15" />
+          <frame id="314:179" name="Frame" x="0" y="21" width="214" height="40">
+            <text id="314:180" name="R$ 0,00" x="14" y="12" width="48" height="16" />
+          </frame>
+        </frame>
+      </frame>
+      <frame id="314:181" name="Frame" x="40" y="297" width="600" height="35">
+        <frame id="314:182" name="Frame" x="0" y="0" width="498" height="1" />
+        <frame id="314:183" name="Frame" x="498" y="0" width="102" height="35">
+          <text id="314:184" name="+ Adicionar" x="16" y="10" width="70" height="15" />
+        </frame>
+      </frame>
+      <frame id="314:185" name="Frame" x="40" y="352" width="600" height="40">
+        <frame id="314:186" name="Frame" x="0" y="0" width="73" height="40">
+          <text id="314:187" name="Voltar" x="18" y="12" width="37" height="16" />
+        </frame>
+        <frame id="314:188" name="Frame" x="85" y="0" width="197" height="1" />
+        <frame id="314:189" name="Frame" x="294" y="0" width="194" height="40">
+          <text id="314:190" name="Salvar e continuar depois" x="18" y="12" width="158" height="16" />
+        </frame>
+        <frame id="314:191" name="Frame" x="500" y="0" width="100" height="40">
+          <text id="314:192" name="Avançar" x="24" y="12" width="52" height="16" />
+        </frame>
+      </frame>
+      <text id="314:193" name="* Campo obrigatório" x="40" y="412" width="106" height="13" />
+    </frame>
+  </frame>

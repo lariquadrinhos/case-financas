@@ -1,0 +1,688 @@
+/**
+ * Design tokens — the single source of visual truth (ADR-0011).
+ *
+ * CANONICAL: every `--color-*` token below comes literally from the "Tokens"
+ * table in files_design/07-style-guide.md (the closed style guide, itself
+ * generated from the Figma variables collection **Cor**, file
+ * 7IZBeQV15kgZp7Shcqh4c8). The Figma variable is named with a slash
+ * (`color/bg/canvas`); the CSS custom property below uses a dash in its place
+ * (`--color-bg-canvas`) so the mapping stays mechanical and traceable. Do not
+ * change a value here without changing files_design/07 (and Figma) first —
+ * this file supersedes every colour that was here before the style guide
+ * existed (files_design/07, opening paragraph).
+ *
+ * DERIVED: tokens marked [derived] have no Figma variable of their own. Most
+ * are literal frame measurements (sidebar width, dialog width) that stay
+ * outside the closed **Escala** collection; they are recorded here, with their
+ * source, so no component ever hand-writes a pixel value.
+ *
+ * No component may contain a raw hex or px value — enforced by `make audit-tokens`.
+ */
+
+:root {
+  color-scheme: light;
+
+  /* ---- Backgrounds — color/bg/* ------------------------------------------ */
+  --color-bg-canvas: #f7f8f8;
+  --color-bg-card: #ffffff;
+  --color-bg-subtle: #f4f5f6;
+  /* Fundo de hover de todo controle (2026-10-01). Medido: o hover usava
+     bg-subtle, 1,09:1 contra o card no claro — a transição não aparecia.
+     #dfe3e6 dá 1,29:1 contra o card e 1,18:1 contra o subtle. Não é [figma];
+     pendente de entrar na coleção de variáveis. */
+  --color-bg-hover: #dfe3e6;
+  --color-bg-inverse: #12161a;
+  --color-bg-state-subtle: #eaf0fe;
+  --color-bg-positive-subtle: #e3f2ea;
+  --color-bg-negative-subtle: #fae7ea;
+  --color-bg-alert-subtle: #fdf0d9;
+  --color-bg-pf-subtle: #e3eff4;
+  --color-bg-pj-subtle: #e9e8f9;
+
+  /* ---- Borders — color/border/* ------------------------------------------ */
+  --color-border-default: #e6e8ea;
+  --color-border-control: #878f94;
+  --color-border-strong: #d3d7da;
+  --color-border-focus: #2758cc;
+  /* The one deliberate exception to "red only means negative variation":
+     form validation error. Same value as color/text/negative, own token
+     because its SCOPE is contour, not text (files_design/07 "O novo token"). */
+  --color-border-negative: #a62b3f;
+
+  /* ---- Text — color/text/* ------------------------------------------------ */
+  --color-text-primary: #12161a;
+  --color-text-secondary: #4a5259;
+  --color-text-tertiary: #676e75;
+  --color-text-inverse: #ffffff;
+  /* Only token identical in both modes: the ramp blocks are light in both. */
+  --color-text-on-block: #12161a;
+  --color-text-state: #2758cc;
+  --color-text-positive: #1b6e4a;
+  --color-text-negative: #a62b3f;
+  --color-text-alert: #8a5a00;
+  --color-text-pf: #175e75;
+  --color-text-pj: #43409e;
+
+  /* ---- Chart — color/chart/* ----------------------------------------------
+     Colour follows the ENTITY, never the position (files_design/07, Sistema
+     de gráfico #1): PF is always chart/pf, PJ is always chart/pj. */
+  --color-chart-pf: #0b7fa6;
+  --color-chart-pj: #5350d8;
+  --color-chart-series-1: #2e6be6;
+  --color-chart-positive: #2c8a5e;
+  --color-chart-negative: #c0566a;
+  --color-chart-neutral: #c3c8cd;
+  /* Six steps only, assigned by RANK, not by position — see docs/
+     files_design/08 §2.5. Light in both modes; the dark mode order is
+     reversed (files_design/07, Treemap #11). */
+  --color-chart-ramp-1: #738292;
+  --color-chart-ramp-2: #8292a2;
+  --color-chart-ramp-3: #92a2b2;
+  --color-chart-ramp-4: #a2b2c3;
+  --color-chart-ramp-5: #b2c2d3;
+  --color-chart-ramp-6: #c3d3e4;
+
+  /* ---- Scale/space — scale/space/* (the closed 4-grid) -------------------- */
+  --space-4: 4px;
+  --space-8: 8px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-40: 40px;
+  /* [derived] Not a named Figma variable, but a multiple of the 4-grid
+     (files_design/07, densidade #1). Card inner padding and page margin. */
+  --space-20: 20px;
+  --space-48: 48px;
+
+  /* ---- Scale/height, radius, stroke — scale/* ------------------------------ */
+  /* scale/height/control — a altura do **Botão de ícone**, e só dele entre os
+     controles com rótulo: Style guide 532:476, símbolos 532:467/532:470/532:473,
+     todos 32×32 (files_design/07 §292, "Contêiner de 32×32"). NÃO é altura de
+     Botão: o Botão é 44 (--height-button, abaixo). */
+  --height-control: 32px;
+  /* [derived] Altura da LINHA DA BARRA LATERAL — medida na página Mockup, nó
+     "Barra lateral" 749:2: os dois "Nav / Grupo" (749:10, 749:26) e os seis
+     "Nav / Item" (749:13, 749:15, 749:17, 749:19, 749:22, 749:24) medem todos
+     240×36, com passo vertical de 40 (36 de altura + 4 de gap). NÃO é
+     --height-control: aquele é o Botão de ícone (32×32, Style guide 532:476),
+     e reusá-lo aqui encolhia cada linha da nav em 4px. */
+  --height-nav-item: 36px;
+  --height-table-row: 44px; /* scale/height/table-row — densidade #1, fixed row height */
+  --radius-control: 6px; /* scale/radius/control */
+  --radius-card: 10px; /* scale/radius/card */
+  --radius-pill: 999px; /* scale/radius/pill */
+  --stroke-hairline: 1px; /* scale/stroke/hairline — the single divider weight */
+  /* [derived] files_design/08 §2.4: treemap block corners, 4px — its own value,
+     outside the Control/Card/Pill radii the closed Escala collection names. */
+  --radius-treemap-block: 4px;
+
+  /* [derived] Layout facts sampled from the Figma frames, outside the closed
+     Escala collection (no Figma variable governs a screen's own width). */
+  /* Barra lateral — medida na página **Mockup**, não no Wireframe: largura é
+     camada visual, e aí a Mockup vence (ADR-0015). Os dois nós "Barra lateral"
+     da Mockup medem 272: 936:1544 (Plano de Contas) e 749:2 (Início dashboard),
+     ambos com os filhos em x=16 e width=240 — 16 + 240 + 16 = 272. O valor
+     anterior, 278, vinha dos nós de Wireframe 5:3 / 26:26 (padding 20, coluna
+     útil 238): 6px largos demais no contêiner e 2px estreitos no conteúdo. */
+  --width-sidebar: 272px;
+  /* Coluna de conteúdo — medida na **Mockup**, e a única medida que fecha com
+     a barra lateral de 272 acima. A área à direita da barra lateral é
+     `549:70` "Frame" (x=272, w=1168) no Início dashboard e `397:26`
+     "Conteúdo" (x=272, w=1168) no DRE; nas duas, TODO filho está em x=40 com
+     width=**1088** (549:71/549:75/549:173/549:242/549:119/549:276 e
+     397:27/397:28/397:29/397:30). 272 + 40 + 1088 + 40 = 1440, o frame.
+
+     Era 1066, com "frame 317:2" por justificativa — um nó de **Wireframe**,
+     onde a barra lateral mede 278 e o recuo é 48 (278 + 48 + 1066 + 48 =
+     1440). A conta do Wireframe fecha sozinha, mas parou de fechar quando a
+     barra lateral virou os 272 do Mockup (ADR-0015 §1): sobravam 1168 de área
+     para 1162 de conteúdo desenhado. Geometria é camada visual e aí a Mockup
+     arbitra, então os dois números vieram junto — 1088 aqui e `px-40` no
+     `<main>` de `(app)/layout.tsx`, nunca um sem o outro. */
+  --width-content-max: 1088px;
+  /* Altura da **Caixa** do Campo — Style guide, símbolo 460:3 "field/default"
+     (240×64) = rótulo 460:4 (h=18) + Caixa 460:5 (240×40). É altura de CAMPO;
+     um botão nunca usa este valor. */
+  --height-field: 40px;
+  /* Altura do **Botão**, os três estilos e os quatro estados: Style guide
+     458:26, símbolos 458:2/4/6/8 (primary), 458:10/12/14/16 (secondary) e
+     458:18/20/22/24 (text) — 12 de 12 medem 72×44. O Mockup aplica os
+     mesmos 44: CTA da barra lateral 936:1550 (240×44) e as três instâncias
+     do rodapé do Onboarding 1, 988:2080/988:2083/988:2085.
+     Substitui `--height-action: 43px`, que era medição do Wireframe 26:28 —
+     onde todo controle é traço cinza uniforme — para o MESMO botão que o
+     Mockup desenha com 44 (ADR-0015 §1: o style guide ganha da medição). */
+  --height-button: 44px;
+  /* [derived] Largura de diálogo, uma por frame. NÃO existe uma largura
+     "padrão": a varredura dos 130 XML de docs/figma/frames/ achou SETE
+     larguras de contêiner de modal desenhadas — 320, 380, 420, 440, 460, 480 e
+     575 — e o Mockup, medido por MCP nos nós "Diálogo" 991:2204, 994:2372,
+     997:2505 e 1000:2886, repete exatamente as mesmas. Padding interno sempre
+     24, o que explica os 272/332/412/527 de conteúdo.
+
+     O que estava aqui antes eram dois números que nenhum frame desenha,
+     `--width-dialog: 560px` e `--width-dialog-wide: 720px`, justificados por
+     "No Mockup-page frame with a bound 'Diálogo' node was available to sample
+     directly". A alegação era falsa nas duas pontas — o Mockup tem 18 frames
+     chamados "Diálogo", e os dez contêineres do Wireframe já estavam neste
+     repositório com largura explícita. Os dez diálogos do produto ficavam de
+     +80px (Detalhe da Categoria) a +280px (Adicionar Direcionamento) largos.
+     O único 560 que o Wireframe desenha é o card de Onboarding 0 (116:3), que
+     não é diálogo. */
+  --width-dialog-prompt: 320px; /* 345:1252 · Mockup 1000:2643 — Gastei um Valor */
+  --width-dialog-compact: 380px; /* 192:2 · Mockup 1000:2886 — Configurar Consumo Livre */
+  --width-dialog-detail: 420px; /* 192:15 — Detalhe do Consumo Livre */
+  --width-dialog-allocation: 440px; /* 103:22 — Adicionar Direcionamento */
+  /* 99:39 · Mockup 991:2204 (Vender Bem Material) e 94:39 · Mockup 994:2372
+     (Registrar Reajuste de Juros): a largura do diálogo-formulário, o único
+     padrão que o Figma desenha duas vezes com a mesma medida. */
+  --width-dialog-form: 460px;
+  /* [derived] Medido no Mockup, nó 872:1305 "Modal — Novo Lançamento": 480 de
+     largura (x=616 numa área de conteúdo que vai de 272 a 1440, ou seja
+     centrada), com 432 de conteúdo entre 24 de padding de cada lado. O
+     Wireframe 6:29 traz a mesma medida, e é também a dos três diálogos de
+     detalhe sobre o Início (183:2, 189:23, 349:252). A aba Receita do
+     Wireframe (65:28) mede 500 — divergência isolada que o Mockup normaliza em
+     480 nos 16 frames de Novo Lançamento; por ADR-0015 o Mockup vence. */
+  --width-dialog-narrow: 480px;
+  --width-dialog-wide: 575px; /* 27:29 · Mockup 997:2505 — Destinar o Lucro */
+  /* Categorizar lançamentos (PRD v7.46) — não está no Figma. Cabe data, descrição,
+     seletor de categoria e valor numa linha. */
+  --width-dialog-list: 880px;
+  /* [derived] Largura da mensagem do estado Vazio — Wireframe `309:47`
+     "Vazio — DRE": card 420×210, mensagem `309:49` em x=40 com width=**340**.
+     40 + 340 + 40 = 420, os mesmos 40 do `px-40` de `Empty`; a mensagem ocupa
+     a largura INTEIRA do content box. O par x=40 / width=340 dentro de um card
+     de 420 se repete sem exceção nos outros 24 frames "Vazio —" (`309:2`,
+     `309:5`, `309:11`, `309:17`, `309:23`, `309:53`, `309:59`, `309:62`,
+     `309:88`, `309:94`, `309:100`, `309:106`, `309:112`, `309:118` e as cópias
+     in-situ `305:1409`…`305:1464` e `311:1699`) — só a altura do parágrafo
+     varia com o número de linhas.
+
+     Era 320px, sem citar frame nenhum, num bloco cujo cabeçalho promete
+     "Layout facts sampled from the Figma frames". Não era só um número torto:
+     320 estreitava o texto 20px ABAIXO do próprio `px-40` que o cerca,
+     deixando 10px de folga morta de cada lado que o Figma não desenha, e
+     empurrando para uma 4ª linha os quatro estados que o Figma fecha em 3
+     (`309:2`, `309:47`, `309:59`, `309:88`, todos com o parágrafo em
+     h=45 = 3 × 15) — o que muda a altura desenhada do card de 210 para 225. */
+  --width-empty-message: 340px;
+  /* [derived] Altura da BARRA do esqueleto, medida nos 15 frames
+     "Carregando —" do Wireframe (`309:26` … `309:142`): as 47 barras
+     desenhadas têm h=14, sem exceção — `309:27` (x=24 y=24 180×**14**),
+     `309:28` (y=50 240×14), `309:29` (y=76 200×14), e assim por diante. O
+     passo vertical é 26, logo o gap é `--space-12` e o recuo é `--space-24`;
+     a altura do card fecha em 36 + 26n (2 barras → 88, 3 → 114, 4 → 140,
+     5 → 166, 6 → 192). Fora da coleção Escala, que é fechada e não tem 14.
+
+     Substitui `--height-card-placeholder: 96px`, que era a ÚNICA linha deste
+     bloco sem citar nó — num bloco cujo cabeçalho promete "sampled from the
+     Figma frames". 96 não é medida de nada aqui: não é altura de card
+     (88/114/140/166/192), nem de barra (14), nem passo (26), nem recuo (24).
+     E a grandeza que ele fingia nomear nem é constante: a altura do esqueleto
+     no Figma é função do número de barras. Seu único consumidor, `LoadingCards`,
+     desenhava BLOCOS maciços de 96 de altura onde os 15 frames desenham barras
+     finas de 14 — em Pendências, 2 blocos (216px) contra as 3 barras de
+     `309:26` (114px). */
+  --height-skeleton-bar: 14px;
+  /* [derived] files_design/08 §9.1: Pendências cards divide the row evenly,
+     wrapping to a new line below this minimum — "~245px, o valor usado no
+     mockup de hoje, com 4 cards" (Figma frame 115:5, measured width 245.5). */
+  --width-pending-card-min: 245px;
+  /* [figma] A célula "Passo" do rótulo do Seletor de mês, medida na página
+     Mockup: `398:22` e `448:74` medem **100×36** e contêm o texto "Julho 2026"
+     (`398:23` / `448:75`) em x=12 com **w=76** — 76 de texto e 12 de respiro de
+     cada lado. A instância aplicada na tela Início, `549:185`, confirma: a seta
+     esquerda (`677:6`) termina em x=32, o texto `549:187` vai de 44 a 120 e a
+     seta direita (`677:8`) começa em 132 — intervalo reservado ao rótulo
+     32→132 = 100, com os mesmos 76 centrados. É essa largura fixa que mantém
+     as setas paradas de "Maio" a "Setembro".
+
+     Substitui `--width-month-label: 88px`, que não era medida de nó nenhum: o
+     comentário anterior admitia a invenção ("≈ 66px; rounded up to the
+     4-grid"), partindo do texto do Wireframe `112:24` (66px) e arredondando por
+     conta própria. Para camada visual o Mockup vence o Wireframe (ADR-0015), e
+     o Mockup já tinha resolvido o mesmo problema com número próprio. */
+  --width-month-label: 100px;
+  /* [figma] Coluna de data de Eventos Recentes — Mockup `549:280`, a linha do
+     card `549:278`: 1040×42, data `549:281` "20/07/2026" em x=16 com w=71, e a
+     descrição `549:282` começando em x=103 (16 de respiro). As cinco linhas
+     repetem o padrão e a data mais larga desenhada é 73 (`549:287`
+     "05/06/2026"), que é o piso da coluna aqui. NÃO é o rótulo do seletor de
+     mês: até esta correção a coluna se pendurava em `--width-month-label`, e
+     acertar o seletor de mês movia a coluna de data de carona. */
+  --width-event-date: 73px;
+  /* 345:1252 não é popover: é o contêiner do diálogo "Quanto você gastou?", o
+     mesmo nó que hoje sustenta `--width-dialog-prompt`. Este token ficou sem
+     nenhum uso quando o diálogo passou a declarar a própria largura — mantido
+     só até alguém confirmar que não há popover a desenhar. Não reaproveite:
+     dois tokens com o mesmo valor foram o que amarrou, por acidente, a altura
+     do popover do Select à largura do diálogo (ver src/components/ui/select.tsx). */
+  --width-popover: 320px;
+  /* Largura dos campos de dinheiro, uma por linha desenhada. NÃO existe uma
+     largura única: os três passos de Onboarding que pedem um valor desenham
+     três larguras diferentes, medidas no Mockup por MCP, e a linha inteira
+     fecha em cada um deles.
+
+     O que estava aqui antes era UM token, `--width-inline-money-edit: 120px`,
+     justificado por "narrow enough to sit next to \"Salvar\" inside the fixed
+     44px row height". A justificativa é falsa nas duas pontas: a linha do
+     histórico do Consumo Livre mede 60 no Mockup (`1005:3312`), não 44 — 44
+     é a altura do BOTÃO "Editar" dentro dela (`1005:3316`, 71×44) — e o
+     único estado de edição inline que o Figma desenha (Wireframe `46:8`) não
+     põe o campo ao lado de "Salvar": o campo ocupa a largura da linha
+     (`46:26`, 296 de 320) e "Cancelar"/"Salvar" descem para uma linha
+     própria. O número 120 tinha lastro, mas de OUTRO nó: é o Campo "Valor" do
+     bloco Redirecionar do mesmo diálogo (`1005:3337`), hoje em
+     `--grid-redirect-discretionary`. Os seis campos que herdavam esse 120
+     ficavam de 20 a 60px estreitos contra o frame. */
+  /* Os três campos de dinheiro do Onboarding foram para 180 em 2026-09-11, e o
+     número não é gosto: é o mínimo para o maior valor que o produto aceita.
+
+     MEDIDO no Figma, na tipografia do campo (Geist Regular 13):
+       "R$ 0,00"                 49px
+       "R$ 999.999,00"           91px
+       "R$ 9.999.999,00"        102px
+       "R$ 999.999.999,00"      118px
+       "R$ 999.000.000.000,00"  148px   ← 999 bilhões, o teto
+     O `Campo` tem 12 de respiro de cada lado, o que dava 148 + 24 = 172.
+
+     CONFERIDO NO NAVEGADOR em 2026-09-11 (Chrome, o diálogo "Editar dados
+     cadastrais" aberto, `scrollWidth` contra `clientWidth` do input com o teto
+     digitado): o texto ocupa **154**, não 148 — a medição do Figma ficou 6px
+     curta. Com os 24 de respiro e 1px de borda de cada lado, o piso real é
+     **180**, e é por isso que 180 não tem folga nenhuma: é exatamente a conta.
+     Um token em 172 cortaria o número por 8px sem o teste acusar.
+
+     Antes disto, `-account` (140) cortava a partir de ~R$ 99 milhões e `-asset`
+     (160) a partir de ~R$ 99 bilhões. O Nome de cada linha é elástico e cedeu a
+     diferença sozinho — nenhuma linha do Mockup estourou. */
+  --width-field-money-account: 180px; /* [figma] Mockup 983:1792 — Onboarding 2, campo "Saldo"; linha "Linha 2" 1111:24 = 180 + 16 + Entidade 91 = 287 */
+  --width-field-money-asset: 180px; /* [figma] Mockup 984:1817 — Onboarding 3, campo "Valor inicial"; linha "Campos" 984:1812 = 297 + 16 + 180 + 16 + 91 = 600 */
+  --width-field-money-investment: 180px; /* [figma] Mockup 984:1882 — Onboarding 4, campo "Valor inicial acumulado"; linha "Campos" 984:1877 = 297 + 16 + 180 + 16 + 91 = 600 */
+  /* Largura do campo "Nome", uma por linha desenhada — o par do trio
+     `--width-field-money-*` acima. Em cada passo do Onboarding o Nome é a
+     coluna que fecha a linha de 600 do card, e o Figma dá o número.
+
+     O que estava aqui era UM token para seis campos,
+     `--width-inline-name-edit: 200px`, justificado por "a 'Nome'-shaped text
+     field wide enough for a typical name without crowding Salvar/Cancelar".
+     As duas metades eram falsas.
+
+     O VALOR: o Mockup desenha 337 / 317 / 297 nos três passos de Onboarding
+     (`983:1788`, `984:1813`, `984:1878`) e 336,5 / 458,5 / 458,5 nas três
+     telas de Patrimônio (`921:36`, `925:1434`, `930:1389`) — em Bens
+     Materiais e Investimentos o campo desenhado tem MAIS QUE O DOBRO dos 200.
+
+     A PREMISSA: o único estado de edição inline que o arquivo inteiro desenha
+     — Wireframe `46:8` "Estado — Editar categoria (inline)",
+     docs/figma/frames/46-8__estado-editar-categoria-inline.xml — não põe o
+     campo ao lado de Salvar/Cancelar. O campo ocupa a linha inteira (`46:26`,
+     296 de 320, x=12) justamente porque "Cancelar" e "Salvar" (`46:29` e
+     `46:31`, nesta ordem) descem para uma linha própria em y=92, 12px abaixo
+     do campo. Por isso as três linhas de edição de Patrimônio não usam
+     largura nomeada nenhuma: o Nome virou coluna elástica, que é o que
+     336,5 + 16 + 228 + 16 + 91 + 16 + 336,5 = 1040 (`921:35`) significa. */
+  --width-field-name-account: 337px; /* [figma] Mockup 983:1788 — Onboarding 2, campo "Nome da conta"; linha "Linha 1" 1111:23 = 337 + 16 + Cor 228 = 581 */
+  --width-field-name-asset: 297px; /* [figma] Mockup 984:1813 — Onboarding 3, campo "Nome"; linha "Campos" 984:1812 = 297 + 16 + 180 + 16 + 91 = 600. Cedeu 20 para o campo de valor caber no teto de 999 bilhões (2026-09-11) */
+  --width-field-name-investment: 297px; /* [figma] Mockup 984:1878 — Onboarding 4, campo "Nome"; linha "Campos" 984:1877 = 297 + 16 + 180 + 16 + 91 = 600 */
+  /* [figma] Barra do Consumo Livre (files_design/08 §9.2) — MEDIDA, não
+     derivada. Mockup 549:112 (trilho) e 549:113 (preenchimento), lidos por MCP:
+     683×31 e 350×31, `rounded-[5px]` nos dois, dentro do wrapper 549:110
+     (683×61 = texto 26 + gap 4 + trilho 31). O Wireframe concorda em 8 frames
+     — 347:719/347:720 em 345:752, e os pares idênticos de 5:2, 317:5, 345:2,
+     345:252, 345:502, 345:1002 e 349:2 — todos 683×31.
+
+     O que estava aqui era `--height-progress-track: 8px`, justificado por "no
+     named Escala token covers a continuous fill bar; 8px keeps it visually in
+     the same family as scale/space/8". A premissa era verdadeira e irrelevante:
+     no Figma a altura da barra é valor cru, não variável da coleção Escala —
+     por isso a medida do frame é a fonte, e não a analogia com um token de
+     ESPAÇO. A barra saía com 8 de altura contra 31 desenhados (~4×), e com
+     `--radius-pill` virava semicírculo perfeito onde o frame desenha um
+     retângulo de canto 5. Nenhum raio nomeado vale 5 (control 6, card 10,
+     pill 999), então o trilho tem o seu. */
+  --height-progress-track: 31px;
+  --radius-progress-track: 5px; /* [figma] Mockup 549:112/549:113 — o raio do trilho e do preenchimento */
+  /* O campo "Valor" dos diálogos de direcionamento — Detalhe do Bloco, Detalhe
+     do Consumo Livre e Direcionar sobra.
+     
+     Aqui existiam DUAS grades, `--grid-redirect-fields: 256fr 140fr` e
+     `--grid-redirect-discretionary: 216fr 120fr`, que punham "Para onde" e
+     "Valor" lado a lado na proporção que o Mockup desenhava. As duas caíram em
+     2026-09-11, e o motivo foi medido, não estético: para o campo de valor
+     comportar "R$ 999.000.000.000,00" ele precisa de 172px, e a única largura
+     disponível numa linha de 348 ou 408 vinha do "Para onde" ao lado.
+     Espremendo-o, o texto "Buscar conta, investimento ou dívida…" passava a
+     truncar em "…ou d" — trocar um corte por outro não é correção.
+
+     Os dois diálogos passaram a EMPILHAR: "Para onde" ocupa a linha inteira e
+     "Valor" desce para a sua, com esta largura. Conferido no Figma nos dois
+     temas: nenhum texto de instrução trunca. */
+  --width-field-money-dialog: 180px;
+  /* Card Open Finance (ADR-0020) — não está no Figma. O seletor de vínculo cabe
+     "Paga por <nome da conta>" sem cortar os nomes que o banco informa. */
+  --width-open-finance-link: 260px;
+  /* O que estava aqui era `--width-inline-category-edit: 280px`, justificado
+     por "wide enough for the longest bloco de referência ('Despesas
+     Administrativas') without wrapping". Era dedução, não medição, e servia
+     dois lugares diferentes errando os dois:
+
+       - "Despesas Administrativas" é o TÍTULO do bloco 4 no Wireframe 44:2 (nó
+         44:28, 179px de texto). Ele nunca entra em campo nenhum;
+       - a linha de criar categoria (44:2, nó 121:2) mede 572 partidos em duas
+         colunas iguais de 282 com 8 de vão (121:3 x=0 w=282; 202:16 x=290
+         w=282), com o botão 121:5 (w=129) terminando em 572. 282 é metade da
+         linha menos o vão — proporção, não largura fixa: virou
+         `grid-cols-2 gap-8` + `justify-self-end` em
+         src/features/plano-de-contas-e-patrimonio/screens/plano-de-contas.tsx;
+       - a renomeação inline (46:8, nó 46:26) mede 296 dentro de uma linha de
+         320 — a largura toda menos os 12 de recuo de cada lado. Também não tem
+         largura fixa.
+
+     Nenhum dos dois usos sobrou, então o token não existe mais. */
+  /* [figma] Wireframe `47:2` §② "Estado — Buscar/Criar Categoria (expandido)",
+     o ÚNICO frame do arquivo que desenha este dropdown aberto: a varredura dos
+     13.894 nós da página Mockup (`552:2`) por MCP não acha "CATEGORIAS
+     EXISTENTES", "+ Criar categoria neste bloco" nem "Buscar ou criar
+     categoria…". A lista rolável `83:10` mede **174** de viewport sobre 291 de
+     conteúdo — dez linhas de **29** (`83:11`..`83:29`) mais o divisor `83:61`
+     de 1 —, e o polegar de rolagem desenhado (`219:2`, 6×104) fecha a conta:
+     174² / 291 = 104,0. São 6 linhas inteiras antes de rolar, medidas.
+
+     Aqui estava `--height-dropdown-max: 240px`, justificado por "enough rows
+     visible before scrolling, without covering most of the dialog behind it" —
+     critério inventado, e 240 não corta em linha inteira nem com a linha do
+     frame (240/29 = 8,3) nem com a de 32 que o componente usava (7,5). */
+  --height-dropdown-row: 29px;
+  --height-dropdown-max: 174px;
+  /* [figma] As outras três alturas do mesmo dropdown `47:2`: o cabeçalho
+     "CATEGORIAS EXISTENTES" (`83:8` e `47:20`, 340×24), a linha "Nenhuma
+     categoria encontrada" (`47:22`, 340×31) e a linha de criação, que mede 35
+     sozinha (`83:62`) e 52 quando carrega a segunda linha "Categorias
+     parecidas neste bloco: …" (`47:25`, com `47:26` em y=10 e `84:2` em
+     y=30). */
+  --height-dropdown-heading: 24px;
+  --height-dropdown-empty: 31px;
+  --height-dropdown-create: 35px;
+  --height-dropdown-create-hint: 52px;
+  /* [figma] Style guide 470:15 "icon/info", medido em 471:17 "cel/info": 20×20,
+     a grade nativa de todo símbolo icon/* (os 16 de 470:42 medem 20×20, sem
+     exceção). A Mockup confirma: as instâncias de icon/info ao lado do rótulo
+     medem 20×20 (877:14 em "Classificação (sugerida)", 872:1374 em "Status",
+     877:1092 em "Tipo de valor"). files_design/07 regra 9: "Nunca redimensionar
+     uma instância de icon/* — usar sempre o tamanho nativo 20×20"; em contexto
+     apertado o ajuste é no espaçamento, nunca no tamanho.
+     NÃO usar o Wireframe 71:11 como fonte de tamanho: os badges de 14×14 de lá
+     (71:18, 71:31, 73:15, 74:18, 78:9) são o bug já identificado e revertido em
+     files_design/02 ~1249 — "as 19 instâncias tinham sido redimensionadas pra
+     14×14, cortando o vetor interno". 71:11 é fonte do conteúdo e do
+     comportamento do tooltip (ver --width-tooltip abaixo), não da geometria do
+     ícone. */
+  --size-help-icon: 20px;
+  /* [figma] Wireframe 71:11 "Estado — Tooltips de ajuda": a caixa do tooltip tem
+     EXATAMENTE a largura do controle segmentado que ela explica — o frame nunca
+     desenha uma caixa mais estreita que o seu gatilho. Medido no XML, painel a
+     painel: Status (controle 71:33 = 162+8+162) → caixa 71:38 w=332;
+     Classificação (73:17) → caixa 73:22 w=332; Tipo de valor (74:20 = 172+8+172)
+     → caixa 74:25 w=352; Sub-tipo (78:11) → caixa 78:16 w=352. Os painéis
+     externos corroboram: 332+24+24 = 380 (71:26, 73:11) e 352+24+24 = 400
+     (74:14, 78:5).
+     São duas larguras, não uma. Unificar em 332 (como este token fazia,
+     alegando que "332 is the narrowest of the four, kept common so no panel
+     overflows its trigger") estreitava em 20px justamente as duas caixas de
+     texto mais longo — 74:25 tem 101px de altura e 78:16 tem 84, contra 63 e 50
+     das outras duas — quebrando o texto em mais linhas do que o desenho previu.
+     A largura não pode ser derivada do gatilho em runtime: o gatilho é o badge
+     "i" de 20px (--size-help-icon), não o controle segmentado. */
+  --width-tooltip: 332px;
+  --width-tooltip-wide: 352px;
+  /* Aqui estava `--width-block-picker: 260px`, "[derived] Novo Lançamento — the
+     'which bloco' picker inside Categoria's inline create-new flow, narrow
+     enough to sit beside Criar/Cancelar". Não havia Criar/Cancelar ao lado de
+     que caber: o Wireframe `47:2` "Estado — Buscar/Criar Categoria
+     (expandido)" desenha a criação como UMA LINHA DENTRO do dropdown
+     (`83:62` / `47:25`) que, na nota do próprio frame (`47:27`), "confirma
+     direto: bloco já é o de onde a pessoa clicou …, sem precisar escolher de
+     novo". Nenhum dos 130 frames do Wireframe desenha um seletor de bloco, e o
+     Style guide (`544:764`) não tem componente Select. O token vestia um
+     controle inventado; saiu junto com ele. */
+
+  /* [derived] The onboarding wizard card, sampled from the "Frame" node inside
+     each Onboarding frame (files_design/02 §"Mockups novos: os 6 Onboarding":
+     "card centralizado (680px, exceto Onboarding 0 que é mais estreito e
+     Passivos que é mais largo por ter 8 campos)"). */
+  --width-onboarding-narrow: 560px; /* frame 116:3 — Onboarding 0 */
+  --width-onboarding: 680px; /* frame 29:3 — Onboarding 1-4 */
+  --width-onboarding-wide: 780px; /* frame 29:181 — Onboarding 5 (Passivos) */
+  /* [derived] frame 29:4 — the row of 5 step pills sits at a fixed width
+     inside the card, left-aligned with the rest of the content. */
+  --width-onboarding-progress: 272px;
+  /* [derived] frame 37:3 — the "Cor" swatch of Onboarding 2 (Contas Bancárias). */
+  --size-swatch: 28px;
+  /* [derived] Mockup 921:42 (Desktop — Contas Bancárias, claro → Card /
+     Adicionar conta → 921:40 "Cor"), medido pixel a pixel no render nativo
+     228×28, linha central y=14: o círculo selecionado tem anel de 2px em
+     #d3d7da (x=0..1 e x=26..27), contra 1px de #e6e8ea nos outros cinco
+     (x=40, x=80, …). O anel de seleção é o único traço de 2px do sistema fora
+     do foco, por isso tem token próprio em vez de reusar --focus-ring. */
+  --stroke-swatch-selected: 2px;
+  /* [derived] Evolução Mensal's grouped-bar chart (files_design/08 §3), sampled
+     from the validated "Provas de conceito" mockup (files_design/07), not the
+     generic §3.2 pair-of-bars number (34px) — this screen's real payload
+     (`MonthlyTrend`, `src/api/contracts/reports.ts`) has no PF/PJ split, so its
+     bar is the single-series shape frame 23:2 actually draws. */
+  --width-chart-bar: 40px; /* frame 23:40 rect width */
+  --height-chart-plot: 170px; /* frame 23:39 per-month slot height */
+  /* files_design/08 §3.3, literal: "Rótulo de eixo à esquerda, alinhado à
+     direita numa coluna de 60px". The plot area starts after this gutter, so
+     an axis label never sits on top of the first month's bar. */
+  --width-chart-axis-gutter: 60px;
+
+  /* ---- Typography ----------------------------------------------------------
+     Uma família só: Geist (files_design/07, Tipografia). The variables below
+     are filled in by `next/font` (the "geist" npm package, self-hosted — see
+     ADR-0009 §2 and RootLayout) via `--font-geist-sans` / `--font-geist-mono`;
+     the fallback stack only ever shows while that CSS variable is still
+     loading. Geist Mono appears only in code.sm (Plano de Contas). */
+  --font-sans:
+    var(--font-geist-sans), ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif;
+  --font-mono:
+    var(--font-geist-mono), ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace;
+
+  /* The 10 named text styles of files_design/07 — each pair is the exact
+     size/line-height the doc gives ("24 / 30"). Weight and family are not
+     tokenised here: they are set once per style in globals.css
+     (`.text-style-*`, `@layer components`), because weight is what the
+     `-medium` variant of a style toggles, and Tailwind's own `font-medium`
+     utility already does that in the utilities layer, which beats components. */
+  --text-heading-xl-size: 1.5rem; /* 24px */
+  --text-heading-xl-leading: 1.875rem; /* 30px */
+  --text-heading-sm-size: 0.9375rem; /* 15px */
+  --text-heading-sm-leading: 1.25rem; /* 20px */
+  --text-body-md-size: 0.875rem; /* 14px — also numeric.md */
+  --text-body-md-leading: 1.25rem; /* 20px */
+  --text-body-sm-size: 0.8125rem; /* 13px */
+  --text-body-sm-leading: 1.125rem; /* 18px */
+  --text-label-xs-size: 0.6875rem; /* 11px */
+  --text-label-xs-leading: 0.875rem; /* 14px */
+  --text-numeric-lg-size: 1.25rem; /* 20px */
+  --text-numeric-lg-leading: 1.625rem; /* 26px */
+  --text-code-sm-size: 0.75rem; /* 12px */
+  --text-code-sm-leading: 1rem; /* 16px */
+
+  --leading-normal: 1.5; /* generic prose fallback, outside the 10 named styles */
+
+  /* ---- Motion — not part of the style guide, kept neutral ------------------ */
+  --duration-fast: 120ms;
+  --duration-normal: 200ms;
+  --easing-default: cubic-bezier(0.2, 0, 0.2, 1);
+
+  /* ---- Scrim — deliberately NOT a token (files_design/07, processo #10):
+     "sem vínculo de token — um escurecedor de fundo não muda de cor com o
+     tema". Recorded as a shared constant so no component hard-codes it twice,
+     but it never appears in the light/dark blocks below. */
+  --scrim-overlay: rgb(0 0 0 / 0.45);
+
+  /* ---- Bank account colour palette (files_design/07 "Cores de banco") ------
+     Six swatches for the "Cor" selector of Contas Bancárias, one per bank.
+     NOT part of the Cor token collection: these are third-party BRAND colours
+     (the bank's, not the product's), so — same reasoning as `--scrim-overlay`
+     above — they are recorded here as a literal reference block, never bound
+     through `setBoundVariable` and never redefined per theme. `bankAccountColourSchema`
+     (src/api/contracts/bank-accounts.ts) stores the slug, never the hex. */
+  --bank-account-nubank: #820ad1;
+  --bank-account-itau: #ec7000;
+  --bank-account-banco-do-brasil: #0038a8;
+  --bank-account-bradesco: #ea1d2c;
+  --bank-account-caixa: #1c60ab;
+  /* As seis cores EXTRAS, que vivem dentro do color pick (decidido em
+     2026-09-11). Cinco matizes novas, escolhidas para não colidirem com as de
+     banco acima — que ocupam roxo, laranja, dois azuis e vermelho — nem entre
+     si; e o cinza, que já existia.
+
+     O cinza mantém o slug `outra`: é dado já gravado (uma conta o usa), e
+     renomear pediria migração para mudar nada na tela. */
+  --bank-account-green: #1e8e5a;
+  --bank-account-teal: #0f766e;
+  --bank-account-gold: #c9a227;
+  --bank-account-pink: #be185d;
+  --bank-account-brown: #6f4e37;
+  --bank-account-outra: #6b7280;
+
+  /* O "+" do gatilho do color pick, quando ele carrega uma cor escolhida.
+     Valores FIXOS, e não `--color-text-inverse`: aquele inverte com o tema, e
+     estas cores não — um "+" que virasse escuro no modo escuro ficaria ilegível
+     sobre um fundo que continuou o mesmo.
+
+     A regra é medida, não escolhida: o "+" é claro, e vira escuro só onde o
+     claro fica abaixo de 3:1. Contraste do branco sobre cada extra, hoje:
+       verde 4,14 · teal 5,47 · ouro 2,42 · rosa 6,04 · marrom 7,44 · cinza 4,83
+     Ou seja: só o ouro. */
+  --bank-account-plus-light: #ffffff;
+  --bank-account-plus-dark: #12161a;
+
+  /* A janela do color pick: UMA linha das seis cores extras, na mesma
+     aritmética da faixa (6 × 28 + 5 × 12 = 228), mais 12 de respiro de cada
+     lado. Ela mostra só as extras — as de banco não se repetem ali, porque a
+     faixa continua visível acima da janela (decidido em 2026-09-11). */
+  --width-colour-pick: 252px;
+
+  /* ---- Focus (accessibility — never remove) --------------------------------
+     "Anel de 2px em color/border/focus, por fora, sem mudar o tamanho da
+     caixa" (files_design/07, Foco) — this is exactly what CSS `outline` is:
+     it never participates in layout, regardless of `outline-offset`. */
+  --focus-ring: 2px;
+  --focus-offset: 2px;
+  --focus-color: var(--color-border-focus);
+}
+
+/* System preference. Guarded with `:not([data-theme='light'])` so that an
+   explicit light choice still wins over the OS setting. The palette below is
+   the same as the [data-theme='dark'] block — CSS has no mixins, so it is
+   duplicated deliberately rather than hidden behind a build step. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    color-scheme: dark;
+
+    --color-bg-canvas: #0e1216;
+    --color-bg-card: #161b21;
+    --color-bg-subtle: #1d242b;
+    --color-bg-hover: #2a333c;
+    --color-bg-inverse: #e8edf2;
+    --color-bg-state-subtle: #1b2740;
+    --color-bg-positive-subtle: #10321f;
+    --color-bg-negative-subtle: #3a1620;
+    --color-bg-alert-subtle: #33270f;
+    --color-bg-pf-subtle: #10303b;
+    --color-bg-pj-subtle: #23214a;
+
+    --color-border-default: #262e36;
+    --color-border-control: #5f6b77;
+    --color-border-strong: #38424c;
+    --color-border-focus: #6e9bff;
+    --color-border-negative: #f08098;
+
+    --color-text-primary: #e8edf2;
+    --color-text-secondary: #adb7c1;
+    --color-text-tertiary: #8b95a0;
+    --color-text-inverse: #0e1216;
+    --color-text-on-block: #12161a;
+    --color-text-state: #6e9bff;
+    --color-text-positive: #4fbf87;
+    --color-text-negative: #f08098;
+    --color-text-alert: #e5b45c;
+    --color-text-pf: #6bc3da;
+    --color-text-pj: #a9a2f5;
+
+    --color-chart-pf: #22a3bc;
+    --color-chart-pj: #8a7cf0;
+    --color-chart-series-1: #6e9bff;
+    --color-chart-positive: #4fbf87;
+    --color-chart-negative: #e08498;
+    --color-chart-neutral: #3a444e;
+    /* Same six steps, inverse order (files_design/07, Treemap #11). */
+    --color-chart-ramp-1: #c3d3e4;
+    --color-chart-ramp-2: #b2c2d3;
+    --color-chart-ramp-3: #a2b2c3;
+    --color-chart-ramp-4: #92a2b2;
+    --color-chart-ramp-5: #8292a2;
+    --color-chart-ramp-6: #738292;
+  }
+}
+
+[data-theme='dark'] {
+  color-scheme: dark;
+
+  --color-bg-canvas: #0e1216;
+  --color-bg-card: #161b21;
+  --color-bg-subtle: #1d242b;
+  --color-bg-hover: #2a333c;
+  --color-bg-inverse: #e8edf2;
+  --color-bg-state-subtle: #1b2740;
+  --color-bg-positive-subtle: #10321f;
+  --color-bg-negative-subtle: #3a1620;
+  --color-bg-alert-subtle: #33270f;
+  --color-bg-pf-subtle: #10303b;
+  --color-bg-pj-subtle: #23214a;
+
+  --color-border-default: #262e36;
+  --color-border-control: #5f6b77;
+  --color-border-strong: #38424c;
+  --color-border-focus: #6e9bff;
+  --color-border-negative: #f08098;
+
+  --color-text-primary: #e8edf2;
+  --color-text-secondary: #adb7c1;
+  --color-text-tertiary: #8b95a0;
+  --color-text-inverse: #0e1216;
+  --color-text-on-block: #12161a;
+  --color-text-state: #6e9bff;
+  --color-text-positive: #4fbf87;
+  --color-text-negative: #f08098;
+  --color-text-alert: #e5b45c;
+  --color-text-pf: #6bc3da;
+  --color-text-pj: #a9a2f5;
+
+  --color-chart-pf: #22a3bc;
+  --color-chart-pj: #8a7cf0;
+  --color-chart-series-1: #6e9bff;
+  --color-chart-positive: #4fbf87;
+  --color-chart-negative: #e08498;
+  --color-chart-neutral: #3a444e;
+  --color-chart-ramp-1: #c3d3e4;
+  --color-chart-ramp-2: #b2c2d3;
+  --color-chart-ramp-3: #a2b2c3;
+  --color-chart-ramp-4: #92a2b2;
+  --color-chart-ramp-5: #8292a2;
+  --color-chart-ramp-6: #738292;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-fast: 0ms;
+    --duration-normal: 0ms;
+  }
+}

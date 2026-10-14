@@ -1,0 +1,248 @@
+  <frame id="305:80" name="Vazio — Novo Lançamento (aba Despesa)" x="-13698" y="-1487" width="1440" height="1300">
+    <frame id="305:82" name="Sidebar" x="0" y="0" width="278" height="1300">
+      <text id="305:83" name="Finanças PF+PJ" x="20" y="28" width="116" height="18" />
+      <frame id="305:84" name="Frame" x="20" y="70" width="238" height="43">
+        <text id="305:85" name="+ Novo Lançamento" x="39.5" y="12" width="159" height="19" />
+      </frame>
+      <frame id="305:86" name="Frame" x="20" y="137" width="238" height="302">
+        <frame id="305:87" name="Frame" x="0" y="0" width="238" height="36">
+          <text id="305:89" name="Relatórios" x="10" y="10" width="63" height="16" />
+          <text id="305:88" name="▾" x="83" y="10" width="5" height="13" />
+        </frame>
+        <frame id="305:90" name="Frame" x="0" y="38" width="238" height="36">
+          <text id="305:91" name="DRE" x="25" y="10" width="26" height="16" />
+        </frame>
+        <frame id="305:92" name="Frame" x="0" y="76" width="238" height="36">
+          <text id="305:93" name="Balanço Patrimonial" x="25" y="10" width="123" height="16" />
+        </frame>
+        <frame id="305:94" name="Frame" x="0" y="114" width="238" height="36">
+          <text id="305:95" name="Evolução Mensal" x="25" y="10" width="105" height="16" />
+        </frame>
+        <frame id="305:96" name="Frame" x="0" y="152" width="238" height="36">
+          <text id="305:97" name="Indicadores Financeiros" x="25" y="10" width="148" height="16" />
+        </frame>
+        <frame id="305:98" name="Frame" x="0" y="190" width="238" height="36">
+          <text id="305:99" name="Revisão de Recorrentes" x="10" y="10" width="147" height="16" />
+        </frame>
+        <frame id="305:100" name="Frame" x="0" y="228" width="238" height="36">
+          <text id="305:101" name="Histórico" x="10" y="10" width="56" height="16" />
+        </frame>
+        <frame id="326:2" name="Frame" x="0" y="266" width="238" height="36">
+          <text id="326:3" name="Plano de Contas e Patrimônio" x="12" y="10" width="183" height="16" />
+          <text id="326:4" name="▾" x="205" y="20.5" width="13" height="5" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="344:2" name="Frame" x="278" y="0" width="1162" height="2501">
+      <text id="344:3" name="Olá! 👋" x="48" y="40" width="77" height="29" />
+      <frame id="344:4" name="Vazio — Pendências" x="48" y="89" width="420" height="148">
+        <frame id="344:5" name="Frame 12" x="24" y="20" width="372" height="19">
+          <text id="344:6" name="Pendências" x="0" y="0" width="92" height="19" />
+        </frame>
+        <frame id="344:7" name="Frame 11" x="40" y="53" width="340" height="71">
+          <text id="344:8" name="Tudo em dia" x="125.5" y="0" width="89" height="18" />
+          <text id="344:9" name="Nenhuma pendência agora. Quando algo precisar da sua decisão (valor sem destino, recorrência sem valor, lucro sem destinar), aparece aqui." x="0" y="26" width="340" height="45" />
+        </frame>
+      </frame>
+      <frame id="344:10" name="Vazio — Pendências" x="48" y="257" width="420" height="182">
+        <frame id="344:11" name="Frame 12" x="24" y="20" width="372" height="19">
+          <text id="344:12" name="Saldo para Consumo Livre" x="0" y="0" width="204" height="19" />
+        </frame>
+        <frame id="344:13" name="Frame 11" x="40" y="53" width="340" height="56">
+          <text id="344:14" name="Configurar Consumo Livre" x="74.5" y="0" width="191" height="18" />
+          <text id="344:15" name="Defina um valor mensal pra Consumo Livre. Sem lançar item por item, só confirma quando gastar." x="0" y="26" width="340" height="30" />
+        </frame>
+        <frame id="344:16" name="Frame" x="147" y="123" width="126" height="35">
+          <text id="344:17" name="Cadastrar agora" x="16" y="10" width="94" height="15" />
+        </frame>
+      </frame>
+      <frame id="344:18" name="Vazio — Pendências" x="48" y="459" width="420" height="182">
+        <frame id="344:19" name="Frame 12" x="24" y="20" width="372" height="19">
+          <text id="344:20" name="Despesas por Categoria" x="0" y="0" width="189" height="19" />
+        </frame>
+        <frame id="344:21" name="Frame 11" x="40" y="53" width="340" height="56">
+          <text id="344:22" name="Nenhuma despesa registrada" x="63.5" y="0" width="213" height="18" />
+          <text id="344:23" name="Assim que você lançar uma despesa, ela aparece aqui, organizada por categoria." x="0" y="26" width="340" height="30" />
+        </frame>
+        <frame id="344:24" name="Frame" x="134.5" y="123" width="151" height="35">
+          <text id="344:25" name="+ Novo Lançamento" x="16" y="10" width="119" height="15" />
+        </frame>
+      </frame>
+      <frame id="344:26" name="Vazio — Pendências" x="48" y="661" width="420" height="182">
+        <frame id="344:27" name="Frame 12" x="24" y="20" width="372" height="19">
+          <text id="344:28" name="Mapa de Fluxo" x="0" y="0" width="113" height="19" />
+        </frame>
+        <frame id="344:29" name="Frame 11" x="40" y="53" width="340" height="56">
+          <text id="344:30" name="Sem lançamentos este mês" x="70.5" y="0" width="199" height="18" />
+          <text id="344:31" name="Registre uma receita ou despesa pra começar a ver de onde vem e pra onde vai o seu dinheiro." x="0" y="26" width="340" height="30" />
+        </frame>
+        <frame id="344:32" name="Frame" x="134.5" y="123" width="151" height="35">
+          <text id="344:33" name="+ Novo Lançamento" x="16" y="10" width="119" height="15" />
+        </frame>
+      </frame>
+      <frame id="344:34" name="Vazio — Pendências" x="48" y="863" width="420" height="182">
+        <frame id="344:35" name="Frame 12" x="24" y="20" width="372" height="19">
+          <text id="344:36" name="Onde Está Meu Dinheiro" x="0" y="0" width="188" height="19" />
+        </frame>
+        <frame id="344:37" name="Frame 11" x="40" y="53" width="340" height="56">
+          <text id="344:38" name="Nada cadastrado ainda" x="86" y="0" width="168" height="18" />
+          <text id="344:39" name="Cadastre suas contas, investimentos ou dívidas em Plano de Contas e Patrimônio pra ver onde seu dinheiro está." x="0" y="26" width="340" height="30" />
+        </frame>
+        <frame id="344:40" name="Frame" x="147" y="123" width="126" height="35">
+          <text id="344:41" name="Cadastrar agora" x="16" y="10" width="94" height="15" />
+        </frame>
+      </frame>
+      <frame id="344:42" name="Vazio — Pendências" x="48" y="1065" width="420" height="133">
+        <frame id="344:43" name="Frame 12" x="24" y="20" width="372" height="19">
+          <text id="344:44" name="Eventos Recentes" x="0" y="0" width="141" height="19" />
+        </frame>
+        <frame id="344:45" name="Frame 11" x="40" y="53" width="340" height="56">
+          <text id="344:46" name="Nenhum evento ainda" x="91" y="0" width="158" height="18" />
+          <text id="344:47" name="Reajustes de juros, divergências de pagamento e parcelas confirmadas aparecem aqui conforme forem acontecendo." x="0" y="26" width="340" height="30" />
+        </frame>
+      </frame>
+    </frame>
+    <rounded-rectangle id="305:326" name="Rectangle" x="0" y="0" width="1440" height="1300" />
+    <frame id="305:327" name="Modal — Novo Lançamento" x="631" y="83" width="480" height="1134">
+      <frame id="305:328" name="Frame" x="28" y="28" width="424" height="22">
+        <text id="305:329" name="Novo Lançamento" x="132.5" y="0" width="159" height="22" />
+      </frame>
+      <frame id="305:330" name="Frame" x="28" y="68" width="424" height="33">
+        <frame id="305:331" name="Frame" x="0" y="0" width="79" height="33">
+          <text id="305:332" name="Despesa" x="14" y="9" width="51" height="15" />
+        </frame>
+        <frame id="305:333" name="Frame" x="87" y="0" width="72" height="33">
+          <text id="305:334" name="Receita" x="14" y="9" width="44" height="15" />
+        </frame>
+        <frame id="305:335" name="Frame" x="167" y="0" width="173" height="33">
+          <text id="305:336" name="Pró-labore e Distribuição" x="14" y="9" width="145" height="15" />
+        </frame>
+        <frame id="305:337" name="Frame" x="348" y="0" width="40" height="33">
+          <text id="305:338" name="IR" x="14" y="9" width="12" height="15" />
+        </frame>
+      </frame>
+      <text id="305:339" name="Despesa: qualquer gasto que saiu ou vai sair da sua conta, inclusive compra no crédito (marque Previsto até a fatura ser realmente paga)." x="28" y="119" width="424" height="30" />
+      <text id="305:340" name="INFORMAÇÕES BÁSICAS" x="28" y="167" width="424" height="13" />
+      <frame id="305:341" name="Frame" x="28" y="198" width="424" height="61">
+        <text id="305:342" name="Valor *" x="0" y="0" width="39" height="15" />
+        <frame id="305:343" name="Frame" x="0" y="21" width="424" height="40">
+          <text id="305:344" name="R$ 0,00" x="14" y="12" width="48" height="16" />
+        </frame>
+      </frame>
+      <frame id="305:345" name="Frame" x="28" y="277" width="424" height="63">
+        <text id="305:346" name="Data de pagamento *" x="0" y="0" width="123" height="15" />
+        <frame id="305:347" name="Frame" x="0" y="21" width="424" height="42">
+          <text id="305:348" name="Hoje, 20/07/2026" x="14" y="12" width="378" height="16" />
+          <frame id="305:349" name="Frame" x="392" y="12" width="18" height="18">
+            <rounded-rectangle id="305:350" name="Rectangle" x="2" y="2.5" width="14" height="13" />
+            <rounded-rectangle id="305:351" name="Rectangle" x="2" y="1" width="14" height="3.5" />
+          </frame>
+        </frame>
+      </frame>
+      <frame id="305:352" name="Frame" x="28" y="358" width="424" height="57">
+        <frame id="305:353" name="Frame" x="0" y="0" width="58" height="15">
+          <text id="305:354" name="Status" x="0" y="0" width="38" height="15" />
+          <frame id="305:355" name="Frame" x="44" y="0" width="14" height="14">
+            <text id="305:356" name="i" x="5.5" y="1" width="3" height="12" />
+          </frame>
+        </frame>
+        <frame id="305:357" name="Frame" x="0" y="21" width="424" height="36">
+          <frame id="305:358" name="Frame" x="0" y="0" width="208" height="36">
+            <text id="305:359" name="Previsto" x="78.5" y="10" width="51" height="16" />
+          </frame>
+          <frame id="305:360" name="Frame" x="216" y="0" width="208" height="36">
+            <text id="305:361" name="Pago" x="88" y="10" width="32" height="16" />
+          </frame>
+        </frame>
+      </frame>
+      <frame id="305:362" name="Frame" x="28" y="433" width="424" height="57">
+        <text id="305:363" name="Entidade" x="0" y="0" width="51" height="15" />
+        <frame id="305:364" name="Frame" x="0" y="21" width="424" height="36">
+          <frame id="305:365" name="Frame" x="0" y="0" width="208" height="36">
+            <text id="305:366" name="PF" x="96" y="10" width="16" height="16" />
+          </frame>
+          <frame id="305:367" name="Frame" x="216" y="0" width="208" height="36">
+            <text id="305:368" name="PJ" x="96.5" y="10" width="15" height="16" />
+          </frame>
+        </frame>
+      </frame>
+      <rounded-rectangle id="305:369" name="Rectangle" x="28" y="508" width="424" height="1" />
+      <text id="305:370" name="CATEGORIZAÇÃO" x="28" y="527" width="424" height="13" />
+      <frame id="305:371" name="Frame" x="28" y="558" width="424" height="61">
+        <text id="305:372" name="Categoria *" x="0" y="0" width="66" height="15" />
+        <frame id="305:373" name="Frame" x="0" y="21" width="424" height="40">
+          <text id="305:374" name="Buscar ou criar categoria…" x="14" y="12" width="165" height="16" />
+        </frame>
+      </frame>
+      <frame id="305:375" name="Frame" x="28" y="637" width="424" height="57">
+        <frame id="305:376" name="Frame" x="0" y="0" width="159" height="15">
+          <text id="305:377" name="Classificação (sugerida)" x="0" y="0" width="139" height="15" />
+          <frame id="305:378" name="Frame" x="145" y="0" width="14" height="14">
+            <text id="305:379" name="i" x="5.5" y="1" width="3" height="12" />
+          </frame>
+        </frame>
+        <frame id="305:380" name="Frame" x="0" y="21" width="424" height="36">
+          <frame id="305:381" name="Frame" x="0" y="0" width="208" height="36">
+            <text id="305:382" name="Circulante" x="72" y="10" width="64" height="16" />
+          </frame>
+          <frame id="305:383" name="Frame" x="216" y="0" width="208" height="36">
+            <text id="305:384" name="Não circulante" x="59" y="10" width="90" height="16" />
+          </frame>
+        </frame>
+      </frame>
+      <frame id="305:385" name="Frame" x="28" y="712" width="424" height="61">
+        <text id="305:386" name="Conta *" x="0" y="0" width="44" height="15" />
+        <frame id="305:387" name="Frame" x="0" y="21" width="424" height="40">
+          <text id="305:388" name="Selecionar conta…" x="14" y="12" width="114" height="16" />
+        </frame>
+      </frame>
+      <rounded-rectangle id="305:389" name="Rectangle" x="28" y="791" width="424" height="1" />
+      <text id="305:390" name="RECORRÊNCIA" x="28" y="810" width="424" height="13" />
+      <frame id="305:391" name="Frame" x="28" y="841" width="424" height="171">
+        <frame id="305:392" name="Frame" x="14" y="14" width="396" height="22">
+          <frame id="305:393" name="Frame" x="0" y="0" width="358" height="16">
+            <text id="305:394" name="Este lançamento se repete todo mês" x="0" y="0" width="229" height="16" />
+          </frame>
+          <frame id="305:395" name="Frame" x="358" y="0" width="38" height="22">
+            <ellipse id="305:396" name="Ellipse" x="19" y="3" width="16" height="16" />
+          </frame>
+        </frame>
+        <frame id="305:397" name="Frame" x="14" y="48" width="396" height="54">
+          <frame id="305:398" name="Frame" x="0" y="0" width="95" height="15">
+            <text id="305:399" name="Tipo de valor" x="0" y="0" width="75" height="15" />
+            <frame id="305:400" name="Frame" x="81" y="0" width="14" height="14">
+              <text id="305:401" name="i" x="5.5" y="1" width="3" height="12" />
+            </frame>
+          </frame>
+          <frame id="305:402" name="Frame" x="0" y="21" width="396" height="33">
+            <frame id="305:403" name="Frame" x="0" y="0" width="194" height="33">
+              <text id="305:404" name="Fixo (copia o valor)" x="42.5" y="9" width="109" height="15" />
+            </frame>
+            <frame id="305:405" name="Frame" x="202" y="0" width="194" height="33">
+              <text id="305:406" name="A definir (em branco)" x="36" y="9" width="122" height="15" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="305:407" name="Frame" x="14" y="114" width="396" height="43">
+          <text id="305:408" name="Término (data da última ocorrência)" x="0" y="0" width="205" height="15" />
+          <frame id="305:409" name="Frame" x="0" y="21" width="396" height="22">
+            <frame id="305:410" name="Frame" x="0" y="0" width="358" height="16">
+              <text id="305:411" name="Definir data de término" x="0" y="0" width="143" height="16" />
+            </frame>
+            <frame id="305:412" name="Frame" x="358" y="0" width="38" height="22">
+              <ellipse id="305:413" name="Ellipse" x="3" y="3" width="16" height="16" />
+            </frame>
+          </frame>
+        </frame>
+      </frame>
+      <frame id="305:414" name="Frame" x="28" y="1030" width="424" height="45">
+        <frame id="305:415" name="Frame" x="0" y="0" width="207" height="45">
+          <text id="305:416" name="Cancelar" x="73.5" y="14" width="60" height="17" />
+        </frame>
+        <frame id="305:417" name="Frame" x="217" y="0" width="207" height="45">
+          <text id="305:418" name="Salvar Lançamento" x="38.5" y="14" width="130" height="17" />
+        </frame>
+      </frame>
+      <text id="305:419" name="* Campo obrigatório" x="28" y="1093" width="106" height="13" />
+    </frame>
+  </frame>

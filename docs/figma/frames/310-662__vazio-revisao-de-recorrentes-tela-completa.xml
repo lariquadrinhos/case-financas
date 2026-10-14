@@ -1,0 +1,54 @@
+  <frame id="310:662" name="Vazio — Revisão de Recorrentes (tela completa)" x="-13698" y="3735" width="1440" height="900">
+    <frame id="310:663" name="Sidebar" x="0" y="0" width="278" height="900">
+      <text id="310:664" name="Finanças PF+PJ" x="20" y="28" width="116" height="18" />
+      <frame id="310:665" name="Frame" x="20" y="70" width="238" height="43">
+        <text id="310:666" name="+ Novo Lançamento" x="39.5" y="12" width="159" height="19" />
+      </frame>
+      <frame id="310:667" name="Frame" x="20" y="137" width="238" height="302">
+        <frame id="310:668" name="Frame" x="0" y="0" width="238" height="36">
+          <text id="310:669" name="Relatórios" x="10" y="10" width="63" height="16" />
+          <text id="310:670" name="▾" x="83" y="10" width="5" height="13" />
+        </frame>
+        <frame id="310:671" name="Frame" x="0" y="38" width="238" height="36">
+          <text id="310:672" name="DRE" x="25" y="10" width="26" height="16" />
+        </frame>
+        <frame id="310:673" name="Frame" x="0" y="76" width="238" height="36">
+          <text id="310:674" name="Balanço Patrimonial" x="25" y="10" width="123" height="16" />
+        </frame>
+        <frame id="310:675" name="Frame" x="0" y="114" width="238" height="36">
+          <text id="310:676" name="Evolução Mensal" x="25" y="10" width="105" height="16" />
+        </frame>
+        <frame id="310:677" name="Frame" x="0" y="152" width="238" height="36">
+          <text id="310:678" name="Indicadores Financeiros" x="25" y="10" width="148" height="16" />
+        </frame>
+        <frame id="310:679" name="Frame" x="0" y="190" width="238" height="36">
+          <text id="310:680" name="Revisão de Recorrentes" x="10" y="10" width="147" height="16" />
+        </frame>
+        <frame id="310:681" name="Frame" x="0" y="228" width="238" height="36">
+          <text id="310:682" name="Histórico" x="10" y="10" width="56" height="16" />
+        </frame>
+        <frame id="310:683" name="Frame" x="0" y="266" width="238" height="36">
+          <text id="310:684" name="Plano de Contas e Patrimônio" x="12" y="10" width="183" height="16" />
+          <text id="310:685" name="▾" x="205" y="20.5" width="13" height="5" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="310:686" name="Frame" x="278" y="0" width="1162" height="900">
+      <frame id="310:687" name="Frame" x="48" y="40" width="1066" height="95">
+        <frame id="310:688" name="Frame" x="0" y="0" width="1066" height="29">
+          <frame id="310:689" name="Frame" x="0" y="0" width="1066" height="29">
+            <text id="310:690" name="Revisão de Recorrentes" x="0" y="0" width="277" height="29" />
+          </frame>
+        </frame>
+        <text id="326:488" name="Revisão de Recorrentes: os lançamentos que suas recorrências já geraram como Previsto pra este mês. Para cada um, marque como pago, edite o valor ou descarte só esta ocorrência." x="0" y="43" width="1066" height="32" />
+      </frame>
+      <frame id="305:1434" name="Vazio — Revisão de Recorrentes" x="48" y="155" width="420" height="210">
+        <text id="305:1435" name="Nenhuma recorrência configurada" x="86" y="40" width="248" height="18" />
+        <text id="305:1436" name="Ative a recorrência num lançamento (despesa, receita, pró-labore...) pra ela aparecer aqui todo mês, pronta pra confirmar." x="40" y="66" width="340" height="45" />
+        <rounded-rectangle id="305:1437" name="Rectangle" x="209.5" y="119" width="1" height="8" />
+        <frame id="305:1438" name="Frame" x="134.5" y="135" width="151" height="35">
+          <text id="305:1439" name="+ Novo Lançamento" x="16" y="10" width="119" height="15" />
+        </frame>
+      </frame>
+    </frame>
+  </frame>

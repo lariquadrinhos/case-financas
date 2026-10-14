@@ -1,0 +1,4 @@
+  <frame id="166:5" name="Nota — Divisão de valor com saldo restante visível" x="208.4846649169922" y="18164.18359375" width="516.6257934570312" height="308.1042785644531">
+    <text id="166:6" name="➗ Divide um valor, sempre vendo quanto falta" x="34.441715240478516" y="34.441715240478516" width="409.6104431152344" height="54" />
+    <text id="166:7" name="Destinar o Lucro e Venda de Bem Material usam a mesma lógica: a pessoa pode dividir um valor entre vários destinos (investimento, passivo, receita, conta...), com o saldo já alocado e o restante sempre visíveis e atualizando em tempo real. Reflete a realidade: raramente um valor tem um destino só." x="34.44173049926758" y="105.66256713867188" width="447.7423400878906" height="168" />
+  </frame>

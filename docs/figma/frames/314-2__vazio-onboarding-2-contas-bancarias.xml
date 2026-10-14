@@ -1,0 +1,70 @@
+  <frame id="314:2" name="Vazio — Onboarding 2 (Contas Bancárias)" x="-10698" y="-4604" width="1440" height="900">
+    <frame id="314:3" name="Frame" x="380" y="80" width="680" height="473">
+      <frame id="314:4" name="Frame" x="40" y="36" width="272" height="4">
+        <rounded-rectangle id="314:5" name="Rectangle" x="0" y="0" width="48" height="4" />
+        <rounded-rectangle id="314:6" name="Rectangle" x="56" y="0" width="48" height="4" />
+        <rounded-rectangle id="314:7" name="Rectangle" x="112" y="0" width="48" height="4" />
+        <rounded-rectangle id="314:8" name="Rectangle" x="168" y="0" width="48" height="4" />
+        <rounded-rectangle id="314:9" name="Rectangle" x="224" y="0" width="48" height="4" />
+      </frame>
+      <text id="314:10" name="Passo 2 de 5: Contas Bancárias" x="40" y="60" width="181" height="15" />
+      <text id="314:11" name="Cadastre suas contas bancárias e patrimonio" x="40" y="95" width="486" height="27" />
+      <text id="314:12" name="Legenda/cor, entidade e saldo atual. Adicione quantas contas quiser." x="40" y="142" width="423" height="16" />
+      <text id="314:33" name="Adicionar conta" x="40" y="178" width="117" height="18" />
+      <frame id="314:34" name="Frame" x="40" y="216" width="600" height="73">
+        <frame id="314:35" name="Frame" x="0" y="0" width="92" height="61">
+          <text id="314:36" name="Nome da conta *" x="0" y="0" width="97" height="15" />
+          <frame id="314:37" name="Frame" x="0" y="21" width="92" height="40">
+            <text id="314:38" name="Ex: Nubank" x="14" y="12" width="70" height="16" />
+          </frame>
+        </frame>
+        <frame id="314:39" name="Cor" x="108" y="0" width="228" height="73">
+          <text id="314:40" name="Cor" x="0" y="0" width="21" height="15" />
+          <frame id="314:41" name="Frame" x="0" y="21" width="228" height="52">
+            <ellipse id="314:42" name="Ellipse" x="0" y="12" width="28" height="28" />
+            <ellipse id="314:43" name="Ellipse" x="40" y="12" width="28" height="28" />
+            <ellipse id="314:44" name="Ellipse" x="80" y="12" width="28" height="28" />
+            <ellipse id="314:45" name="Ellipse" x="120" y="12" width="28" height="28" />
+            <ellipse id="314:46" name="Ellipse" x="160" y="12" width="28" height="28" />
+            <ellipse id="314:47" name="Ellipse" x="200" y="12" width="28" height="28" />
+          </frame>
+        </frame>
+        <frame id="314:48" name="Frame" x="352" y="0" width="140" height="52">
+          <text id="314:49" name="Entidade" x="0" y="0" width="51" height="15" />
+          <frame id="314:50" name="Frame" x="0" y="21" width="83" height="31">
+            <frame id="314:51" name="Frame" x="0" y="0" width="39" height="31">
+              <text id="314:52" name="PF" x="12" y="8" width="15" height="15" />
+            </frame>
+            <frame id="314:53" name="Frame" x="45" y="0" width="38" height="31">
+              <text id="314:54" name="PJ" x="12" y="8" width="14" height="15" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="314:55" name="Frame" x="508" y="0" width="92" height="61">
+          <text id="314:56" name="Saldo" x="0" y="0" width="33" height="15" />
+          <frame id="314:57" name="Frame" x="0" y="21" width="92" height="40">
+            <text id="314:58" name="R$ 0,00" x="14" y="12" width="48" height="16" />
+          </frame>
+        </frame>
+      </frame>
+      <frame id="314:59" name="Frame" x="40" y="309" width="600" height="35">
+        <frame id="314:60" name="Frame" x="0" y="0" width="498" height="1" />
+        <frame id="314:61" name="Frame" x="498" y="0" width="102" height="35">
+          <text id="314:62" name="+ Adicionar" x="16" y="10" width="70" height="15" />
+        </frame>
+      </frame>
+      <frame id="314:63" name="Frame" x="40" y="364" width="600" height="40">
+        <frame id="314:64" name="Frame" x="0" y="0" width="73" height="40">
+          <text id="314:65" name="Voltar" x="18" y="12" width="37" height="16" />
+        </frame>
+        <frame id="314:66" name="Frame" x="85" y="0" width="197" height="1" />
+        <frame id="314:67" name="Frame" x="294" y="0" width="194" height="40">
+          <text id="314:68" name="Salvar e continuar depois" x="18" y="12" width="158" height="16" />
+        </frame>
+        <frame id="314:69" name="Frame" x="500" y="0" width="100" height="40">
+          <text id="314:70" name="Avançar" x="24" y="12" width="52" height="16" />
+        </frame>
+      </frame>
+      <text id="314:71" name="* Campo obrigatório" x="40" y="424" width="106" height="13" />
+    </frame>
+  </frame>

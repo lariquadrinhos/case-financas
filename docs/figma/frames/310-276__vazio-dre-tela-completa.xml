@@ -1,0 +1,54 @@
+  <frame id="310:276" name="Vazio — DRE (tela completa)" x="-13698" y="-127" width="1440" height="736">
+    <frame id="310:277" name="Sidebar" x="0" y="0" width="278" height="736">
+      <text id="310:278" name="Finanças PF+PJ" x="20" y="28" width="116" height="18" />
+      <frame id="310:279" name="Frame" x="20" y="70" width="238" height="43">
+        <text id="310:280" name="+ Novo Lançamento" x="39.5" y="12" width="159" height="19" />
+      </frame>
+      <frame id="310:281" name="Frame" x="20" y="137" width="238" height="302">
+        <frame id="310:282" name="Frame" x="0" y="0" width="238" height="36">
+          <text id="310:283" name="Relatórios" x="10" y="10" width="63" height="16" />
+          <text id="310:284" name="▾" x="83" y="10" width="5" height="13" />
+        </frame>
+        <frame id="310:285" name="Frame" x="0" y="38" width="238" height="36">
+          <text id="310:286" name="DRE" x="25" y="10" width="26" height="16" />
+        </frame>
+        <frame id="310:287" name="Frame" x="0" y="76" width="238" height="36">
+          <text id="310:288" name="Balanço Patrimonial" x="25" y="10" width="123" height="16" />
+        </frame>
+        <frame id="310:289" name="Frame" x="0" y="114" width="238" height="36">
+          <text id="310:290" name="Evolução Mensal" x="25" y="10" width="105" height="16" />
+        </frame>
+        <frame id="310:291" name="Frame" x="0" y="152" width="238" height="36">
+          <text id="310:292" name="Indicadores Financeiros" x="25" y="10" width="148" height="16" />
+        </frame>
+        <frame id="310:293" name="Frame" x="0" y="190" width="238" height="36">
+          <text id="310:294" name="Revisão de Recorrentes" x="10" y="10" width="147" height="16" />
+        </frame>
+        <frame id="310:295" name="Frame" x="0" y="228" width="238" height="36">
+          <text id="310:296" name="Histórico" x="10" y="10" width="56" height="16" />
+        </frame>
+        <frame id="310:297" name="Frame" x="0" y="266" width="238" height="36">
+          <text id="310:298" name="Plano de Contas e Patrimônio" x="12" y="10" width="183" height="16" />
+          <text id="310:299" name="▾" x="205" y="20.5" width="13" height="5" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="310:300" name="Frame" x="278" y="0" width="1162" height="736">
+      <frame id="310:301" name="Frame" x="48" y="40" width="1066" height="79">
+        <frame id="310:302" name="Frame" x="0" y="0" width="1066" height="29">
+          <frame id="310:303" name="Frame" x="0" y="0" width="1066" height="29">
+            <text id="310:304" name="DRE" x="0" y="0" width="48" height="29" />
+          </frame>
+        </frame>
+        <text id="326:483" name="O DRE mostra como sua receita se transforma em lucro, mês a mês, passando por cada categoria de custo e despesa até chegar no Lucro Líquido." x="0" y="43" width="1066" height="16" />
+      </frame>
+      <frame id="305:1409" name="Vazio — DRE" x="48" y="139" width="420" height="210">
+        <text id="305:1410" name="Nada lançado ainda este mês" x="103.5" y="40" width="213" height="18" />
+        <text id="305:1411" name="O DRE mostra o resultado calculado a partir dos seus lançamentos. Registre uma receita ou despesa pra começar." x="40" y="66" width="340" height="45" />
+        <rounded-rectangle id="305:1412" name="Rectangle" x="209.5" y="119" width="1" height="8" />
+        <frame id="305:1413" name="Frame" x="134.5" y="135" width="151" height="35">
+          <text id="305:1414" name="+ Novo Lançamento" x="16" y="10" width="119" height="15" />
+        </frame>
+      </frame>
+    </frame>
+  </frame>

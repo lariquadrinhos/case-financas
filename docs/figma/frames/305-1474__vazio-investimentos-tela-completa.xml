@@ -1,0 +1,69 @@
+  <frame id="305:1474" name="Vazio — Investimentos (tela completa)" x="-13688" y="8985" width="1440" height="1050">
+    <frame id="305:1475" name="Sidebar" x="0" y="0" width="278" height="1050">
+      <text id="305:1476" name="Finanças PF+PJ" x="20" y="28" width="116" height="18" />
+      <frame id="305:1477" name="Frame" x="20" y="70" width="238" height="43">
+        <text id="305:1478" name="+ Novo Lançamento" x="39.5" y="12" width="159" height="19" />
+      </frame>
+      <frame id="305:1479" name="Frame" x="20" y="137" width="238" height="492">
+        <frame id="305:1480" name="Frame" x="0" y="0" width="238" height="36">
+          <text id="305:1481" name="Relatórios" x="12" y="10" width="63" height="16" />
+          <text id="305:1482" name="▾" x="85" y="10" width="5" height="13" />
+        </frame>
+        <frame id="305:1483" name="Frame" x="0" y="38" width="238" height="36">
+          <text id="305:1484" name="DRE" x="25" y="10" width="26" height="16" />
+        </frame>
+        <frame id="305:1485" name="Frame" x="0" y="76" width="238" height="36">
+          <text id="305:1486" name="Balanço Patrimonial" x="25" y="10" width="123" height="16" />
+        </frame>
+        <frame id="305:1487" name="Frame" x="0" y="114" width="238" height="36">
+          <text id="305:1488" name="Evolução Mensal" x="25" y="10" width="105" height="16" />
+        </frame>
+        <frame id="305:1489" name="Frame" x="0" y="152" width="238" height="36">
+          <text id="305:1490" name="Indicadores Financeiros" x="25" y="10" width="148" height="16" />
+        </frame>
+        <frame id="305:1491" name="Frame" x="0" y="190" width="238" height="36">
+          <text id="305:1492" name="Revisão de Recorrentes" x="10" y="10" width="147" height="16" />
+        </frame>
+        <frame id="305:1493" name="Frame" x="0" y="228" width="238" height="36">
+          <text id="305:1494" name="Histórico" x="10" y="10" width="56" height="16" />
+        </frame>
+        <frame id="305:1495" name="Frame" x="0" y="266" width="238" height="36">
+          <text id="305:1496" name="Plano de Contas e Patrimônio" x="12" y="10" width="183" height="16" />
+          <text id="305:1497" name="▾" x="205" y="10" width="5" height="13" />
+        </frame>
+        <frame id="305:1498" name="Frame" x="0" y="304" width="238" height="36">
+          <text id="305:1499" name="Plano de Contas" x="25" y="10" width="102" height="16" />
+        </frame>
+        <frame id="305:1500" name="Frame" x="0" y="342" width="238" height="36">
+          <text id="305:1501" name="Contas Bancárias" x="25" y="10" width="109" height="16" />
+        </frame>
+        <frame id="305:1502" name="Frame" x="0" y="380" width="238" height="36">
+          <text id="305:1503" name="Bens Materiais" x="25" y="10" width="92" height="16" />
+        </frame>
+        <frame id="305:1504" name="Frame" x="0" y="418" width="238" height="36">
+          <text id="305:1505" name="Investimentos" x="25" y="10" width="88" height="16" />
+        </frame>
+        <frame id="305:1506" name="Frame" x="0" y="456" width="238" height="36">
+          <text id="305:1507" name="Passivos" x="25" y="10" width="55" height="16" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="305:1508" name="Frame" x="278" y="0" width="1162" height="1050">
+      <frame id="305:1509" name="Frame" x="48" y="40" width="1066" height="78">
+        <frame id="305:1510" name="Frame" x="0" y="0" width="1066" height="29">
+          <frame id="305:1511" name="Frame" x="0" y="0" width="1066" height="29">
+            <text id="305:1512" name="Investimentos" x="0" y="0" width="168" height="29" />
+          </frame>
+        </frame>
+        <text id="326:495" name="Investimentos: o valor acumulado que você já tem aplicado, sem detalhar a carteira. Atualize aqui quando quiser, sem precisar reavaliar todo mês." x="0" y="43" width="1066" height="15" />
+      </frame>
+      <frame id="305:1458" name="Vazio — Investimentos" x="48" y="138" width="420" height="180">
+        <text id="305:1459" name="Nenhum investimento cadastrado" x="87.5" y="40" width="245" height="18" />
+        <text id="305:1460" name="Adicione o valor acumulado dos seus investimentos." x="40" y="66" width="340" height="15" />
+        <rounded-rectangle id="305:1461" name="Rectangle" x="209.5" y="89" width="1" height="8" />
+        <frame id="305:1462" name="Frame" x="159" y="105" width="102" height="35">
+          <text id="305:1463" name="+ Adicionar" x="16" y="10" width="70" height="15" />
+        </frame>
+      </frame>
+    </frame>
+  </frame>

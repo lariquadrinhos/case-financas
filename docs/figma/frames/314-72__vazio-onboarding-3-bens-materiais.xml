@@ -1,0 +1,59 @@
+  <frame id="314:72" name="Vazio — Onboarding 3 (Bens Materiais)" x="-9198" y="-4604" width="1440" height="900">
+    <frame id="314:73" name="Frame" x="380" y="80" width="680" height="461">
+      <frame id="314:74" name="Frame" x="40" y="36" width="272" height="4">
+        <rounded-rectangle id="314:75" name="Rectangle" x="0" y="0" width="48" height="4" />
+        <rounded-rectangle id="314:76" name="Rectangle" x="56" y="0" width="48" height="4" />
+        <rounded-rectangle id="314:77" name="Rectangle" x="112" y="0" width="48" height="4" />
+        <rounded-rectangle id="314:78" name="Rectangle" x="168" y="0" width="48" height="4" />
+        <rounded-rectangle id="314:79" name="Rectangle" x="224" y="0" width="48" height="4" />
+      </frame>
+      <text id="314:80" name="Passo 3 de 5: Bens Materiais" x="40" y="60" width="165" height="15" />
+      <text id="314:81" name="Cadastre seus bens materiais" x="40" y="95" width="320" height="27" />
+      <text id="314:82" name="Imóvel, veículo, equipamentos, o que tiver valor. Nome livre, sem categoria fixa." x="40" y="142" width="487" height="16" />
+      <text id="314:103" name="Adicionar bem material" x="40" y="178" width="170" height="18" />
+      <frame id="314:104" name="Frame" x="40" y="216" width="600" height="61">
+        <frame id="314:105" name="Frame" x="0" y="0" width="214" height="61">
+          <text id="314:106" name="Nome *" x="0" y="0" width="44" height="15" />
+          <frame id="314:107" name="Frame" x="0" y="21" width="214" height="40">
+            <text id="314:108" name="Ex: Apartamento Centro" x="14" y="12" width="148" height="16" />
+          </frame>
+        </frame>
+        <frame id="314:109" name="Frame" x="230" y="0" width="140" height="52">
+          <text id="314:110" name="Entidade" x="0" y="0" width="51" height="15" />
+          <frame id="314:111" name="Frame" x="0" y="21" width="83" height="31">
+            <frame id="314:112" name="Frame" x="0" y="0" width="39" height="31">
+              <text id="314:113" name="PF" x="12" y="8" width="15" height="15" />
+            </frame>
+            <frame id="314:114" name="Frame" x="45" y="0" width="38" height="31">
+              <text id="314:115" name="PJ" x="12" y="8" width="14" height="15" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="314:116" name="Frame" x="386" y="0" width="214" height="61">
+          <text id="314:117" name="Valor inicial *" x="0" y="0" width="75" height="15" />
+          <frame id="314:118" name="Frame" x="0" y="21" width="214" height="40">
+            <text id="314:119" name="R$ 0,00" x="14" y="12" width="48" height="16" />
+          </frame>
+        </frame>
+      </frame>
+      <frame id="314:120" name="Frame" x="40" y="297" width="600" height="35">
+        <frame id="314:121" name="Frame" x="0" y="0" width="498" height="1" />
+        <frame id="314:122" name="Frame" x="498" y="0" width="102" height="35">
+          <text id="314:123" name="+ Adicionar" x="16" y="10" width="70" height="15" />
+        </frame>
+      </frame>
+      <frame id="314:124" name="Frame" x="40" y="352" width="600" height="40">
+        <frame id="314:125" name="Frame" x="0" y="0" width="73" height="40">
+          <text id="314:126" name="Voltar" x="18" y="12" width="37" height="16" />
+        </frame>
+        <frame id="314:127" name="Frame" x="85" y="0" width="197" height="1" />
+        <frame id="314:128" name="Frame" x="294" y="0" width="194" height="40">
+          <text id="314:129" name="Salvar e continuar depois" x="18" y="12" width="158" height="16" />
+        </frame>
+        <frame id="314:130" name="Frame" x="500" y="0" width="100" height="40">
+          <text id="314:131" name="Avançar" x="24" y="12" width="52" height="16" />
+        </frame>
+      </frame>
+      <text id="314:132" name="* Campo obrigatório" x="40" y="412" width="106" height="13" />
+    </frame>
+  </frame>

@@ -1,0 +1,88 @@
+  <frame id="47:2" name="Estado — Buscar/Criar Categoria (expandido)" x="3229" y="677" width="1440" height="1197">
+    <frame id="47:3" name="Frame" x="48" y="85" width="1344" height="1027">
+      <frame id="47:4" name="Frame" x="0" y="436" width="380" height="155">
+        <text id="47:5" name="① Antes: campo fechado" x="20" y="20" width="177" height="17" />
+        <frame id="122:2" name="Frame" x="20" y="49" width="340" height="61">
+          <text id="122:3" name="Categoria *" x="0" y="0" width="66" height="15" />
+          <frame id="122:4" name="Frame" x="0" y="21" width="340" height="40">
+            <text id="122:5" name="Buscar ou criar categoria…" x="14" y="12" width="165" height="16" />
+          </frame>
+        </frame>
+        <text id="47:11" name="↓ clique no campo" x="20" y="122" width="99" height="13" />
+      </frame>
+      <frame id="83:2" name="Frame" x="404" y="323" width="380" height="381">
+        <text id="83:3" name="② Depois: clique (lista completa)" x="20" y="20" width="231" height="17" />
+        <frame id="83:4" name="Frame" x="20" y="49" width="340" height="274">
+          <frame id="83:5" name="Frame" x="0" y="0" width="340" height="40">
+            <text id="83:6" name="|" x="14" y="12" width="5" height="16" />
+          </frame>
+          <rounded-rectangle id="83:7" name="Rectangle" x="0" y="40" width="340" height="1" />
+          <frame id="83:8" name="Frame" x="0" y="41" width="340" height="24">
+            <text id="83:9" name="CATEGORIAS EXISTENTES" x="14" y="8" width="129" height="12" />
+          </frame>
+          <frame id="83:10" name="Frame" x="0" y="65" width="340" height="174">
+            <frame id="83:11" name="Frame" x="0" y="0" width="340" height="29">
+              <text id="83:12" name="Academia" x="14" y="7" width="57" height="15" />
+            </frame>
+            <frame id="83:13" name="Frame" x="0" y="29" width="340" height="29">
+              <text id="83:14" name="Alimentação" x="14" y="7" width="70" height="15" />
+            </frame>
+            <frame id="83:15" name="Frame" x="0" y="58" width="340" height="29">
+              <text id="83:16" name="Assinaturas" x="14" y="7" width="67" height="15" />
+            </frame>
+            <frame id="83:17" name="Frame" x="0" y="87" width="340" height="29">
+              <text id="83:18" name="Automóvel" x="14" y="7" width="61" height="15" />
+            </frame>
+            <frame id="83:19" name="Frame" x="0" y="116" width="340" height="29">
+              <text id="83:20" name="Cuidados pessoais" x="14" y="7" width="107" height="15" />
+            </frame>
+            <frame id="83:21" name="Frame" x="0" y="145" width="340" height="29">
+              <text id="83:22" name="Cursos" x="14" y="7" width="40" height="15" />
+            </frame>
+            <frame id="83:23" name="Frame" x="0" y="174" width="340" height="29">
+              <text id="83:24" name="Doações" x="14" y="7" width="50" height="15" />
+            </frame>
+            <frame id="83:25" name="Frame" x="0" y="203" width="340" height="29">
+              <text id="83:26" name="Educação" x="14" y="7" width="56" height="15" />
+            </frame>
+            <frame id="83:27" name="Frame" x="0" y="232" width="340" height="29">
+              <text id="83:28" name="Eletrônicos" x="14" y="7" width="63" height="15" />
+            </frame>
+            <frame id="83:29" name="Frame" x="0" y="261" width="340" height="29">
+              <text id="83:30" name="Entretenimento" x="14" y="7" width="87" height="15" />
+            </frame>
+            <rounded-rectangle id="83:61" name="Rectangle" x="0" y="290" width="340" height="1" />
+            <rounded-rectangle id="219:2" name="Rectangle" x="330" y="0.5" width="6" height="104" />
+          </frame>
+          <frame id="83:62" name="Frame" x="0" y="239" width="340" height="35">
+            <text id="83:63" name="+ Criar categoria neste bloco" x="14" y="10" width="172" height="15" />
+          </frame>
+        </frame>
+        <text id="83:64" name="Lista completa, em ordem alfabética, aparece assim que o campo é clicado, antes de digitar qualquer coisa." x="20" y="335" width="340" height="26" />
+      </frame>
+      <frame id="47:12" name="Frame" x="808" y="463.5" width="40" height="100">
+        <text id="47:13" name="→" x="8.5" y="35.5" width="23" height="29" />
+      </frame>
+      <frame id="47:14" name="Frame" x="872" y="385.5" width="380" height="256">
+        <text id="47:15" name="③ Depois: digitando &quot;pet&quot;" x="20" y="20" width="180" height="17" />
+        <frame id="47:16" name="Frame" x="20" y="49" width="340" height="149">
+          <frame id="47:17" name="Frame" x="0" y="0" width="340" height="40">
+            <text id="47:18" name="pet" x="14" y="12" width="21" height="16" />
+          </frame>
+          <rounded-rectangle id="47:19" name="Rectangle" x="0" y="40" width="340" height="1" />
+          <frame id="47:20" name="Frame" x="0" y="41" width="340" height="24">
+            <text id="47:21" name="CATEGORIAS EXISTENTES" x="14" y="8" width="129" height="12" />
+          </frame>
+          <frame id="47:22" name="Frame" x="0" y="65" width="340" height="31">
+            <text id="47:23" name="Nenhuma categoria encontrada" x="14" y="6" width="180" height="15" />
+          </frame>
+          <rounded-rectangle id="47:24" name="Rectangle" x="0" y="96" width="340" height="1" />
+          <frame id="47:25" name="Frame" x="0" y="97" width="340" height="52">
+            <text id="47:26" name="+ Criar categoria &quot;pet&quot; neste bloco" x="14" y="10" width="220" height="16" />
+            <text id="84:2" name="Categorias parecidas neste bloco: Alimentação, Automóvel" x="14" y="30" width="278" height="12" />
+          </frame>
+        </frame>
+        <text id="47:27" name="Confirma direto: bloco já é o de onde a pessoa clicou (Custo dos Serviços/Produtos), sem precisar escolher de novo." x="20" y="210" width="340" height="26" />
+      </frame>
+    </frame>
+  </frame>

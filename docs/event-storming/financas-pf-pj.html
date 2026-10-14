@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Controle Financeiro PF + PJ — Documento vivo do domínio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#EFF3F1; --card:#fff; --ink:#0E2A3B; --txt:#25333b; --muted:#5C6B72; --line:#E1E8E6;
+  --green:#128A66; --green-light:#DBF1E9; --green-dark:#0B5B44;
+  --pf:#0E8F8F; --pf-light:#D6F0F0; --pj:#5B4BC4; --pj-light:#E4E0F8; --cons:#5C6B72; --cons-light:#E7ECEB;
+  --amber:#C9852B; --amber-light:#FCEFD6; --err:#C0304A; --err-light:#FBE1E6;
+  --console:#0E2033; --console2:#16304A; --console-line:rgba(120,220,190,.16);
+  --st-ev:#FFD9A8; --st-ev-t:#8A4B00; --st-cmd:#BFE3FB; --st-cmd-t:#0B5A86;
+  --st-pol:#E3D6FA; --st-pol-t:#5533A8; --st-act:#FBF0A8; --st-act-t:#6E5E00;
+  --st-read:#C7EBD3; --st-read-t:#1B6E42; --st-hot:#FBD5DE; --st-hot-t:#B0234A;
+  --st-agg:#E8D9C5; --st-agg-t:#7A552B;
+  --shadow-1:0 4px 16px rgba(14,42,59,.05); --shadow-2:0 8px 20px rgba(14,42,59,.08); --shadow-3:0 2px 24px rgba(14,42,59,.16);
+  --radius:16px; --mono:'IBM Plex Mono',monospace; --disp:'Sora',sans-serif; --body:'Inter',sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+body{font-family:var(--body);background:var(--paper);color:var(--txt);line-height:1.65;font-size:clamp(15px,.35vw + 13.6px,17px)}
+.wrap{display:grid;grid-template-columns:274px minmax(0,1fr);max-width:1320px;margin:0 auto}
+nav.side{position:sticky;top:16px;align-self:start;height:calc(100vh - 32px);overflow-y:auto;margin:16px 0 16px 16px;padding:22px 12px 30px 18px;background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow-1)}
+nav.side .logo{display:flex;align-items:center;gap:11px;margin-bottom:3px}
+nav.side .logo .mk{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--green),var(--pj));display:flex;align-items:center;justify-content:center;color:#fff;font-family:var(--disp);font-weight:800;font-size:17px;flex-shrink:0}
+nav.side .logo .lt{font-family:var(--disp);font-weight:800;font-size:15px;line-height:1.12;color:var(--ink)}
+nav.side .vers{font-family:var(--mono);font-size:10.5px;color:#7C8A90;margin:8px 0 16px}
+nav.side a{display:block;text-decoration:none;font-size:12.5px;color:#47565D;padding:5.5px 10px;border-radius:9px;margin:1px 0;font-weight:500;line-height:1.32}
+nav.side a:hover{background:#EAF2EF;color:var(--green-dark)}
+nav.side a.h{font-weight:700;color:#2C3A41;margin-top:11px}
+nav.side a.sub{font-size:11.8px;padding-left:20px;color:#5C6B72}
+nav.side a.on{background:var(--green-light);color:var(--green-dark)}
+main{padding:16px 44px 120px 34px;min-width:0}
+.hero{position:relative;overflow:hidden;border-radius:20px;background:linear-gradient(120deg,#0C2A3E 6%,#123A4A 52%,#12564A 100%);color:#fff;padding:44px 44px 36px;margin-top:16px;box-shadow:var(--shadow-3)}
+.hero::after{content:"";position:absolute;right:-90px;top:-110px;width:360px;height:360px;border-radius:50%;background:radial-gradient(circle at 35% 35%,rgba(31,169,126,.42),rgba(31,169,126,.05) 62%,transparent 72%);pointer-events:none}
+.hero .eyebrow{display:inline-block;font-family:var(--mono);font-size:11px;letter-spacing:.11em;text-transform:uppercase;font-weight:600;color:#06382b;background:#7EE7C0;border-radius:999px;padding:6px 14px;margin-bottom:16px}
+.hero h1{font-family:var(--disp);font-weight:800;font-size:clamp(30px,4.2vw,46px);line-height:1.07;letter-spacing:-.01em;margin-bottom:14px;position:relative;z-index:1}
+.hero h1 em{font-style:normal;color:#7EE7C0}
+.hero p.lead{font-size:clamp(15px,.4vw + 13.5px,18.5px);color:#D9EAE4;max-width:680px;margin-bottom:22px;position:relative;z-index:1}
+.hero p.lead b{color:#fff}
+.legend{display:flex;flex-wrap:wrap;gap:9px;position:relative;z-index:1}
+.legend .st:nth-child(2n){transform:rotate(1.2deg)}.legend .st:nth-child(3n){transform:rotate(-1.1deg)}
+.st{display:inline-flex;align-items:center;font-family:var(--mono);font-size:11.5px;font-weight:500;padding:7px 11px;border-radius:5px;box-shadow:0 1px 3px rgba(0,0,0,.14);line-height:1.3}
+.st.ev{background:var(--st-ev);color:var(--st-ev-t)}.st.cmd{background:var(--st-cmd);color:var(--st-cmd-t)}
+.st.pol{background:var(--st-pol);color:var(--st-pol-t)}.st.act{background:var(--st-act);color:var(--st-act-t)}
+.st.read{background:var(--st-read);color:var(--st-read-t)}.st.hot{background:var(--st-hot);color:var(--st-hot-t);border:1px solid #F2B6C6}
+.st.agg{background:var(--st-agg);color:var(--st-agg-t)}
+section{padding-top:50px;scroll-margin-top:14px}
+.doc{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow-1);padding:34px 44px;margin-top:20px}
+.doc h2{font-family:var(--disp);font-size:clamp(21px,.9vw+17px,27px);font-weight:800;color:var(--ink);margin:6px 0 6px;scroll-margin-top:20px}
+.doc .kicker{font-family:var(--mono);font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--green);font-weight:600;margin-bottom:14px}
+.doc h3{font-family:var(--disp);font-size:clamp(17px,.5vw+15px,20px);font-weight:700;color:var(--ink);margin:28px 0 8px;scroll-margin-top:80px}
+.doc h4{font-family:var(--disp);font-size:14px;font-weight:700;color:var(--green-dark);margin:18px 0 6px;text-transform:uppercase;letter-spacing:.04em}
+.doc p{margin:0 0 13px;max-width:76ch}
+.doc ul,.doc ol{margin:0 0 13px 22px}.doc li{margin-bottom:6px}
+.doc strong{color:var(--ink)}
+.doc code{font-family:var(--mono);font-size:.87em;background:var(--green-light);border:1px solid #C7E7DC;border-radius:5px;padding:1px 5px;color:var(--green-dark)}
+.doc blockquote{border-left:3px solid var(--green);background:#F2FAF7;padding:11px 16px;border-radius:0 10px 10px 0;margin:0 0 14px;color:#33474A}
+.doc blockquote p{margin:0}
+.tablewrap{overflow-x:auto;margin:0 0 16px}
+table{border-collapse:collapse;width:100%;font-size:13px}
+th{background:#EAF2EF;color:#28413B;font-family:var(--mono);font-size:10.5px;text-transform:uppercase;letter-spacing:.05em;text-align:left;padding:8px 11px;border-bottom:2px solid #C8E1D8}
+td{padding:9px 11px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:nth-child(even) td{background:#FAFCFB}
+hr{border:none;border-top:1px solid var(--line);margin:24px 0}
+.gl{border-bottom:1.5px dotted var(--pf);cursor:help;border-radius:1px}
+.gl:hover,.gl:focus{background:var(--pf-light);border-bottom-style:solid;outline:none}
+.hs{display:inline-flex;align-items:center;gap:5px;font-family:var(--mono);font-size:11px;font-weight:600;background:#FCEAF0;border:1px solid #F2C0D0;color:var(--err);border-radius:999px;padding:2px 9px;vertical-align:middle;cursor:help;transition:.15s;white-space:nowrap}
+.hs.done{background:var(--green-light);border-color:#B7E0D2;color:var(--green-dark)}
+.hs:hover,.hs:focus{box-shadow:var(--shadow-1);outline:none}
+#tip{position:fixed;z-index:120;max-width:360px;background:#122B3D;color:#EAF3F0;border-radius:12px;padding:13px 16px;box-shadow:var(--shadow-3);font-size:13px;line-height:1.55;display:none;pointer-events:none}
+#tip .q{font-family:var(--disp);font-weight:700;font-size:13.5px;display:block;margin-bottom:6px;color:#FFC9D8}
+#tip.ok .q{color:#8BEAC7}
+#tip .r{color:#C6D5D0}#tip .r b{color:#fff}
+.callout{border:1px solid #C7E7DC;background:#F2FAF7;border-radius:12px;padding:14px 18px;margin:2px 0 16px;font-size:14px}
+.callout.warn{border-color:#F2C0D0;background:#FDF1F4}
+.callout b{color:var(--green-dark)}.callout.warn b{color:var(--err)}
+.tag{display:inline-block;font-family:var(--mono);font-size:10px;font-weight:600;padding:2px 8px;border-radius:999px;text-transform:uppercase;letter-spacing:.04em;vertical-align:middle}
+.tag.pf{background:var(--pf-light);color:#0A6A6A}.tag.pj{background:var(--pj-light);color:#4436A0}.tag.mvp{background:var(--green-light);color:var(--green-dark)}
+.tag.fora{background:#EEE;color:#777}.tag.road{background:var(--amber-light);color:#95611A}
+/* escopo em 2 colunas */
+.scopegrid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:6px 0 16px}
+.scopecol{border-radius:12px;padding:16px 18px;font-size:14px}
+.scopecol.in{background:#F2FAF7;border:1px solid #C7E7DC}
+.scopecol.out{background:#F7F8F8;border:1px solid #E1E8E6}
+.scopecol h4{margin-top:0}
+.scopecol ul{margin:8px 0 0 18px}.scopecol li{margin-bottom:7px}
+/* casos de uso */
+.ucgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:11px;margin:6px 0 12px}
+.uc{background:#F8FBFA;border:1px solid var(--line);border-left:3px solid var(--green);border-radius:10px;padding:11px 14px;font-size:13.5px}
+.uc b{font-family:var(--mono);font-size:11px;color:var(--green-dark)}
+/* waterfall do DRE */
+.wf{display:grid;gap:4px;font-family:var(--mono);font-size:12.5px;margin:8px 0 16px}
+.wf .r{display:grid;grid-template-columns:26px 1fr auto;gap:8px;align-items:center;padding:7px 12px;border-radius:8px;background:#F6F9F8;border:1px solid var(--line)}
+.wf .r.sum{background:var(--green-light);border-color:#C7E7DC;font-weight:600;color:var(--green-dark)}
+.wf .r.minus .op{color:var(--err)}.wf .r.plus .op{color:var(--green)}
+.wf .op{font-weight:700;text-align:center;color:var(--muted)}
+.wf .nm strong{color:var(--ink)}
+.wf .r small{display:block;font-family:var(--body);font-size:11.5px;color:var(--muted);margin-top:1px}
+/* SIMULATOR */
+.sim{background:var(--console);border-radius:var(--radius);margin:22px 0 8px;color:#DDEAE5;box-shadow:var(--shadow-3);overflow:hidden}
+.sim .bar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;background:linear-gradient(100deg,#123A4A,#12564A);padding:12px 18px}
+.sim .bar .dot{width:10px;height:10px;border-radius:50%;background:#2FD6A5;box-shadow:0 0 10px #2FD6A5}
+.sim .bar b{font-family:var(--mono);font-size:12.5px;letter-spacing:.05em;font-weight:600;color:#fff}
+.sim .bar span{margin-left:auto;font-family:var(--mono);font-size:11px;color:#8FE7C9;text-align:right}
+.sim .body{padding:20px;display:grid;gap:16px}
+.sim .cols{display:grid;grid-template-columns:270px minmax(0,1fr);gap:16px}
+.panel{background:var(--console2);border:1px solid var(--console-line);border-radius:12px;padding:15px}
+.panel h5{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:#7FE0C0;margin-bottom:12px;font-weight:600}
+.ctrl{margin-bottom:13px;font-size:13px}
+.ctrl>span.lb{display:block;margin-bottom:5px;color:#B7C7C1;font-size:12px}
+.ctrl label.row{display:flex;align-items:center;justify-content:space-between;gap:10px;cursor:pointer}
+.seg{display:flex;gap:5px;flex-wrap:wrap}
+.seg button{flex:1;min-width:60px;font-family:var(--mono);font-size:11.5px;background:#0E2033;border:1px solid var(--console-line);color:#9FB4AE;border-radius:8px;padding:7px 8px;cursor:pointer;transition:.15s}
+.seg button.on{background:#2FD6A5;color:#06322a;border-color:#2FD6A5;font-weight:600}
+.ctrl select,.ctrl input[type=number]{width:100%;background:#0E2033;color:#EAF3F0;border:1px solid var(--console-line);border-radius:8px;padding:7px 9px;font-family:var(--mono);font-size:12.5px}
+.ctrl input[type=range]{width:100%;accent-color:#2FD6A5;margin-top:4px}
+.btn{font-family:var(--mono);font-size:12.5px;font-weight:600;border:none;border-radius:999px;padding:9px 16px;cursor:pointer;background:#2FD6A5;color:#06322a;transition:.15s}
+.btn:hover{filter:brightness(1.07)}.btn:disabled{opacity:.35;cursor:not-allowed}
+.btn.ghost{background:transparent;color:#DDEAE5;border:1.5px solid var(--console-line)}
+.btn.sm{padding:6px 12px;font-size:11.5px}
+.viewgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.vcard{background:#0E2033;border:1px solid var(--console-line);border-radius:11px;padding:13px}
+.vcard.pf{border-top:3px solid #37C0C0}.vcard.pj{border-top:3px solid #8B7BEA}.vcard.cons{border-top:3px solid #9FB4AE}
+.vcard h6{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:9px;color:#CDE0DA}
+.line{display:flex;justify-content:space-between;gap:8px;font-family:var(--mono);font-size:11.5px;padding:3px 0;color:#AFC4BE;border-bottom:1px dashed rgba(255,255,255,.06)}
+.line.tot{color:#fff;font-weight:600;border-bottom:none;margin-top:4px;border-top:1px solid rgba(255,255,255,.16);padding-top:6px}
+.line .v{color:#EAF3F0}.line.neg .v{color:#FF9DB1}.line.pos .v{color:#7FE0C0}
+.line.elim{opacity:.5;text-decoration:line-through}
+.chip{display:inline-block;font-family:var(--mono);font-size:10px;padding:2px 7px;border-radius:999px;margin-left:6px}
+.chip.pf{background:rgba(55,192,192,.2);color:#8DE0E0}.chip.pj{background:rgba(139,123,234,.2);color:#C3B8F5}
+.chip.elim{background:rgba(255,157,177,.16);color:#FFB1C3}
+.months{display:flex;gap:9px;flex-wrap:wrap}
+.mcol{flex:1;min-width:120px;background:#0E2033;border:1px solid var(--console-line);border-radius:11px;padding:12px;transition:.2s}
+.mcol.active{border-color:#2FD6A5;box-shadow:0 0 0 1px rgba(47,214,165,.4)}
+.mcol h6{font-family:var(--mono);font-size:11px;color:#CDE0DA;margin-bottom:8px;letter-spacing:.05em}
+.mcol .big{font-family:var(--disp);font-size:20px;font-weight:700;color:#fff}
+.mcol .sub{font-family:var(--mono);font-size:10.5px;color:#8FA6A0;margin-top:2px}
+.tray{background:rgba(255,157,177,.08);border:1px dashed rgba(255,157,177,.35);border-radius:10px;padding:10px 12px;font-family:var(--mono);font-size:11.5px;color:#FFB1C3;min-height:20px}
+.timeline{display:flex;gap:7px;flex-wrap:wrap}
+.tchip{font-family:var(--mono);font-size:10.5px;padding:7px 9px;border-radius:9px;background:#0E2033;border:1px solid var(--console-line);color:#AFC4BE;transition:.2s;animation:pop .3s ease}
+.tchip.prev{border-color:#C79A3A;color:#F0CE88}.tchip.pago{border-color:#2FD6A5;color:#8FE7C9}
+.tchip.end{opacity:.3;text-decoration:line-through}
+@keyframes pop{from{transform:scale(.8);opacity:0}to{transform:scale(1);opacity:1}}
+.verdict{font-family:var(--disp);font-weight:600;font-size:14.5px;padding:11px 15px;border-radius:11px;line-height:1.5}
+.verdict.ok{background:rgba(47,214,165,.14);color:#8BEAC7;border:1px solid rgba(47,214,165,.5)}
+.verdict.mid{background:rgba(201,150,58,.14);color:#F0CE88;border:1px solid rgba(201,150,58,.5)}
+.verdict.no{background:rgba(192,48,74,.14);color:#FFB1C3;border:1px solid rgba(192,48,74,.5)}
+.simcap{font-size:13.5px;color:var(--muted);margin:9px 2px 0;max-width:76ch}
+.simcap b{color:var(--ink)}
+.bars{display:grid;gap:7px}
+.barrow{display:grid;grid-template-columns:150px 1fr 74px;gap:9px;align-items:center;font-family:var(--mono);font-size:11.5px;color:#AFC4BE}
+.bartrk{height:14px;background:#0E2033;border:1px solid var(--console-line);border-radius:5px;overflow:hidden}
+.bartrk i{display:block;height:100%;background:linear-gradient(90deg,#2FD6A5,#37C0C0);transition:width .4s}
+.barrow .val{text-align:right;color:#EAF3F0}
+footer{margin-top:60px;background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow-1);padding:22px 26px;font-size:13px;color:var(--muted)}
+@media(max-width:1080px){main{padding:16px 22px 100px}.wrap{grid-template-columns:214px minmax(0,1fr)}}
+@media(max-width:920px){
+  .wrap{grid-template-columns:1fr}
+  nav.side{position:sticky;top:0;z-index:60;height:auto;overflow-x:auto;overflow-y:hidden;margin:0;border-radius:0;display:flex;gap:6px;padding:10px 12px;box-shadow:var(--shadow-2);align-items:center}
+  nav.side .logo{margin:0 6px 0 0}nav.side .logo .lt,nav.side .vers{display:none}
+  nav.side a{flex-shrink:0;white-space:nowrap;font-size:12px;background:#EAF2EF;border-radius:999px;padding:6px 12px}
+  nav.side a.h,nav.side a.sub{margin-top:0;padding-left:12px}
+  .sim .cols{grid-template-columns:1fr}.viewgrid{grid-template-columns:1fr}
+  .scopegrid,.ucgrid{grid-template-columns:1fr}
+  .doc{padding:24px 20px}.hero{padding:30px 22px}
+}
+@media(max-width:560px){.hero h1{font-size:28px}.months .mcol{min-width:100%}.wf .r{grid-template-columns:22px 1fr auto}}
+:focus-visible{outline:2.5px solid var(--green);outline-offset:2px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav class="side" aria-label="Navegação">
+  <div class="logo"><div class="mk">₽</div><span class="lt">Finanças<br>PF + PJ</span></div>
+  <div class="vers">Documento vivo · PRD v6 + Event Storming</div>
+  <a href="#s-ler" class="h">Como ler</a>
+  <a href="#s-visao" class="h">1 · Visão &amp; problema</a>
+  <a href="#s-escopo" class="h">2 · Escopo</a>
+  <a href="#s-stake" class="h">3 · Stakeholders</a>
+  <a href="#s-modelo" class="h">4 · O modelo financeiro</a>
+  <a href="#s-regras" class="h">5 · Regras de negócio</a>
+  <a href="#sim-caixa" class="sub">↳ Regime de caixa</a>
+  <a href="#sim-inter" class="sub">↳ Intercompany</a>
+  <a href="#sim-recor" class="sub">↳ Recorrência</a>
+  <a href="#sim-venda" class="sub">↳ Realização na venda</a>
+  <a href="#sim-dre" class="sub">↳ DRE configurável</a>
+  <a href="#s-func" class="h">6 · Funcionalidades</a>
+  <a href="#s-uc" class="h">7 · Casos de uso</a>
+  <a href="#s-fluxos" class="h">8 · Fluxos de usuário</a>
+  <a href="#s-req" class="h">9 · Requisitos técnicos</a>
+  <a href="#s-lib" class="h">10 · Critérios de liberação</a>
+  <a href="#s-contexts" class="h">11 · Bounded contexts</a>
+  <a href="#s-agregados" class="h">12 · Agregados &amp; eventos</a>
+  <a href="#s-hotspots" class="h">13 · Hotspots</a>
+  <a href="#s-agir" class="h">14 · Decisões &amp; ADRs</a>
+</nav>
+<main>
+<div class="hero">
+  <div class="eyebrow">Documento vivo · Negócio · Produto · Engenharia · Design</div>
+  <h1>Controle financeiro <em>PF + PJ</em>,<br>para ler, alinhar e simular.</h1>
+  <p class="lead">O produto inteiro num só lugar: o <b>PRD (v6)</b> explicado por completo e o <b>Event Storming</b> do domínio. Onde uma regra financeira é difícil de imaginar de cabeça, um <b>simulador embutido</b> deixa o time executá-la. Cada <span class="hs">🔴 hotspot</span> abre a decisão em aberto; cada <span class="gl" data-t="Termo de negócio ou de contabilidade explicado ao passar o mouse.">termo sublinhado</span> abre sua definição. É a base a partir da qual os quatro times trabalham.</p>
+  <div class="legend" aria-label="Legenda do Event Storming">
+    <span class="st ev">🟧 Evento (no passado)</span>
+    <span class="st cmd">🟦 Comando</span>
+    <span class="st pol">🟪 Política / Automação</span>
+    <span class="st act">🟨 Ator</span>
+    <span class="st read">🟩 Projeção / leitura</span>
+    <span class="st agg">🟫 Agregado</span>
+    <span class="st hot">🔴 Hotspot</span>
+  </div>
+</div>
+
+<!-- ====== COMO LER ====== -->
+<section id="s-ler"><div class="doc">
+  <div class="kicker">Orientação</div>
+  <h2>Como ler este documento</h2>
+  <p>Este é o <strong>documento vivo</strong> do produto. Ele reúne duas camadas: o <strong>PRD</strong> (o que o produto é e por quê — seções 1 a 10) e o <strong>Event Storming</strong> (o modelo de domínio que a Engenharia extraiu — seções 11 a 14). A ideia é que qualquer pessoa — de Negócio, Produto, Engenharia ou Design — entenda o domínio inteiro daqui e saiba onde agir, sem depender de explicação verbal.</p>
+  <p>Onde uma regra de negócio é sutil, há um <strong>simulador</strong>: rode-o para sentir o comportamento. Termos de contabilidade (para quem não é da área) e de <span class="gl" data-t="Domain-Driven Design: modelar o software a partir da linguagem e dos eventos do negócio.">DDD</span> vêm sublinhados — passe o mouse.</p>
+  <h4>Glossário rápido do Event Storming</h4>
+  <div class="tablewrap"><table>
+    <thead><tr><th>Peça</th><th>Em palavras simples</th></tr></thead>
+    <tbody>
+      <tr><td><span class="st ev">Evento</span></td><td>Um <strong>fato que já aconteceu</strong>, sempre no passado (<code>Lançamento pago</code>, <code>Investimento vendido</code>).</td></tr>
+      <tr><td><span class="st cmd">Comando</span></td><td>A <strong>intenção</strong> que dispara o fato: "faça X".</td></tr>
+      <tr><td><span class="st pol">Política</span></td><td>Reação automática do Sistema: "<strong>sempre que</strong> X, <strong>então</strong> Y".</td></tr>
+      <tr><td><span class="st act">Ator</span></td><td>Quem inicia. Só há dois: a <strong>Pessoa usuária</strong> e o <strong>Sistema</strong>.</td></tr>
+      <tr><td><span class="st read">Projeção</span></td><td>Uma <strong>leitura derivada</strong> (DRE, Balanço, Painel, Indicadores). Calculada, não digitada.</td></tr>
+      <tr><td><span class="st agg">Agregado</span></td><td>A entidade que guarda a consistência (o <code>Lançamento</code>).</td></tr>
+    </tbody>
+  </table></div>
+  <div class="callout"><b>A espinha do modelo:</b> existe <strong>uma única fonte da verdade — o Lançamento</strong>. Tudo que se lê (as 3 visões do DRE, o Balanço, o Painel, os Indicadores) é <span class="gl" data-t="Command Query Responsibility Segregation: separar o modelo de escrita (o lançamento) do de leitura (relatórios calculados).">CQRS</span>-lite: projeção derivada, nunca dado paralelo. É o que o PRD chama de "lançamento único, 3 visões".</div>
+</div></section>
+
+<!-- ====== 1 · VISÃO ====== -->
+<section id="s-visao"><div class="doc">
+  <div class="kicker">PRD · Propósito</div>
+  <h2>1 · Visão &amp; problema</h2>
+  <p>Dar a <strong>uma pessoa</strong> o controle do dinheiro de suas <strong>duas entidades</strong> — <span class="gl" data-t="Pessoa Física: você como indivíduo — salário, aluguel recebido, gastos pessoais, IR.">Pessoa Física (PF)</span> e <span class="gl" data-t="Pessoa Jurídica: sua empresa — fatura clientes, emite nota fiscal, paga impostos e o pró-labore.">Pessoa Jurídica (PJ)</span> — com <strong>fricção mínima de lançamento</strong>, gerando <span class="gl" data-t="Demonstrativo de Resultado do Exercício: o relatório em cascata que sai da receita e chega ao lucro líquido.">DRE</span>, <span class="gl" data-t="Balanço Patrimonial: a foto do que você tem (ativos) menos o que você deve (passivos) num instante.">Balanço</span>, Painel e Indicadores automaticamente.</p>
+  <blockquote><p><strong>Origem:</strong> brainstorming de 11/07/2026 com Larissa Quadros e a pessoa usuária, + a planilha <code>Meu DRE.xlsx</code> como exemplo de referência do que reproduzir e superar.</p></blockquote>
+  <h3>O problema real: a fricção da planilha</h3>
+  <p>Hoje a pessoa usa uma planilha de DRE. Ela funciona para números fixos, mas <strong>quebra na hora de lançar o variável</strong>: um cartão de crédito com muitos itens de uma viagem acabava jogado num "bolo" genérico, porque discriminar item a item era trabalhoso demais. O resultado: dados que a pessoa não confia e não consegue analisar.</p>
+  <div class="callout warn"><b>Prioridade nº 1 do produto:</b> o fluxo de lançamento é o requisito de maior valor — é a causa-raiz do abandono da planilha. <strong>Qualquer requisito novo que aumente a fricção do lançamento deve ser questionado antes de ser aceito.</strong></div>
+  <h3>É green field</h3>
+  <p>Nada existe ainda (repositório vazio). A modelagem explora o domínio antes de convergir; o risco desta fase é convergir cedo demais sobre um palpite — por isso cada ambiguidade virou <span class="hs">🔴 hotspot</span>, não premissa assumida.</p>
+</div></section>
+
+<!-- ====== 2 · ESCOPO ====== -->
+<section id="s-escopo"><div class="doc">
+  <div class="kicker">PRD · Seção 1</div>
+  <h2>2 · Escopo do MVP</h2>
+  <div class="scopegrid">
+    <div class="scopecol in">
+      <h4>✓ Dentro do MVP</h4>
+      <ul>
+        <li>Lançamento de receita/despesa, com <strong>entidade (PF/PJ) como atributo</strong> — não cadastro duplicado.</li>
+        <li>Plano de contas completo do DRE, como <strong>modelo inicial editável</strong> (outras pessoas têm despesas diferentes).</li>
+        <li><strong>DRE em 3 visões</strong> sobre os mesmos lançamentos: consolidado, PF, PJ.</li>
+        <li>Classificação <span class="gl" data-t="Circulante = curto prazo (vira dinheiro ou vence em até 12 meses). Não circulante = longo prazo.">circulante / não circulante</span> para o Balanço.</li>
+        <li>Regime de <strong>caixa por data de pagamento</strong>; status <strong>Previsto / Pago</strong>.</li>
+        <li>Fechamento mensal automático.</li>
+        <li><strong>Consumo livre</strong> como linha de despesa (rotulagem opcional).</li>
+        <li>Destinação do lucro em 4 categorias.</li>
+        <li><strong>Painel</strong> (evolução mensal) e <strong>Indicadores</strong> financeiros.</li>
+        <li><strong>Lançamentos recorrentes</strong> (fixo/a definir; com/sem término).</li>
+        <li>Investimentos como valor acumulado; realização só na venda.</li>
+        <li>Conta bancária como legenda/cor + saldo por conta.</li>
+        <li>Onboarding reaproveitando telas normais.</li>
+        <li>Instalação local, <strong>sem login</strong>; dados em banco de dados.</li>
+      </ul>
+    </div>
+    <div class="scopecol out">
+      <h4>✕ Fora do MVP <span class="tag road">roadmap</span></h4>
+      <ul>
+        <li>Gestão de carteira de investimentos (segue no Google Finance).</li>
+        <li>Acesso do Contador ao sistema (ele é só uma despesa da PJ).</li>
+        <li><strong>Integração bancária automática</strong> (Open Finance) — roadmap.</li>
+        <li>Multiusuário / multi-tenant / login.</li>
+        <li>App mobile nativo (MVP é web responsivo).</li>
+        <li>Regra de desvio tolerável nos recorrentes — roadmap.</li>
+        <li>Cálculo automático de depreciação / valorização mensal.</li>
+        <li>Insights por IA — roadmap.</li>
+        <li>Backup / exportação / importação de histórico — <strong>decisão de Engenharia</strong>, não requisito de produto.</li>
+      </ul>
+    </div>
+  </div>
+</div></section>
+
+<!-- ====== 3 · STAKEHOLDERS ====== -->
+<section id="s-stake"><div class="doc">
+  <div class="kicker">PRD · Seção 2</div>
+  <h2>3 · Stakeholders</h2>
+  <div class="tablewrap"><table>
+    <thead><tr><th>Stakeholder</th><th>Papel</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Pessoa usuária</strong></td><td>Usuária do MVP; fonte primária de requisitos e validação. O produto será usado por várias pessoas — nunca modelar em torno de um indivíduo só.</td></tr>
+      <tr><td><strong>Time de Produto</strong></td><td>Dono do PRD e de sua evolução.</td></tr>
+      <tr><td><strong>Time de Engenharia</strong></td><td>Conduz Event Storming, ADRs e specs; decide persistência, backup e importação de histórico.</td></tr>
+      <tr><td><strong>Time de Design</strong></td><td>Dono do fluxo de lançamento, do onboarding e das telas de Painel/Indicadores — maior fricção e maior valor percebido.</td></tr>
+      <tr><td><strong>Contador da PJ</strong></td><td><strong>Não é ator do sistema.</strong> Aparece só como categoria de despesa (CSV) da PJ.</td></tr>
+    </tbody>
+  </table></div>
+</div></section>
+
+<!-- ====== 4 · MODELO FINANCEIRO ====== -->
+<section id="s-modelo"><div class="doc">
+  <div class="kicker">PRD · Plano de contas de referência</div>
+  <h2>4 · O modelo financeiro</h2>
+  <p>Esta seção é o vocabulário comum do produto. Todo o resto se apoia nela. Se você é de Design ou Negócio e não vem de contabilidade, é aqui que o domínio fica claro.</p>
+
+  <h3>4.1 As duas entidades e o fluxo do dinheiro</h3>
+  <p>A <span class="tag pj">PJ</span> fatura clientes (ex.: emite nota fiscal), paga o contador e os impostos, e transfere um <span class="gl" data-t="Pró-labore: a remuneração que o sócio tira da própria empresa — para a PJ é despesa; para a PF é renda.">pró-labore</span> para a <span class="tag pf">PF</span>; o que sobra é lucro da PJ. A <span class="tag pf">PF</span> tem mais de uma renda (pró-labore + aluguel recebido + dividendos) e muitas despesas (moradia, pet, transporte, assinaturas…). A mesma pessoa é dona das duas.</p>
+
+  <h3>4.2 O DRE — a cascata que vira lucro</h3>
+  <p>O DRE parte da receita e vai <strong>descontando em camadas</strong> até o lucro líquido. Cada linha marcada <span class="gl" data-t="Marca a linha como um subtotal calculado — não é algo que se digita.">(=)</span> é um subtotal calculado. Estrutura de referência (10 blocos):</p>
+  <div class="wf">
+    <div class="r sum"><span class="op">=</span><span class="nm"><strong>Receita Bruta</strong><small>salário/pró-labore, aluguel recebido, dividendos, freelance</small></span><span>28.700</span></div>
+    <div class="r minus"><span class="op">−</span><span class="nm">Deduções da receita<small>DAS Simples, DARF, taxas</small></span><span>3.900</span></div>
+    <div class="r sum"><span class="op">=</span><span class="nm"><strong>Receita Líquida</strong></span><span>24.800</span></div>
+    <div class="r minus"><span class="op">−</span><span class="nm"><span class="gl" data-t="Custo dos Serviços/Produtos vendidos: o custo direto de gerar a receita — aqui, assinaturas/ferramentas, contador, internet.">CSV</span><small>ferramentas, contador, internet, pet</small></span><span>1.330</span></div>
+    <div class="r sum"><span class="op">=</span><span class="nm"><strong>Lucro Bruto</strong></span><span>23.470</span></div>
+    <div class="r minus"><span class="op">−</span><span class="nm">Despesas administrativas<small>moradia, financiamento, água, luz, plano de saúde</small></span><span>5.570</span></div>
+    <div class="r minus"><span class="op">−</span><span class="nm">Despesas pessoais / consumo<small>alimentação, transporte, lazer, vestuário, consumo livre</small></span><span>1.500</span></div>
+    <div class="r sum"><span class="op">=</span><span class="nm"><strong><span class="gl" data-t="Lucro antes de juros, impostos, depreciação e amortização — o resultado operacional 'de caixa'.">EBITDA</span></strong></span><span>16.400</span></div>
+    <div class="r minus"><span class="op">−</span><span class="nm"><span class="gl" data-t="Depreciação & Amortização: a perda de valor de ativos ao longo do tempo. Neste produto é sempre zero no mês — só se reconhece na venda.">D&amp;A</span><small>zero no MVP — ver regra 5.5</small></span><span>0</span></div>
+    <div class="r sum"><span class="op">=</span><span class="nm"><strong><span class="gl" data-t="Lucro antes de juros e impostos (resultado operacional). Como D&A é zero, aqui é igual ao EBITDA.">EBIT</span></strong> <span style="font-family:var(--body);font-size:11px;color:var(--muted)">(= EBITDA)</span></span><span>16.400</span></div>
+    <div class="r plus"><span class="op">±</span><span class="nm">Resultado não operacional<small>ganho/perda na venda de ativo ou investimento</small></span><span>0</span></div>
+    <div class="r minus"><span class="op">−</span><span class="nm">Resultado financeiro<small>juros de financiamento/cartão; rendimento de caixa</small></span><span>0</span></div>
+    <div class="r minus"><span class="op">−</span><span class="nm">Impostos sobre o lucro (IR)<small>manual — pagamento ou recebimento</small></span><span>0</span></div>
+    <div class="r sum"><span class="op">=</span><span class="nm"><strong>Lucro Líquido</strong></span><span>16.400</span></div>
+    <div class="r"><span class="op">→</span><span class="nm">Destinação do lucro<small>aporte · reinvestimento de dividendos · consumo extraordinário · reserva</small></span><span></span></div>
+  </div>
+  <p>As <strong>3 visões</strong> (consolidado / PF / PJ) são o mesmo DRE filtrado por entidade — nunca lançamentos duplicados. Como consolidar corretamente é a regra 5.2.</p>
+
+  <h3>4.3 O Balanço Patrimonial — a foto do patrimônio</h3>
+  <p>Enquanto o DRE mostra o <em>fluxo</em> do mês, o Balanço mostra o <em>acúmulo</em>: o que você tem menos o que você deve.</p>
+  <div class="tablewrap"><table>
+    <thead><tr><th>Ativos (o que você tem)</th><th>Passivos (o que você deve)</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Circulante</strong> (curto prazo): caixa por conta bancária, aplicações de curto prazo.</td><td><strong>Circulante</strong>: fatura de cartão, parcelas de curto prazo.</td></tr>
+      <tr><td><strong>Não circulante</strong> (longo prazo): imóvel, investimentos (aportes acumulados), veículo.</td><td><strong>Não circulante</strong>: saldo devedor de financiamento, empréstimos.</td></tr>
+    </tbody>
+  </table></div>
+  <div class="callout"><b>Patrimônio Líquido = Total de Ativos − Total de Passivos.</b> Passivos são mantidos 100% manualmente <span class="hs done" data-h="9">✅ H9</span> — ver regra 5.8.</div>
+
+  <h3>4.4 Painel e Indicadores</h3>
+  <p>O <strong>Painel</strong> é a série histórica mês a mês (receita, EBITDA, lucro, patrimônio líquido…). Os <strong>Indicadores</strong> agrupam-se em cinco famílias:</p>
+  <div class="tablewrap"><table>
+    <thead><tr><th>Família</th><th>Indicadores</th></tr></thead>
+    <tbody>
+      <tr><td>Rentabilidade</td><td>margem bruta, margem EBITDA, margem EBIT, margem líquida, <span class="gl" data-t="Return on Equity: retorno sobre o patrimônio líquido — quanto o patrimônio rende.">ROE</span>, taxa de poupança</td></tr>
+      <tr><td>Liquidez</td><td>liquidez corrente, liquidez geral</td></tr>
+      <tr><td>Endividamento</td><td>grau de endividamento, endividamento sobre PL, comprometimento da renda</td></tr>
+      <tr><td>Crescimento patrimonial</td><td>crescimento do PL e dos investimentos mês a mês (via aportes, não valorização)</td></tr>
+      <tr><td>Qualidade de vida financeira</td><td>custo de vida mensal, reserva de emergência (em meses), cobertura por renda passiva, consumo livre / FCL, eficiência de aporte</td></tr>
+    </tbody>
+  </table></div>
+</div></section>
+
+<!-- ====== 5 · REGRAS DE NEGÓCIO + SIMULADORES ====== -->
+<section id="s-regras"><div class="doc">
+  <div class="kicker">PRD · Regras + simuladores</div>
+  <h2>5 · Regras de negócio</h2>
+  <p>As oito regras que definem o comportamento do produto. Cinco delas têm simulador — rode para entender antes de projetar tela ou código.</p>
+
+  <h3 id="sim-caixa">5.1 · Regime de caixa por data de pagamento <span class="hs" data-h="3">🔴 H3</span></h3>
+  <p>Todo lançamento nasce <strong>Previsto</strong> (planejamento) e só entra no DRE quando marcado <strong>Pago</strong>. Ele cai no mês da <strong>data de pagamento</strong> que a pessoa informa (padrão: mês corrente). Não há regime de <span class="gl" data-t="Competência: reconhecer no mês do fato gerador, independente do pagamento. Aqui NÃO se usa — o que vale é a data de pagamento.">competência</span> paralelo — a data de pagamento é a única que decide o mês.</p>
+  <div class="sim" id="simCaixa">
+    <div class="bar"><span class="dot"></span><b>SIMULADOR · Regime de caixa por data de pagamento</b><span>Previsto não conta · Pago cai no mês da data</span></div>
+    <div class="body"><div class="cols">
+      <div class="panel">
+        <h5>Lançamento</h5>
+        <div class="ctrl"><span class="lb">Despesa (R$)</span><input type="number" id="cx-val" value="1200" step="100"></div>
+        <div class="ctrl"><span class="lb">Status</span><div class="seg" id="cx-st"><button data-v="prev" class="on">Previsto</button><button data-v="pago">Pago</button></div></div>
+        <div class="ctrl"><span class="lb">Data de pagamento</span><select id="cx-mes"><option value="0">Junho</option><option value="1" selected>Julho</option><option value="2">Agosto</option></select></div>
+        <p style="font-family:var(--mono);font-size:11px;color:#8FA6A0;margin:0">Base de cada mês: receita R$ 8.000, outras despesas R$ 2.000.</p>
+      </div>
+      <div class="panel">
+        <h5>DRE por mês (só lançamentos pagos)</h5>
+        <div class="months" id="cx-months"></div>
+        <div style="margin-top:12px"><span class="lb" style="font-family:var(--mono);font-size:11px;color:#B7C7C1">Bandeja de Previstos (fora do DRE)</span><div class="tray" id="cx-tray">—</div></div>
+        <div class="verdict mid" id="cx-verd" style="margin-top:12px"></div>
+      </div>
+    </div></div>
+  </div>
+  <p class="simcap"><b>O que observar:</b> enquanto o status é <em>Previsto</em>, o valor fica na bandeja e <b>nenhum mês muda</b>. Ao marcar <em>Pago</em>, ele entra no DRE do mês da data — mude a data e veja o lançamento "pular" de mês.</p>
+
+  <h3 id="sim-inter">5.2 · Intercompany e as 3 visões <span class="hs" data-h="2">🔴 H2</span></h3>
+  <p>Pró-labore e distribuição de lucro passam da PJ para a PF: são <strong>o mesmo dinheiro visto duas vezes</strong>, então a visão consolidada precisa <strong>eliminá-los</strong>. E não se comportam igual: pró-labore é <strong>despesa que reduz o lucro da PJ</strong>; distribuição é <strong>apropriação do lucro já apurado</strong> (abaixo da linha). Dividendo de investimento externo <strong>não</strong> é intercompany e permanece no consolidado.</p>
+  <div class="sim" id="simInter">
+    <div class="bar"><span class="dot"></span><b>SIMULADOR · Eliminação intercompany</b><span>3 visões sobre o mesmo lançamento</span></div>
+    <div class="body"><div class="cols">
+      <div class="panel">
+        <h5>Lançamento intercompany</h5>
+        <div class="ctrl"><span class="lb">Tipo</span><div class="seg" id="ic-tipo" style="flex-direction:column">
+          <button data-v="prol" class="on">Pró-labore (PJ→PF)</button>
+          <button data-v="dist">Distribuição de lucro (PJ→PF)</button>
+          <button data-v="div">Dividendo externo (mercado→PF)</button>
+        </div></div>
+        <div class="ctrl"><span class="lb">Valor (R$)</span><input type="number" id="ic-val" value="5000" step="500"></div>
+        <p style="font-family:var(--mono);font-size:11px;color:#8FA6A0;margin:0">Base fixa: PJ fatura R$ 20.000 e tem R$ 4.000 de custos. PF tem R$ 2.000 de aluguel recebido.</p>
+      </div>
+      <div class="panel">
+        <h5>Resultado por visão</h5>
+        <div class="viewgrid">
+          <div class="vcard pf" id="ic-pf"></div>
+          <div class="vcard pj" id="ic-pj"></div>
+          <div class="vcard cons" id="ic-cons"></div>
+        </div>
+        <div class="verdict ok" id="ic-verd" style="margin-top:12px"></div>
+      </div>
+    </div></div>
+  </div>
+  <p class="simcap"><b>O que observar:</b> com o mesmo valor, troque pró-labore ↔ distribuição. Na <span style="color:#0A6A6A">PJ</span>, o pró-labore <b>reduz o lucro</b> e a distribuição <b>não</b>. Na <span style="color:#5C6B72">consolidada</span> os dois somem — mas o <b>dividendo externo permanece</b>. Tratá-los como "a mesma transferência" é o erro que o H2 evita.</p>
+
+  <h3>5.3 · Consumo livre — dinheiro do dia a dia</h3>
+  <p>Consumo livre é o valor que a pessoa gasta livremente sem detalhar item a item — a solução direta para a fricção que matou a planilha. É <strong>exclusivamente uma linha de despesa no DRE</strong> (em despesas pessoais): o gasto entra ali, e a pessoa pode <strong>opcionalmente rotular</strong> cada gasto para uma categoria específica ou deixá-lo agregado. <strong>Nunca é negativo</strong>, não aparece no ativo e não é calculado como "esperado − real".</p>
+
+  <h3 id="sim-recor">5.4 · Motor de recorrência <span class="hs" data-h="4">🔴 H4</span></h3>
+  <p>Um lançamento recorrente gera, a cada virada de mês, a ocorrência seguinte já como <strong>Previsto</strong> — valor <strong>fixo</strong> (copiado) ou <strong>a definir</strong> (em branco). A pessoa pode dar uma <strong>data de término</strong> (parcelamento 12×) ou deixar indefinida. Editar uma ocorrência pergunta: <strong>só esta</strong> ou <strong>a série toda</strong>.</p>
+  <div class="sim" id="simRecor">
+    <div class="bar"><span class="dot"></span><b>SIMULADOR · Motor de recorrência</b><span>virada de mês gera Previsto</span></div>
+    <div class="body"><div class="cols">
+      <div class="panel">
+        <h5>Configurar recorrência</h5>
+        <div class="ctrl"><span class="lb">Valor</span><div class="seg" id="rc-val"><button data-v="fixo" class="on">Fixo (R$ 300)</button><button data-v="def">A definir</button></div></div>
+        <div class="ctrl"><span class="lb">Término</span><div class="seg" id="rc-term"><button data-v="0" class="on">Indefinida</button><button data-v="4">Parcela 4×</button></div></div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:6px">
+          <button class="btn sm" id="rc-adv">▶ Avançar mês</button>
+          <button class="btn sm ghost" id="rc-edit">✎ Editar próxima ocorrência</button>
+          <button class="btn sm ghost" id="rc-reset">↺ Reiniciar</button>
+        </div>
+      </div>
+      <div class="panel">
+        <h5>Ocorrências geradas</h5>
+        <div class="timeline" id="rc-tl" style="min-height:44px"></div>
+        <div class="verdict mid" id="rc-verd" style="margin-top:12px">Recorrência criada em Junho. Avance os meses para o Sistema gerar as ocorrências.</div>
+      </div>
+    </div></div>
+  </div>
+  <p class="simcap"><b>O que observar:</b> cada avanço gera um <span style="color:#95611A">Previsto</span>. Com término 4×, o motor <b>para sozinho</b>. "Editar próxima ocorrência" mostra a escolha <b>só esta × série</b>. Uma recorrência "a definir" nunca preenchida fica pendente sem travar o fechamento (Previsto não entra no DRE).</p>
+
+  <h3 id="sim-venda">5.5 · Realização só na venda <span class="hs" data-h="5">🔴 H5</span></h3>
+  <p>Investimentos e ativos depreciáveis <strong>não</strong> são reavaliados nem depreciados mês a mês. O valor de mercado sobe e desce — nada disso toca o DRE. O ganho/perda só é reconhecido <strong>na venda</strong>, como resultado não operacional. Consequência: <strong>D&amp;A mensal = 0</strong>, logo <strong>EBITDA = EBIT</strong> todo mês.</p>
+  <div class="sim" id="simVenda">
+    <div class="bar"><span class="dot"></span><b>SIMULADOR · Realização na venda</b><span>sem mark-to-market · sem D&A mensal</span></div>
+    <div class="body"><div class="cols">
+      <div class="panel">
+        <h5>Ativo / investimento</h5>
+        <div class="ctrl"><span class="lb">Valor de compra: R$ 40.000</span></div>
+        <div class="ctrl"><span class="lb">Valor de mercado hoje: <b id="vd-mkv" style="color:#EAF3F0">R$ 40.000</b></span><input type="range" id="vd-mk" min="28000" max="52000" step="1000" value="40000"></div>
+        <button class="btn sm" id="vd-sell">Vender pelo valor de mercado</button>
+        <button class="btn sm ghost" id="vd-reset" style="margin-top:6px">↺ Voltar (não vendido)</button>
+      </div>
+      <div class="panel">
+        <h5>DRE do mês</h5>
+        <div id="vd-dre"></div>
+        <div class="verdict ok" id="vd-verd" style="margin-top:12px"></div>
+      </div>
+    </div></div>
+  </div>
+  <p class="simcap"><b>O que observar:</b> arraste o valor de mercado — o DRE <b>não muda</b> (EBITDA e EBIT colados, D&amp;A zero). Só ao <b>vender</b> o ganho/perda aparece, uma vez, em resultado não operacional.</p>
+
+  <h3 id="sim-dre">5.6 · DRE dirigido por configuração <span class="hs" data-h="10">🔴 H10</span></h3>
+  <p>A decisão de <strong>maior risco</strong> do domínio: a estrutura do DRE é <strong>configurável</strong> pela pessoa (não um esqueleto fixo em código). O motor de cálculo precisa ser dirigido por dados, e indicadores como EBITDA/EBIT apontam para linhas que podem ser reconfiguradas. Ligue/desligue blocos e veja a cascata recalcular.</p>
+  <div class="sim" id="simDre">
+    <div class="bar"><span class="dot"></span><b>SIMULADOR · Estrutura de DRE configurável</b><span>por que o motor não pode ser fixo</span></div>
+    <div class="body"><div class="cols">
+      <div class="panel">
+        <h5>Blocos ativos na estrutura</h5>
+        <div id="dr-toggles"></div>
+        <p style="font-family:var(--mono);font-size:11px;color:#8FA6A0;margin:8px 0 0">Cada estrutura diferente é um DRE válido e diferente. O cálculo tem de seguir a configuração, não o código.</p>
+      </div>
+      <div class="panel">
+        <h5>Cascata resultante</h5>
+        <div class="bars" id="dr-cascade"></div>
+        <div class="verdict mid" id="dr-verd" style="margin-top:12px"></div>
+      </div>
+    </div></div>
+  </div>
+  <p class="simcap"><b>O que observar:</b> ao desligar "Deduções" ou "Despesas administrativas", a cascata inteira se refaz. Um motor com blocos fixos em código não representaria isso — daí o H10 ser o hotspot da ADR-0002.</p>
+
+  <h3>5.7 · Meses sempre editáveis <span class="hs done" data-h="8">✅ H8</span></h3>
+  <p>Não há trava. Um mês fechado permanece editável; corrigir/adicionar um lançamento no passado <strong>recalcula aquele mês e cascateia para os meses seguintes</strong> (saldos de investimento e patrimônio são cumulativos). "Fechamento" é só a consolidação automática da virada de mês, não um bloqueio. Isso pesa na decisão de projeções sob demanda vs. materializadas <span class="hs" data-h="6">🔴 H6</span>.</p>
+
+  <h3>5.8 · Passivos manuais — DRE ≠ fluxo de caixa <span class="hs done" data-h="9">✅ H9</span></h3>
+  <p>O DRE (receitas/despesas) e os passivos do Balanço (fatura de cartão, saldo devedor) são <strong>planos distintos</strong>. Registrar uma despesa <strong>não</strong> baixa um passivo automaticamente — os saldos de passivo são mantidos 100% pela pessoa. Por isso um parcelamento 12× aparece como 12 despesas mensais (via recorrência) <strong>sem dupla contagem</strong> com o saldo do cartão.</p>
+</div></section>
+
+<!-- ====== 6 · FUNCIONALIDADES ====== -->
+<section id="s-func"><div class="doc">
+  <div class="kicker">PRD · Seção 3</div>
+  <h2>6 · Funcionalidades × problema que resolvem</h2>
+  <div class="tablewrap"><table>
+    <thead><tr><th>Funcionalidade</th><th>Problema que resolve</th></tr></thead>
+    <tbody>
+      <tr><td>Lançamento rápido com entidade como atributo</td><td>Fricção de preencher a planilha à mão</td></tr>
+      <tr><td>Plano de contas completo e editável</td><td>Dúvida de categorização; permite outras pessoas com despesas diferentes</td></tr>
+      <tr><td>DRE em 3 visões</td><td>Ver o resultado combinado sem perder a leitura por entidade, sem duplicar lançamento</td></tr>
+      <tr><td>Intercompany com tratamento correto</td><td>Pró-labore reduz o lucro da PJ; distribuição é apropriação; ambos eliminados no consolidado</td></tr>
+      <tr><td>Status Previsto/Pago + data de pagamento</td><td>Planejar o mês e só levar ao DRE o que foi pago, no mês certo</td></tr>
+      <tr><td>Recorrentes com término opcional</td><td>Elimina redigitação; cobre despesa fixa e parcelamento com prazo</td></tr>
+      <tr><td>Fechamento mensal automático</td><td>Cálculo manual por aba/mês na planilha, com risco de erro</td></tr>
+      <tr><td>Consumo livre como linha de despesa</td><td>Registrar o gasto do dia a dia sem categorizar cada item</td></tr>
+      <tr><td>Destinação do lucro em 4 categorias</td><td>Divisão hoje feita de cabeça, sem registro</td></tr>
+      <tr><td>Painel e Indicadores</td><td>Calculados hoje à mão em abas separadas</td></tr>
+      <tr><td>Investimento/depreciação só na venda</td><td>Evita calcular valorização/depreciação mês a mês sem necessidade</td></tr>
+      <tr><td>IR manual e orientado</td><td>Cobre pagamento ou recebimento sem automatizar cálculo tributário</td></tr>
+      <tr><td>Onboarding reaproveitando telas</td><td>Começar com saldos iniciais sem fluxo à parte</td></tr>
+      <tr><td>Instalação local sem login</td><td>Reduz escopo técnico sem impedir uso por outras pessoas</td></tr>
+      <tr><td>Legenda + saldo por conta</td><td>Saber "onde o dinheiro está" sem integração bancária</td></tr>
+    </tbody>
+  </table></div>
+</div></section>
+
+<!-- ====== 7 · CASOS DE USO ====== -->
+<section id="s-uc"><div class="doc">
+  <div class="kicker">PRD · Seção 4</div>
+  <h2>7 · Casos de uso</h2>
+  <div class="ucgrid">
+    <div class="uc"><b>UC1</b> — Lança despesa variável de cartão sem detalhar item a item.</div>
+    <div class="uc"><b>UC2</b> — Lança como "Previsto"; ao pagar, marca "Pago" e informa a data, que define o mês do DRE.</div>
+    <div class="uc"><b>UC3</b> — Registra pró-labore (intercompany): despesa na PJ, receita na PF, eliminado no consolidado.</div>
+    <div class="uc"><b>UC4</b> — Registra distribuição de lucro: apropriação na PJ, receita na PF, eliminada no consolidado.</div>
+    <div class="uc"><b>UC5</b> — Registra aluguel recebido (PF) e dividendos externos como receita comum (não intercompany).</div>
+    <div class="uc"><b>UC6</b> — Fecha o mês distribuindo o lucro entre aporte, reinvestimento, consumo extraordinário e reserva.</div>
+    <div class="uc"><b>UC7</b> — Gera o DRE e alterna entre consolidado, só PF e só PJ.</div>
+    <div class="uc"><b>UC8</b> — Registra um gasto de consumo livre; entra como despesa, com rótulo opcional.</div>
+    <div class="uc"><b>UC9</b> — Abre o Painel e vê receita, lucro, EBITDA/EBIT, patrimônio mês a mês.</div>
+    <div class="uc"><b>UC10</b> — Abre Indicadores e consulta, ex., quantos meses de reserva de emergência tem.</div>
+    <div class="uc"><b>UC11</b> — Registra aporte em investimento, atualizando o acumulado sem reavaliar valorização.</div>
+    <div class="uc"><b>UC12</b> — Vende investimento/ativo; o ganho ou perda é reconhecido como não operacional.</div>
+    <div class="uc"><b>UC13</b> — Marca um lançamento como recorrente (fixo ou a definir); aparece no mês seguinte como Previsto.</div>
+    <div class="uc"><b>UC14</b> — Edita uma ocorrência e escolhe só esta ou a série toda.</div>
+    <div class="uc"><b>UC15</b> — Define término de parcelamento (12×); após a data, para de propagar.</div>
+    <div class="uc"><b>UC16</b> — Edita o plano de contas, criando uma categoria própria em um bloco.</div>
+    <div class="uc"><b>UC17</b> — Instala o app e completa o onboarding (plano de contas + saldos), podendo salvar e continuar.</div>
+    <div class="uc"><b>UC18</b> — Lança IR como pagamento ou recebimento, seguindo a orientação da interface.</div>
+  </div>
+</div></section>
+
+<!-- ====== 8 · FLUXOS ====== -->
+<section id="s-fluxos"><div class="doc">
+  <div class="kicker">PRD · Seção 8</div>
+  <h2>8 · Fluxos de usuário</h2>
+  <h3>Onboarding (primeira vez)</h3>
+  <ol>
+    <li>A pessoa instala o app localmente.</li>
+    <li>Define o plano de contas inicial a partir do modelo, editando o necessário.</li>
+    <li>Cadastra saldos iniciais de ativos e passivos (imóvel, veículo, investimentos, financiamentos, saldos por conta) — podendo salvar e continuar depois.</li>
+  </ol>
+  <h3>Fluxo principal (mensal)</h3>
+  <ol>
+    <li>Revisa os recorrentes do mês, marcando "Pago" (com a data) conforme ocorrem, ou ajustando o previsto.</li>
+    <li>Lança receitas/despesas variáveis, cada uma com entidade, classificação e data de pagamento; registra gastos de consumo livre.</li>
+    <li>Registra intercompany (pró-labore, distribuição) quando ocorrem.</li>
+    <li>No fechamento, define a destinação do lucro entre as 4 categorias.</li>
+    <li>Atualiza saldos por conta e o valor investido; registra vendas de ativos/investimentos, se houver.</li>
+    <li>Consulta DRE (3 visões), Balanço, Painel e Indicadores para revisar o mês.</li>
+  </ol>
+</div></section>
+
+<!-- ====== 9 · REQUISITOS ====== -->
+<section id="s-req"><div class="doc">
+  <div class="kicker">PRD · Seção 5</div>
+  <h2>9 · Requisitos técnicos e de usabilidade</h2>
+  <ul>
+    <li><strong>Plataforma:</strong> web responsivo, instalado localmente por pessoa/máquina, sem login.</li>
+    <li><strong>Persistência:</strong> dados em banco de dados (não só no navegador).</li>
+    <li><strong>Usabilidade crítica:</strong> o lançamento é o requisito de maior prioridade — nada pode aumentar sua fricção sem questionamento.</li>
+    <li><strong>Modelo de dados:</strong> lançamento único por transação; as 3 visões são projeções sobre o mesmo dado.</li>
+    <li><strong>Motor de eliminação intercompany:</strong> pró-labore e distribuição excluídos do consolidado, com tratamento distinto na PJ.</li>
+    <li><strong>Regime de caixa por data de pagamento:</strong> só Pago entra no DRE; sem competência paralela.</li>
+    <li><strong>Plano de contas editável</strong> e <strong>estrutura de DRE configurável</strong> <span class="hs" data-h="10">🔴 H10</span>.</li>
+    <li><strong>Cálculo determinístico</strong> a partir dos lançamentos pagos, sem fechamento manual de totais.</li>
+    <li><strong>D&amp;A e EBIT:</strong> D&amp;A sempre zero no MVP → EBITDA = EBIT.</li>
+    <li><strong>Recorrência:</strong> gera Previsto; aceita término; edição série vs. ocorrência.</li>
+    <li><strong>Realização na venda:</strong> sem reavaliação/depreciação mensal.</li>
+    <li><strong>DRE ≠ passivos/fluxo de caixa:</strong> despesa não baixa passivo automaticamente.</li>
+    <li><strong>Dados sensíveis:</strong> proteção de dados acompanha a evolução, mesmo local single-user. Backup/exportação/importação: decisão de Engenharia.</li>
+  </ul>
+  <div class="callout"><b>Cronograma:</b> a ser definido após o Event Storming, quando a Engenharia puder estimar esforço a partir do modelo de domínio.</div>
+</div></section>
+
+<!-- ====== 10 · CRITÉRIOS DE LIBERAÇÃO ====== -->
+<section id="s-lib"><div class="doc">
+  <div class="kicker">PRD · Seção 7</div>
+  <h2>10 · Critérios de liberação</h2>
+  <p>O MVP está pronto quando:</p>
+  <ul>
+    <li>É possível lançar receita/despesa com entidade e classificação circulante/não circulante.</li>
+    <li>Intercompany é tratado corretamente (pró-labore reduz lucro da PJ, distribuição é apropriação, ambos eliminados no consolidado, dividendo externo não).</li>
+    <li>O plano de contas pode ser editado pela pessoa.</li>
+    <li>Cada lançamento tem status e data de pagamento; o DRE contabiliza pelo pagamento e ignora Previstos.</li>
+    <li>Consumo livre aparece só como despesa (nunca negativo), não como ativo.</li>
+    <li>Recorrentes se propagam, com/sem término, e a edição oferece ocorrência vs. série.</li>
+    <li>O DRE gera as 3 visões e bate com o plano de contas de referência.</li>
+    <li>No MVP, EBITDA = EBIT, refletido no Painel e Indicadores.</li>
+    <li>Ganhos de investimento/venda só são reconhecidos na venda.</li>
+    <li>O Balanço reflete saldos por conta e demais ativos/passivos informados.</li>
+    <li>Destinação do lucro nas 4 categorias.</li>
+    <li>Painel e Indicadores reproduzem as abas da planilha de referência.</li>
+    <li>IR aceita pagamento ou recebimento, com orientação.</li>
+    <li>Onboarding cadastra plano de contas e saldos reaproveitando telas, com salvar/continuar.</li>
+    <li>Roda localmente, sem login, persistindo em banco de dados.</li>
+    <li>A pessoa reproduz o fechamento mensal da planilha com menos esforço de lançamento.</li>
+  </ul>
+</div></section>
+
+<!-- ====== 11 · BOUNDED CONTEXTS ====== -->
+<section id="s-contexts"><div class="doc">
+  <div class="kicker">Event Storming</div>
+  <h2>11 · Bounded contexts</h2>
+  <p>Seis fronteiras de vocabulário. O eixo é a separação <strong>escrita (lançar) × leitura (relatórios)</strong>.</p>
+  <div class="tablewrap"><table>
+    <thead><tr><th>Contexto</th><th>Responsabilidade</th><th>Agregado central</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Configuração</strong></td><td>Estrutura do DRE, categorias, contas bancárias</td><td>Plano de Contas <span class="hs" data-h="10">🔴 H10</span></td></tr>
+      <tr><td><strong>Lançamentos</strong> (núcleo)</td><td>Registrar receitas/despesas — a única fonte da verdade</td><td>Lançamento</td></tr>
+      <tr><td><strong>Recorrência</strong></td><td>Gerar automaticamente lançamentos repetidos</td><td>Recorrência</td></tr>
+      <tr><td><strong>Patrimônio</strong></td><td>Ativos, investimentos, passivos, saldos; realização na venda</td><td>Ativo / Investimento / Passivo</td></tr>
+      <tr><td><strong>Relatórios</strong> (leitura)</td><td>Projetar DRE (3 visões), Balanço, Painel, Indicadores</td><td>— (projeções)</td></tr>
+      <tr><td><strong>Onboarding</strong></td><td>Primeiro uso: reaproveita Configuração + Patrimônio</td><td>— (orquestra)</td></tr>
+    </tbody>
+  </table></div>
+</div></section>
+
+<!-- ====== 12 · AGREGADOS ====== -->
+<section id="s-agregados"><div class="doc">
+  <div class="kicker">Event Storming</div>
+  <h2>12 · Agregados &amp; eventos</h2>
+  <div class="tablewrap"><table>
+    <thead><tr><th>Agregado</th><th>Guarda</th><th>Eventos-chave (no passado)</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Lançamento</strong></td><td>entidade, tipo, categoria, classificação, conta, valor, data de pagamento, status, rótulo, recorrência</td><td>Previsto registrado · Pago · Editado · Excluído</td></tr>
+      <tr><td><strong>Plano de Contas / Estrutura</strong> <span class="hs" data-h="10">🔴 H10</span></td><td>blocos, ordem, fórmulas, linhas elimináveis, ancoragem dos indicadores</td><td>Estrutura editada · Categoria criada</td></tr>
+      <tr><td><strong>Recorrência</strong></td><td>modelo (fixo/a definir), término</td><td>Criada · Ocorrência gerada · Encerrada</td></tr>
+      <tr><td><strong>Conta Bancária</strong></td><td>legenda/cor, saldo (manual)</td><td>Cadastrada · Saldo atualizado</td></tr>
+      <tr><td><strong>Investimento</strong></td><td>valor acumulado (aportes)</td><td>Aporte registrado · Dividendo recebido · Vendido → ganho/perda</td></tr>
+      <tr><td><strong>Ativo</strong></td><td>imóvel/veículo/equipamento</td><td>Cadastrado · Vendido → ganho/perda</td></tr>
+      <tr><td><strong>Passivo</strong> <span class="hs done" data-h="9">✅ H9</span></td><td>financiamento/cartão; saldo 100% manual</td><td>Atualizado (manual)</td></tr>
+    </tbody>
+  </table></div>
+  <h3>Políticas / automações do Sistema</h3>
+  <ul>
+    <li><span class="st pol">🟪</span> <strong>Sempre que</strong> um lançamento é <em>pago</em> → as projeções (DRE, Balanço, Painel, Indicadores) refletem o novo estado.</li>
+    <li><span class="st pol">🟪</span> <strong>Sempre que</strong> o mês vira → o motor gera as ocorrências Previstas do mês seguinte, até a data de término.</li>
+    <li><span class="st pol">🟪</span> <strong>Sempre que</strong> um investimento/ativo é vendido → ganho/perda entra em resultado não operacional.</li>
+    <li><span class="st pol">🟪</span> <strong>Sempre que</strong> um mês passado é editado → recálculo em cascata dos meses seguintes.</li>
+  </ul>
+</div></section>
+
+<!-- ====== 13 · HOTSPOTS ====== -->
+<section id="s-hotspots"><div class="doc">
+  <div class="kicker">Event Storming</div>
+  <h2>13 · Hotspots consolidados</h2>
+  <p>Cada hotspot é uma decisão a registrar em ADR (com alternativas + trade-offs). Passe o mouse para ver a pergunta e o porquê. Os <span class="hs done">✅ verdes</span> já foram resolvidos.</p>
+  <div class="tablewrap"><table>
+    <thead><tr><th>#</th><th>Decisão</th><th>Destino</th></tr></thead>
+    <tbody>
+      <tr><td><span class="hs" data-h="1">🔴 H1</span></td><td>Lançamento único + projeções (CQRS-lite) vs. tabelas por relatório</td><td>ADR-0001</td></tr>
+      <tr><td><span class="hs" data-h="2">🔴 H2</span></td><td>Representação de intercompany e eliminação no consolidado</td><td>ADR-0003</td></tr>
+      <tr><td><span class="hs" data-h="3">🔴 H3</span></td><td>Regime de caixa por data de pagamento; Previsto/Pago</td><td>ADR-0001</td></tr>
+      <tr><td><span class="hs" data-h="4">🔴 H4</span></td><td>Motor de recorrência: materialização; edição série vs. ocorrência</td><td>ADR-0004</td></tr>
+      <tr><td><span class="hs" data-h="5">🔴 H5</span></td><td>Realização só na venda (sem mark-to-market/D&A mensal)</td><td>ADR-0005</td></tr>
+      <tr><td><span class="hs" data-h="6">🔴 H6</span></td><td>Projeções sob demanda vs. materializadas</td><td>ADR-0001</td></tr>
+      <tr><td><span class="hs" data-h="7">🔴 H7</span></td><td>Stack de persistência e empacotamento local</td><td>ADR-0006</td></tr>
+      <tr><td><span class="hs" data-h="10">🔴 H10</span></td><td>DRE dirigido por configuração — <strong>maior risco</strong></td><td>ADR-0002</td></tr>
+      <tr><td><span class="hs done" data-h="8">✅ H8</span></td><td>Mês fechado: sempre editável, recálculo em cascata</td><td>Resolvido</td></tr>
+      <tr><td><span class="hs done" data-h="9">✅ H9</span></td><td>Passivos 100% manuais, plano à parte do DRE</td><td>Resolvido</td></tr>
+    </tbody>
+  </table></div>
+</div></section>
+
+<!-- ====== 14 · DECISÕES & ADRs ====== -->
+<section id="s-agir"><div class="doc">
+  <div class="kicker">Próximos passos do loop</div>
+  <h2>14 · Decisões travadas &amp; backlog de ADRs</h2>
+  <p>Seguindo a diretriz "nunca assuma premissas", três ambiguidades foram confirmadas com o time — não deduzidas: <strong>estrutura do DRE configurável</strong> <span class="hs" data-h="10">🔴 H10</span>, <strong>meses sempre editáveis</strong> <span class="hs done" data-h="8">✅ H8</span> e <strong>passivos 100% manuais</strong> <span class="hs done" data-h="9">✅ H9</span>.</p>
+  <div class="tablewrap"><table>
+    <thead><tr><th>ADR</th><th>Decisão</th><th>Hotspots</th></tr></thead>
+    <tbody>
+      <tr><td><strong>ADR-0001</strong></td><td>Arquitetura de dados e cálculo: lançamento único + projeções sob demanda; regime de caixa; meses editáveis</td><td>H1, H3, H6, H8</td></tr>
+      <tr><td><strong>ADR-0002</strong></td><td>Motor de DRE dirigido por configuração — <em>maior risco; validar cedo</em></td><td>H10</td></tr>
+      <tr><td><strong>ADR-0003</strong></td><td>Intercompany e eliminação no consolidado</td><td>H2</td></tr>
+      <tr><td><strong>ADR-0004</strong></td><td>Motor de recorrência: materialização, edição série/ocorrência, término</td><td>H4</td></tr>
+      <tr><td><strong>ADR-0005</strong></td><td>Patrimônio: Ativo/Investimento/Passivo e realização só na venda</td><td>H5, H9</td></tr>
+      <tr><td><strong>ADR-0006</strong></td><td>Stack de persistência e empacotamento local</td><td>H7</td></tr>
+    </tbody>
+  </table></div>
+  <p>Recomendação: começar por <strong>ADR-0001</strong> (base de tudo) e <strong>ADR-0002</strong> (maior risco) em paralelo.</p>
+</div></section>
+
+<footer>
+  Documento vivo · Controle Financeiro PF + PJ · green field · v1 — 2026-07-11.<br>
+  Fontes: <code>docs/prd/financas-pf-pj.md</code> (v6) e <code>docs/event-storming/financas-pf-pj.md</code>. Atualize este HTML junto com o PRD e as ADRs — é a base a partir da qual os quatro times trabalham.
+</footer>
+</main>
+</div>
+
+<script>
+const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
+const money=n=>'R$ '+Math.round(n).toLocaleString('pt-BR');
+
+/* ---------- HOTSPOT + GLOSSÁRIO TOOLTIPS ---------- */
+const HS={
+ 1:['Lançamento único + projeções, ou tabelas por relatório?','As 3 visões, o Balanço, o Painel e os Indicadores devem ser calculados a partir do lançamento (CQRS-lite) ou materializados? Simplicidade/consistência × performance de leitura.',0],
+ 2:['Como representar intercompany e eliminar no consolidado?','Pró-labore e distribuição de lucro passam da PJ para a PF. Modelar como tipo especial com regra de projeção, ou lançamento de duas pernas? Fidelidade contábil × "lançamento único, nunca duplicado".',0],
+ 3:['Como Previsto/Pago e a data de pagamento entram no DRE?','A data de pagamento decide o mês; Previsto não conta. Como isso é armazenado e filtrado nas projeções, e o que acontece na edição histórica.',0],
+ 4:['Recorrência: materializada ou virtual? Edição série ou ocorrência?','Gerar as ocorrências Previstas antecipadamente ou calculá-las virtualmente; e a granularidade da edição. Previsibilidade × volume de dados.',0],
+ 5:['Realização só na venda: como modelar Ativo/Investimento?','Sem mark-to-market e sem D&A mensal — o resultado só surge na venda. Como guardar base/custo e reconhecer ganho/perda. Simplicidade × rastreabilidade.',0],
+ 6:['Projeções sob demanda ou materializadas?','Recalcular DRE/Balanço/Painel a cada leitura, ou persistir. Determinismo e simplicidade (single-user local) × custo de recálculo, agravado pelo recálculo em cascata (H8).',0],
+ 7:['Qual stack de persistência e empacotamento local?','Instalação local, sem login, dados em banco de dados. Qual banco, como empacotar/instalar na máquina da pessoa. A definir na ADR.',0],
+ 8:['Mês fechado é imutável?','RESOLVIDO: sempre editável. Sem trava; edição retroativa recalcula o mês e cascateia para os seguintes (saldos acumulados são cumulativos). "Fechamento" = consolidação automática.',1],
+ 9:['Passivos têm baixa automática?','RESOLVIDO: 100% manual. Nenhum lançamento baixa passivo automaticamente; é um plano à parte do DRE, o que evita a dupla contagem com parcelamentos.',1],
+ 10:['DRE fixo ou dirigido por configuração?','RESOLVIDO como configurável — e por isso é o maior risco. A estrutura de blocos/fórmulas é definível pela pessoa; o motor de cálculo tem de ser dirigido por dados, e indicadores/eliminação ancoram-se a linhas configuráveis. Flexibilidade × complexidade do motor.',0]
+};
+(function(){
+ const tip=document.createElement('div');tip.id='tip';document.body.appendChild(tip);
+ function show(el){
+   let q,r,ok=false;
+   if(el.dataset.h){const d=HS[el.dataset.h];if(!d)return;q=(d[2]?'✅ ':'🔴 ')+'H'+el.dataset.h+' — '+d[0];r='<b>Por quê:</b> '+d[1];ok=d[2]===1;}
+   else{q=el.dataset.g||'';r=el.dataset.t||'';}
+   tip.className=ok?'ok':'';
+   tip.innerHTML='<span class="q">'+q+'</span><span class="r">'+r+'</span>';
+   tip.style.display='block';
+   const b=el.getBoundingClientRect(),tw=Math.min(360,innerWidth-24);
+   tip.style.maxWidth=tw+'px';
+   tip.style.left=Math.min(Math.max(12,b.left),innerWidth-tw-12)+'px';
+   const th=tip.offsetHeight;
+   tip.style.top=(b.top-th-10>8?b.top-th-10:b.bottom+10)+'px';
+ }
+ const hide=()=>tip.style.display='none';
+ $$('.hs,.gl').forEach(el=>{
+   el.tabIndex=0;
+   el.addEventListener('mouseenter',()=>show(el));el.addEventListener('mouseleave',hide);
+   el.addEventListener('focus',()=>show(el));el.addEventListener('blur',hide);
+   el.addEventListener('click',e=>{e.preventDefault();tip.style.display==='block'?hide():show(el)});
+ });
+ addEventListener('scroll',hide,{passive:true});
+})();
+
+/* ---------- SCROLLSPY ---------- */
+(function(){
+ const links=$$('nav.side a[href^="#"]'),byId={};
+ links.forEach(a=>{const id=a.getAttribute('href').slice(1);(byId[id]=byId[id]||[]).push(a)});
+ const setOn=id=>{links.forEach(a=>a.classList.remove('on'));(byId[id]||[]).forEach(a=>a.classList.add('on'))};
+ if('IntersectionObserver' in window){
+   const io=new IntersectionObserver(es=>{const v=es.filter(e=>e.isIntersecting).sort((a,b)=>b.intersectionRatio-a.intersectionRatio)[0];if(v&&v.target.id)setOn(v.target.id);},{rootMargin:'-10% 0px -75% 0px',threshold:[0,.5,1]});
+   $$('section[id]').forEach(s=>io.observe(s));
+ }
+ links.forEach(a=>a.addEventListener('click',()=>setOn(a.getAttribute('href').slice(1))));
+})();
+
+/* ================= S1 · REGIME DE CAIXA ================= */
+(function(){
+ const root=$('#simCaixa');if(!root)return;
+ let status='prev',mes=1;
+ const base=[8000-2000,8000-2000,8000-2000];
+ function render(){
+   const val=+$('#cx-val').value||0;
+   const res=base.slice();
+   const paid=status==='pago';
+   if(paid)res[mes]-=val;
+   const names=['Junho','Julho','Agosto'];
+   $('#cx-months').innerHTML=names.map((n,i)=>`<div class="mcol${paid&&i===mes?' active':''}"><h6>${n}</h6><div class="big">${money(res[i])}</div><div class="sub">resultado do mês</div></div>`).join('');
+   $('#cx-tray').innerHTML=paid?'—':`Despesa ${money(val)} · ${names[mes]} · <b style="color:#F0CE88">Previsto</b> (não entra em nenhum DRE)`;
+   const v=$('#cx-verd');
+   if(paid){v.className='verdict ok';v.textContent=`✓ Pago: a despesa entrou no DRE de ${names[mes]} (a data de pagamento decidiu o mês). Nenhum outro mês mudou.`;}
+   else{v.className='verdict mid';v.textContent='◷ Previsto: é só planejamento. O resultado dos três meses continua intacto até você marcar Pago.';}
+ }
+ $$('#cx-st button').forEach(b=>b.onclick=()=>{$$('#cx-st button').forEach(x=>x.classList.remove('on'));b.classList.add('on');status=b.dataset.v;render();});
+ $('#cx-mes').onchange=e=>{mes=+e.target.value;render();};
+ $('#cx-val').oninput=render;
+ render();
+})();
+
+/* ================= S2 · INTERCOMPANY ================= */
+(function(){
+ const root=$('#simInter');if(!root)return;
+ let tipo='prol';
+ function render(){
+   const v=+$('#ic-val').value||0;
+   const pjReceita=20000, pjCusto=4000, pfAluguel=2000;
+   let pj={rec:pjReceita,desp:pjCusto,aprop:0}, consEliminado=false;
+   let verd='';
+   if(tipo==='prol'){pj.desp+=v;consEliminado=true;verd='Pró-labore: receita na PF e despesa que REDUZ o lucro da PJ. No consolidado, os dois se anulam.';}
+   else if(tipo==='dist'){pj.aprop=v;consEliminado=true;verd='Distribuição: receita na PF, mas na PJ é apropriação do lucro já apurado (abaixo da linha) — NÃO reduz o lucro operacional. Eliminada no consolidado.';}
+   else{consEliminado=false;verd='Dividendo externo NÃO é intercompany: receita comum da PF (bloco 1) e PERMANECE no consolidado — não é dinheiro entre as suas entidades.';}
+   const pfLucro=pfAluguel+v;
+   const pjLucroOp=pj.rec-pj.desp;
+   const pjLucroFinal=pjLucroOp-pj.aprop;
+   const consRec=pjReceita+pfAluguel+(tipo==='div'?v:0);
+   const consLucro=consRec-pjCusto;
+   $('#ic-pf').innerHTML=`<h6>Visão PF <span class="chip pf">receita</span></h6>
+     <div class="line"><span>Aluguel recebido</span><span class="v">${money(pfAluguel)}</span></div>
+     <div class="line pos"><span>${tipo==='prol'?'Pró-labore':tipo==='dist'?'Distribuição':'Dividendo'}</span><span class="v">+${money(v)}</span></div>
+     <div class="line tot"><span>Resultado PF</span><span class="v">${money(pfLucro)}</span></div>`;
+   $('#ic-pj').innerHTML=`<h6>Visão PJ</h6>
+     <div class="line"><span>Receita bruta</span><span class="v">${money(pj.rec)}</span></div>
+     <div class="line neg"><span>Custos${tipo==='prol'?' + pró-labore':''}</span><span class="v">−${money(pj.desp)}</span></div>
+     <div class="line ${tipo==='prol'?'tot':''}"><span>Lucro operacional</span><span class="v">${money(pjLucroOp)}</span></div>
+     ${tipo==='dist'?`<div class="line neg"><span>(−) Distribuição (bloco 10)</span><span class="v">−${money(pj.aprop)}</span></div><div class="line tot"><span>Lucro retido</span><span class="v">${money(pjLucroFinal)}</span></div>`:''}`;
+   $('#ic-cons').innerHTML=`<h6>Consolidado (PF+PJ)</h6>
+     <div class="line"><span>Receitas somadas</span><span class="v">${money(consRec)}</span></div>
+     <div class="line neg"><span>Custos</span><span class="v">−${money(pjCusto)}</span></div>
+     <div class="line ${consEliminado?'elim':''}"><span>${tipo==='div'?'Dividendo (mantido)':'Intercompany'}</span><span class="v">${consEliminado?'eliminado':'+'+money(v)}</span></div>
+     <div class="line tot"><span>Resultado consolidado</span><span class="v">${money(consLucro)}</span></div>`;
+   const vv=$('#ic-verd');vv.className='verdict ok';vv.textContent=verd;
+ }
+ $$('#ic-tipo button').forEach(b=>b.onclick=()=>{$$('#ic-tipo button').forEach(x=>x.classList.remove('on'));b.classList.add('on');tipo=b.dataset.v;render();});
+ $('#ic-val').oninput=render;
+ render();
+})();
+
+/* ================= S3 · RECORRÊNCIA ================= */
+(function(){
+ const root=$('#simRecor');if(!root)return;
+ const MES=['Jun','Jul','Ago','Set','Out','Nov','Dez','Jan'];
+ let valMode='fixo',term=0,cur,occ;
+ function reset(){cur=0;occ=[];render();$('#rc-verd').className='verdict mid';$('#rc-verd').textContent='Recorrência criada em Junho. Avance os meses para o Sistema gerar as ocorrências.';}
+ function render(){$('#rc-tl').innerHTML=occ.map(o=>`<span class="tchip ${o.end?'end':'prev'}">${o.mes} · ${o.end?'encerrada':(o.val===null?'a definir':money(o.val))}</span>`).join('')||'<span style="font-family:var(--mono);font-size:11px;color:#8FA6A0">nenhuma ocorrência ainda</span>';}
+ function adv(){
+   cur++;
+   if(term>0&&cur>term){occ.push({mes:MES[cur],end:true});render();$('#rc-verd').className='verdict no';$('#rc-verd').textContent=`⏹ Término atingido (${term}×). O motor parou de gerar — parcelamento encerrado sozinho.`;return;}
+   const val=valMode==='fixo'?300:null;
+   occ.push({mes:MES[cur],val});render();
+   const v=$('#rc-verd');v.className='verdict ok';
+   v.textContent=`✓ Virada de mês: Sistema gerou ${MES[cur]} como Previsto ${val===null?'(a definir — pendente, não trava o fechamento)':'(fixo, valor copiado)'}.`;
+ }
+ $$('#rc-val button').forEach(b=>b.onclick=()=>{$$('#rc-val button').forEach(x=>x.classList.remove('on'));b.classList.add('on');valMode=b.dataset.v;reset();});
+ $$('#rc-term button').forEach(b=>b.onclick=()=>{$$('#rc-term button').forEach(x=>x.classList.remove('on'));b.classList.add('on');term=+b.dataset.v;reset();});
+ $('#rc-adv').onclick=adv;
+ $('#rc-edit').onclick=()=>{const v=$('#rc-verd');v.className='verdict mid';v.innerHTML='✎ Editar a próxima ocorrência — o Sistema pergunta: <b>só esta ocorrência</b> ou <b>a série toda</b>? Essa granularidade é o que o hotspot H4 precisa fechar.';};
+ $('#rc-reset').onclick=reset;
+ reset();
+})();
+
+/* ================= S4 · REALIZAÇÃO NA VENDA ================= */
+(function(){
+ const root=$('#simVenda');if(!root)return;
+ const COMPRA=40000;let sold=false;
+ function render(){
+   const mk=+$('#vd-mk').value;
+   $('#vd-mkv').textContent=money(mk);
+   const receita=15000, custos=3000, ebitda=receita-custos, da=0, ebit=ebitda-da;
+   const ganho=sold?(mk-COMPRA):0;
+   const lucro=ebit+(sold?ganho:0);
+   $('#vd-dre').innerHTML=`
+     <div class="line"><span>Receita operacional</span><span class="v">${money(receita)}</span></div>
+     <div class="line neg"><span>Custos/despesas</span><span class="v">−${money(custos)}</span></div>
+     <div class="line"><span>EBITDA</span><span class="v">${money(ebitda)}</span></div>
+     <div class="line"><span>(−) D&A</span><span class="v">${money(da)}</span></div>
+     <div class="line"><span>EBIT</span><span class="v">${money(ebit)}</span></div>
+     <div class="line ${sold?(ganho>=0?'pos':'neg'):''}"><span>Result. não operacional (venda)</span><span class="v">${sold?(ganho>=0?'+':'−')+money(Math.abs(ganho)):money(0)}</span></div>
+     <div class="line tot"><span>Lucro líquido</span><span class="v">${money(lucro)}</span></div>`;
+   const v=$('#vd-verd');
+   if(!sold){v.className='verdict ok';v.textContent='Valor de mercado oscila, mas o DRE não muda: EBITDA = EBIT (D&A = 0). Nada é reconhecido até a venda.';}
+   else{v.className=ganho>=0?'verdict ok':'verdict no';v.textContent=(ganho>=0?'✓ Vendido com ganho de ':'✕ Vendido com perda de ')+money(Math.abs(ganho))+' — reconhecido UMA vez, em resultado não operacional.';}
+ }
+ $('#vd-mk').oninput=()=>{if(sold)sold=false;render();};
+ $('#vd-sell').onclick=()=>{sold=true;render();};
+ $('#vd-reset').onclick=()=>{sold=false;$('#vd-mk').value=40000;render();};
+ render();
+})();
+
+/* ================= S5 · DRE CONFIGURÁVEL ================= */
+(function(){
+ const root=$('#simDre');if(!root)return;
+ const BLOCKS=[
+   {id:'ded',name:'Deduções',val:-3900,on:true},
+   {id:'csv',name:'CSV',val:-1330,on:true},
+   {id:'adm',name:'Despesas administrativas',val:-5570,on:true},
+   {id:'pes',name:'Despesas pessoais',val:-1500,on:true},
+   {id:'imp',name:'Impostos sobre lucro',val:-3660,on:true}
+ ];
+ const RECEITA=28700;
+ function render(){
+   $('#dr-toggles').innerHTML=BLOCKS.map(b=>`<div class="ctrl" style="margin-bottom:9px"><label class="row"><span>${b.name}</span><input type="checkbox" data-b="${b.id}" ${b.on?'checked':''} style="accent-color:#2FD6A5;width:18px;height:18px"></label></div>`).join('');
+   $$('#dr-toggles input').forEach(i=>i.onchange=()=>{BLOCKS.find(b=>b.id===i.dataset.b).on=i.checked;calc();});
+   calc();
+ }
+ function calc(){
+   let running=RECEITA;const rows=[['Receita bruta',RECEITA,RECEITA]];
+   BLOCKS.forEach(b=>{if(b.on){running+=b.val;rows.push([b.name,b.val,running]);}});
+   const max=RECEITA;
+   $('#dr-cascade').innerHTML=rows.map((r,i)=>{
+     const cumulative=r[2];const w=Math.max(4,Math.round(cumulative/max*100));
+     return `<div class="barrow"><span>${r[0]}</span><div class="bartrk"><i style="width:${w}%"></i></div><span class="val">${money(cumulative)}</span></div>`;
+   }).join('');
+   const active=BLOCKS.filter(b=>b.on).length;
+   const v=$('#dr-verd');v.className='verdict mid';
+   v.innerHTML=`Estrutura com <b>${active}/5</b> blocos ativos → Lucro líquido <b style="color:#8BEAC7">${money(running)}</b>. Cada configuração é um DRE válido diferente — o motor calcula pela estrutura, não por fórmulas fixas em código.`;
+ }
+ render();
+})();
+</script>
+</body>
+</html>

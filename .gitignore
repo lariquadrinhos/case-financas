@@ -1,0 +1,37 @@
+.DS_Store
+
+# dependências
+node_modules/
+.pnp
+.pnp.*
+
+# build
+.next/
+out/
+build/
+dist/
+storybook-static/
+
+# testes
+coverage/
+test-results/
+playwright-report/
+blob-report/
+.playwright/
+
+# banco local — dado financeiro em repouso, NUNCA versionado (ADR-0009)
+.data/
+.data-audit/
+.data-audit-seeded/
+
+# ambiente — NUNCA commitar segredo (ADR-0009)
+.env
+.env.*
+!.env.example
+
+# ferramentas
+*.tsbuildinfo
+next-env.d.ts
+.vercel
+.turbo
+.eslintcache

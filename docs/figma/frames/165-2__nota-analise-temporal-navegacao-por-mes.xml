@@ -1,0 +1,4 @@
+  <frame id="165:2" name="Nota — Análise Temporal (navegação por mês)" x="208.4846649169922" y="17281" width="516.6257934570312" height="455.1042785644531">
+    <text id="165:3" name="Análise temporal: o passado não fica escondido" x="34.441715240478516" y="34.44171905517578" width="371.478515625" height="54" />
+    <text id="165:4" name="Fizemos uma auditoria completa de onde faz sentido navegar por mês, e aplicamos com consistência: • DRE: seletor de mês (← →) • Mapa de Fluxo (Home): seletor de mês (← →) • Indicadores Financeiros: seletor de mês (← →) • Revisão de Recorrentes: seletor de mês, dá pra rever meses anteriores • Histórico: filtro de Mês • Evolução Mensal: toggle Últimos 6 meses / Último ano Intencionalmente sem navegação (são &quot;foto do momento&quot;, não histórico): Balanço Patrimonial e Mapa de Posição." x="34.44173049926758" y="105.66256713867188" width="447.7423400878906" height="315" />
+  </frame>

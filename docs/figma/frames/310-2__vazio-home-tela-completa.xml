@@ -1,0 +1,105 @@
+  <frame id="310:2" name="Vazio — Home (tela completa)" x="-13698" y="-2803" width="1440" height="1256">
+    <frame id="310:3" name="Sidebar" x="0" y="0" width="278" height="1256">
+      <text id="310:4" name="Finanças PF+PJ" x="20" y="28" width="116" height="18" />
+      <frame id="310:5" name="Frame" x="20" y="70" width="238" height="43">
+        <text id="310:6" name="+ Novo Lançamento" x="39.5" y="12" width="159" height="19" />
+      </frame>
+      <frame id="310:7" name="Frame" x="20" y="137" width="238" height="302">
+        <frame id="310:8" name="Frame" x="0" y="0" width="238" height="36">
+          <text id="310:9" name="Relatórios" x="10" y="10" width="63" height="16" />
+          <text id="310:10" name="▾" x="83" y="10" width="5" height="13" />
+        </frame>
+        <frame id="310:11" name="Frame" x="0" y="38" width="238" height="36">
+          <text id="310:12" name="DRE" x="25" y="10" width="26" height="16" />
+        </frame>
+        <frame id="310:13" name="Frame" x="0" y="76" width="238" height="36">
+          <text id="310:14" name="Balanço Patrimonial" x="25" y="10" width="123" height="16" />
+        </frame>
+        <frame id="310:15" name="Frame" x="0" y="114" width="238" height="36">
+          <text id="310:16" name="Evolução Mensal" x="25" y="10" width="105" height="16" />
+        </frame>
+        <frame id="310:17" name="Frame" x="0" y="152" width="238" height="36">
+          <text id="310:18" name="Indicadores Financeiros" x="25" y="10" width="148" height="16" />
+        </frame>
+        <frame id="310:19" name="Frame" x="0" y="190" width="238" height="36">
+          <text id="310:20" name="Revisão de Recorrentes" x="10" y="10" width="147" height="16" />
+        </frame>
+        <frame id="310:21" name="Frame" x="0" y="228" width="238" height="36">
+          <text id="310:22" name="Histórico" x="10" y="10" width="56" height="16" />
+        </frame>
+        <frame id="310:23" name="Frame" x="0" y="266" width="238" height="36">
+          <text id="310:24" name="Plano de Contas e Patrimônio" x="12" y="10" width="183" height="16" />
+          <text id="310:25" name="▾" x="205" y="20.5" width="13" height="5" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="310:26" name="Frame" x="278" y="0" width="1162" height="2501">
+      <text id="310:27" name="Olá! 👋" x="48" y="40" width="77" height="29" />
+      <frame id="305:2" name="Vazio — Pendências" x="48" y="89" width="420" height="148">
+        <frame id="305:27" name="Frame 12" x="24" y="20" width="372" height="19">
+          <text id="310:29" name="Pendências" x="0" y="0" width="92" height="19" />
+        </frame>
+        <frame id="305:26" name="Frame 11" x="40" y="53" width="340" height="71">
+          <text id="305:3" name="Tudo em dia" x="125.5" y="0" width="89" height="18" />
+          <text id="305:4" name="Nenhuma pendência agora. Quando algo precisar da sua decisão (valor sem destino, recorrência sem valor, lucro sem destinar), aparece aqui." x="0" y="26" width="340" height="45" />
+        </frame>
+      </frame>
+      <frame id="305:28" name="Vazio — Pendências" x="48" y="257" width="420" height="182">
+        <frame id="305:29" name="Frame 12" x="24" y="20" width="372" height="19">
+          <text id="305:30" name="Saldo para Consumo Livre" x="0" y="0" width="204" height="19" />
+        </frame>
+        <frame id="305:31" name="Frame 11" x="40" y="53" width="340" height="56">
+          <text id="305:32" name="Configurar Consumo Livre" x="74.5" y="0" width="191" height="18" />
+          <text id="305:33" name="Defina um valor mensal pra Consumo Livre. Sem lançar item por item, só confirma quando gastar." x="0" y="26" width="340" height="30" />
+        </frame>
+        <frame id="305:60" name="Frame" x="147" y="123" width="126" height="35">
+          <text id="305:61" name="Cadastrar agora" x="16" y="10" width="94" height="15" />
+        </frame>
+      </frame>
+      <frame id="305:34" name="Vazio — Pendências" x="48" y="459" width="420" height="182">
+        <frame id="305:35" name="Frame 12" x="24" y="20" width="372" height="19">
+          <text id="305:36" name="Despesas por Categoria" x="0" y="0" width="189" height="19" />
+        </frame>
+        <frame id="305:37" name="Frame 11" x="40" y="53" width="340" height="56">
+          <text id="305:38" name="Nenhuma despesa registrada" x="63.5" y="0" width="213" height="18" />
+          <text id="305:39" name="Assim que você lançar uma despesa, ela aparece aqui, organizada por categoria." x="0" y="26" width="340" height="30" />
+        </frame>
+        <frame id="305:62" name="Frame" x="134.5" y="123" width="151" height="35">
+          <text id="305:63" name="+ Novo Lançamento" x="16" y="10" width="119" height="15" />
+        </frame>
+      </frame>
+      <frame id="305:40" name="Vazio — Pendências" x="48" y="661" width="420" height="182">
+        <frame id="305:41" name="Frame 12" x="24" y="20" width="372" height="19">
+          <text id="305:42" name="Mapa de Fluxo" x="0" y="0" width="113" height="19" />
+        </frame>
+        <frame id="305:43" name="Frame 11" x="40" y="53" width="340" height="56">
+          <text id="305:44" name="Sem lançamentos este mês" x="70.5" y="0" width="199" height="18" />
+          <text id="305:45" name="Registre uma receita ou despesa pra começar a ver de onde vem e pra onde vai o seu dinheiro." x="0" y="26" width="340" height="30" />
+        </frame>
+        <frame id="305:9" name="Frame" x="134.5" y="123" width="151" height="35">
+          <text id="305:10" name="+ Novo Lançamento" x="16" y="10" width="119" height="15" />
+        </frame>
+      </frame>
+      <frame id="305:64" name="Vazio — Pendências" x="48" y="863" width="420" height="182">
+        <frame id="305:65" name="Frame 12" x="24" y="20" width="372" height="19">
+          <text id="305:66" name="Onde Está Meu Dinheiro" x="0" y="0" width="188" height="19" />
+        </frame>
+        <frame id="305:67" name="Frame 11" x="40" y="53" width="340" height="56">
+          <text id="305:68" name="Nada cadastrado ainda" x="86" y="0" width="168" height="18" />
+          <text id="305:69" name="Cadastre suas contas, investimentos ou dívidas em Plano de Contas e Patrimônio pra ver onde seu dinheiro está." x="0" y="26" width="340" height="30" />
+        </frame>
+        <frame id="305:76" name="Frame" x="147" y="123" width="126" height="35">
+          <text id="305:77" name="Cadastrar agora" x="16" y="10" width="94" height="15" />
+        </frame>
+      </frame>
+      <frame id="305:70" name="Vazio — Pendências" x="48" y="1065" width="420" height="133">
+        <frame id="305:71" name="Frame 12" x="24" y="20" width="372" height="19">
+          <text id="305:72" name="Eventos Recentes" x="0" y="0" width="141" height="19" />
+        </frame>
+        <frame id="305:73" name="Frame 11" x="40" y="53" width="340" height="56">
+          <text id="305:74" name="Nenhum evento ainda" x="91" y="0" width="158" height="18" />
+          <text id="305:75" name="Reajustes de juros, divergências de pagamento e parcelas confirmadas aparecem aqui conforme forem acontecendo." x="0" y="26" width="340" height="30" />
+        </frame>
+      </frame>
+    </frame>
+  </frame>

@@ -1,0 +1,8 @@
+  <frame id="309:94" name="Vazio — Histórico" x="-18015" y="-3454" width="420" height="195">
+    <text id="309:95" name="Nenhum lançamento ainda" x="113" y="40" width="194" height="18" />
+    <text id="309:96" name="Assim que você registrar seu primeiro lançamento, ele aparece aqui." x="40" y="66" width="340" height="30" />
+    <rounded-rectangle id="309:97" name="Rectangle" x="209.5" y="104" width="1" height="8" />
+    <frame id="309:98" name="Frame" x="134.5" y="120" width="151" height="35">
+      <text id="309:99" name="+ Novo Lançamento" x="16" y="10" width="119" height="15" />
+    </frame>
+  </frame>

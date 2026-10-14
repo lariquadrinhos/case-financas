@@ -1,0 +1,177 @@
+  <frame id="10:2" name="Desktop — Revisão de Recorrentes" x="26" y="6424" width="1440" height="900">
+    <frame id="20:94" name="Sidebar" x="0" y="0" width="278" height="900">
+      <frame id="509:48" name="Topo da sidebar" x="20" y="28" width="238" height="44">
+        <text id="20:95" name="Finanças PF+PJ" x="0" y="13" width="116" height="18" />
+        <instance id="509:49" name="Alternador de tema" x="154" y="0" width="84" height="44" />
+      </frame>
+      <frame id="20:96" name="Frame" x="20" y="96" width="238" height="43">
+        <text id="20:97" name="+ Novo Lançamento" x="39.5" y="12" width="159" height="19" />
+      </frame>
+      <frame id="20:98" name="Frame" x="20" y="163" width="238" height="302">
+        <frame id="20:99" name="Frame" x="0" y="0" width="238" height="36">
+          <text id="20:101" name="Relatórios" x="10" y="10" width="63" height="16" />
+          <text id="20:100" name="▾" x="83" y="10" width="5" height="13" />
+        </frame>
+        <frame id="20:102" name="Frame" x="0" y="38" width="238" height="36">
+          <text id="20:103" name="DRE" x="25" y="10" width="26" height="16" />
+        </frame>
+        <frame id="20:104" name="Frame" x="0" y="76" width="238" height="36">
+          <text id="20:105" name="Balanço Patrimonial" x="25" y="10" width="123" height="16" />
+        </frame>
+        <frame id="20:106" name="Frame" x="0" y="114" width="238" height="36">
+          <text id="20:107" name="Evolução Mensal" x="25" y="10" width="105" height="16" />
+        </frame>
+        <frame id="20:108" name="Frame" x="0" y="152" width="238" height="36">
+          <text id="20:109" name="Indicadores Financeiros" x="25" y="10" width="148" height="16" />
+        </frame>
+        <frame id="20:110" name="Frame" x="0" y="190" width="238" height="36">
+          <text id="20:111" name="Revisão de Recorrentes" x="10" y="10" width="147" height="16" />
+        </frame>
+        <frame id="20:112" name="Frame" x="0" y="228" width="238" height="36">
+          <text id="20:113" name="Histórico" x="10" y="10" width="56" height="16" />
+        </frame>
+        <frame id="157:39" name="Frame" x="0" y="266" width="238" height="36">
+          <text id="157:41" name="Plano de Contas e Patrimônio" x="12" y="10" width="183" height="16" />
+          <text id="157:40" name="▾" x="205" y="20.5" width="13" height="5" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="10:24" name="Frame" x="278" y="0" width="1162" height="900">
+      <frame id="288:6" name="Frame" x="48" y="40" width="1066" height="153">
+        <frame id="288:7" name="Frame" x="0" y="0" width="1066" height="29">
+          <frame id="288:8" name="Frame" x="0" y="0" width="1066" height="29">
+            <text id="10:25" name="Revisão de Recorrentes" x="0" y="0" width="277" height="29" />
+          </frame>
+        </frame>
+        <text id="283:2" name="Revisão de Recorrentes: os lançamentos que suas recorrências já geraram como Previsto pra este mês. Para cada um, marque como pago, edite o valor ou descarte só esta ocorrência." x="0" y="43" width="1066" height="15" />
+        <text id="284:2" name="Navegue entre meses: pra trás revê recorrências de meses passados; pra frente mostra o que já está projetado pros próximos meses." x="0" y="72" width="1066" height="15" />
+        <frame id="143:6" name="Frame" x="0" y="101" width="141" height="32">
+          <text id="143:7" name="←" x="12" y="8" width="13" height="16" />
+          <text id="143:8" name="Julho 2026" x="35" y="8" width="71" height="16" />
+          <text id="143:9" name="→" x="116" y="8" width="13" height="16" />
+        </frame>
+      </frame>
+      <frame id="10:27" name="Frame" x="48" y="213" width="1066" height="350">
+        <frame id="10:28" name="Frame" x="0" y="0" width="1066" height="62">
+          <frame id="10:29" name="Frame" x="16" y="14" width="653" height="34">
+            <text id="10:30" name="Aluguel" x="0" y="0" width="52" height="17" />
+            <text id="10:31" name="PJ · Despesas Administrativas · valor fixo" x="0" y="19" width="231" height="15" />
+          </frame>
+          <frame id="10:32" name="Frame" x="685" y="14" width="82" height="17">
+            <text id="10:33" name="R$ 1.500,00" x="0" y="0" width="82" height="17" />
+          </frame>
+          <frame id="10:34" name="Frame" x="783" y="14" width="267" height="31">
+            <frame id="10:35" name="Frame" x="0" y="0" width="102" height="31">
+              <text id="10:36" name="Marcar Pago" x="14" y="8" width="74" height="15" />
+            </frame>
+            <frame id="10:37" name="Frame" x="110" y="0" width="63" height="31">
+              <text id="10:38" name="Editar" x="14" y="8" width="35" height="15" />
+            </frame>
+            <frame id="10:39" name="Frame" x="181" y="0" width="86" height="31">
+              <text id="10:40" name="Descartar" x="14" y="8" width="58" height="15" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="10:41" name="Frame" x="0" y="72" width="1066" height="62">
+          <frame id="10:42" name="Frame" x="16" y="14" width="666" height="34">
+            <text id="10:43" name="Academia" x="0" y="0" width="68" height="17" />
+            <text id="10:44" name="PF · Consumo Livre · valor fixo" x="0" y="19" width="172" height="15" />
+          </frame>
+          <frame id="10:45" name="Frame" x="698" y="14" width="69" height="17">
+            <text id="10:46" name="R$ 189,90" x="0" y="0" width="69" height="17" />
+          </frame>
+          <frame id="10:47" name="Frame" x="783" y="14" width="267" height="31">
+            <frame id="10:48" name="Frame" x="0" y="0" width="102" height="31">
+              <text id="10:49" name="Marcar Pago" x="14" y="8" width="74" height="15" />
+            </frame>
+            <frame id="10:50" name="Frame" x="110" y="0" width="63" height="31">
+              <text id="10:51" name="Editar" x="14" y="8" width="35" height="15" />
+            </frame>
+            <frame id="10:52" name="Frame" x="181" y="0" width="86" height="31">
+              <text id="10:53" name="Descartar" x="14" y="8" width="58" height="15" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="10:54" name="Frame" x="0" y="144" width="1066" height="62">
+          <frame id="10:55" name="Frame" x="16" y="14" width="615" height="34">
+            <text id="10:56" name="Internet" x="0" y="0" width="54" height="17" />
+            <text id="10:57" name="PJ · Despesas Administrativas · valor a definir" x="0" y="19" width="257" height="15" />
+          </frame>
+          <frame id="10:58" name="Frame" x="647" y="14" width="120" height="17">
+            <text id="10:59" name="⚠ valor pendente" x="0" y="0" width="120" height="17" />
+          </frame>
+          <frame id="10:60" name="Frame" x="783" y="14" width="267" height="31">
+            <frame id="10:61" name="Frame" x="0" y="0" width="102" height="31">
+              <text id="10:62" name="Marcar Pago" x="14" y="8" width="74" height="15" />
+            </frame>
+            <frame id="10:63" name="Frame" x="110" y="0" width="63" height="31">
+              <text id="10:64" name="Editar" x="14" y="8" width="35" height="15" />
+            </frame>
+            <frame id="10:65" name="Frame" x="181" y="0" width="86" height="31">
+              <text id="10:66" name="Descartar" x="14" y="8" width="58" height="15" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="10:67" name="Frame" x="0" y="216" width="1066" height="62">
+          <frame id="10:68" name="Frame" x="16" y="14" width="650" height="34">
+            <text id="10:69" name="Pró-labore" x="0" y="0" width="72" height="17" />
+            <text id="10:70" name="Intercompany · valor fixo" x="0" y="19" width="140" height="15" />
+          </frame>
+          <frame id="10:71" name="Frame" x="682" y="14" width="85" height="17">
+            <text id="10:72" name="R$ 4.000,00" x="0" y="0" width="85" height="17" />
+          </frame>
+          <frame id="10:73" name="Frame" x="783" y="14" width="267" height="31">
+            <frame id="10:74" name="Frame" x="0" y="0" width="102" height="31">
+              <text id="10:75" name="Marcar Pago" x="14" y="8" width="74" height="15" />
+            </frame>
+            <frame id="10:76" name="Frame" x="110" y="0" width="63" height="31">
+              <text id="10:77" name="Editar" x="14" y="8" width="35" height="15" />
+            </frame>
+            <frame id="10:78" name="Frame" x="181" y="0" width="86" height="31">
+              <text id="10:79" name="Descartar" x="14" y="8" width="58" height="15" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="10:80" name="Frame" x="0" y="288" width="1066" height="62">
+          <frame id="10:81" name="Frame" x="16" y="14" width="615" height="34">
+            <text id="10:82" name="Contador" x="0" y="0" width="64" height="17" />
+            <text id="10:83" name="PJ · Despesas Administrativas · valor a definir" x="0" y="19" width="257" height="15" />
+          </frame>
+          <frame id="10:84" name="Frame" x="647" y="14" width="120" height="17">
+            <text id="10:85" name="⚠ valor pendente" x="0" y="0" width="120" height="17" />
+          </frame>
+          <frame id="10:86" name="Frame" x="783" y="14" width="267" height="31">
+            <frame id="10:87" name="Frame" x="0" y="0" width="102" height="31">
+              <text id="10:88" name="Marcar Pago" x="14" y="8" width="74" height="15" />
+            </frame>
+            <frame id="10:89" name="Frame" x="110" y="0" width="63" height="31">
+              <text id="10:90" name="Editar" x="14" y="8" width="35" height="15" />
+            </frame>
+            <frame id="10:91" name="Frame" x="181" y="0" width="86" height="31">
+              <text id="10:92" name="Descartar" x="14" y="8" width="58" height="15" />
+            </frame>
+          </frame>
+        </frame>
+      </frame>
+      <frame id="144:6" name="Frame" x="48" y="583" width="1066" height="62">
+        <frame id="144:7" name="Frame" x="16" y="14" width="623" height="34">
+          <text id="144:8" name="Financiamento apartamento, parcela 13/360" x="0" y="0" width="301" height="17" />
+          <text id="144:9" name="Passivo · Caixa Econômica · valor calculado (amortização)" x="0" y="19" width="328" height="15" />
+        </frame>
+        <frame id="144:10" name="Frame" x="655" y="14" width="81" height="17">
+          <text id="144:11" name="R$ 1.520,00" x="0" y="0" width="81" height="17" />
+        </frame>
+        <frame id="144:12" name="Frame" x="752" y="14" width="298" height="31">
+          <frame id="144:13" name="Frame" x="0" y="0" width="102" height="31">
+            <text id="144:14" name="Marcar Pago" x="14" y="8" width="74" height="15" />
+          </frame>
+          <frame id="144:15" name="Frame" x="110" y="0" width="94" height="31">
+            <text id="144:16" name="Editar juros" x="14" y="8" width="66" height="15" />
+          </frame>
+          <frame id="144:17" name="Frame" x="212" y="0" width="86" height="31">
+            <text id="144:18" name="Descartar" x="14" y="8" width="58" height="15" />
+          </frame>
+        </frame>
+      </frame>
+    </frame>
+  </frame>

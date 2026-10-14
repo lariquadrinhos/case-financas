@@ -1,0 +1,8 @@
+  <frame id="309:100" name="Vazio — Contas Bancárias" x="-17555" y="-3454" width="420" height="195">
+    <text id="309:101" name="Nenhuma conta cadastrada" x="110" y="40" width="200" height="18" />
+    <text id="309:102" name="Adicione suas contas bancárias pra começar a organizar seu dinheiro." x="40" y="66" width="340" height="30" />
+    <rounded-rectangle id="309:103" name="Rectangle" x="209.5" y="104" width="1" height="8" />
+    <frame id="309:104" name="Frame" x="159" y="120" width="102" height="35">
+      <text id="309:105" name="+ Adicionar" x="16" y="10" width="70" height="15" />
+    </frame>
+  </frame>

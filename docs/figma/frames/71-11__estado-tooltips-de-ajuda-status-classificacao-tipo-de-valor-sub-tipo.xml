@@ -1,0 +1,117 @@
+  <frame id="71:11" name="Estado — Tooltips de ajuda (Status, Classificação, Tipo de valor, Sub-tipo)" x="1477" y="-115" width="2121" height="700">
+    <frame id="71:12" name="Frame" x="42.5" y="222" width="2036" height="256">
+      <frame id="71:13" name="Frame" x="0" y="0" width="380" height="160">
+        <text id="71:14" name="① Normal: &quot;i&quot; discreto ao lado do rótulo" x="24" y="24" width="272" height="17" />
+        <frame id="71:15" name="Frame" x="24" y="55" width="332" height="54">
+          <frame id="71:16" name="Frame" x="0" y="0" width="58" height="15">
+            <text id="71:17" name="Status" x="0" y="0" width="38" height="15" />
+            <frame id="71:18" name="Frame" x="44" y="0" width="14" height="14">
+              <text id="71:19" name="i" x="5.5" y="1" width="3" height="12" />
+            </frame>
+          </frame>
+          <frame id="71:20" name="Frame" x="0" y="21" width="332" height="33">
+            <frame id="71:21" name="Frame" x="0" y="0" width="162" height="33">
+              <text id="71:22" name="Previsto" x="57.5" y="9" width="47" height="15" />
+            </frame>
+            <frame id="71:23" name="Frame" x="170" y="0" width="162" height="33">
+              <text id="71:24" name="Pago" x="66" y="9" width="30" height="15" />
+            </frame>
+          </frame>
+        </frame>
+        <text id="71:25" name="↓ passa o mouse sobre o &quot;i&quot;" x="24" y="123" width="149" height="13" />
+      </frame>
+      <frame id="71:26" name="Frame" x="404" y="0" width="380" height="229">
+        <text id="71:27" name="② Hover: tooltip aparece" x="24" y="24" width="175" height="17" />
+        <frame id="71:28" name="Frame" x="24" y="55" width="332" height="123">
+          <frame id="71:29" name="Frame" x="0" y="0" width="58" height="15">
+            <text id="71:30" name="Status" x="0" y="0" width="38" height="15" />
+            <frame id="71:31" name="Frame" x="44" y="0" width="14" height="14">
+              <text id="71:32" name="i" x="5.5" y="1" width="3" height="12" />
+            </frame>
+          </frame>
+          <frame id="71:33" name="Frame" x="0" y="21" width="332" height="33">
+            <frame id="71:34" name="Frame" x="0" y="0" width="162" height="33">
+              <text id="71:35" name="Previsto" x="57.5" y="9" width="47" height="15" />
+            </frame>
+            <frame id="71:36" name="Frame" x="170" y="0" width="162" height="33">
+              <text id="71:37" name="Pago" x="66" y="9" width="30" height="15" />
+            </frame>
+          </frame>
+          <frame id="71:38" name="Frame" x="0" y="60" width="332" height="63">
+            <text id="71:39" name="Previsto: ainda não aconteceu, ainda não entra nos relatórios.(compra no crédito, por exemplo)" x="12" y="10" width="296" height="26" />
+            <text id="71:40" name="Pago: já aconteceu, passa a contar no mês." x="12" y="40" width="226" height="13" />
+          </frame>
+        </frame>
+        <text id="71:41" name="Some ao tirar o mouse. No mobile, futuramente: toque em vez de hover." x="24" y="192" width="374" height="13" />
+      </frame>
+      <frame id="73:11" name="Frame" x="808" y="0" width="380" height="232">
+        <text id="73:12" name="③ Hover: Classificação" x="24" y="24" width="164" height="17" />
+        <frame id="73:13" name="Frame" x="24" y="55" width="159" height="15">
+          <text id="73:14" name="Classificação (sugerida)" x="0" y="0" width="139" height="15" />
+          <frame id="73:15" name="Frame" x="145" y="0" width="14" height="14">
+            <text id="73:16" name="i" x="5.5" y="1" width="3" height="12" />
+          </frame>
+        </frame>
+        <frame id="73:17" name="Frame" x="24" y="84" width="332" height="33">
+          <frame id="73:18" name="Frame" x="0" y="0" width="162" height="33">
+            <text id="73:19" name="Circulante" x="51.5" y="9" width="59" height="15" />
+          </frame>
+          <frame id="73:20" name="Frame" x="170" y="0" width="162" height="33">
+            <text id="73:21" name="Não circulante" x="39.5" y="9" width="83" height="15" />
+          </frame>
+        </frame>
+        <frame id="73:22" name="Frame" x="24" y="131" width="332" height="50">
+          <text id="73:23" name="Circulante: previsto para até 12 meses." x="12" y="10" width="202" height="13" />
+          <text id="73:24" name="Não circulante: prazo maior que 12 meses." x="12" y="27" width="220" height="13" />
+        </frame>
+        <text id="73:25" name="Sugestão automática pode ser trocada manualmente a qualquer momento." x="24" y="195" width="389" height="13" />
+      </frame>
+      <frame id="74:14" name="Frame" x="1212" y="0" width="400" height="256">
+        <text id="74:15" name="④ Hover: Tipo de valor (recorrência)" x="24" y="24" width="254" height="17" />
+        <frame id="74:16" name="Frame" x="24" y="55" width="95" height="15">
+          <text id="74:17" name="Tipo de valor" x="0" y="0" width="75" height="15" />
+          <frame id="74:18" name="Frame" x="81" y="0" width="14" height="14">
+            <text id="74:19" name="i" x="5.5" y="1" width="3" height="12" />
+          </frame>
+        </frame>
+        <frame id="74:20" name="Frame" x="24" y="84" width="352" height="33">
+          <frame id="74:21" name="Frame" x="0" y="0" width="172" height="33">
+            <text id="74:22" name="Fixo (copia o valor)" x="31.5" y="9" width="109" height="15" />
+          </frame>
+          <frame id="74:23" name="Frame" x="180" y="0" width="172" height="33">
+            <text id="74:24" name="A definir (em branco)" x="25" y="9" width="122" height="15" />
+          </frame>
+        </frame>
+        <frame id="74:25" name="Frame" x="24" y="131" width="352" height="101">
+          <text id="75:2" name="Fixo: o valor se repete igualmente todo mês." x="12" y="10" width="230" height="13" />
+          <text id="75:3" name="A definir: o valor sofre alterações e deve ser" x="12" y="27" width="230" height="13" />
+          <text id="75:4" name="informado a cada mês." x="12" y="44" width="119" height="13" />
+          <text id="75:5" name="Para editar ou informar o valor de recorrências," x="12" y="61" width="245" height="13" />
+          <text id="75:6" name="use a tela Revisão de Recorrentes." x="12" y="78" width="180" height="13" />
+        </frame>
+      </frame>
+      <frame id="78:5" name="Frame" x="1636" y="0" width="400" height="239">
+        <text id="78:6" name="⑤ Hover: Sub-tipo (Pró-labore/Distribuição)" x="24" y="24" width="307" height="17" />
+        <frame id="78:7" name="Frame" x="24" y="55" width="71" height="15">
+          <text id="78:8" name="Sub-tipo" x="0" y="0" width="51" height="15" />
+          <frame id="78:9" name="Frame" x="57" y="0" width="14" height="14">
+            <text id="78:10" name="i" x="5.5" y="1" width="3" height="12" />
+          </frame>
+        </frame>
+        <frame id="78:11" name="Frame" x="24" y="84" width="352" height="33">
+          <frame id="78:12" name="Frame" x="0" y="0" width="172" height="33">
+            <text id="78:13" name="Pró-labore" x="55.5" y="9" width="61" height="15" />
+          </frame>
+          <frame id="78:14" name="Frame" x="180" y="0" width="172" height="33">
+            <text id="78:15" name="Distribuição de lucro" x="26.5" y="9" width="119" height="15" />
+          </frame>
+        </frame>
+        <frame id="78:16" name="Frame" x="24" y="131" width="352" height="84">
+          <text id="78:17" name="Pró-labore: remuneração pelo seu trabalho, reduz" x="12" y="10" width="259" height="13" />
+          <text id="78:18" name="o lucro da PJ e vira receita na PF." x="12" y="27" width="172" height="13" />
+          <text id="78:19" name="Distribuição de lucro: direciona a parte do lucro" x="12" y="44" width="246" height="13" />
+          <text id="78:20" name="que sobra, não afeta o resultado da PJ." x="12" y="61" width="203" height="13" />
+        </frame>
+      </frame>
+    </frame>
+  </frame>

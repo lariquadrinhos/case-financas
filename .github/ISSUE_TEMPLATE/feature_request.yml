@@ -1,0 +1,54 @@
+name: 💡 Proposta de funcionalidade
+description: Propor uma mudança ou capacidade nova no Bigorna
+labels: ['enhancement']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Este projeto trabalha a partir de fonte da verdade: PRD (`docs/prd/`),
+        Event Storming (`docs/event-storming/`), especificação de telas
+        (`files_design/`) e ADRs (`docs/adr/`). Decisão não trivial vira ADR.
+
+        **Uma boa proposta enuncia o PROBLEMA antes da solução.** Solução
+        chegando pronta esconde o problema que a gerou, e o problema é a única
+        parte que dá para discutir. Descreva primeiro o que dói.
+
+        🔒 **Nunca cole dado financeiro real, print de tela com valor nem
+        credencial** para ilustrar a proposta. Use exemplo inventado.
+  - type: checkboxes
+    id: pre-voo
+    attributes:
+      label: Pré-voo
+      options:
+        - label: Procurei nas issues existentes e esta proposta não é duplicada.
+          required: true
+        - label: Esta proposta não contém dado real de pessoa alguma — nem meu, nem de terceiro.
+          required: true
+  - type: textarea
+    id: problema
+    attributes:
+      label: Problema
+      description: Que necessidade ou dor isto endereça? Em que momento de uso ela aparece?
+    validations:
+      required: true
+  - type: textarea
+    id: proposta
+    attributes:
+      label: Solução proposta
+      description: O que o Bigorna deveria fazer? Use os nomes já fechados no glossário (`files_design/04-glossario-de-nomenclatura.md`).
+    validations:
+      required: true
+  - type: textarea
+    id: alternativas
+    attributes:
+      label: Alternativas consideradas
+      description: O que mais resolveria, e por que você descartou.
+    validations:
+      required: false
+  - type: textarea
+    id: fonte-da-verdade
+    attributes:
+      label: Fonte da verdade afetada
+      description: Isto muda o PRD, um agregado ou hotspot do Event Storming, a especificação de telas, o glossário ou exige ADR nova?
+    validations:
+      required: false

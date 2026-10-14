@@ -1,0 +1,1 @@
+ALTER TABLE `net_worth_snapshots` ADD `investments_total` integer DEFAULT 0 NOT NULL;
